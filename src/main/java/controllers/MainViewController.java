@@ -29,6 +29,8 @@ public class MainViewController implements Initializable {
     private Button helpButton;
     @FXML
     private Button settingsButton;
+    @FXML
+    private Button openGroupsBtn;
 
 
     @Override
@@ -38,7 +40,7 @@ public class MainViewController implements Initializable {
     }
 
     @FXML
-    private void loadHomePane(ActionEvent event) throws IOException {
+    private void loadHomePane() throws IOException {
 
         AnchorPane homePane = FXMLLoader.load(getClass().getResource("/view/homeview.fxml"));
         fillerPane.getChildren().setAll(homePane);
@@ -74,10 +76,10 @@ public class MainViewController implements Initializable {
         fillerPane.getChildren().setAll(settingsPane);
     }
 
-
-
-
-
-
+    @FXML
+    private void loadGroupsPane(ActionEvent event) throws IOException{
+        AnchorPane groupPane = FXMLLoader.load(getClass().getResource("/view/groupsmainview.fxml"));
+        fillerPane.getChildren().setAll(groupPane);
+    }
 
 }
