@@ -50,6 +50,8 @@ public class RegisterController {
     private Text hintMessage;
     @FXML
     private Text registrationSuccesful;
+    @FXML
+    private Text whoopsMessage;
 
     @FXML
     private void loadLoginView(){
@@ -104,12 +106,27 @@ public class RegisterController {
                         registrationSuccesful.setVisible(true);
                         closeFactory();
                     }
+                }else {
+                    displayUserExistsMessage();
+                    resetFields();
                 }
             }
         }
         else {
             displayMessageOnView();
         }
+    }
+
+    private void resetFields(){
+
+
+    }
+
+    private void displayUserExistsMessage(){
+
+        whoopsMessage.setText("It seems that username or email has been taken.");
+        whoopsMessage.setVisible(true);
+
     }
 
     private int persistNewUser(){
