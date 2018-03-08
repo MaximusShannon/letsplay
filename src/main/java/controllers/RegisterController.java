@@ -1,5 +1,6 @@
 package controllers;
 
+import functionality.HibernateUtil;
 import functionality.Validator;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +12,15 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import models.Gamer;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.security.crypto.bcrypt.BCrypt;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import java.util.List;
 
 
 public class RegisterController {
@@ -20,6 +28,9 @@ public class RegisterController {
     private ClassPathXmlApplicationContext context;
     private Validator validator;
     private Gamer gamer;
+    private Session session;
+    private List<Gamer> gamersFound;
+    private SessionFactory factory;
 
     @FXML
     private AnchorPane registerStage;
@@ -37,6 +48,8 @@ public class RegisterController {
     private PasswordField passwordTwo;
     @FXML
     private Text hintMessage;
+    @FXML
+    private Text registrationSuccesful;
 
     @FXML
     private void loadLoginView(){
@@ -66,6 +79,8 @@ public class RegisterController {
     @FXML
     private void startRegistrationProcess(){
 
+        initilizeFactory();
+
         context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         validator = (Validator) context.getBean("validator");
 
@@ -75,19 +90,40 @@ public class RegisterController {
                 emailText.getText())
                 && validator.validatePasswordsMatch(passwordOne.getText(), passwordTwo.getText())){
 
-            /*
-            * Fields Validated
-            * - create the object
-            * - check does username and email exists
-            * - if(not) persist user
-            * */
-
             createGamerObject();
+            fetchAllGamersInDb();
 
+            if(gamersFound != null){
+
+                if(!checkDoesUsernameOrEmailExist()){
+
+                    Integer id = persistNewUser();
+
+                    if(id > 0){
+
+                        registrationSuccesful.setVisible(true);
+                        closeFactory();
+                    }
+                }
+            }
         }
         else {
             displayMessageOnView();
         }
+    }
+
+    private int persistNewUser(){
+
+        Integer id;
+
+        session = factory.openSession();
+        session.beginTransaction();
+
+        id = (Integer) session.save(gamer);
+        session.getTransaction().commit();
+        session.close();
+
+        return id;
     }
 
     private void createGamerObject(){
@@ -98,6 +134,35 @@ public class RegisterController {
         gamer.setEmail(emailText.getText());
         gamer.setUserName(userNameText.getText());
         gamer.setPassword(hashPassword(passwordOne.getText()));
+        /*Setting initial values to the gamer object to be updated later by the user*/
+        gamer.setBio("");
+        gamer.setProfilePictureReference("");
+        gamer.setInterest("");
+        gamer.setLocation("");
+        gamer.setPostCount(0);
+        gamer.setCommentsCount(0);
+        gamer.setApplicationsCount(0);
+        gamer.setLoginCount(0);
+        gamer.setProfileVersion(1);
+        gamer.setPlayerOnlineStatus(false);
+        gamer.setAvailableToPlay(false);
+        /*By default auto-matchmaking will be set to false, due to their settings not being configured*/
+        gamer.setAutoMatchmaking(false);
+    }
+
+    private void fetchAllGamersInDb(){
+
+
+        session = factory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<Gamer> gamers = builder.createQuery(Gamer.class);
+        gamers.from(Gamer.class);
+
+        gamersFound = session.createQuery(gamers).getResultList();
+
+        session.close();
     }
 
     private String hashPassword(String password){
@@ -110,4 +175,31 @@ public class RegisterController {
         hintMessage.setVisible(true);
     }
 
+    private boolean checkDoesUsernameOrEmailExist(){
+
+        boolean exist = false;
+
+        for(int i = 0; i < gamersFound.size(); i++){
+
+            if(gamersFound.get(i).getUserName().equals(userNameText.getText())
+                    || gamersFound.get(i).getEmail().equals(emailText.getText())){
+
+                exist = true;
+            }
+        }
+        return exist;
+    }
+
+    private void initilizeFactory(){
+
+        factory = new Configuration()
+                .configure("hibernate.cfg.xml")
+                .addAnnotatedClass(Gamer.class)
+                .buildSessionFactory();
+    }
+
+    private void closeFactory(){
+
+        factory.close();
+    }
 }

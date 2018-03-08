@@ -1,23 +1,25 @@
 package functionality;
 
-import javafx.fxml.Initializable;
 import models.Gamer;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class HibernateUtil implements Initializable {
+public class HibernateUtil {
 
     public static SessionFactory factory;
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-
+    public HibernateUtil(){
         factory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Gamer.class)
                 .buildSessionFactory();
     }
+
+    public static Session returnSession(){
+
+        return factory.openSession();
+    }
+
 }

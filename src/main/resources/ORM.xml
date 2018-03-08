@@ -5,7 +5,7 @@
 
 <hibernate-mapping package="models">
 
-    <class name="models.Gamer" table="USERS">
+    <class name="models.Gamer" table="Gamers">
         <id name = "id" column="USER_ID">
              <generator class="native"/>
         </id>
