@@ -39,6 +39,7 @@ public class LoginController {
     }
 
     private void closeStage(){
+
         Stage stage =(Stage) loginStage.getScene().getWindow();
         stage.close();
     }
