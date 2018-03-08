@@ -1,4 +1,4 @@
-package sample;
+package functionality;
 
 
 import javafx.application.Application;
