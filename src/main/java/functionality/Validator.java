@@ -7,25 +7,24 @@ public class Validator {
     /*
     Check for empty String entries on loginValidation
     * */
-    private boolean validateLogin(String textOne, String textTwo) {
+    public boolean validateLogin(String textOne, String textTwo) {
 
         return validated = !textOne.equals("") && !textTwo.equals("");
     }
     /*
     * Check for empty String entries on RegisterValidation
     * */
-    private boolean validateRegistrationText(String textOne, String textTwo, String textThree, String textFour, String textFive){
+    public boolean validateRegistrationText(String textOne, String textTwo, String textThree, String textFour){
 
         return validated = !textOne.equals("")
                 && !textTwo.equals("")
                 && !textThree.equals("")
-                && !textFour.equals("")
-                && !textFive.equals("");
+                && !textFour.equals("");
     }
     /*
     * Validate the passwords match from the two textfield's
     * */
-    private boolean validatePasswordsMatch(String passwordOne, String passwordTwo){
+    public boolean validatePasswordsMatch(String passwordOne, String passwordTwo){
 
         return validated = passwordOne.equals(passwordTwo);
     }

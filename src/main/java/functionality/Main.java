@@ -13,8 +13,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        
-
         Parent root = FXMLLoader.load(getClass().getResource("/view/login.fxml"));
         primaryStage.setTitle("LetsPlay");
         primaryStage.getIcons().add(new Image("/images/letsplay_icon.png"));
@@ -24,14 +22,11 @@ public class Main extends Application {
         primaryStage.show();
 
 
-
-
-
-
     }
 
 
     public static void main(String[] args) {
         launch(args);
+
     }
 }
