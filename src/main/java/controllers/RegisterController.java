@@ -1,6 +1,5 @@
 package controllers;
 
-import functionality.HibernateUtil;
 import functionality.Validator;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,9 +21,19 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import java.util.List;
 
+/**
+ * Java Class to handle a user trying to register
+ * - Author: Max Shannon
+ * - Date: 08/03/2018
+ * - Version: 0.1
+ */
 
 public class RegisterController {
 
+    /**
+     * Objects used by this class - bean definitions etc.
+     * Lists used for checking if user exists
+     */
     private ClassPathXmlApplicationContext context;
     private Validator validator;
     private Gamer gamer;
@@ -32,6 +41,10 @@ public class RegisterController {
     private List<Gamer> gamersFound;
     private SessionFactory factory;
 
+
+    /**
+     * View properties binded.
+     */
     @FXML
     private AnchorPane registerStage;
     @FXML
@@ -53,6 +66,10 @@ public class RegisterController {
     @FXML
     private Text whoopsMessage;
 
+    /**
+     * This method loads the loginView, this is used for the button to go back to the
+     * login view, and for when a use is registered completely.
+     */
     @FXML
     private void loadLoginView(){
 
@@ -65,6 +82,7 @@ public class RegisterController {
             registerStage.setScene(new Scene(root, 900, 500));
             registerStage.show();
 
+            /*Close this stage - Registration stage*/
             closeStage();
 
         }catch (Exception e){
@@ -73,15 +91,39 @@ public class RegisterController {
         }
     }
 
+    /**
+     * This method closes the current stage which is the registration stage
+     * it does this by getting a handle on the root AnchorPane
+     */
     private void closeStage(){
         Stage stage =(Stage) registerStage.getScene().getWindow();
         stage.close();
     }
 
+    /**
+     * This method initializes the hibernate SessionFactory
+     * then it gets the context from the Spring application context file allowing beans to be created
+     *
+     * It is called when the user clicks the register button on the view.
+     *
+     * It then checks to make sure the user hasn't clicked that button without entering any details,
+     * t checks that the passwords match to make sure the user hasn't made an error
+     * it checks that the email also contains @ and . using the Validator object
+     *
+     * It then creates a gamer object from the textfields, and initializes default values used later on
+     * by the user to tailor their profiles
+     *
+     * It checks to see if a userName or email exist within the database to stop users creating the same records.
+     *
+     * If the user doesn't exist it then persists the user to the database, then closes the sessionFactory,
+     * loads the loginView
+     *
+     * and closes this stage.
+     */
     @FXML
     private void startRegistrationProcess(){
 
-        initilizeFactory();
+        initializeFactory();
 
         context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         validator = (Validator) context.getBean("validator");
@@ -105,7 +147,11 @@ public class RegisterController {
                     if(id > 0){
 
                         registrationSuccesful.setVisible(true);
+
                         closeFactory();
+
+                        loadLoginView();
+                        closeStage();
                     }
                 }else {
                     displayUserExistsMessage();
@@ -118,12 +164,19 @@ public class RegisterController {
         }
     }
 
+    /**
+     * If a user enters a username or email that already exists within the database
+     * this method will be called to reset the fields so the user doesn't try it again.
+     */
     private void resetUsernameAndEmailFields(){
 
         emailText.setText("");
         userNameText.setText("");
     }
 
+    /**
+     * This method displays a message if the username or email exists within the database
+     */
     private void displayUserExistsMessage(){
 
         whoopsMessage.setText("It seems that username or email has been taken.");
@@ -131,6 +184,12 @@ public class RegisterController {
 
     }
 
+    /**
+     *Persists the user to the database if it is successful it will return a Serializable integer (the primary key)
+     * id.
+     *
+     * @return id which is returned by session.save()
+     */
     private int persistNewUser(){
 
         Integer id;
@@ -145,9 +204,12 @@ public class RegisterController {
         return id;
     }
 
+    /**
+     * Instantiate the gamerBean
+     */
     private void createGamerObject(){
 
-        gamer = new Gamer();
+        gamer = (Gamer) context.getBean("gamer");
         gamer.setFirstName(firstNameText.getText());
         gamer.setSecondName(secondNameText.getText());
         gamer.setEmail(emailText.getText());
@@ -169,6 +231,10 @@ public class RegisterController {
         gamer.setAutoMatchmaking(false);
     }
 
+    /**
+     * Gets a list of all gamers in the database, used to check if a user exists already when trying to
+     * create a new user.
+     */
     private void fetchAllGamersInDb(){
 
 
@@ -184,16 +250,30 @@ public class RegisterController {
         session.close();
     }
 
+    /**
+     * Uses spring security to encrypt the password with a generated salt string
+     *
+     * @param password got from the passwordOne textField, only called after they
+     *                 are validated.
+     * @return return the encrypted password so it can be persisted to the database.
+     */
     private String hashPassword(String password){
 
         return BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
+    /**
+     * Displays a message on the view if the user hasn't matched their passwords or left a field empty
+     */
     private void displayMessageOnView(){
 
         hintMessage.setVisible(true);
     }
 
+    /**
+     * Checks does a user exist within the database by checking the userName and email against other records
+     * @return returns a boolean to see if it existed or not
+     */
     private boolean checkDoesUsernameOrEmailExist(){
 
         boolean exist = false;
@@ -209,7 +289,12 @@ public class RegisterController {
         return exist;
     }
 
-    private void initilizeFactory(){
+    /**
+     * TODO:
+     * initialize the sessionFactory
+     * Might refactor this to initialize on application startup
+     */
+    private void initializeFactory(){
 
         factory = new Configuration()
                 .configure("hibernate.cfg.xml")
@@ -217,6 +302,9 @@ public class RegisterController {
                 .buildSessionFactory();
     }
 
+    /**
+     * Close the session factory
+     */
     private void closeFactory(){
 
         factory.close();
