@@ -108,7 +108,7 @@ public class RegisterController {
                     }
                 }else {
                     displayUserExistsMessage();
-                    resetFields();
+                    resetUsernameAndEmailFields();
                 }
             }
         }
@@ -117,9 +117,10 @@ public class RegisterController {
         }
     }
 
-    private void resetFields(){
+    private void resetUsernameAndEmailFields(){
 
-
+        emailText.setText("");
+        userNameText.setText("");
     }
 
     private void displayUserExistsMessage(){
