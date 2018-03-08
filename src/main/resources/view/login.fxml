@@ -31,7 +31,7 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Text>
-      <Text fx:id="loginFailureText" fill="#a13131" layoutX="277.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We couldn't find an account with that username and/or password" visible="false">
+      <Text fx:id="loginFailureText" fill="#a13131" layoutX="277.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We couldn't find an account with that username and/or password" visible="false">
          <effect>
             <Glow />
          </effect></Text>
@@ -63,6 +63,14 @@
       <Text fill="#0967a5" layoutX="501.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text=".gg">
          <font>
             <Font name="AdobeDevanagari-Regular" size="48.0" />
+         </font>
+         <effect>
+            <Glow level="0.2" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="320.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your username and password">
+         <font>
+            <Font size="14.0" />
          </font>
          <effect>
             <Glow level="0.2" />
