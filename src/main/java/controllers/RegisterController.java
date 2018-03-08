@@ -90,7 +90,8 @@ public class RegisterController {
                 secondNameText.getText(),
                 userNameText.getText(),
                 emailText.getText())
-                && validator.validatePasswordsMatch(passwordOne.getText(), passwordTwo.getText())){
+                && validator.validatePasswordsMatch(passwordOne.getText(), passwordTwo.getText())
+                && validator.validateEmail(emailText.getText())){
 
             createGamerObject();
             fetchAllGamersInDb();
