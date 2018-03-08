@@ -42,4 +42,5 @@ public class LoginController {
         Stage stage =(Stage) loginStage.getScene().getWindow();
         stage.close();
     }
+
 }
