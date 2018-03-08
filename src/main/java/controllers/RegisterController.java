@@ -12,6 +12,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import models.Gamer;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 
 
 public class RegisterController {
@@ -71,7 +72,8 @@ public class RegisterController {
         if(validator.validateRegistrationText(firstNameText.getText(),
                 secondNameText.getText(),
                 userNameText.getText(),
-                emailText.getText())){
+                emailText.getText())
+                && validator.validatePasswordsMatch(passwordOne.getText(), passwordTwo.getText())){
 
             /*
             * Fields Validated
@@ -80,14 +82,27 @@ public class RegisterController {
             * - if(not) persist user
             * */
 
-            gamer = new Gamer();
-
-
+            createGamerObject();
 
         }
         else {
             displayMessageOnView();
         }
+    }
+
+    private void createGamerObject(){
+
+        gamer = new Gamer();
+        gamer.setFirstName(firstNameText.getText());
+        gamer.setSecondName(secondNameText.getText());
+        gamer.setEmail(emailText.getText());
+        gamer.setUserName(userNameText.getText());
+        gamer.setPassword(hashPassword(passwordOne.getText()));
+    }
+
+    private String hashPassword(String password){
+
+        return BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
     private void displayMessageOnView(){
