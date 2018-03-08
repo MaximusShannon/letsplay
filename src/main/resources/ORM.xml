@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="models">
+
+    <class name="models.Gamer" table="USERS">
+        <id name = "id" column="USER_ID">
+             <generator class="native"/>
+        </id>
+        <property name="userName" type="java.lang.String" column="user_name"/>
+        <property name="bio" type="java.lang.String" column="user_bio"/>
+        <property name="email" type="java.lang.String" column="email_address"/>
+        <property name="password" type="java.lang.String" column="password"/>
+        <property name="profilePictureReference" type="java.lang.String" column="profile_pic_ref"/>
+        <property name="location" type="java.lang.String" column="location"/>
+        <property name="interest" type="java.lang.String" column="interests"/>
+        <property name="postCount" type="java.lang.Integer" column="post_count"/>
+        <property name="commentsCount" type="java.lang.Integer" column="comments_count"/>
+        <property name="applicationsCount" type="java.lang.Integer" column="gaming_session_application_count"/>
+        <property name="loginCount" type="java.lang.Integer" column="login_count"/>
+        <property name="profileVersion" type="java.lang.Integer" column="profile_version"/>
+        <property name="playerOnlineStatus" type="boolean" column="is_online"/>
+        <property name="availableToPlay" type="boolean" column="available_to_play"/>
+        <property name="autoMatchmaking" type="boolean" column="auto_matchmaking_enabled"/>
+    </class>
+
+</hibernate-mapping>

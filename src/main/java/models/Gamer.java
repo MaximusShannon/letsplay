@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Gamer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY);
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String userName;
     private String bio;
@@ -23,7 +23,7 @@ public class Gamer {
     private int applicationsCount; /* How many applications they've made on others posts*/
     private int loginCount;
     private int profileVersion; /* How many times the profile has been updated, default to 1*/
-    private boolean isOnline;
+    private boolean playerOnlineStatus;
     private boolean availableToPlay;
     private boolean autoMatchmaking;
 
@@ -34,7 +34,7 @@ public class Gamer {
     public Gamer(int id, String userName, String bio, String email, String password,
                  String profilePictureReference, String location, String interest, int postCount,
                  int commentsCount, int applicationsCount, int loginCount, int profileVersion,
-                 boolean isOnline, boolean availableToPlay, boolean autoMatchmaking) {
+                 boolean playerOnlineStatus, boolean availableToPlay, boolean autoMatchmaking) {
         this.id = id;
         this.userName = userName;
         this.bio = bio;
@@ -48,7 +48,7 @@ public class Gamer {
         this.applicationsCount = applicationsCount;
         this.loginCount = loginCount;
         this.profileVersion = profileVersion;
-        this.isOnline = isOnline;
+        this.playerOnlineStatus = playerOnlineStatus;
         this.availableToPlay = availableToPlay;
         this.autoMatchmaking = autoMatchmaking;
     }
@@ -157,12 +157,12 @@ public class Gamer {
         this.profileVersion = profileVersion;
     }
 
-    public boolean isOnline() {
-        return isOnline;
+    public boolean getPlayerOnlineStatus() {
+        return playerOnlineStatus;
     }
 
-    public void setOnline(boolean online) {
-        isOnline = online;
+    public void setPlayerOnlineStatus(boolean online) {
+        playerOnlineStatus = online;
     }
 
     public boolean isAvailableToPlay() {
