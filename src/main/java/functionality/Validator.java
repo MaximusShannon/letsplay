@@ -11,7 +11,6 @@ public class Validator {
 
         return validated = !textOne.equals("") && !textTwo.equals("");
     }
-
     /*
     * Check for empty String entries on RegisterValidation
     * */

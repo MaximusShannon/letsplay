@@ -16,4 +16,8 @@
     <bean id="gamerRequirements"
         class="models.GamerRequirements">
     </bean>
+
+    <bean id = "validator"
+        class = "functionality.Validator">
+    </bean>
 </beans>
