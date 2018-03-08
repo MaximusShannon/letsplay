@@ -1,5 +1,7 @@
+controllers\RegisterController.class
+controllers\LoginController.class
 main\java\controllers\subsection\controllers\SubSectionHomeController.class
 controllers\MainViewController.class
-sample\Main.class
 controllers\subsection\controllers\SubSectionSettingsController.class
+functionality\Main.class
 controllers\Controller.class
