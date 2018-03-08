@@ -11,9 +11,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #292E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="loginStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #292E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <children>
-      <Text fill="WHITE" layoutX="331.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Letsplay.gg">
+      <Text fill="WHITE" layoutX="331.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LetsPlay">
          <font>
             <Font name="AdobeDevanagari-Regular" size="48.0" />
          </font>
@@ -21,9 +21,9 @@
             <Glow level="0.2" />
          </effect>
       </Text>
-      <TextField layoutX="328.0" layoutY="199.0" prefHeight="34.0" prefWidth="245.0" promptText="Username" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
-      <PasswordField layoutX="328.0" layoutY="259.0" prefHeight="34.0" prefWidth="245.0" promptText="Password" style="-fx-background-color: #38444C; -fx-text-fill: white;" />
-      <Button layoutX="328.0" layoutY="364.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="245.0" stylesheets="@../css/Sharp.css" text="Login" textFill="WHITE">
+      <TextField fx:id="userNameField" layoutX="328.0" layoutY="199.0" prefHeight="34.0" prefWidth="245.0" promptText="Username" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+      <PasswordField fx:id="passwordField" layoutX="328.0" layoutY="259.0" prefHeight="34.0" prefWidth="245.0" promptText="Password" style="-fx-background-color: #38444C; -fx-text-fill: white;" />
+      <Button fx:id="loginBtn" layoutX="328.0" layoutY="364.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="245.0" stylesheets="@../css/Sharp.css" text="Login" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
@@ -55,10 +55,18 @@
             <Image url="@../images/arrowicon.png" />
          </image>
       </ImageView>
-      <Button fx:id="registerButton" layoutX="633.0" layoutY="433.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="239.0">
+      <Button fx:id="registerButton" onAction="#loadRegisterView" layoutX="633.0" layoutY="433.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="239.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Text fill="#0967a5" layoutX="501.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text=".gg">
+         <font>
+            <Font name="AdobeDevanagari-Regular" size="48.0" />
+         </font>
+         <effect>
+            <Glow level="0.2" />
+         </effect>
+      </Text>
    </children>
 </AnchorPane>
