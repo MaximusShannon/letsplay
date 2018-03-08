@@ -1,5 +1,5 @@
 main\java\controllers\subsection\controllers\SubSectionHomeController.class
-controllers\subsection\controllers\SubSectionSettingsController.class
-controllers\Controller.class
 controllers\MainViewController.class
 sample\Main.class
+controllers\subsection\controllers\SubSectionSettingsController.class
+controllers\Controller.class
