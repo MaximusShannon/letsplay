@@ -9,6 +9,8 @@
         <id name = "id" column="USER_ID">
              <generator class="native"/>
         </id>
+        <property name="firstName" type="java.lang.String" column="first_name"/>
+        <property name="secondName" type="java.lang.String" column="second_name"/>
         <property name="userName" type="java.lang.String" column="user_name"/>
         <property name="bio" type="java.lang.String" column="user_bio"/>
         <property name="email" type="java.lang.String" column="email_address"/>

@@ -41,7 +41,6 @@ public class RegisterController {
     private List<Gamer> gamersFound;
     private SessionFactory factory;
 
-
     /**
      * View properties binded.
      */
@@ -149,7 +148,6 @@ public class RegisterController {
                         registrationSuccesful.setVisible(true);
 
                         closeFactory();
-
                         loadLoginView();
                         closeStage();
                     }

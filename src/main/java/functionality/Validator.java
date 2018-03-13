@@ -37,6 +37,7 @@ public class Validator {
     * */
     public boolean validatePasswordsMatch(String passwordOne, String passwordTwo){
 
-        return validated = passwordOne.equals(passwordTwo) && passwordOne.length() > 6;
+        return validated = passwordOne.equals(passwordTwo)
+                && passwordOne.length() > 6;
     }
 }
