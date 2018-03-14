@@ -82,7 +82,7 @@ public class LoginController {
 
     private void closeStage(){
 
-        Stage stage =(Stage) loginStage.getScene().getWindow();
+        Stage stage = (Stage) loginStage.getScene().getWindow();
         stage.close();
     }
 
@@ -95,6 +95,8 @@ public class LoginController {
             homeViewStage.setTitle("Welcome, " + Session.gamerSession.getUserName());
             homeViewStage.getIcons().add(new Image("/images/letsplay_icon.png"));
             homeViewStage.setScene(new Scene(root, 1200, 900));
+            homeViewStage.setResizable(false);
+            homeViewStage.sizeToScene();
             homeViewStage.show();
 
             closeStage();

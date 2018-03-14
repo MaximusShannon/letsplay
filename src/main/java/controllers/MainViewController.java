@@ -4,10 +4,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import models.Session;
 
 
@@ -16,6 +20,11 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MainViewController implements Initializable {
+
+    public static Scene mainStage;
+
+    @FXML
+    private AnchorPane mainViewPane;
 
     @FXML
     private AnchorPane fillerPane;
@@ -43,6 +52,8 @@ public class MainViewController implements Initializable {
     public void initialize(URL url, ResourceBundle rb){
 
         setUserNameText();
+
+        mainStage = mainViewPane.getScene();
     }
 
     private void setUserNameText(){
@@ -50,10 +61,63 @@ public class MainViewController implements Initializable {
         userNameText.setText(Session.gamerSession.getUserName());
     }
 
+    /**
+     * TODO: on logout show confirmation box
+     * Time on problem 2 hrs had to leave.
+     */
+    private void loadConfirmationBox(){
+
+        try{
+
+            Stage confirmationBox = new Stage();
+
+            Parent root = FXMLLoader.load(getClass().getResource("/view/logoutconfirmationbox.fxml"));
+            confirmationBox.setTitle("Are you sure?");
+            confirmationBox.getIcons().add(new Image("/images/letsplay_icon.png"));
+            confirmationBox.setScene(new Scene(root, 400, 200));
+            confirmationBox.setResizable(false);
+            confirmationBox.requestFocus();
+            confirmationBox.show();
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+
+    }
+
     @FXML
     private void handleLogoutRequest(){
+        
+        Session.resetSession();
+        closeStage();
+        loadLoginView();
+    }
+    
+    private void loadLoginView(){
 
+        try{
 
+            Stage loginStage = new Stage();
+
+            Parent root = FXMLLoader.load(getClass().getResource("/view/login.fxml"));
+            loginStage.setTitle("Login");
+            loginStage.setScene(new Scene(root, 900, 500));
+            loginStage.getIcons().add(new Image("/images/letsplay_icon.png"));
+            loginStage.setResizable(false);
+            loginStage.sizeToScene();
+            loginStage.show();
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    private void closeStage(){
+
+        Stage stage = (Stage) mainViewPane.getScene().getWindow();
+        stage.close();
     }
 
     @FXML
