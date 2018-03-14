@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -69,24 +70,11 @@ public class LoginController {
                     Session.gamerSession = gamer;
                     loadHomeView();
 
-
-                    /**
-                     * Insta session
-                     * loadView
-                     * Close Login
-                     * Close factory;
-                     */
                 }else{
-                    /**
-                     * Display messages to user if passwords dont match
-                     */
                     showFailedLoginAttemptMessage();
                 }
 
             }else{
-                /**
-                 * Display messages to user if username doesn't exits
-                 */
                 showFailedLoginAttemptMessage();
             }
         }
@@ -104,7 +92,8 @@ public class LoginController {
             Stage homeViewStage = new Stage();
 
             Parent root = FXMLLoader.load(getClass().getResource("/view/mainview.fxml"));
-            homeViewStage.setTitle("Weclome, " + Session.gamerSession.getUserName());
+            homeViewStage.setTitle("Welcome, " + Session.gamerSession.getUserName());
+            homeViewStage.getIcons().add(new Image("/images/letsplay_icon.png"));
             homeViewStage.setScene(new Scene(root, 1200, 900));
             homeViewStage.show();
 
