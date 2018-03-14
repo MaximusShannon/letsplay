@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LogoutConfirmationBoxController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/LogoutConfirmationBoxController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MainViewController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/MainViewController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/createpostview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/createpostview.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/groupsmainview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/groupsmainview.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/helpview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/helpview.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/homeview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/homeview.fxml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/logoutconfirmationbox.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/logoutconfirmationbox.fxml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/mainview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/mainview.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/profileview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/profileview.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/settingsview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/settingsview.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,103 +83,53 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="RegisterController.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/controllers/RegisterController.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="237">
-                    <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="89" selection-end-column="9" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="docComment;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;field#context#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;field#registerStage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#loadLoginView#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#closeStage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#closeStage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#startRegistrationProcess#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#startRegistrationProcess#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#resetUsernameAndEmailFields#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#resetUsernameAndEmailFields#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#displayUserExistsMessage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#displayUserExistsMessage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#persistNewUser#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#persistNewUser#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#createGamerObject#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#createGamerObject#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#fetchAllGamersInDb#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#fetchAllGamersInDb#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#hashPassword#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#hashPassword#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#displayMessageOnView#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#displayMessageOnView#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#checkDoesUsernameOrEmailExist#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#checkDoesUsernameOrEmailExist#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#initializeFactory#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#initializeFactory#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#closeFactory#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#closeFactory#0;class#RegisterController#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LoginController.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="527">
-                    <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="98" selection-end-column="40" />
-                    <folding>
-                      <element signature="method#showFailedLoginAttemptMessage#0;class#LoginController#0" expanded="false" />
-                      <element signature="method#fadeFailureText#0;class#LoginController#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/functionality/Main.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="238">
-                    <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="35" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainViewController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainViewController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state relative-caret-position="727">
+              <caret line="162" column="69" lean-forward="false" selection-start-line="162" selection-start-column="69" selection-end-line="162" selection-end-column="69" />
               <folding>
+                <element signature="docComment;method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
                 <element signature="method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
+                <element signature="method#loadLoginView#0;class#MainViewController#0" expanded="false" />
+                <element signature="method#closeStage#0;class#MainViewController#0" expanded="false" />
+                <element signature="method#loadHomePane#0;class#MainViewController#0" expanded="false" />
+                <element signature="method#loadProfilePane#0;class#MainViewController#0" expanded="false" />
+                <element signature="method#loadCreatePostPane#0;class#MainViewController#0" expanded="false" />
+                <element signature="method#loadHelpPane#0;class#MainViewController#0" expanded="false" />
+                <element signature="method#loadSettingsPane#0;class#MainViewController#0" expanded="false" />
+                <element signature="method#loadGroupsPane#0;class#MainViewController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogoutConfirmationBoxController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homeview.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/view/homeview.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutConfirmationBoxController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LogoutConfirmationBoxController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="52" column="62" lean-forward="true" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+            <state relative-caret-position="295">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#closeMainView#0;class#LogoutConfirmationBoxController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -182,8 +138,8 @@
       <file leaf-file-name="logoutconfirmationbox.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/view/logoutconfirmationbox.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -208,6 +164,7 @@
       <find>checkDoesUsernameOrEmailExist</find>
       <find>logout</find>
       <find>mainViewPane</find>
+      <find>init</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -226,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/view/login.fxml" />
         <option value="$PROJECT_DIR$/src/controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/view/homeview.fxml" />
@@ -276,6 +232,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/view/logoutconfirmationbox.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/LogoutConfirmationBoxController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/homeview.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/MainViewController.java" />
       </list>
     </option>
@@ -640,12 +597,12 @@
       <workItem from="1520866166004" duration="1290000" />
       <workItem from="1520931758795" duration="4589000" />
       <workItem from="1521043193189" duration="21000" />
-      <workItem from="1521043282448" duration="13673000" />
+      <workItem from="1521043282448" duration="16625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60684000" />
+    <option name="totallyTimeSpent" value="63636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -667,7 +624,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27687296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3995657" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32464713" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -768,7 +725,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -777,14 +734,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/css/Sharp.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -892,16 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/homeview.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="33" column="94" lean-forward="true" selection-start-line="33" selection-start-column="94" selection-end-line="33" selection-end-column="124" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1165,8 +1104,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/logoutconfirmationbox.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1212,10 +1151,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LogoutConfirmationBoxController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#closeMainView#0;class#LogoutConfirmationBoxController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_161/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="3123" column="0" lean-forward="false" selection-start-line="3123" selection-start-column="0" selection-end-line="3123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="98" selection-end-column="40" />
+        <state relative-caret-position="782">
+          <caret line="104" column="32" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
           <folding>
             <element signature="method#showFailedLoginAttemptMessage#0;class#LoginController#0" expanded="false" />
             <element signature="method#fadeFailureText#0;class#LoginController#0" expanded="false" />
@@ -1223,22 +1181,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/homeview.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-          <folding>
-            <element signature="method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LogoutConfirmationBoxController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="52" column="62" lean-forward="true" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+        <state relative-caret-position="727">
+          <caret line="162" column="69" lean-forward="false" selection-start-line="162" selection-start-column="69" selection-end-line="162" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadLoginView#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#closeStage#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadHomePane#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadProfilePane#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadCreatePostPane#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadHelpPane#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadSettingsPane#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadGroupsPane#0;class#MainViewController#0" expanded="false" />
           </folding>
         </state>
       </provider>

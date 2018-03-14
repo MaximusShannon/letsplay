@@ -11,120 +11,106 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="900.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane prefHeight="53.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
-         <children>
-            <Text fill="WHITE" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Text>
-            <Text fill="#0967a5" layoutX="-7.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I">
-               <font>
-                  <Font size="48.0" />
-               </font>
-            </Text>
-         </children>
-      </Pane>
-      <ImageView fitHeight="185.0" fitWidth="185.0" layoutX="749.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="185.0" fitWidth="185.0" layoutX="744.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/profile_std.jpg" />
          </image>
       </ImageView>
-      <Text fill="#292e37" layoutX="25.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Information">
+      <Text fill="#292e37" layoutX="20.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Information">
          <font>
             <Font name="Segoe UI Emoji" size="18.0" />
          </font>
       </Text>
-      <Pane layoutX="25.0" layoutY="85.0" prefHeight="2.0" prefWidth="715.0" style="-fx-background-color: #0967A5;" />
-      <Text fill="#0967a5" layoutX="802.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change picture" underline="true">
+      <Pane layoutX="20.0" layoutY="46.0" prefHeight="2.0" prefWidth="715.0" style="-fx-background-color: #0967A5;" />
+      <Text fill="#0967a5" layoutX="797.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change picture" underline="true">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="30.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="92.000015437603">
+      <Text fill="#0967a5" layoutX="25.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="92.000015437603">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="30.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="335.1728515625">
+      <Text layoutX="25.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="335.1728515625">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="352.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="92.000015437603">
+      <Text fill="#0967a5" layoutX="347.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="92.000015437603">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="352.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interests:" wrappingWidth="92.000015437603">
+      <Text fill="#0967a5" layoutX="347.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interests:" wrappingWidth="92.000015437603">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="30.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" wrappingWidth="92.000015437603">
+      <Text fill="#0967a5" layoutX="25.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" wrappingWidth="92.000015437603">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="354.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="335.1728515625">
+      <Text layoutX="349.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="335.1728515625">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="352.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Random, Random, Random" wrappingWidth="385.1728515625">
+      <Text layoutX="347.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Random, Random, Random" wrappingWidth="385.1728515625">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="30.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18" wrappingWidth="67.1728515625">
+      <Text layoutX="25.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18" wrappingWidth="67.1728515625">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="37.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posts: " wrappingWidth="50.65135833621025">
+      <Text fill="#0967a5" layoutX="32.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posts: " wrappingWidth="50.65135833621025">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="143.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="43.000015437603">
+      <Text layoutX="138.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="43.000015437603">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="343.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments:" wrappingWidth="80.45507168769836">
+      <Text fill="#0967a5" layoutX="338.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments:" wrappingWidth="80.45507168769836">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="343.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sessions: " wrappingWidth="67.17285066470504">
+      <Text fill="#0967a5" layoutX="338.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sessions: " wrappingWidth="67.17285066470504">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="451.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="43.000015437603">
+      <Text layoutX="446.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="43.000015437603">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="449.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="43.000015437603">
+      <Text layoutX="444.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="43.000015437603">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="40.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="isOnline: " wrappingWidth="67.17285066470504">
+      <Text fill="#0967a5" layoutX="35.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="isOnline: " wrappingWidth="67.17285066470504">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Label layoutX="140.0" layoutY="354.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: green;" />
-      <Text fill="#292e37" layoutX="791.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Settings">
+      <Label layoutX="135.0" layoutY="315.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: green;" />
+      <Text fill="#292e37" layoutX="786.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Settings">
          <font>
             <Font name="Segoe UI Emoji" size="16.0" />
          </font>
       </Text>
-      <CheckBox layoutX="792.0" layoutY="339.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="136.0" stylesheets="@../css/Sharp.css" text="Available to play">
+      <CheckBox layoutX="787.0" layoutY="300.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="136.0" stylesheets="@../css/Sharp.css" text="Available to play">
          <font>
             <Font size="14.0" />
          </font>
@@ -132,7 +118,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="792.0" layoutY="380.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="162.0" stylesheets="@../css/Sharp.css" text="Active Matchmaking">
+      <CheckBox layoutX="787.0" layoutY="341.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="162.0" stylesheets="@../css/Sharp.css" text="Active Matchmaking">
          <font>
             <Font size="14.0" />
          </font>
@@ -140,87 +126,87 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <Text fill="#0967a5" layoutX="30.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Spoken" wrappingWidth="144.000015437603">
+      <Text fill="#0967a5" layoutX="25.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Spoken" wrappingWidth="144.000015437603">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="30.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18" wrappingWidth="67.1728515625">
+      <Text layoutX="25.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18" wrappingWidth="67.1728515625">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Pane layoutX="25.0" layoutY="296.0" prefHeight="2.0" prefWidth="715.0" style="-fx-background-color: #0967A5;" />
-      <Text fill="#292e37" layoutX="27.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistics">
+      <Pane layoutX="20.0" layoutY="257.0" prefHeight="2.0" prefWidth="715.0" style="-fx-background-color: #0967A5;" />
+      <Text fill="#292e37" layoutX="22.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistics">
          <font>
             <Font name="Segoe UI Emoji" size="18.0" />
          </font>
       </Text>
-      <Pane layoutX="26.0" layoutY="424.0" prefHeight="2.0" prefWidth="944.0" style="-fx-background-color: #0967A5;" />
-      <Text fill="#292e37" layoutX="29.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matchmaking Requirements">
+      <Pane layoutX="21.0" layoutY="385.0" prefHeight="2.0" prefWidth="944.0" style="-fx-background-color: #0967A5;" />
+      <Text fill="#292e37" layoutX="24.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matchmaking Requirements">
          <font>
             <Font name="Segoe UI Emoji" size="18.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="34.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Microphone Required:" wrappingWidth="161.99999332427979">
+      <Text fill="#0967a5" layoutX="29.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Microphone Required:" wrappingWidth="161.99999332427979">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="317.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Males:" wrappingWidth="161.99999332427979">
+      <Text fill="#0967a5" layoutX="312.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Males:" wrappingWidth="161.99999332427979">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="317.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Females:" wrappingWidth="161.99999332427979">
+      <Text fill="#0967a5" layoutX="312.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Females:" wrappingWidth="161.99999332427979">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="34.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="language Requred: " wrappingWidth="161.99999332427979">
+      <Text fill="#0967a5" layoutX="29.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="language Requred: " wrappingWidth="161.99999332427979">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="639.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competitive:" wrappingWidth="92.00000095367432">
+      <Text fill="#0967a5" layoutX="634.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competitive:" wrappingWidth="92.00000095367432">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="639.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casual: " wrappingWidth="69.32812309265137">
+      <Text fill="#0967a5" layoutX="634.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casual: " wrappingWidth="69.32812309265137">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="34.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Played:" wrappingWidth="161.99999332427979">
+      <Text fill="#0967a5" layoutX="29.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Played:" wrappingWidth="161.99999332427979">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Pane layoutX="26.0" layoutY="576.0" prefHeight="2.0" prefWidth="944.0" style="-fx-background-color: #0967A5;" />
-      <Text fill="#292e37" layoutX="165.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages">
+      <Pane layoutX="21.0" layoutY="537.0" prefHeight="2.0" prefWidth="944.0" style="-fx-background-color: #0967A5;" />
+      <Text fill="#292e37" layoutX="160.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages">
          <font>
             <Font name="Segoe UI Emoji" size="18.0" />
          </font>
       </Text>
-      <Text fill="#292e37" layoutX="682.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groups">
+      <Text fill="#292e37" layoutX="677.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groups">
          <font>
             <Font name="Segoe UI Emoji" size="18.0" />
          </font>
       </Text>
-      <Text layoutX="128.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No messages to display." wrappingWidth="150.1728515625">
+      <Text layoutX="123.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No messages to display." wrappingWidth="150.1728515625">
          <font>
             <Font name="Segoe UI Italic" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="635.0" layoutY="625.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No groups to display." wrappingWidth="150.1728515625">
+      <Text layoutX="630.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No groups to display." wrappingWidth="150.1728515625">
          <font>
             <Font name="Segoe UI Italic" size="14.0" />
          </font>
       </Text>
-      <Button layoutX="305.0" layoutY="849.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="274.0" stylesheets="@../css/Sharp.css" text="Edit Profile" textFill="WHITE" />
-      <Pane layoutX="442.0" layoutY="603.0" prefHeight="237.0" prefWidth="2.0" style="-fx-background-color: #0967A5;" />
-      <Pane layoutX="76.0" layoutY="839.0" prefHeight="2.0" prefWidth="255.0" style="-fx-background-color: #0967A5;" />
-      <Pane layoutX="604.0" layoutY="838.0" prefHeight="2.0" prefWidth="255.0" style="-fx-background-color: #0967A5;" />
+      <Button layoutX="307.0" layoutY="789.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="274.0" stylesheets="@../css/Sharp.css" text="Edit Profile" textFill="WHITE" />
+      <Pane layoutX="436.0" layoutY="544.0" prefHeight="237.0" prefWidth="2.0" style="-fx-background-color: #0967A5;" />
+      <Pane layoutX="73.0" layoutY="784.0" prefHeight="2.0" prefWidth="255.0" style="-fx-background-color: #0967A5;" />
+      <Pane layoutX="596.0" layoutY="783.0" prefHeight="2.0" prefWidth="255.0" style="-fx-background-color: #0967A5;" />
    </children>
 </AnchorPane>

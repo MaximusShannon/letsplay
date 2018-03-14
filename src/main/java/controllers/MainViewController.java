@@ -21,11 +21,8 @@ import java.util.ResourceBundle;
 
 public class MainViewController implements Initializable {
 
-    public static Scene mainStage;
-
     @FXML
     private AnchorPane mainViewPane;
-
     @FXML
     private AnchorPane fillerPane;
     @FXML
@@ -46,6 +43,8 @@ public class MainViewController implements Initializable {
     private Button logoutButton;
     @FXML
     private Text userNameText;
+    @FXML
+    private Text navbarText;
 
 
     @Override
@@ -53,7 +52,6 @@ public class MainViewController implements Initializable {
 
         setUserNameText();
 
-        mainStage = mainViewPane.getScene();
     }
 
     private void setUserNameText(){
@@ -125,6 +123,7 @@ public class MainViewController implements Initializable {
 
         AnchorPane homePane = FXMLLoader.load(getClass().getResource("/view/homeview.fxml"));
         fillerPane.getChildren().setAll(homePane);
+        navbarText.setText("Home");
     }
 
     @FXML
@@ -132,7 +131,7 @@ public class MainViewController implements Initializable {
 
         AnchorPane profilePane = FXMLLoader.load(getClass().getResource("/view/profileview.fxml"));
         fillerPane.getChildren().setAll(profilePane);
-
+        navbarText.setText("Profile");
     }
 
     @FXML
@@ -140,6 +139,7 @@ public class MainViewController implements Initializable {
 
         AnchorPane createPostPane = FXMLLoader.load(getClass().getResource("/view/createpostview.fxml"));
         fillerPane.getChildren().setAll(createPostPane);
+        navbarText.setText("Create a tailored post");
 
     }
 
@@ -148,6 +148,7 @@ public class MainViewController implements Initializable {
 
         AnchorPane helpPane = FXMLLoader.load(getClass().getResource("/view/helpview.fxml"));
         fillerPane.getChildren().setAll(helpPane);
+        navbarText.setText("Help");
 
     }
 
@@ -155,12 +156,14 @@ public class MainViewController implements Initializable {
     private void loadSettingsPane(ActionEvent event) throws IOException{
         AnchorPane settingsPane = FXMLLoader.load(getClass().getResource("/view/settingsview.fxml"));
         fillerPane.getChildren().setAll(settingsPane);
+        navbarText.setText("Settings");
     }
 
     @FXML
     private void loadGroupsPane(ActionEvent event) throws IOException{
         AnchorPane groupPane = FXMLLoader.load(getClass().getResource("/view/groupsmainview.fxml"));
         fillerPane.getChildren().setAll(groupPane);
+        navbarText.setText("Groups");
     }
 
 }

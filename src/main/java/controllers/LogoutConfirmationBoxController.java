@@ -39,7 +39,7 @@ public class LogoutConfirmationBoxController {
 
     private void closeMainView(){
 
-        MainViewController.mainStage.getWindow().hide();
+        //MainViewController.mainStage.getWindow().hide();
     }
 
     private void loadLoginView(){
