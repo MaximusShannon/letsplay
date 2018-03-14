@@ -25,7 +25,7 @@
                         <Font size="48.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="774.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username">
+                  <Text fx:id="userNameText" fill="WHITE" layoutX="774.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -36,7 +36,7 @@
                      </image>
                   </ImageView>
                   <Button layoutX="881.0" layoutY="8.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="94.0" style="-fx-background-color: #292E37;" text="Logout" textFill="WHITE" />
-                  <Button fx:id="logoutButton" layoutX="873.0" layoutY="8.0" mnemonicParsing="false" onAction="#loadProfilePane" opacity="0.0" prefHeight="40.0" prefWidth="111.0" stylesheets="@../css/mainviewbuttons.css" />
+                  <Button fx:id="logoutButton" layoutX="873.0" layoutY="8.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="111.0" stylesheets="@../css/mainviewbuttons.css" />
                </children>
             </Pane>
             <Text fill="#292e37" layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feature List">

@@ -7,6 +7,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
+import models.Session;
 
 
 import java.io.IOException;
@@ -31,10 +33,25 @@ public class MainViewController implements Initializable {
     private Button settingsButton;
     @FXML
     private Button openGroupsBtn;
+    @FXML
+    private Button logoutButton;
+    @FXML
+    private Text userNameText;
 
 
     @Override
     public void initialize(URL url, ResourceBundle rb){
+
+        setUserNameText();
+    }
+
+    private void setUserNameText(){
+
+        userNameText.setText(Session.gamerSession.getUserName());
+    }
+
+    @FXML
+    private void handleLogoutRequest(){
 
 
     }
