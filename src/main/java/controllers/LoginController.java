@@ -12,11 +12,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import models.Gamer;
+import models.Session;
 
 public class LoginController {
 
     private Validator validator;
-    private DatabaseInteractionService databaseInteractionService;
     private Authentication authenticator;
     private Gamer gamer;
 
@@ -50,6 +50,9 @@ public class LoginController {
     @FXML
     private void handleLoginRequest(){
 
+        validator = new Validator();
+        authenticator = new Authentication();
+
         if(validator.validateLogin(userNameField.getText(), passwordField.getText())){
 
             if(authenticator.checkDoesUsernameExist(userNameField.getText())){
@@ -57,6 +60,10 @@ public class LoginController {
                 gamer = authenticator.fetchExistingGamer(userNameField.getText());
 
                 if(authenticator.checkPasswordsMatch(passwordField.getText(), gamer.getPassword())){
+
+                    Session.gamerSession = gamer;
+                    loadHomeView();
+
 
                     /**
                      * Insta session
@@ -85,4 +92,20 @@ public class LoginController {
         stage.close();
     }
 
+    private void loadHomeView(){
+
+        try{
+            Stage homeViewStage = new Stage();
+
+            Parent root = FXMLLoader.load(getClass().getResource("/view/mainview.fxml"));
+            homeViewStage.setTitle("Weclome, " + Session.gamerSession.getUserName());
+            homeViewStage.setScene(new Scene(root, 1200, 900));
+            homeViewStage.show();
+
+            closeStage();
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

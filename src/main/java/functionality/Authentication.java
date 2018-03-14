@@ -20,6 +20,7 @@ public class Authentication {
 
         dbService = new DatabaseInteractionService();
         gamersList = dbService.fetchGamerList();
+        dbService.closeFactory();
     }
 
     public boolean checkDoesUsernameExist(String userNameRequested){

@@ -50,7 +50,7 @@ public class DatabaseInteractionService {
                 .buildSessionFactory();
     }
 
-    private void closeFactory(){
+    public void closeFactory(){
 
         sessionFactory.close();
     }
