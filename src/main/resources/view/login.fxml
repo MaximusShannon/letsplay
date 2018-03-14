@@ -23,7 +23,7 @@
       </Text>
       <TextField fx:id="userNameField" layoutX="328.0" layoutY="199.0" prefHeight="34.0" prefWidth="245.0" promptText="Username" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
       <PasswordField fx:id="passwordField" layoutX="328.0" layoutY="259.0" prefHeight="34.0" prefWidth="245.0" promptText="Password" style="-fx-background-color: #38444C; -fx-text-fill: white;" />
-      <Button fx:id="loginBtn" layoutX="328.0" layoutY="364.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="245.0" stylesheets="@../css/Sharp.css" text="Login" textFill="WHITE">
+      <Button fx:id="loginBtn" onAction="#handleLoginRequest" layoutX="328.0" layoutY="364.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="245.0" stylesheets="@../css/Sharp.css" text="Login" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
