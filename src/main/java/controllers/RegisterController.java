@@ -235,7 +235,6 @@ public class RegisterController {
      */
     private void fetchAllGamersInDb(){
 
-
         session = factory.openSession();
 
         CriteriaBuilder builder = session.getCriteriaBuilder();

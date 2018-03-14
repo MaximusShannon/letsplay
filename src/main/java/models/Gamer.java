@@ -5,6 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * I think this is where hibernate gets the table name from, its the only place called Gamer.
+ */
 @Entity
 public class Gamer {
 
