@@ -44,5 +44,23 @@
         <property name="lookingForCasualPlayers" type="boolean" column="will_accept_casual_gamers"/>
         <property name="lookingForCompetitivePlayers" type="boolean" column="will_accept_competitive_gamers"/>
     </class>
+    
+    <class name="models.Post" table="POST">
+        <id name="id" column="POST_ID">
+                <generator class="native"/>
+        </id>
+        <property name="postTitle" type="java.lang.String" column="post_title"/>
+        <property name="ageRange" type="java.lang.String" column="age_range"/>
+        <property name="postDescription" type="java.lang.String" column="post_description"/>
+        <property name="postTags" type="java.lang.String" column="post_tags"/>
+        <property name="languageSpoken" type="java.lang.String" column="language_spoken"/>
+        <property name="gamePlayed" type="java.lang.String" column="game_played"/>
+        <property name="timeZone" type="java.lang.String" column="time_zone"/>
+        <property name="microphoneRequired" type="boolean" column="mic_required"/>
+        <property name="competitivePlayers" type="boolean" column="competitive_players_accepted"/>
+        <property name="casualPlayers" type="boolean" column="casual_players_accepted"/>
+        <property name="acceptMales" type="boolean" column="accept_males"/>
+        <property name="acceptFemales" type="boolean" column="accept_females"/>
+    </class>
 
 </hibernate-mapping>

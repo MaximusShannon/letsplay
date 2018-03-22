@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.subsection.controllers.SubSectionCreatePostController">
    <children>
       <Text fill="#292e37" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a tailored post">
          <font>
@@ -61,7 +61,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <MenuButton layoutX="82.0" layoutY="516.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" stylesheets="@../css/Sharp.css" text="English" textFill="WHITE">
+      <MenuButton fx:id="languageSpoken" layoutX="82.0" layoutY="516.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" stylesheets="@../css/Sharp.css" text="English" textFill="WHITE">
          <items>
             <MenuItem mnemonicParsing="false" text="Action 1" />
             <MenuItem mnemonicParsing="false" text="Action 2" />
@@ -89,13 +89,13 @@
          </font>
       </Text>
       <TextField layoutX="479.0" layoutY="141.0" prefHeight="27.0" prefWidth="131.0" promptText="18-25 etc" style="-fx-border-color: #292E37;" />
-      <MenuButton layoutX="326.0" layoutY="516.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" stylesheets="@../css/Sharp.css" text="Counter Strike: Global Offensive" textFill="WHITE">
+      <MenuButton fx:id="gamePlayed" layoutX="326.0" layoutY="516.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" stylesheets="@../css/Sharp.css" text="Counter Strike: Global Offensive" textFill="WHITE">
          <items>
             <MenuItem mnemonicParsing="false" text="Action 1" />
             <MenuItem mnemonicParsing="false" text="Action 2" />
          </items>
       </MenuButton>
-      <MenuButton layoutX="548.0" layoutY="516.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" stylesheets="@../css/Sharp.css" text="GMT +0" textFill="WHITE">
+      <MenuButton fx:id="timeZone" layoutX="548.0" layoutY="516.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" stylesheets="@../css/Sharp.css" text="GMT +0" textFill="WHITE">
          <items>
             <MenuItem mnemonicParsing="false" text="Action 1" />
             <MenuItem mnemonicParsing="false" text="Action 2" />
