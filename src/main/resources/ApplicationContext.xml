@@ -20,4 +20,10 @@
     <bean id = "validator"
         class = "functionality.Validator">
     </bean>
+
+    <bean id = "post"
+          class="models.Post">
+    </bean>
+
+
 </beans>
