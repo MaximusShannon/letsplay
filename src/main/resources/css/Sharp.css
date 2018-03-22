@@ -44,3 +44,11 @@
 .scroll-pane > .corner{
     -fx-background-color:  #292E37;
 }
+
+.choice-box{
+    -fx-background-color: #292E37;
+    -fx-fill: white;
+}
+.choice-box .context-menu{
+    -fx-background-color: #292E37;
+}
