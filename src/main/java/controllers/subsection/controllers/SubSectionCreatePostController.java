@@ -1,5 +1,6 @@
 package controllers.subsection.controllers;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
@@ -21,67 +22,41 @@ public class SubSectionCreatePostController implements Initializable {
     @FXML
     private ChoiceBox<String> timeZone;
 
-//    @FXML
-//    private MenuButton languageSpoken;
-//    @FXML
-//    private MenuButton gamePlayed;
-//    @FXML
-//    private MenuButton timeZone;
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-//        languageSpoken.getItems().clear();
-//        gamePlayed.getItems().clear();
-//
-//        languageSpoken.getItems().addAll(generateLanguages());
-//        menuItems.clear();
-//        gamePlayed.getItems().addAll(generateGames());
+        instantiateLanguageSpokenChoiceBox();
+        instantiateGamePlayedChoiceBox();
+        instantiateTimeZoneChoiceBox();
+
     }
 
-//    /**
-//     *
-//     * returns a list to add it to the language spoken menubutton on the view.
-//     * @return
-//     */
-//    private ArrayList<MenuItem> generateLanguages(){
-//
-//        MenuItem menuItem;
-//        String languages[]
-//                = {"Manderin", "English",
-//                "Spanish", "French",
-//                "Norwegian", "Portuguese",
-//                "Bengali", "Russian",
-//                "Dutch", "Irish"};
-//
-//        menuItems = new ArrayList<>();
-//
-//        for (String language : languages) {
-//
-//            menuItem = new MenuItem(language);
-//            menuItems.add(menuItem);
-//        }
-//
-//        return menuItems;
-//    }
-//
-//    private ArrayList<MenuItem> generateGames(){
-//
-//        MenuItem menuItem;
-//        String games[]
-//                = {"League of Legends", "FortNite",
-//                "Dota2", "Counter Strike: Global Offensive",
-//                "Rust", "PlayerUnknown Battlegrounds",
-//                "Rainbow SIX: SIEGE", "World Of Tanks",
-//                "Total War: War Hammer 2", "DayZ"};
-//
-//        for(String game: games){
-//
-//            menuItem = new MenuItem(game);
-//            menuItems.add(menuItem);
-//        }
-//
-//        return menuItems;
-//    }
+    private void instantiateLanguageSpokenChoiceBox(){
+
+        languageSpoken.setItems(FXCollections.observableArrayList("English", "Irish",
+                "French", "German",
+                "Norwegian", "Dutch",
+                "Russian"));
+        languageSpoken.getSelectionModel().selectFirst();
+    }
+
+    private void instantiateGamePlayedChoiceBox(){
+
+        gamePlayed.setItems(FXCollections.observableArrayList("League Of Legends", "FORTNITE",
+                "PUBG", "Counter-Strike: Global Offensive",
+                "Rust", "DayZ",
+                "Rainbow SIX: Siege", "Escape From Tarkov"));
+        gamePlayed.getSelectionModel().selectFirst();
+    }
+
+    private void instantiateTimeZoneChoiceBox(){
+
+        timeZone.setItems(FXCollections.observableArrayList("UTC-1", "UTC",
+                "UTC+1", "UTC+2",
+                "UTC+3", "UTC+4",
+                "UTC+5"));
+        timeZone.getSelectionModel().selectFirst();
+    }
+
 }

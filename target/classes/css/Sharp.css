@@ -47,8 +47,15 @@
 
 .choice-box{
     -fx-background-color: #292E37;
-    -fx-fill: white;
+}
+.choice-box > .label{
+    -fx-text-fill: white;
+}
+.choice-box .menu-item > .label{
+    -fx-text-fill: white;
 }
 .choice-box .context-menu{
     -fx-background-color: #292E37;
+    -fx-fill: white;
+    -fx-text-fill: white;
 }

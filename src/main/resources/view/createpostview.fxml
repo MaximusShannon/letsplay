@@ -104,7 +104,7 @@
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="languageSpoken" layoutX="82.0" layoutY="514.0" prefWidth="150.0" stylesheets="@../css/Sharp.css" />
+      <ChoiceBox fx:id="languageSpoken" layoutX="82.0" layoutY="514.0" prefWidth="150.0" style="-fx-text-fill: white;" stylesheets="@../css/Sharp.css" />
       <ChoiceBox fx:id="gamePlayed" layoutX="323.0" layoutY="514.0" prefWidth="150.0" stylesheets="@../css/Sharp.css" />
       <ChoiceBox fx:id="timeZone" layoutX="545.0" layoutY="514.0" prefWidth="150.0" stylesheets="@../css/Sharp.css" />
    </children>
