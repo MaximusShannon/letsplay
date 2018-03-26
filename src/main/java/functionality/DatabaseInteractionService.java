@@ -1,6 +1,7 @@
 package functionality;
 
 import models.Gamer;
+import models.Post;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -16,6 +17,7 @@ public class DatabaseInteractionService {
     private Session session;
     private SessionFactory sessionFactory;
     private List<Gamer> gamersFound;
+    private List<Post> postsFound;
 
     public DatabaseInteractionService(){
 
@@ -39,6 +41,23 @@ public class DatabaseInteractionService {
         session.close();
 
         return gamersFound;
+
+    }
+
+    public List<Post> fetchPostList(){
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<Post> posts = builder.createQuery(Post.class);
+        posts.from(Post.class);
+
+        postsFound = session.createQuery(posts).getResultList();
+
+        session.close();
+
+        return postsFound;
 
     }
 

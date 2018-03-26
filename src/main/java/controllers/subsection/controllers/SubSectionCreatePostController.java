@@ -108,16 +108,6 @@ public class SubSectionCreatePostController implements Initializable {
                 && validator.validateTextFieldNotEmpty(postDescription.getText())
                 && validator.validateTextFieldNotEmpty(ageRange.getText())){
 
-            /*
-            * If it's validated
-            * - init context            x
-            * - Build the post object   x
-            * - persist the post        x
-            * - Bring to a notification view.
-            * - close the context
-            * - close the factory
-            * */
-
             initContext();
             buildThePostBean();
             idReturned = postCreationService.persistNewPost(post);
@@ -127,7 +117,6 @@ public class SubSectionCreatePostController implements Initializable {
                 closeContext();
                 postCreationService.closeFactory();
                 loadSuccessView();
-
             }else {
                 fadeFailureText();
             }

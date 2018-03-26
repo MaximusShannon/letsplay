@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="847.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="847.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.subsection.controllers.SubSectionPlayerSearchingLandingController">
    <children>
       <Text fill="#292e37" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most popular games with players searching for friends:">
          <font>
@@ -41,7 +41,7 @@
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="fortnitePostCount" fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
@@ -76,7 +76,7 @@
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="pubgPostCount" fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
@@ -111,7 +111,7 @@
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="lolPostCount" fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
@@ -146,7 +146,7 @@
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="rustPostCount" fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
@@ -170,7 +170,7 @@
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="51.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESCAPE FROM TARKOV">
+            <Text fill="WHITE" layoutX="41.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESCAPE FROM TARKOV">
                <font>
                   <Font name="Segoe UI Bold" size="12.0" />
                </font>
@@ -181,7 +181,7 @@
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="eftPostCount" fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
@@ -216,7 +216,7 @@
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="csgoPostCount" fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
@@ -251,7 +251,7 @@
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="rb6sPostCount" fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
@@ -286,7 +286,7 @@
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="dayzPostCount" fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font name="Verdana Bold Italic" size="10.0" />
                </font>
