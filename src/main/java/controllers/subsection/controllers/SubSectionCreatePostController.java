@@ -1,20 +1,44 @@
 package controllers.subsection.controllers;
 
+import functionality.Validator;
+import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
+import javafx.scene.text.Text;
+import javafx.util.Duration;
+import org.hibernate.annotations.Check;
 
 import java.net.URL;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class SubSectionCreatePostController implements Initializable {
 
-    private ArrayList<MenuItem> menuItems;
+    private Validator validator;
 
+    @FXML
+    private Text postCreationFailed;
+    @FXML
+    private TextField postTitle;
+    @FXML
+    private TextField ageRange;
+    @FXML
+    private TextArea postDescription;
+    @FXML
+    private TextField postTags;
+    @FXML
+    private CheckBox micRequired;
+    @FXML
+    private CheckBox competitivePlayersAccepted;
+    @FXML
+    private CheckBox casualPlayersAccepted;
+    @FXML
+    private CheckBox acceptFemales;
+    @FXML
+    private CheckBox acceptMales;
     @FXML
     private ChoiceBox<String> languageSpoken;
     @FXML
@@ -57,6 +81,36 @@ public class SubSectionCreatePostController implements Initializable {
                 "UTC+3", "UTC+4",
                 "UTC+5"));
         timeZone.getSelectionModel().selectFirst();
+    }
+
+    /*
+    * Only the post title, description, age range and at least one requirement is required.
+    * */
+    @FXML
+    private void preparePostForCreation(){
+
+        validator = new Validator();
+
+        if(validator.validateTextFieldNotEmpty(postTitle.getText())
+                && validator.validateTextFieldNotEmpty(postDescription.getText())
+                && validator.validateTextFieldNotEmpty(ageRange.getText())){
+
+
+
+        }else {
+            fadeFailureText();
+        }
+    }
+
+    private void fadeFailureText(){
+
+        postCreationFailed.setVisible(true);
+
+        FadeTransition fadeTransition = new FadeTransition(Duration.millis(5000), postCreationFailed);
+        fadeTransition.setFromValue(1.0);
+        fadeTransition.setToValue(0.0);
+
+        fadeTransition.play();
     }
 
 }

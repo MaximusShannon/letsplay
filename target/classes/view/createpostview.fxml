@@ -24,19 +24,19 @@
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <TextField layoutX="82.0" layoutY="141.0" prefHeight="27.0" prefWidth="328.0" promptText="Something eye catching" style="-fx-border-color: #292E37;" />
+      <TextField fx:id="postTitle" layoutX="82.0" layoutY="141.0" prefHeight="27.0" prefWidth="328.0" promptText="Something eye catching" style="-fx-border-color: #292E37;" />
       <Text fill="#0967a5" layoutX="82.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post Description" wrappingWidth="150.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <TextArea layoutX="82.0" layoutY="199.0" prefHeight="200.0" prefWidth="680.0" promptText="Say something special, what your doing, where your going" style="-fx-border-color: #292E37;" />
+      <TextArea fx:id="postDescription" layoutX="82.0" layoutY="199.0" prefHeight="200.0" prefWidth="680.0" promptText="Say something special, what your doing, where your going" style="-fx-border-color: #292E37;" />
       <Text fill="#0967a5" layoutX="82.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requirements" wrappingWidth="150.74512830376625">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <CheckBox layoutX="82.0" layoutY="588.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Microphone Required">
+      <CheckBox fx:id="micRequired" layoutX="82.0" layoutY="588.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Microphone Required">
          <font>
             <Font size="14.0" />
          </font>
@@ -44,7 +44,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="290.0" layoutY="588.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Competitive Players">
+      <CheckBox fx:id="competitivePlayersAccepted" layoutX="290.0" layoutY="588.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Competitive Players">
          <font>
             <Font size="14.0" />
          </font>
@@ -52,7 +52,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="82.0" layoutY="625.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Casual Players">
+      <CheckBox fx:id="casualPlayersAccepted" layoutX="82.0" layoutY="625.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Casual Players">
          <font>
             <Font size="14.0" />
          </font>
@@ -60,7 +60,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="290.0" layoutY="625.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Accept Males">
+      <CheckBox fx:id="acceptMales" layoutX="290.0" layoutY="625.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Accept Males">
          <font>
             <Font size="14.0" />
          </font>
@@ -68,7 +68,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="479.0" layoutY="588.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Accept Females">
+      <CheckBox fx:id="acceptFemales" layoutX="479.0" layoutY="588.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Accept Females">
          <font>
             <Font size="14.0" />
          </font>
@@ -81,14 +81,14 @@
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <TextField layoutX="479.0" layoutY="141.0" prefHeight="27.0" prefWidth="131.0" promptText="18-25 etc" style="-fx-border-color: #292E37;" />
-      <Button layoutX="694.0" layoutY="704.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Create Post" textFill="WHITE" />
+      <TextField fx:id="ageRange" layoutX="479.0" layoutY="141.0" prefHeight="27.0" prefWidth="131.0" promptText="18-25 etc" style="-fx-border-color: #292E37;" />
+      <Button layoutX="756.0" layoutY="774.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="189.0" onAction="#preparePostForCreation" stylesheets="@../css/Sharp.css" text="Create Post" textFill="WHITE" />
       <Text fill="#0967a5" layoutX="83.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post Tags" wrappingWidth="71.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <TextField layoutX="82.0" layoutY="429.0" prefHeight="27.0" prefWidth="680.0" promptText="Messing, acheivements, rust, fun, boy, girl etc.." style="-fx-border-color: #292E37;" />
+      <TextField fx:id="postTags" layoutX="82.0" layoutY="429.0" prefHeight="27.0" prefWidth="680.0" promptText="Messing, acheivements, rust, fun, boy, girl etc.." style="-fx-border-color: #292E37;" />
       <Text fill="#0967a5" layoutX="82.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Spoken" wrappingWidth="143.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
@@ -104,8 +104,24 @@
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="languageSpoken" layoutX="82.0" layoutY="514.0" prefWidth="150.0" style="-fx-text-fill: white;" stylesheets="@../css/Sharp.css" />
+      <ChoiceBox fx:id="languageSpoken" layoutX="82.0" layoutY="514.0" prefWidth="150.0" stylesheets="@../css/Sharp.css" />
       <ChoiceBox fx:id="gamePlayed" layoutX="323.0" layoutY="514.0" prefWidth="150.0" stylesheets="@../css/Sharp.css" />
       <ChoiceBox fx:id="timeZone" layoutX="545.0" layoutY="514.0" prefWidth="150.0" stylesheets="@../css/Sharp.css" />
+      <Text fill="RED" layoutX="469.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="68.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="68.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="postCreationFailed" fill="RED" layoutX="290.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post creation failed, all posts marked with * are required." visible="false" />
    </children>
 </AnchorPane>

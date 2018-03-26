@@ -40,4 +40,15 @@ public class Validator {
         return validated = passwordOne.equals(passwordTwo)
                 && passwordOne.length() > 6;
     }
+
+    /*
+    * Validate a string isn't value isn't empty
+    * */
+
+    public boolean validateTextFieldNotEmpty(String entry){
+
+        return validated = !entry.equals("");
+    }
+
+
 }
