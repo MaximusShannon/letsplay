@@ -378,7 +378,7 @@
                   <Image url="@../images/binocs.png" />
                </image>
             </ImageView>
-            <Button fx:id="openGamesSelectionButton" layoutX="13.0" layoutY="316.0" mnemonicParsing="false" onAction="#loadCreatePostPane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
+            <Button fx:id="openGamesSelectionButton" layoutX="13.0" layoutY="316.0" mnemonicParsing="false" onAction="#loadGamersSearchingLanding" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
             <Button fx:id="homePane" layoutX="15.0" layoutY="144.0" mnemonicParsing="false" onAction="#loadHomePane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
             <Button fx:id="profileButton" layoutX="15.0" layoutY="204.0" mnemonicParsing="false" onAction="#loadProfilePane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
             <Button fx:id="createPostButton" layoutX="13.0" layoutY="369.0" mnemonicParsing="false" onAction="#loadCreatePostPane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />

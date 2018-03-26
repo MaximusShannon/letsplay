@@ -127,6 +127,14 @@ public class MainViewController implements Initializable {
     }
 
     @FXML
+    private void loadGamersSearchingLanding() throws IOException{
+
+        AnchorPane gamersSearching = FXMLLoader.load(getClass().getResource("/view/players_searching_landing.fxml"));
+        fillerPane.getChildren().setAll(gamersSearching);
+        navbarText.setText("Choose a game");
+
+    }
+    @FXML
     private void loadProfilePane(ActionEvent event) throws IOException{
 
         AnchorPane profilePane = FXMLLoader.load(getClass().getResource("/view/profileview.fxml"));
