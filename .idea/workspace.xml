@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/css/filters.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/images/eraser-256.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/images/refresh.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/players_searching_landing.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/players_searching_landing.fxml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MainViewController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/MainViewController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/Sharp.css" afterPath="$PROJECT_DIR$/src/main/resources/css/Sharp.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/mainviewbuttons.css" afterPath="$PROJECT_DIR$/src/main/resources/css/mainviewbuttons.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/MainViewController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/MainViewController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/Sharp.css" afterPath="$PROJECT_DIR$/target/classes/css/Sharp.css" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/players_searching_landing.fxml" afterPath="$PROJECT_DIR$/target/classes/view/players_searching_landing.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/postsdisplay.fxml" afterPath="$PROJECT_DIR$/target/classes/view/postsdisplay.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -121,11 +127,78 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="MainViewController.java" pinned="false" current-in-tab="true">
+            <file leaf-file-name="Post.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/models/Post.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="425">
+                    <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="17" />
+                    <folding>
+                      <element signature="e#647#648#0" expanded="true" />
+                      <element signature="e#672#673#0" expanded="true" />
+                      <element signature="e#703#704#0" expanded="true" />
+                      <element signature="e#731#732#0" expanded="true" />
+                      <element signature="e#772#773#0" expanded="true" />
+                      <element signature="e#806#807#0" expanded="true" />
+                      <element signature="e#839#840#0" expanded="true" />
+                      <element signature="e#867#868#0" expanded="true" />
+                      <element signature="e#903#904#0" expanded="true" />
+                      <element signature="e#935#936#0" expanded="true" />
+                      <element signature="e#985#986#0" expanded="true" />
+                      <element signature="e#1027#1028#0" expanded="true" />
+                      <element signature="e#1062#1063#0" expanded="true" />
+                      <element signature="e#1093#1094#0" expanded="true" />
+                      <element signature="e#1141#1142#0" expanded="true" />
+                      <element signature="e#1181#1182#0" expanded="true" />
+                      <element signature="e#1223#1224#0" expanded="true" />
+                      <element signature="e#1261#1262#0" expanded="true" />
+                      <element signature="e#1323#1324#0" expanded="true" />
+                      <element signature="e#1377#1378#0" expanded="true" />
+                      <element signature="e#1412#1413#0" expanded="true" />
+                      <element signature="e#1443#1444#0" expanded="true" />
+                      <element signature="e#1491#1492#0" expanded="true" />
+                      <element signature="e#1531#1532#0" expanded="true" />
+                      <element signature="e#1572#1573#0" expanded="true" />
+                      <element signature="e#1609#1610#0" expanded="true" />
+                      <element signature="e#1669#1670#0" expanded="true" />
+                      <element signature="e#1721#1722#0" expanded="true" />
+                      <element signature="e#1758#1759#0" expanded="true" />
+                      <element signature="e#1791#1792#0" expanded="true" />
+                      <element signature="e#1843#1844#0" expanded="true" />
+                      <element signature="e#1887#1888#0" expanded="true" />
+                      <element signature="e#1922#1923#0" expanded="true" />
+                      <element signature="e#1953#1954#0" expanded="true" />
+                      <element signature="e#2001#2002#0" expanded="true" />
+                      <element signature="e#2041#2042#0" expanded="true" />
+                      <element signature="e#2086#2087#0" expanded="true" />
+                      <element signature="e#2127#2128#0" expanded="true" />
+                      <element signature="e#2196#2197#0" expanded="true" />
+                      <element signature="e#2256#2257#0" expanded="true" />
+                      <element signature="e#2301#2302#0" expanded="true" />
+                      <element signature="e#2342#2343#0" expanded="true" />
+                      <element signature="e#2411#2412#0" expanded="true" />
+                      <element signature="e#2471#2472#0" expanded="true" />
+                      <element signature="e#2511#2512#0" expanded="true" />
+                      <element signature="e#2547#2548#0" expanded="true" />
+                      <element signature="e#2606#2607#0" expanded="true" />
+                      <element signature="e#2656#2657#0" expanded="true" />
+                      <element signature="e#2696#2697#0" expanded="true" />
+                      <element signature="e#2732#2733#0" expanded="true" />
+                      <element signature="e#2791#2792#0" expanded="true" />
+                      <element signature="e#2841#2842#0" expanded="true" />
+                      <element signature="e#2879#2880#0" expanded="true" />
+                      <element signature="e#2913#2914#0" expanded="true" />
+                      <element signature="e#2968#2969#0" expanded="true" />
+                      <element signature="e#3014#3015#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="MainViewController.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainViewController.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="187">
-                    <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+                  <state relative-caret-position="509">
+                    <caret line="133" column="39" lean-forward="false" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
                     <folding>
                       <element signature="method#setUserNameText#0;class#MainViewController#0" expanded="false" />
                       <element signature="docComment;method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
@@ -143,6 +216,30 @@
                 </provider>
               </entry>
             </file>
+            <file leaf-file-name="Gamer.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/models/Gamer.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="136">
+                    <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                    <folding>
+                      <element signature="method#Gamer#0;class#Gamer#0" expanded="false" />
+                      <element signature="method#Gamer#1;class#Gamer#0" expanded="false" />
+                      <element signature="method#setProfilePictureReference#0;class#Gamer#0" expanded="false" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Sharp.css" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/resources/css/Sharp.css">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="391">
+                    <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
           </leaf>
         </state>
       </content>
@@ -153,11 +250,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SubSectionPlayerSearchingLandingController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SubSectionPlayerSearchingLandingController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="232" column="33" lean-forward="false" selection-start-line="232" selection-start-column="17" selection-end-line="232" selection-end-column="33" />
+            <state relative-caret-position="414">
+              <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#initialize#0;class#SubSectionPlayerSearchingLandingController#0" expanded="false" />
@@ -170,11 +267,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="filters.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/css/filters.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainviewbuttons.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/css/mainviewbuttons.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="postsdisplay.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="238">
+              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -186,8 +303,8 @@
       <file leaf-file-name="PostDisplayController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="340">
+              <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -255,8 +372,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/css/Sharp.css" />
-        <option value="$PROJECT_DIR$/src/controllers/subsection/controllers/SubSectionHomeController.java" />
         <option value="$PROJECT_DIR$/src/controllers/subsection/controllers/SubSectionSettingsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionHomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionSettingsController.java" />
@@ -287,7 +402,6 @@
         <option value="$PROJECT_DIR$/src/main/java/models/GamerRequirements.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Post.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ORM.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/css/Sharp.css" />
         <option value="$PROJECT_DIR$/src/main/java/functionality/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/createpostview.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/functionality/PostCreationService.java" />
@@ -298,14 +412,17 @@
         <option value="$PROJECT_DIR$/src/main/resources/view/postcreation_success.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/mainview.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/MainViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionCreatePostController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/players_searching_landing.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/MainViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/Sharp.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/filters.css" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/mainviewbuttons.css" />
       </list>
     </option>
   </component>
@@ -345,8 +462,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1934" />
-    <option name="y" value="23" />
+    <option name="x" value="-308" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -441,6 +557,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -503,9 +627,9 @@
       <recent name="view" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\slaye\IdeaProjects\Responsive Prototype\src\main\resources\images" />
       <recent name="C:\Users\slaye\IdeaProjects\Responsive Prototype\src\main\resources\images\Game Images" />
       <recent name="C:\Users\slaye\IdeaProjects\Responsive Prototype\src\main\resources\view\Game Images" />
-      <recent name="C:\Users\slaye\IdeaProjects\Responsive Prototype\src\main\resources\images" />
       <recent name="C:\Users\slaye\IdeaProjects\Responsive Prototype\src\main\resources" />
       <recent name="C:\Users\slaye\IdeaProjects\Responsive Prototype\lib" />
     </key>
@@ -693,15 +817,15 @@
       <workItem from="1521715962435" duration="7745000" />
       <workItem from="1522062262359" duration="3442000" />
       <workItem from="1522065796005" duration="4209000" />
-      <workItem from="1522072543886" duration="8787000" />
+      <workItem from="1522072543886" duration="13337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89894000" />
+    <option name="totallyTimeSpent" value="94444000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -720,7 +844,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53963083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21389794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -838,19 +962,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/out/production/Responsive Prototype/controllers/Controller.class" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/mainviewbuttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1090,13 +1206,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="104" column="32" lean-forward="false" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/functionality/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="815">
@@ -1109,18 +1218,6 @@
         <state relative-caret-position="136">
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Gamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="method#Gamer#0;class#Gamer#0" expanded="false" />
-            <element signature="method#Gamer#1;class#Gamer#0" expanded="false" />
-            <element signature="method#setProfilePictureReference#0;class#Gamer#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1189,6 +1286,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/postcreation_success.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="53" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/players_searching_landing.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="216" lean-forward="false" selection-start-line="10" selection-start-column="216" selection-end-line="10" selection-end-column="216" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/mainview.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="397" column="20" lean-forward="true" selection-start-line="397" selection-start-column="20" selection-end-line="397" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionCreatePostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Gamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="method#Gamer#0;class#Gamer#0" expanded="false" />
+            <element signature="method#Gamer#1;class#Gamer#0" expanded="false" />
+            <element signature="method#setProfilePictureReference#0;class#Gamer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="133" column="39" lean-forward="false" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+          <folding>
+            <element signature="method#setUserNameText#0;class#MainViewController#0" expanded="false" />
+            <element signature="docComment;method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#handleLogoutRequest#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadLoginView#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#closeStage#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadProfilePane#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadCreatePostPane#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadHelpPane#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadSettingsPane#0;class#MainViewController#0" expanded="false" />
+            <element signature="method#loadGroupsPane#0;class#MainViewController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Post.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1254,96 +1451,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/postcreation_success.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/Sharp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="53" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/players_searching_landing.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="216" lean-forward="false" selection-start-line="10" selection-start-column="216" selection-end-line="10" selection-end-column="216" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/mainview.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="397" column="20" lean-forward="true" selection-start-line="397" selection-start-column="20" selection-end-line="397" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionCreatePostController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="69" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="238">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1351,30 +1462,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="method#setUserNameText#0;class#MainViewController#0" expanded="false" />
-            <element signature="docComment;method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
-            <element signature="method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
-            <element signature="method#handleLogoutRequest#0;class#MainViewController#0" expanded="false" />
-            <element signature="method#loadLoginView#0;class#MainViewController#0" expanded="false" />
-            <element signature="method#closeStage#0;class#MainViewController#0" expanded="false" />
-            <element signature="method#loadProfilePane#0;class#MainViewController#0" expanded="false" />
-            <element signature="method#loadCreatePostPane#0;class#MainViewController#0" expanded="false" />
-            <element signature="method#loadHelpPane#0;class#MainViewController#0" expanded="false" />
-            <element signature="method#loadSettingsPane#0;class#MainViewController#0" expanded="false" />
-            <element signature="method#loadGroupsPane#0;class#MainViewController#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="251">
+          <caret line="104" column="32" lean-forward="false" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="232" column="33" lean-forward="false" selection-start-line="232" selection-start-column="17" selection-end-line="232" selection-end-column="33" />
+        <state relative-caret-position="414">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initialize#0;class#SubSectionPlayerSearchingLandingController#0" expanded="false" />
@@ -1383,6 +1482,40 @@
             <element signature="method#countGames#0;class#SubSectionPlayerSearchingLandingController#0" expanded="false" />
             <element signature="method#updateView#0;class#SubSectionPlayerSearchingLandingController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/filters.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/Sharp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/mainviewbuttons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

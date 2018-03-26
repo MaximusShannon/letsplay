@@ -131,7 +131,7 @@ public class MainViewController implements Initializable {
 
         AnchorPane gamersSearching = FXMLLoader.load(getClass().getResource("/view/players_searching_landing.fxml"));
         fillerPane.getChildren().setAll(gamersSearching);
-        navbarText.setText("Choose a game");
+        navbarText.setText("Search. . .");
 
     }
     @FXML

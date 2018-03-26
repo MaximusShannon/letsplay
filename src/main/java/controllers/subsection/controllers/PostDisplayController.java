@@ -18,7 +18,7 @@ public class PostDisplayController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        setTextLabel.setText(game);
+        //setTextLabel.setText(game);
         System.out.println(game);
     }
 

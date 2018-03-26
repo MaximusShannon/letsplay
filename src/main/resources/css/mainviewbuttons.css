@@ -3,3 +3,10 @@
     -fx-background-color: white;
     -fx-cursor: HAND;
 }
+
+.button:pressed{
+    -fx-opacity: .3;
+    -fx-border-color: white;
+    -fx-cursor: CLOSED_HAND;
+}
+
