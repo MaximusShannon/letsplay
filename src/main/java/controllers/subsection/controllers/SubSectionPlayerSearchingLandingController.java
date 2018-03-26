@@ -2,7 +2,10 @@ package controllers.subsection.controllers;
 
 import functionality.DatabaseInteractionService;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import models.Post;
 
@@ -23,6 +26,10 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
     private int rb6sCount;
     private int dayzCount;
 
+    @FXML
+    private AnchorPane playerSearchingPane;
+    @FXML
+    private Pane fortnitePane;
     @FXML
     private Text fortnitePostCount;
     @FXML
@@ -113,4 +120,128 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
         rb6sPostCount.setText(Integer.toString(rb6sCount));
         dayzPostCount.setText(Integer.toString(dayzCount));
     }
+
+    @FXML
+    private void loadFortunePostDisplayView(){
+
+        try{
+
+            PostDisplayController.game = "fortnite";
+
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            playerSearchingPane.getChildren().setAll(postDisplay);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void loadPUBGPostDisplayView(){
+
+        try{
+
+            PostDisplayController.game = "pubg";
+
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            playerSearchingPane.getChildren().setAll(postDisplay);
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void loadLeagueOfLegendsPostView(){
+
+        try{
+
+            PostDisplayController.game = "leagueoflegends";
+
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            playerSearchingPane.getChildren().setAll(postDisplay);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void loadRustPostView(){
+
+        try{
+
+            PostDisplayController.game = "rust";
+
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            playerSearchingPane.getChildren().setAll(postDisplay);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void loadEscapeFromTarkovPostView(){
+
+        try{
+
+            PostDisplayController.game = "escape from tarkov";
+
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            playerSearchingPane.getChildren().setAll(postDisplay);
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void loadCsgoPostView(){
+
+        try{
+
+            PostDisplayController.game = "counter-strike: global offensive";
+
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            playerSearchingPane.getChildren().setAll(postDisplay);
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void loadRb6sPostView(){
+
+        try{
+
+            PostDisplayController.game = "rainbow six: siege";
+
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            playerSearchingPane.getChildren().setAll(postDisplay);
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void loadDayzPostView(){
+
+        try{
+
+            PostDisplayController.game = "dayz";
+
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            playerSearchingPane.getChildren().setAll(postDisplay);
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
 }
