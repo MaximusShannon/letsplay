@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="847.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#292e37" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most popular games with players searching for friends:">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Text>
+      <Pane layoutX="48.0" layoutY="61.0" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
+         <children>
+            <ImageView fitHeight="220.0" fitWidth="165.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Game%20Images/fortnite.jpg" />
+               </image></ImageView>
+            <Text fill="WHITE" layoutX="13.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players Actively Searching: ">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post count:">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="76.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FORTNITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <Pane layoutX="73.0" layoutY="253.0" prefHeight="1.0" prefWidth="63.0" style="-fx-background-color: #0967A5;" />
+            <Text fill="#0967a5" layoutX="174.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="278.0" layoutY="61.0" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
+         <children>
+            <ImageView fitHeight="220.0" fitWidth="165.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Game%20Images/pubg.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="13.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players Actively Searching: ">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post count:">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="88.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBG">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <Pane layoutX="73.0" layoutY="253.0" prefHeight="1.0" prefWidth="63.0" style="-fx-background-color: #0967A5;" />
+            <Text fill="#0967a5" layoutX="174.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="505.0" layoutY="61.0" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
+         <children>
+            <ImageView fitHeight="220.0" fitWidth="165.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Game%20Images/lol.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="13.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players Actively Searching: ">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post count:">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LEAGUE OF LEGENDS">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <Pane layoutX="73.0" layoutY="253.0" prefHeight="1.0" prefWidth="63.0" style="-fx-background-color: #0967A5;" />
+            <Text fill="#0967a5" layoutX="174.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="737.0" layoutY="61.0" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
+         <children>
+            <ImageView fitHeight="220.0" fitWidth="165.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Game%20Images/rust.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="13.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players Actively Searching: ">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post count:">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="92.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RUST">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <Pane layoutX="73.0" layoutY="253.0" prefHeight="1.0" prefWidth="63.0" style="-fx-background-color: #0967A5;" />
+            <Text fill="#0967a5" layoutX="174.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="48.0" layoutY="438.0" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
+         <children>
+            <ImageView fitHeight="220.0" fitWidth="165.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Game%20Images/eftarkov.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="13.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players Actively Searching: ">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post count:">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="51.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESCAPE FROM TARKOV">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <Pane layoutX="73.0" layoutY="253.0" prefHeight="1.0" prefWidth="63.0" style="-fx-background-color: #0967A5;" />
+            <Text fill="#0967a5" layoutX="174.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="278.0" layoutY="438.0" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
+         <children>
+            <ImageView fitHeight="220.0" fitWidth="165.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Game%20Images/cs.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="13.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players Actively Searching: ">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post count:">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="87.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CS:GO">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <Pane layoutX="73.0" layoutY="253.0" prefHeight="1.0" prefWidth="63.0" style="-fx-background-color: #0967A5;" />
+            <Text fill="#0967a5" layoutX="174.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="505.0" layoutY="438.0" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
+         <children>
+            <ImageView fitHeight="220.0" fitWidth="165.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Game%20Images/rb6s.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="13.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players Actively Searching: ">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post count:">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="39.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RAINBOW SIX: SIEGE">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <Pane layoutX="73.0" layoutY="253.0" prefHeight="1.0" prefWidth="63.0" style="-fx-background-color: #0967A5;" />
+            <Text fill="#0967a5" layoutX="174.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="737.0" layoutY="438.0" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
+         <children>
+            <ImageView fitHeight="220.0" fitWidth="165.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Game%20Images/Dayz.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="13.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players Actively Searching: ">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post count:">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="90.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DAYZ">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <Pane layoutX="73.0" layoutY="253.0" prefHeight="1.0" prefWidth="63.0" style="-fx-background-color: #0967A5;" />
+            <Text fill="#0967a5" layoutX="174.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="87.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
