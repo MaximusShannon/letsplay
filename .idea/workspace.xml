@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/post_view.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/mainviewbuttons.css" afterPath="$PROJECT_DIR$/target/classes/css/mainviewbuttons.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/filters.css" afterPath="$PROJECT_DIR$/src/main/resources/css/filters.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/post_view.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/post_view.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/subsection/controllers/PostDisplayController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/subsection/controllers/PostDisplayController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/filters.css" afterPath="$PROJECT_DIR$/target/classes/css/filters.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/postsdisplay.fxml" afterPath="$PROJECT_DIR$/target/classes/view/postsdisplay.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,7 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Responsive_Prototype$Main.coverage" NAME="Main Coverage Results" MODIFIED="1522084825710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Responsive_Prototype$Main.coverage" NAME="Main Coverage Results" MODIFIED="1522101090656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>controllers.*</FILTER>
     </SUITE>
   </component>
@@ -75,181 +80,31 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="RegisterController.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/controllers/RegisterController.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="305">
-                    <caret line="126" column="8" lean-forward="false" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-                    <folding>
-                      <element signature="docComment;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;field#context#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;field#registerStage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#loadLoginView#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#closeStage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#closeStage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#startRegistrationProcess#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#resetUsernameAndEmailFields#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#resetUsernameAndEmailFields#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#displayUserExistsMessage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#displayUserExistsMessage#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#persistNewUser#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#createGamerObject#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#createGamerObject#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#fetchAllGamersInDb#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#fetchAllGamersInDb#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#hashPassword#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#hashPassword#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#displayMessageOnView#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#displayMessageOnView#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#checkDoesUsernameOrEmailExist#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#checkDoesUsernameOrEmailExist#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#initializeFactory#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#initializeFactory#0;class#RegisterController#0" expanded="false" />
-                      <element signature="docComment;method#closeFactory#0;class#RegisterController#0" expanded="false" />
-                      <element signature="method#closeFactory#0;class#RegisterController#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Post.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/models/Post.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="425">
-                    <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="17" />
-                    <folding>
-                      <element signature="e#647#648#0" expanded="true" />
-                      <element signature="e#672#673#0" expanded="true" />
-                      <element signature="e#703#704#0" expanded="true" />
-                      <element signature="e#731#732#0" expanded="true" />
-                      <element signature="e#772#773#0" expanded="true" />
-                      <element signature="e#806#807#0" expanded="true" />
-                      <element signature="e#839#840#0" expanded="true" />
-                      <element signature="e#867#868#0" expanded="true" />
-                      <element signature="e#903#904#0" expanded="true" />
-                      <element signature="e#935#936#0" expanded="true" />
-                      <element signature="e#985#986#0" expanded="true" />
-                      <element signature="e#1027#1028#0" expanded="true" />
-                      <element signature="e#1062#1063#0" expanded="true" />
-                      <element signature="e#1093#1094#0" expanded="true" />
-                      <element signature="e#1141#1142#0" expanded="true" />
-                      <element signature="e#1181#1182#0" expanded="true" />
-                      <element signature="e#1223#1224#0" expanded="true" />
-                      <element signature="e#1261#1262#0" expanded="true" />
-                      <element signature="e#1323#1324#0" expanded="true" />
-                      <element signature="e#1377#1378#0" expanded="true" />
-                      <element signature="e#1412#1413#0" expanded="true" />
-                      <element signature="e#1443#1444#0" expanded="true" />
-                      <element signature="e#1491#1492#0" expanded="true" />
-                      <element signature="e#1531#1532#0" expanded="true" />
-                      <element signature="e#1572#1573#0" expanded="true" />
-                      <element signature="e#1609#1610#0" expanded="true" />
-                      <element signature="e#1669#1670#0" expanded="true" />
-                      <element signature="e#1721#1722#0" expanded="true" />
-                      <element signature="e#1758#1759#0" expanded="true" />
-                      <element signature="e#1791#1792#0" expanded="true" />
-                      <element signature="e#1843#1844#0" expanded="true" />
-                      <element signature="e#1887#1888#0" expanded="true" />
-                      <element signature="e#1922#1923#0" expanded="true" />
-                      <element signature="e#1953#1954#0" expanded="true" />
-                      <element signature="e#2001#2002#0" expanded="true" />
-                      <element signature="e#2041#2042#0" expanded="true" />
-                      <element signature="e#2086#2087#0" expanded="true" />
-                      <element signature="e#2127#2128#0" expanded="true" />
-                      <element signature="e#2196#2197#0" expanded="true" />
-                      <element signature="e#2256#2257#0" expanded="true" />
-                      <element signature="e#2301#2302#0" expanded="true" />
-                      <element signature="e#2342#2343#0" expanded="true" />
-                      <element signature="e#2411#2412#0" expanded="true" />
-                      <element signature="e#2471#2472#0" expanded="true" />
-                      <element signature="e#2511#2512#0" expanded="true" />
-                      <element signature="e#2547#2548#0" expanded="true" />
-                      <element signature="e#2606#2607#0" expanded="true" />
-                      <element signature="e#2656#2657#0" expanded="true" />
-                      <element signature="e#2696#2697#0" expanded="true" />
-                      <element signature="e#2732#2733#0" expanded="true" />
-                      <element signature="e#2791#2792#0" expanded="true" />
-                      <element signature="e#2841#2842#0" expanded="true" />
-                      <element signature="e#2879#2880#0" expanded="true" />
-                      <element signature="e#2913#2914#0" expanded="true" />
-                      <element signature="e#2968#2969#0" expanded="true" />
-                      <element signature="e#3014#3015#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="MainViewController.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainViewController.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="509">
-                    <caret line="133" column="39" lean-forward="false" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
-                    <folding>
-                      <element signature="method#setUserNameText#0;class#MainViewController#0" expanded="false" />
-                      <element signature="docComment;method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
-                      <element signature="method#loadConfirmationBox#0;class#MainViewController#0" expanded="false" />
-                      <element signature="method#handleLogoutRequest#0;class#MainViewController#0" expanded="false" />
-                      <element signature="method#loadLoginView#0;class#MainViewController#0" expanded="false" />
-                      <element signature="method#closeStage#0;class#MainViewController#0" expanded="false" />
-                      <element signature="method#loadProfilePane#0;class#MainViewController#0" expanded="false" />
-                      <element signature="method#loadCreatePostPane#0;class#MainViewController#0" expanded="false" />
-                      <element signature="method#loadHelpPane#0;class#MainViewController#0" expanded="false" />
-                      <element signature="method#loadSettingsPane#0;class#MainViewController#0" expanded="false" />
-                      <element signature="method#loadGroupsPane#0;class#MainViewController#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Gamer.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/models/Gamer.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="136">
-                    <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-                    <folding>
-                      <element signature="method#Gamer#0;class#Gamer#0" expanded="false" />
-                      <element signature="method#Gamer#1;class#Gamer#0" expanded="false" />
-                      <element signature="method#setProfilePictureReference#0;class#Gamer#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Sharp.css" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/resources/css/Sharp.css">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="391">
-                    <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="post_view.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/view/post_view.fxml">
+      <file leaf-file-name="postsdisplay.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
               <folding />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filters.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/css/filters.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -333,14 +188,14 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionCreatePostController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/players_searching_landing.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/MainViewController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/Sharp.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/css/filters.css" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/mainviewbuttons.css" />
         <option value="$PROJECT_DIR$/src/main/resources/view/post_view.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/filters.css" />
       </list>
     </option>
   </component>
@@ -380,7 +235,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-308" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -403,7 +259,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -442,31 +298,6 @@
               <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="functionality" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -483,23 +314,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="Game Images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -507,8 +321,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -735,42 +549,43 @@
       <workItem from="1521715962435" duration="7745000" />
       <workItem from="1522062262359" duration="3442000" />
       <workItem from="1522065796005" duration="4209000" />
-      <workItem from="1522072543886" duration="14608000" />
+      <workItem from="1522072543886" duration="17297000" />
+      <workItem from="1522098344503" duration="41000" />
+      <workItem from="1522098399383" duration="1241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95715000" />
+    <option name="totallyTimeSpent" value="99686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18603411" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26058632" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21389794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18603411" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5103149" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32464713" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17857143" sideWeight="0.6703755" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18176973" sideWeight="0.6703755" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -780,6 +595,7 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -949,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionSettingsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1070,10 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#closeMainView#0;class#LogoutConfirmationBoxController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,46 +939,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostCreationSuccessController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="126" column="8" lean-forward="false" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-          <folding>
-            <element signature="docComment;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;field#context#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;field#registerStage#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#loadLoginView#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#closeStage#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#closeStage#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#startRegistrationProcess#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#resetUsernameAndEmailFields#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#resetUsernameAndEmailFields#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#displayUserExistsMessage#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#displayUserExistsMessage#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#persistNewUser#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#createGamerObject#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#createGamerObject#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#fetchAllGamersInDb#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#fetchAllGamersInDb#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#hashPassword#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#hashPassword#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#displayMessageOnView#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#displayMessageOnView#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#checkDoesUsernameOrEmailExist#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#checkDoesUsernameOrEmailExist#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#initializeFactory#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#initializeFactory#0;class#RegisterController#0" expanded="false" />
-            <element signature="docComment;method#closeFactory#0;class#RegisterController#0" expanded="false" />
-            <element signature="method#closeFactory#0;class#RegisterController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/functionality/PostFunctionalityService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
@@ -1233,17 +1002,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/mainview.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -1259,13 +1018,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="69" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="104" column="32" lean-forward="false" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/mainviewbuttons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/post_view.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="126" column="8" lean-forward="false" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+          <folding>
+            <element signature="docComment;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;field#context#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;field#registerStage#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#loadLoginView#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#closeStage#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#closeStage#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#startRegistrationProcess#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#resetUsernameAndEmailFields#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#resetUsernameAndEmailFields#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#displayUserExistsMessage#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#displayUserExistsMessage#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#persistNewUser#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#createGamerObject#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#createGamerObject#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#fetchAllGamersInDb#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#fetchAllGamersInDb#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#hashPassword#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#hashPassword#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#displayMessageOnView#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#displayMessageOnView#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#checkDoesUsernameOrEmailExist#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#checkDoesUsernameOrEmailExist#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#initializeFactory#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#initializeFactory#0;class#RegisterController#0" expanded="false" />
+            <element signature="docComment;method#closeFactory#0;class#RegisterController#0" expanded="false" />
+            <element signature="method#closeFactory#0;class#RegisterController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
+        <state relative-caret-position="1088">
           <caret line="133" column="39" lean-forward="false" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
           <folding>
             <element signature="method#setUserNameText#0;class#MainViewController#0" expanded="false" />
@@ -1283,74 +1129,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="104" column="32" lean-forward="false" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/SubSectionPlayerSearchingLandingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#initialize#0;class#SubSectionPlayerSearchingLandingController#0" expanded="false" />
-            <element signature="method#getPostList#0;class#SubSectionPlayerSearchingLandingController#0" expanded="false" />
-            <element signature="method#initCounters#0;class#SubSectionPlayerSearchingLandingController#0" expanded="false" />
-            <element signature="method#countGames#0;class#SubSectionPlayerSearchingLandingController#0" expanded="false" />
-            <element signature="method#updateView#0;class#SubSectionPlayerSearchingLandingController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/PostDisplayController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/mainviewbuttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/filters.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/css/Sharp.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1359,75 +1137,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Post.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Gamer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="17" />
-          <folding>
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1261#1262#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1377#1378#0" expanded="true" />
-            <element signature="e#1412#1413#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1721#1722#0" expanded="true" />
-            <element signature="e#1758#1759#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1843#1844#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1922#1923#0" expanded="true" />
-            <element signature="e#1953#1954#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
-            <element signature="e#2041#2042#0" expanded="true" />
-            <element signature="e#2086#2087#0" expanded="true" />
-            <element signature="e#2127#2128#0" expanded="true" />
-            <element signature="e#2196#2197#0" expanded="true" />
-            <element signature="e#2256#2257#0" expanded="true" />
-            <element signature="e#2301#2302#0" expanded="true" />
-            <element signature="e#2342#2343#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
-            <element signature="e#2471#2472#0" expanded="true" />
-            <element signature="e#2511#2512#0" expanded="true" />
-            <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#2606#2607#0" expanded="true" />
-            <element signature="e#2656#2657#0" expanded="true" />
-            <element signature="e#2696#2697#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2791#2792#0" expanded="true" />
-            <element signature="e#2841#2842#0" expanded="true" />
-            <element signature="e#2879#2880#0" expanded="true" />
-            <element signature="e#2913#2914#0" expanded="true" />
-            <element signature="e#2968#2969#0" expanded="true" />
-            <element signature="e#3014#3015#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/post_view.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/postsdisplay.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1435,15 +1163,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Gamer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/filters.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="method#Gamer#0;class#Gamer#0" expanded="false" />
-            <element signature="method#Gamer#1;class#Gamer#0" expanded="false" />
-            <element signature="method#setProfilePictureReference#0;class#Gamer#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
