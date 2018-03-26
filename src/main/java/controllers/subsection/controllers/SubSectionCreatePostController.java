@@ -1,5 +1,6 @@
 package controllers.subsection.controllers;
 
+import functionality.PostFunctionalityService;
 import functionality.Validator;
 import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
@@ -8,7 +9,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
+import models.Post;
 import org.hibernate.annotations.Check;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.net.URL;
 import java.time.LocalDateTime;
@@ -18,6 +21,9 @@ import java.util.ResourceBundle;
 public class SubSectionCreatePostController implements Initializable {
 
     private Validator validator;
+    private PostFunctionalityService postCreationService;
+    private ClassPathXmlApplicationContext context;
+    private Post post;
 
     @FXML
     private Text postCreationFailed;
@@ -95,11 +101,35 @@ public class SubSectionCreatePostController implements Initializable {
                 && validator.validateTextFieldNotEmpty(postDescription.getText())
                 && validator.validateTextFieldNotEmpty(ageRange.getText())){
 
+            /*
+            * If it's validated
+            * - init context
+            * - Build the post object
+            * - persist the post
+            * - Bring to a notification view.
+            * - close the context
+            * */
 
 
         }else {
             fadeFailureText();
         }
+    }
+
+    private void initContext(){
+
+        context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+    }
+
+    private void closeContext(){
+
+        context.close();
+    }
+
+    private void buildThePostBean(){
+
+        post = (Post) context.getBean("post");
+
     }
 
     private void fadeFailureText(){

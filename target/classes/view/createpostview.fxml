@@ -82,7 +82,7 @@
          </font>
       </Text>
       <TextField fx:id="ageRange" layoutX="479.0" layoutY="141.0" prefHeight="27.0" prefWidth="131.0" promptText="18-25 etc" style="-fx-border-color: #292E37;" />
-      <Button layoutX="756.0" layoutY="774.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="189.0" onAction="#preparePostForCreation" stylesheets="@../css/Sharp.css" text="Create Post" textFill="WHITE" />
+      <Button layoutX="756.0" layoutY="774.0" mnemonicParsing="false" onAction="#preparePostForCreation" prefHeight="37.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Create Post" textFill="WHITE" />
       <Text fill="#0967a5" layoutX="83.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post Tags" wrappingWidth="71.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
