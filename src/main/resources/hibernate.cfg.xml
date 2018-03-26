@@ -25,6 +25,9 @@
 		<property name="current_session_context_class">thread</property>
 
         <property name="hbm2ddl.auto">update</property>
+
+        <mapping class="models.Post"/>
+        <mapping class="models.Gamer"/>
  
     </session-factory>
 

@@ -5,14 +5,18 @@ import functionality.Validator;
 import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 import models.Post;
+import models.Session;
 import org.hibernate.annotations.Check;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -24,7 +28,10 @@ public class SubSectionCreatePostController implements Initializable {
     private PostFunctionalityService postCreationService;
     private ClassPathXmlApplicationContext context;
     private Post post;
+    private Integer idReturned;
 
+    @FXML
+    private AnchorPane settingsView;
     @FXML
     private Text postCreationFailed;
     @FXML
@@ -103,17 +110,44 @@ public class SubSectionCreatePostController implements Initializable {
 
             /*
             * If it's validated
-            * - init context
-            * - Build the post object
-            * - persist the post
+            * - init context            x
+            * - Build the post object   x
+            * - persist the post        x
             * - Bring to a notification view.
             * - close the context
+            * - close the factory
             * */
 
+            initContext();
+            buildThePostBean();
+            idReturned = postCreationService.persistNewPost(post);
+
+            if(idReturned > 0){
+
+                closeContext();
+                postCreationService.closeFactory();
+                loadSuccessView();
+
+            }else {
+                fadeFailureText();
+            }
 
         }else {
             fadeFailureText();
         }
+    }
+
+    private void loadSuccessView(){
+
+        try{
+
+            AnchorPane postCreation_sucess = FXMLLoader.load(getClass().getResource("/view/postcreation_success.fxml"));
+            settingsView.getChildren().setAll(postCreation_sucess);
+        }catch (IOException e){
+
+            e.printStackTrace();
+        }
+
     }
 
     private void initContext(){
@@ -128,8 +162,29 @@ public class SubSectionCreatePostController implements Initializable {
 
     private void buildThePostBean(){
 
+        /*instantiate beans*/
         post = (Post) context.getBean("post");
+        postCreationService = (PostFunctionalityService) context.getBean("postfunctionalityservice");
 
+        post.setPostTitle(postTitle.getText());
+        post.setAgeRange(ageRange.getText());
+        post.setPostDescription(postDescription.getText());
+        post.setPostTags(postTags.getText());
+        post.setLanguageSpoken(languageSpoken.getValue());
+        post.setGamePlayed(gamePlayed.getValue());
+        post.setTimeZone(timeZone.getValue());
+        /*Requirements*/
+        post.setMicrophoneRequired(micRequired.isSelected());
+        post.setCompetitivePlayers(competitivePlayersAccepted.isSelected());
+        post.setAcceptFemales(acceptFemales.isSelected());
+        post.setAcceptMales(acceptMales.isSelected());
+        post.setCasualPlayers(casualPlayersAccepted.isSelected());
+
+        /*
+        * Set the oneToOne relationship between post and gamer
+        * one post has one gamer (that created it)
+        * */
+        post.setGamer(Session.gamerSession);
     }
 
     private void fadeFailureText(){

@@ -1,5 +1,6 @@
 package functionality;
 
+import models.Gamer;
 import models.Post;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

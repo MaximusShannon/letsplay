@@ -25,5 +25,9 @@
           class="models.Post">
     </bean>
 
+    <bean id = "postfunctionalityservice"
+        class="functionality.PostFunctionalityService">
+    </bean>
+
 
 </beans>
