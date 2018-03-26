@@ -44,7 +44,7 @@ public class MainViewController implements Initializable {
     @FXML
     private Text userNameText;
     @FXML
-    private Text navbarText;
+    public  Text navbarText;
 
 
     @Override

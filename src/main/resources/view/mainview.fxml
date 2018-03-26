@@ -303,6 +303,11 @@
       </AnchorPane>
       <Pane prefHeight="900.0" prefWidth="215.0" style="-fx-background-color: #292E37;">
          <children>
+            <Text fill="WHITE" layoutX="71.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players searching">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
             <Text fill="WHITE" layoutX="70.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
                <font>
                   <Font name="Segoe UI" size="16.0" />
@@ -318,7 +323,7 @@
                   <Font name="Segoe UI" size="16.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="70.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create post">
+            <Text fill="WHITE" layoutX="68.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create post">
                <font>
                   <Font name="Segoe UI" size="16.0" />
                </font>
@@ -353,7 +358,7 @@
                   <Image url="@../images/settingsicon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="60.0" fitWidth="30.0" layoutX="25.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="60.0" fitWidth="30.0" layoutX="23.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/createposticon.png" />
                </image>
@@ -368,9 +373,15 @@
                   <Image url="@../images/User-Group.png" />
                </image>
             </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="30.0" layoutX="25.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/binocs.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="openGamesSelectionButton" layoutX="13.0" layoutY="316.0" mnemonicParsing="false" onAction="#loadCreatePostPane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
             <Button fx:id="homePane" layoutX="15.0" layoutY="144.0" mnemonicParsing="false" onAction="#loadHomePane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
             <Button fx:id="profileButton" layoutX="15.0" layoutY="204.0" mnemonicParsing="false" onAction="#loadProfilePane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
-            <Button fx:id="createPostButton" layoutX="15.0" layoutY="315.0" mnemonicParsing="false" onAction="#loadCreatePostPane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
+            <Button fx:id="createPostButton" layoutX="13.0" layoutY="369.0" mnemonicParsing="false" onAction="#loadCreatePostPane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
             <Button fx:id="helpButton" layoutX="15.0" layoutY="734.0" mnemonicParsing="false" onAction="#loadHelpPane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
             <Button fx:id="openGroupsBtn" layoutX="14.0" layoutY="263.0" mnemonicParsing="false" onAction="#loadGroupsPane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
             <Button fx:id="settingsButton" layoutX="15.0" layoutY="792.0" mnemonicParsing="false" onAction="#loadSettingsPane" opacity="0.0" prefHeight="53.0" prefWidth="189.0" stylesheets="@../css/mainviewbuttons.css" />
