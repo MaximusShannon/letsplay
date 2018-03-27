@@ -11,9 +11,7 @@ import models.Post;
 
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class PostDisplayController implements Initializable {
 
@@ -34,6 +32,9 @@ public class PostDisplayController implements Initializable {
 
         if(postList != null){
             filterByGame();
+
+            /*Reverse the list so the new stuff is at the top.*/
+            Collections.reverse(filteredPosts);
 
             for (Post filteredPost : filteredPosts) {
 

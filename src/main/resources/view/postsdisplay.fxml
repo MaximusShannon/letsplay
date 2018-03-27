@@ -84,7 +84,7 @@
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <Button layoutX="836.0" layoutY="11.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="135.0" stylesheets="@../css/mainviewbuttons.css" textFill="WHITE">
+            <Button fx:id="refreshButton" layoutX="836.0" layoutY="11.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="135.0" stylesheets="@../css/mainviewbuttons.css" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
@@ -99,11 +99,26 @@
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <Button layoutX="836.0" layoutY="45.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="135.0" stylesheets="@../css/mainviewbuttons.css" textFill="WHITE">
+            <Button fx:id="resetFiltersButton" layoutX="836.0" layoutY="45.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="135.0" stylesheets="@../css/mainviewbuttons.css" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Button>
+            <Text fill="WHITE" layoutX="770.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Displaying">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postCount" fill="WHITE" layoutX="851.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="879.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posts">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
       <ScrollPane hbarPolicy="NEVER" layoutY="166.0" prefHeight="681.0" prefWidth="985.0" styleClass="edge-to-edge" stylesheets="@../css/filters.css" vbarPolicy="ALWAYS">
