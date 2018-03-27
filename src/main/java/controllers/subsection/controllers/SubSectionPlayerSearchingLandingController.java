@@ -157,7 +157,7 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
 
         try{
 
-            PostDisplayController.game = "leagueoflegends";
+            PostDisplayController.game = "league of legends";
 
             AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
             playerSearchingPane.getChildren().setAll(postDisplay);
