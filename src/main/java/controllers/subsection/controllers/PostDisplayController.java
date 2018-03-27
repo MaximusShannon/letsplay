@@ -67,6 +67,34 @@ public class PostDisplayController implements Initializable {
             uniquePostController.postTitle.setText(post.getPostTitle());
             uniquePostController.postDescription.setText(post.getPostDescription());
             uniquePostController.username.setText(post.getGamer().getUserName());
+            uniquePostController.postTags.setText(post.getPostTags());
+
+            /*Requirements display*/
+            if(post.isMicrophoneRequired()){
+                uniquePostController.mr_tick.setVisible(true);
+            }else{
+                uniquePostController.mr_x.setVisible(true);
+            }
+            if(post.isCasualPlayers()){
+                uniquePostController.cp_tick.setVisible(true);
+            }else{
+                uniquePostController.cp_x.setVisible(true);
+            }
+            if(post.isCompetitivePlayers()){
+                uniquePostController.comp_tick.setVisible(true);
+            }else{
+                uniquePostController.comp_x.setVisible(true);
+            }
+            if(post.isAcceptFemales()){
+                uniquePostController.acf_tick.setVisible(true);
+            }else{
+                uniquePostController.acf_x.setVisible(true);
+            }
+            if(post.isAcceptMales()){
+                uniquePostController.acm_tick.setVisible(true);
+            }else{
+                uniquePostController.acm_x.setVisible(true);
+            }
 
             postsVbox.getChildren().add(node);
 

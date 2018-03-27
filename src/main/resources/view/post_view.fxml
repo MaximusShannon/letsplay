@@ -43,12 +43,12 @@
                   <Font name="Verdana Bold" size="14.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="201.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Microphone Required">
+            <Text fx:id="mic" fill="WHITE" layoutX="201.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Microphone Required">
                <font>
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
-            <ImageView fitHeight="13.0" fitWidth="17.0" layoutX="337.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="mr_tick" fitHeight="13.0" fitWidth="17.0" layoutX="337.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@../images/tick.png" />
                </image>
@@ -58,7 +58,7 @@
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
-            <ImageView fitHeight="13.0" fitWidth="17.0" layoutX="249.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="lang_tick" fitHeight="13.0" fitWidth="17.0" layoutX="249.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/tick.png" />
                </image>
@@ -68,7 +68,7 @@
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
-            <ImageView fitHeight="13.0" fitWidth="17.0" layoutX="605.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="comp_tick" fitHeight="13.0" fitWidth="17.0" layoutX="605.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@../images/tick.png" />
                </image>
@@ -78,7 +78,7 @@
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
-            <ImageView fitHeight="13.0" fitWidth="17.0" layoutX="456.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="cp_tick" fitHeight="13.0" fitWidth="17.0" layoutX="456.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@../images/tick.png" />
                </image>
@@ -88,7 +88,7 @@
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
-            <ImageView fitHeight="13.0" fitWidth="17.0" layoutX="713.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="acm_tick" fitHeight="13.0" fitWidth="17.0" layoutX="713.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@../images/tick.png" />
                </image>
@@ -98,7 +98,7 @@
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
-            <ImageView fitHeight="13.0" fitWidth="17.0" layoutX="838.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="acf_tick" fitHeight="13.0" fitWidth="17.0" layoutX="838.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@../images/tick.png" />
                </image>
@@ -108,7 +108,7 @@
                   <Font name="Verdana Italic" size="10.0" />
                </font>
             </Text>
-            <Text fill="#00ff5e" layoutX="239.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rust PvP, Base Building, Armor, Guns, Etc.">
+            <Text fx:id="postTags" fill="#00ff5e" layoutX="239.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rust PvP, Base Building, Armor, Guns, Etc.">
                <font>
                   <Font name="Verdana Italic" size="11.0" />
                </font>
@@ -150,6 +150,36 @@
                   <Font name="Verdana Bold Italic" size="12.0" />
                </font>
             </Text>
+            <ImageView fx:id="mr_x" fitHeight="17.0" fitWidth="17.0" layoutX="338.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/red_x.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cp_x" fitHeight="17.0" fitWidth="17.0" layoutX="456.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/red_x.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="comp_x" fitHeight="17.0" fitWidth="17.0" layoutX="604.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/red_x.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="acm_x" fitHeight="17.0" fitWidth="17.0" layoutX="713.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/red_x.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="acf_x" fitHeight="17.0" fitWidth="17.0" layoutX="838.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/red_x.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lang_x" fitHeight="17.0" fitWidth="17.0" layoutX="249.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/red_x.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <Label layoutX="466.0" layoutY="300.0" prefHeight="2.0" prefWidth="48.0" textFill="WHITE" />
