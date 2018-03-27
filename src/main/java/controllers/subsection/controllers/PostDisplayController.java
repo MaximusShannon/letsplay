@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import models.Post;
 
 
@@ -22,6 +23,8 @@ public class PostDisplayController implements Initializable {
 
     @FXML
     private VBox postsVbox;
+    @FXML
+    private Text postCount;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -41,6 +44,8 @@ public class PostDisplayController implements Initializable {
                 displayUniquePostsInView(filteredPost);
             }
         }
+
+        displayPostCount();
     }
 
     private void filterByGame(){
@@ -54,6 +59,11 @@ public class PostDisplayController implements Initializable {
                 filteredPosts.add(postList.get(i));
             }
         }
+    }
+
+    private void displayPostCount(){
+
+        postCount.setText(Integer.toString(filteredPosts.size()));
     }
 
     private void displayUniquePostsInView(Post post){
