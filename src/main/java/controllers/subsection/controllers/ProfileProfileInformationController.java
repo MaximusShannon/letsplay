@@ -1,5 +1,6 @@
 package controllers.subsection.controllers;
 
+import functionality.DatabaseInteractionService;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -12,6 +13,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ProfileProfileInformationController implements Initializable {
+
+    private DatabaseInteractionService dbService;
 
     @FXML
     private Text userName;
@@ -182,14 +185,18 @@ public class ProfileProfileInformationController implements Initializable {
     @FXML
     private void updateUser(){
 
+        dbService = new DatabaseInteractionService();
+
         if(checkFieldsHaveChanged()){
 
-            //update all fields.
-            // notify view that it hasn't changed..
+            dbService.updateGamer(dbService.fetchUserForUpdate(), firstnameEdit.getText(),
+                    surnameEdit.getText(), emailEdit.getText(),
+                    locationEdit.getText(), bioEdit.getText(),
+                    interestsEdit.getText());
 
         }else{
 
-            //notify view that it didn't work
+            //notify not changed
         }
     }
 

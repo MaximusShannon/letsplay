@@ -4,6 +4,7 @@ import models.Gamer;
 import models.Post;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -31,9 +32,34 @@ public class DatabaseInteractionService {
         return session.load(Gamer.class, models.Session.gamerSession.getId());
     }
 
-    public void updateGamer(){
+    public void updateGamer(Gamer gamer, String firstName,
+                            String surname, String email,
+                            String location, String bio,
+                            String interests){
 
+        Transaction tx = session.beginTransaction();
 
+        gamer.setFirstName(firstName);
+        gamer.setSecondName(surname);
+        gamer.setEmail(email);
+        gamer.setLocation(location);
+        gamer.setBio(bio);
+        gamer.setInterest(interests);
+        gamer.setProfileVersion(gamer.getProfileVersion() + 1);
+
+        session.update(gamer);
+        tx.commit();
+
+        updateSession(gamer);
+
+        session.close();
+        closeFactory();
+    }
+
+    private void updateSession(Gamer gamer){
+
+        models.Session.resetSession();
+        models.Session.gamerSession = gamer;
     }
 
     /**

@@ -119,7 +119,7 @@
             <TextField fx:id="locationEdit" layoutX="31.0" layoutY="228.0" prefHeight="34.0" prefWidth="461.0" promptText="Location" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
             <TextField fx:id="bioEdit" alignment="TOP_LEFT" layoutX="31.0" layoutY="288.0" prefHeight="126.0" prefWidth="461.0" promptText="Bio" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
             <Button fx:id="cancelUpdate" layoutX="168.0" layoutY="439.0" mnemonicParsing="false" onAction="#cancelUpdate" prefHeight="37.0" prefWidth="187.0" stylesheets="@../css/Sharp.css" text="Cancel" textFill="WHITE" />
-            <Button fx:id="updateProfile" layoutX="399.0" layoutY="439.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="187.0" stylesheets="@../css/Sharp.css" text="Update Profile" textFill="WHITE" />
+            <Button fx:id="updateProfile" onAction="#updateUser" layoutX="399.0" layoutY="439.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="187.0" stylesheets="@../css/Sharp.css" text="Update Profile" textFill="WHITE" />
          </children>
       </Pane>
       <ImageView fitHeight="185.0" fitWidth="185.0" layoutX="53.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
