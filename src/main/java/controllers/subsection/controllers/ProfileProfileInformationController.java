@@ -1,11 +1,14 @@
 package controllers.subsection.controllers;
 
 import functionality.DatabaseInteractionService;
+import functionality.Validator;
+import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
 import models.Session;
 
 
@@ -15,6 +18,7 @@ import java.util.ResourceBundle;
 public class ProfileProfileInformationController implements Initializable {
 
     private DatabaseInteractionService dbService;
+    private Validator validator;
 
     @FXML
     private Text userName;
@@ -36,6 +40,8 @@ public class ProfileProfileInformationController implements Initializable {
     private Text commentCount;
     @FXML
     private Text applicationCount;
+    @FXML
+    private Text updateFailed;
     @FXML
     private TextField firstnameEdit;
     @FXML
@@ -63,6 +69,8 @@ public class ProfileProfileInformationController implements Initializable {
         initFields();
         setEditFieldsInvisible();
         hideUpdateAndCancel();
+
+        updateFailed.setVisible(false);
     }
 
     private void initFields(){
@@ -118,6 +126,18 @@ public class ProfileProfileInformationController implements Initializable {
         interestsEdit.setVisible(true);
         locationEdit.setVisible(true);
         bioEdit.setVisible(true);
+
+        fillInEditFields();
+    }
+
+    private void fillInEditFields(){
+
+        firstnameEdit.setText(Session.gamerSession.getFirstName());
+        surnameEdit.setText(Session.gamerSession.getSecondName());
+        emailEdit.setText(Session.gamerSession.getEmail());
+        interestsEdit.setText(Session.gamerSession.getInterest());
+        locationEdit.setText(Session.gamerSession.getLocation());
+        bioEdit.setText(Session.gamerSession.getBio());
     }
 
     private void setProfileInformationInvisible(){
@@ -189,15 +209,42 @@ public class ProfileProfileInformationController implements Initializable {
 
         if(checkFieldsHaveChanged()){
 
-            dbService.updateGamer(dbService.fetchUserForUpdate(), firstnameEdit.getText(),
-                    surnameEdit.getText(), emailEdit.getText(),
-                    locationEdit.getText(), bioEdit.getText(),
-                    interestsEdit.getText());
+            validator = new Validator();
 
+            if(validator.validateTextFieldNotEmpty(firstnameEdit.getText()) && validator.validateTextFieldNotEmpty(surnameEdit.getText())
+                    && validator.validateEmail(emailEdit.getText()) && validator.validateTextFieldNotEmpty(locationEdit.getText())
+                    && validator.validateTextFieldNotEmpty(bioEdit.getText()) && validator.validateTextFieldNotEmpty(interests.getText())){
+
+                dbService.updateGamer(dbService.fetchUserForUpdate(), firstnameEdit.getText(),
+                        surnameEdit.getText(), emailEdit.getText(),
+                        locationEdit.getText(), bioEdit.getText(),
+                        interestsEdit.getText());
+
+                initFields();
+                hideUpdateAndCancel();
+                setEditFieldsInvisible();
+                setProfileInformationVisible();
+                showEditButton();
+
+            }else{
+
+                updateFailed.setVisible(true);
+                fadeUpdateFailedText(updateFailed);
+            }
         }else{
 
-            //notify not changed
+            updateFailed.setVisible(true);
+            fadeUpdateFailedText(updateFailed);
         }
+    }
+
+    private void fadeUpdateFailedText(Text textToFade){
+
+        FadeTransition ft = new FadeTransition(Duration.millis(5000), textToFade);
+        ft.setFromValue(1.0);
+        ft.setToValue(0.0);
+
+        ft.play();
     }
 
     private boolean checkFieldsHaveChanged(){

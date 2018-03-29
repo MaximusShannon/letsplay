@@ -13,7 +13,7 @@
    <children>
       <Pane layoutX="5.0" layoutY="223.0" prefHeight="501.0" prefWidth="974.0" style="-fx-background-color: #292E37;">
          <children>
-            <Text fill="#0967a5" layoutX="32.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Firstname">
+            <Text fill="#0967a5" layoutX="32.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Firstname">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>
@@ -23,32 +23,32 @@
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="31.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname">
+            <Text fill="#0967a5" layoutX="32.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>
             </Text>
-            <Text fx:id="surname" fill="WHITE" layoutX="32.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname">
+            <Text fx:id="surname" fill="WHITE" layoutX="32.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname">
                <font>
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="36.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+            <Text fill="#0967a5" layoutX="32.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>
             </Text>
-            <Text fx:id="email" fill="WHITE" layoutX="37.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email@emal.ie">
+            <Text fx:id="email" fill="WHITE" layoutX="32.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email@emal.ie">
                <font>
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
-            <Text fill="#0967a5" layoutX="34.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bio">
+            <Text fill="#0967a5" layoutX="32.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bio">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>
             </Text>
-            <Text fx:id="bio" fill="WHITE" layoutX="34.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email@emal.ie" wrappingWidth="334.19140625">
+            <Text fx:id="bio" fill="WHITE" layoutX="32.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email@emal.ie" wrappingWidth="334.19140625">
                <font>
                   <Font name="Verdana Italic" size="12.0" />
                </font>
@@ -102,24 +102,29 @@
                   </Text>
                </children>
             </Pane>
-            <Text fill="#0967a5" layoutX="33.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location">
+            <Text fill="#0967a5" layoutX="32.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>
             </Text>
-            <Text fx:id="location" fill="WHITE" layoutX="34.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location">
+            <Text fx:id="location" fill="WHITE" layoutX="32.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location">
                <font>
                   <Font name="Verdana Italic" size="12.0" />
                </font>
             </Text>
             <Button fx:id="editProfile" layoutX="773.0" layoutY="439.0" mnemonicParsing="false" onAction="#showEditFields" prefHeight="37.0" prefWidth="187.0" stylesheets="@../css/Sharp.css" text="Edit Profile" textFill="WHITE" />
-            <TextField fx:id="firstnameEdit" layoutX="31.0" layoutY="47.0" prefHeight="34.0" prefWidth="461.0" promptText="First name" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
-            <TextField fx:id="surnameEdit" layoutX="31.0" layoutY="106.0" prefHeight="34.0" prefWidth="461.0" promptText="Surname" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
-            <TextField fx:id="emailEdit" layoutX="31.0" layoutY="167.0" prefHeight="34.0" prefWidth="461.0" promptText="Email Address" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
-            <TextField fx:id="locationEdit" layoutX="31.0" layoutY="228.0" prefHeight="34.0" prefWidth="461.0" promptText="Location" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
-            <TextField fx:id="bioEdit" alignment="TOP_LEFT" layoutX="31.0" layoutY="288.0" prefHeight="126.0" prefWidth="461.0" promptText="Bio" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+            <TextField fx:id="firstnameEdit" layoutX="32.0" layoutY="47.0" prefHeight="34.0" prefWidth="461.0" promptText="First name" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+            <TextField fx:id="surnameEdit" layoutX="32.0" layoutY="106.0" prefHeight="34.0" prefWidth="461.0" promptText="Surname" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+            <TextField fx:id="emailEdit" layoutX="32.0" layoutY="165.0" prefHeight="34.0" prefWidth="461.0" promptText="Email Address" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+            <TextField fx:id="locationEdit" layoutX="31.0" layoutY="227.0" prefHeight="34.0" prefWidth="461.0" promptText="Location" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+            <TextField fx:id="bioEdit" alignment="TOP_LEFT" layoutX="32.0" layoutY="291.0" prefHeight="126.0" prefWidth="461.0" promptText="Bio" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
             <Button fx:id="cancelUpdate" layoutX="168.0" layoutY="439.0" mnemonicParsing="false" onAction="#cancelUpdate" prefHeight="37.0" prefWidth="187.0" stylesheets="@../css/Sharp.css" text="Cancel" textFill="WHITE" />
-            <Button fx:id="updateProfile" onAction="#updateUser" layoutX="399.0" layoutY="439.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="187.0" stylesheets="@../css/Sharp.css" text="Update Profile" textFill="WHITE" />
+            <Button fx:id="updateProfile" layoutX="399.0" layoutY="439.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="37.0" prefWidth="187.0" stylesheets="@../css/Sharp.css" text="Update Profile" textFill="WHITE" />
+            <Text fx:id="updateFailed" fill="WHITE" layoutX="524.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have to change some fields to update your profile." visible="false">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
       <ImageView fitHeight="185.0" fitWidth="185.0" layoutX="53.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
