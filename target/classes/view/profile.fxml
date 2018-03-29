@@ -8,7 +8,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProfileController">
    <children>
       <Pane layoutY="35.0" prefHeight="83.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
@@ -28,8 +27,8 @@
                   <Image url="@../images/posts.png" />
                </image>
             </ImageView>
-            <Button fx:id="postsBtn" layoutX="367.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="78.0" stylesheets="@../css/mainviewbuttons.css" />
-            <Pane fx:id="postsBlueBar" layoutX="369.0" layoutY="71.0" prefHeight="2.0" prefWidth="64.0" style="-fx-background-color: #0967a5;" />
+            <Button fx:id="postsBtn" onAction="#loadUserPostsView" layoutX="367.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="78.0" stylesheets="@../css/mainviewbuttons.css" />
+            <Pane fx:id="postsBlueBar" layoutX="369.0" layoutY="71.0" prefHeight="2.0" prefWidth="78.0" style="-fx-background-color: #0967a5;" />
             <Text fill="WHITE" layoutX="525.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groups">
                <font>
                   <Font name="Verdana" size="12.0" />
@@ -40,7 +39,7 @@
                   <Image url="@../images/User-Group.png" />
                </image>
             </ImageView>
-            <Button fx:id="groupButton" layoutX="503.0" layoutY="12.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="83.0" stylesheets="@../css/mainviewbuttons.css" text="group btn" />
+            <Button fx:id="groupButton" onAction="#loadUserGroupsView" layoutX="503.0" layoutY="12.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="83.0" stylesheets="@../css/mainviewbuttons.css" text="group btn" />
             <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="239.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/user_icon.png" />
@@ -51,16 +50,16 @@
                   <Image url="@../images/matchmaker.png" />
                </image>
             </ImageView>
-            <Button fx:id="profileBtn" layoutX="232.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="83.0" stylesheets="@../css/mainviewbuttons.css" />
+            <Button fx:id="profileBtn" onAction="#loadProfileInformationView" layoutX="232.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="83.0" stylesheets="@../css/mainviewbuttons.css" />
             <Pane fx:id="profileBlueBar" layoutX="232.0" layoutY="71.0" prefHeight="2.0" prefWidth="78.0" style="-fx-background-color: #0967a5;" />
-            <Pane fx:id="groupsBlueBar" layoutX="509.0" layoutY="71.0" prefHeight="2.0" prefWidth="64.0" style="-fx-background-color: #0967a5;" />
+            <Pane fx:id="groupsBlueBar" layoutX="509.0" layoutY="71.0" prefHeight="2.0" prefWidth="78.0" style="-fx-background-color: #0967a5;" />
             <Text fill="WHITE" layoutX="663.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matchmaking">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <Pane fx:id="matchmakingBlueBar" layoutX="659.0" layoutY="71.0" prefHeight="2.0" prefWidth="64.0" style="-fx-background-color: #0967a5;" />
-            <Button fx:id="matchmakingButton" layoutX="640.0" layoutY="13.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="112.0" stylesheets="@../css/mainviewbuttons.css" />
+            <Pane fx:id="matchmakingBlueBar" layoutX="662.0" layoutY="71.0" prefHeight="2.0" prefWidth="78.0" style="-fx-background-color: #0967a5;" />
+            <Button fx:id="matchmakingButton" onAction="#loadUserMatchmakerSettingsView" layoutX="640.0" layoutY="13.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="112.0" stylesheets="@../css/mainviewbuttons.css" />
          </children>
       </Pane>
       <AnchorPane fx:id="injectablePane" layoutY="118.0" prefHeight="728.0" prefWidth="985.0" />
