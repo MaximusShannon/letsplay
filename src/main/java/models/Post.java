@@ -105,7 +105,7 @@ public class Post {
         this.microphoneRequired = microphoneRequired;
     }
 
-    public boolean isCompetitivePlayers() {
+    public boolean isAcceptingCompetitivePlayers() {
         return competitivePlayers;
     }
 
@@ -113,7 +113,7 @@ public class Post {
         this.competitivePlayers = competitivePlayers;
     }
 
-    public boolean isCasualPlayers() {
+    public boolean isAcceptingCasualPlayers() {
         return casualPlayers;
     }
 

@@ -9,6 +9,7 @@ public class UniquePostController {
     public Text postTitle;
     public Text postDescription;
     public Text postTags;
+    public Text postLanguage;
 
     /*
     * Microphone required to language spoken image views to notify the user

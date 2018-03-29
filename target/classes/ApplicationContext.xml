@@ -29,5 +29,8 @@
         class="functionality.PostFunctionalityService">
     </bean>
 
+    <bean id = "filter"
+          class = "models.Filter">
+    </bean>
 
 </beans>

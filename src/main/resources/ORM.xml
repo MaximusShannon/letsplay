@@ -57,8 +57,8 @@
         <property name="gamePlayed" type="java.lang.String" column="game_played"/>
         <property name="timeZone" type="java.lang.String" column="time_zone"/>
         <property name="microphoneRequired" type="boolean" column="mic_required"/>
-        <property name="competitivePlayers" type="boolean" column="competitive_players_accepted"/>
-        <property name="casualPlayers" type="boolean" column="casual_players_accepted"/>
+        <property name="isAcceptingCompetitivePlayers" type="boolean" column="competitive_players_accepted"/>
+        <property name="isAcceptingCasualPlayers" type="boolean" column="casual_players_accepted"/>
         <property name="acceptMales" type="boolean" column="accept_males"/>
         <property name="acceptFemales" type="boolean" column="accept_females"/>
     </class>

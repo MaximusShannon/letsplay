@@ -22,54 +22,54 @@
                   <Font name="Verdana Bold" size="14.0" />
                </font>
             </Text>
-            <ChoiceBox layoutX="14.0" layoutY="66.0" prefHeight="32.0" prefWidth="163.0" style="-fx-border-color: white;" stylesheets="@../css/Sharp.css" />
+            <ChoiceBox fx:id="languageFilter" layoutX="14.0" layoutY="66.0" prefHeight="32.0" prefWidth="107.0" style="-fx-border-color: white;" stylesheets="@../css/Sharp.css" />
             <Text fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Spoken">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="200.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Zone">
+            <Text fill="WHITE" layoutX="136.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Zone">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="410.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competitive Players">
+            <Text fill="WHITE" layoutX="439.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competitive Players">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <ChoiceBox layoutX="200.0" layoutY="66.0" prefHeight="32.0" prefWidth="64.0" style="-fx-border-color: white;" stylesheets="@../css/Sharp.css" />
-            <CheckBox layoutX="410.0" layoutY="66.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../css/filters.css" text="Accepted" textFill="WHITE">
+            <ChoiceBox fx:id="timeZoneFilter" layoutX="136.0" layoutY="66.0" prefHeight="32.0" prefWidth="64.0" style="-fx-border-color: white;" stylesheets="@../css/Sharp.css" />
+            <CheckBox fx:id="compAcceptedFilter" layoutX="439.0" layoutY="67.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../css/filters.css" text="Accepted" textFill="WHITE">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </CheckBox>
-            <Text fill="WHITE" layoutX="302.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casual Players">
+            <Text fill="WHITE" layoutX="331.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casual Players">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <CheckBox layoutX="302.0" layoutY="66.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../css/filters.css" text="Accepted" textFill="WHITE">
+            <CheckBox fx:id="casualAcceptedFilter" layoutX="331.0" layoutY="67.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../css/filters.css" text="Accepted" textFill="WHITE">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </CheckBox>
-            <Text fill="WHITE" layoutX="551.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Males">
+            <Text fill="WHITE" layoutX="580.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Males">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <CheckBox layoutX="551.0" layoutY="66.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../css/filters.css" text="Accepted" textFill="WHITE">
+            <CheckBox fx:id="acceptMalesFilter" layoutX="580.0" layoutY="67.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../css/filters.css" text="Accepted" textFill="WHITE">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </CheckBox>
-            <Text fill="WHITE" layoutX="660.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Females">
+            <Text fill="WHITE" layoutX="689.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Females">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <CheckBox layoutX="657.0" layoutY="66.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../css/filters.css" text="Accepted" textFill="WHITE">
+            <CheckBox fx:id="acceptFemalesFilter" layoutX="686.0" layoutY="67.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../css/filters.css" text="Accepted" textFill="WHITE">
                <font>
                   <Font name="Verdana" size="12.0" />
                </font>
@@ -84,7 +84,7 @@
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <Button layoutX="836.0" layoutY="11.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="135.0" stylesheets="@../css/mainviewbuttons.css" textFill="WHITE">
+            <Button fx:id="refreshButton" layoutX="836.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#refreshPosts" opacity="0.0" prefHeight="25.0" prefWidth="135.0" stylesheets="@../css/mainviewbuttons.css" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
@@ -99,11 +99,41 @@
                   <Font name="Verdana" size="12.0" />
                </font>
             </Text>
-            <Button layoutX="836.0" layoutY="45.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="135.0" stylesheets="@../css/mainviewbuttons.css" textFill="WHITE">
+            <Button fx:id="resetFiltersButton" layoutX="836.0" layoutY="45.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="135.0" stylesheets="@../css/mainviewbuttons.css" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Button>
+            <Text fill="WHITE" layoutX="844.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Displaying">
+               <font>
+                  <Font name="Verdana Italic" size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="postCount" fill="#0967a5" layoutX="916.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Verdana Italic" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="933.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posts">
+               <font>
+                  <Font name="Verdana Italic" size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="refreshText" fill="WHITE" layoutX="14.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refreshing. . ." visible="false">
+               <font>
+                  <Font name="Verdana Italic" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="232.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Microphone">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="micRequired" layoutX="232.0" layoutY="67.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../css/filters.css" text="Required" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </CheckBox>
          </children>
       </Pane>
       <ScrollPane hbarPolicy="NEVER" layoutY="166.0" prefHeight="681.0" prefWidth="985.0" styleClass="edge-to-edge" stylesheets="@../css/filters.css" vbarPolicy="ALWAYS">

@@ -54,7 +54,7 @@
                   <Image url="@../images/tick.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="201.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English">
+            <Text fx:id="postLanguage" fill="WHITE" layoutX="201.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English">
                <font>
                   <Font name="Verdana Italic" size="12.0" />
                </font>
