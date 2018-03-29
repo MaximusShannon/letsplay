@@ -24,6 +24,18 @@ public class DatabaseInteractionService {
         initFactory();
     }
 
+    public Gamer fetchUserForUpdate(){
+
+        session = sessionFactory.openSession();
+
+        return session.load(Gamer.class, models.Session.gamerSession.getId());
+    }
+
+    public void updateGamer(){
+
+
+    }
+
     /**
      * Get a list of user's from the gamer table in the database.
      */
