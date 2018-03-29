@@ -137,7 +137,7 @@ public class MainViewController implements Initializable {
     @FXML
     private void loadProfilePane(ActionEvent event) throws IOException{
 
-        AnchorPane profilePane = FXMLLoader.load(getClass().getResource("/view/profileview.fxml"));
+        AnchorPane profilePane = FXMLLoader.load(getClass().getResource("/view/profile.fxml"));
         fillerPane.getChildren().setAll(profilePane);
         navbarText.setText("Profile");
     }
