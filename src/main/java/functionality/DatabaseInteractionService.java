@@ -37,6 +37,13 @@ public class DatabaseInteractionService {
         return session.load(Gamer.class, models.Session.gamerSession.getId());
     }
 
+    public Post fetchPostForUpdate(){
+
+        session = sessionFactory.openSession();
+
+        return session.load(Post.class, models.Session.updateablePost.getId());
+    }
+
     public void updateGamer(Gamer gamer, String firstName,
                             String surname, String email,
                             String location, String bio,
@@ -59,6 +66,37 @@ public class DatabaseInteractionService {
 
         session.close();
         closeFactory();
+    }
+
+    public void updatePost(Post post, String postTitle,
+                           String ageRange, String postDesc,
+                           String postTags, String langSpoken,
+                           String gamePlayed, String timeZone,
+                           boolean isMicAccepted, boolean isCompetitiveAccept,
+                           boolean isCasualAccepted, boolean isFemalesAccepted,
+                           boolean isMalesAccepted){
+
+        Transaction tx = session.beginTransaction();
+
+        post.setPostTitle(postTitle);
+        post.setAgeRange(ageRange);
+        post.setPostDescription(postDesc);
+        post.setPostTags(postTags);
+        post.setLanguageSpoken(langSpoken);
+        post.setGamePlayed(gamePlayed);
+        post.setTimeZone(timeZone);
+        post.setMicrophoneRequired(isMicAccepted);
+        post.setCompetitivePlayers(isCompetitiveAccept);
+        post.setCasualPlayers(isCasualAccepted);
+        post.setAcceptFemales(isFemalesAccepted);
+        post.setAcceptMales(isMalesAccepted);
+
+        session.update(post);
+        tx.commit();
+
+        session.close();
+        closeFactory();
+
     }
 
     private void updateSession(Gamer gamer){
