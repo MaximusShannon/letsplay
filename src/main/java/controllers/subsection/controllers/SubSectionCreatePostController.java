@@ -30,35 +30,20 @@ public class SubSectionCreatePostController implements Initializable {
     private Post post;
     private Integer idReturned;
 
-    @FXML
-    private AnchorPane settingsView;
-    @FXML
-    private Text postCreationFailed;
-    @FXML
-    private TextField postTitle;
-    @FXML
-    private TextField ageRange;
-    @FXML
-    private TextArea postDescription;
-    @FXML
-    private TextField postTags;
-    @FXML
-    private CheckBox micRequired;
-    @FXML
-    private CheckBox competitivePlayersAccepted;
-    @FXML
-    private CheckBox casualPlayersAccepted;
-    @FXML
-    private CheckBox acceptFemales;
-    @FXML
-    private CheckBox acceptMales;
-    @FXML
-    private ChoiceBox<String> languageSpoken;
-    @FXML
-    private ChoiceBox<String> gamePlayed;
-    @FXML
-    private ChoiceBox<String> timeZone;
-
+    @FXML private AnchorPane settingsView;
+    @FXML private Text postCreationFailed;
+    @FXML private TextField postTitle;
+    @FXML private TextField ageRange;
+    @FXML private TextArea postDescription;
+    @FXML private TextField postTags;
+    @FXML private CheckBox micRequired;
+    @FXML private CheckBox competitivePlayersAccepted;
+    @FXML private CheckBox casualPlayersAccepted;
+    @FXML private CheckBox acceptFemales;
+    @FXML private CheckBox acceptMales;
+    @FXML private ChoiceBox<String> languageSpoken;
+    @FXML private ChoiceBox<String> gamePlayed;
+    @FXML private ChoiceBox<String> timeZone;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
