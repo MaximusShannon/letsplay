@@ -21,31 +21,10 @@ import java.util.ResourceBundle;
 
 public class MainViewController implements Initializable {
 
-    @FXML
-    private AnchorPane mainViewPane;
-    @FXML
-    private AnchorPane fillerPane;
-    @FXML
-    private ScrollPane scrollPaneMatchedGamers;
-    @FXML
-    private Button homePane;
-    @FXML
-    private Button profileButton;
-    @FXML
-    private Button createPostButton;
-    @FXML
-    private Button helpButton;
-    @FXML
-    private Button settingsButton;
-    @FXML
-    private Button openGroupsBtn;
-    @FXML
-    private Button logoutButton;
-    @FXML
-    private Text userNameText;
-    @FXML
-    public  Text navbarText;
-
+    @FXML private AnchorPane mainViewPane;
+    @FXML private AnchorPane fillerPane;
+    @FXML private Text userNameText;
+    @FXML public  Text navbarText;
 
     @Override
     public void initialize(URL url, ResourceBundle rb){
