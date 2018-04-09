@@ -2,16 +2,19 @@ package controllers.subsection.controllers;
 
 import functionality.DatabaseInteractionService;
 import functionality.Validator;
+import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
+import javafx.util.Duration;
 import models.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -21,6 +24,7 @@ public class ProfilePostUpdateController implements Initializable {
     private DatabaseInteractionService dbService;
     private ClassPathXmlApplicationContext context;
 
+    @FXML private AnchorPane injectablePane;
     @FXML private TextField postTitle;
     @FXML private TextField ageRange;
     @FXML private TextArea postDescription;
@@ -33,6 +37,13 @@ public class ProfilePostUpdateController implements Initializable {
     @FXML private ChoiceBox<String> languageSpoken;
     @FXML private ChoiceBox<String> gamePlayed;
     @FXML private ChoiceBox<String> timeZone;
+    @FXML private Text updateSuccess;
+    @FXML private Text updateFailure;
+    @FXML private Button updatePostButton;
+    @FXML private Button backButton;
+
+    //TODO: Notify the user that the post has been updated.
+    //TODO: Add functionality for the back button in the top bar.
 
 
     @Override
@@ -64,8 +75,36 @@ public class ProfilePostUpdateController implements Initializable {
                         acceptMales.isSelected());
 
                 context.close();
+
+                updateSuccess.setVisible(true);
+                fadeSuccessfullText(updateSuccess);
+                updatePostButton.setDisable(true);
+
+            }else{
+
+                /*
+                  If the user tried to remove all the text fields.
+                 */
+                updateFailure.setVisible(true);
+                fadeSuccessfullText(updateFailure);
             }
+
+        }else {
+
+            /*
+             *If the user tried to spam the update button.
+             */
+            updateFailure.setVisible(true);
+            fadeSuccessfullText(updateFailure);
+
         }
+    }
+
+    @FXML
+    private void backToUserPostsView() throws IOException{
+
+        AnchorPane postsPane = FXMLLoader.load(getClass().getResource("/view/profile_usersposts.fxml"));
+        injectablePane.getChildren().addAll(postsPane);
     }
 
     private boolean validatePostHasChanged(){
@@ -137,5 +176,14 @@ public class ProfilePostUpdateController implements Initializable {
                 "UTC+1", "UTC+2",
                 "UTC+3", "UTC+4",
                 "UTC+5"));
+    }
+
+    private void fadeSuccessfullText(Text textToFade){
+
+        FadeTransition ft = new FadeTransition(Duration.millis(5000), textToFade);
+        ft.setFromValue(1.0);
+        ft.setToValue(0.0);
+
+        ft.play();
     }
 }
