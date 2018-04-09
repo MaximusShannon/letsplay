@@ -7,13 +7,28 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="728.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="728.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.subsection.controllers.ProfileUserPostsController">
    <children>
-      <Pane layoutY="45.0" prefHeight="100.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
+      <Pane layoutY="14.0" prefHeight="100.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
          <children>
             <Text fx:id="updateFailed" fill="WHITE" layoutX="410.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post's created by you">
                <font>
                   <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="updateFailed1" fill="WHITE" layoutX="737.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Displaying: ">
+               <font>
+                  <Font name="Segoe UI Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postCount" fill="WHITE" layoutX="808.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Segoe UI Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="updateFailed12" fill="WHITE" layoutX="827.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post(s)">
+               <font>
+                  <Font name="Segoe UI Italic" size="14.0" />
                </font>
             </Text>
          </children>

@@ -33,4 +33,9 @@
           class = "models.Filter">
     </bean>
 
+    <bean id = "notification"
+          class="models.Notification">
+
+    </bean>
+
 </beans>

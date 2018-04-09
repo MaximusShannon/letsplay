@@ -9,13 +9,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="200.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="200.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.cardcontrollers.UniqueUsersPostController">
    <children>
       <Pane layoutX="6.0" layoutY="7.0" prefHeight="188.0" prefWidth="958.0" style="-fx-background-color: #292E37;">
          <children>
             <Pane layoutX="14.0" layoutY="42.0" prefHeight="2.0" prefWidth="935.0" style="-fx-background-color: #0967a5;" />
-            <Text fx:id="updateFailed" fill="WHITE" layoutX="28.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post Title">
+            <Text fx:id="postTitle" fill="WHITE" layoutX="28.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post Title">
                <font>
                   <Font name="Segoe UI Bold" size="18.0" />
                </font>
@@ -55,32 +54,32 @@
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Text fx:id="updateFailed112" fill="#0967a5" layoutX="158.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18yo" wrappingWidth="176.2861328125">
+            <Text fx:id="age" fill="#0967a5" layoutX="158.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18yo" wrappingWidth="176.2861328125">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Text fx:id="updateFailed1121" fill="#0967a5" layoutX="158.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English" wrappingWidth="176.2861328125">
+            <Text fx:id="language" fill="#0967a5" layoutX="158.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English" wrappingWidth="176.2861328125">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Text fx:id="updateFailed11211" fill="#0967a5" layoutX="158.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UTC" wrappingWidth="176.2861328125">
+            <Text fx:id="timeZone" fill="#0967a5" layoutX="158.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UTC" wrappingWidth="176.2861328125">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Text fx:id="updateFailed112111" fill="#0967a5" layoutX="158.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hup hup pvp here we go" wrappingWidth="176.2861328125">
+            <Text fx:id="tags" fill="#0967a5" layoutX="158.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hup hup pvp here we go" wrappingWidth="176.2861328125">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Text fx:id="updateFailed1122" fill="#0967a5" layoutX="547.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="176.2861328125">
+            <Text fx:id="applicationCount" fill="#0967a5" layoutX="547.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="176.2861328125">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Text fx:id="updateFailed11221" fill="#0967a5" layoutX="547.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="176.2861328125">
+            <Text fx:id="commentCount" fill="#0967a5" layoutX="547.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="176.2861328125">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
@@ -95,7 +94,7 @@
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Button layoutX="804.0" layoutY="58.0" mnemonicParsing="false" opacity="0.0" prefHeight="24.0" prefWidth="118.0" stylesheets="@../css/mainviewbuttons.css" />
+            <Button fx:id="deletePostButton" layoutX="804.0" layoutY="54.0" mnemonicParsing="false" opacity="0.0" prefHeight="32.0" prefWidth="118.0" stylesheets="@../css/mainviewbuttons.css" />
             <ImageView fitHeight="24.0" fitWidth="36.0" layoutX="804.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/createposticon.png" />
@@ -106,7 +105,7 @@
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Button layoutX="805.0" layoutY="96.0" mnemonicParsing="false" opacity="0.0" prefHeight="24.0" prefWidth="118.0" stylesheets="@../css/mainviewbuttons.css" />
+            <Button layoutX="804.0" layoutY="91.0" mnemonicParsing="false" opacity="0.0" prefHeight="32.0" prefWidth="118.0" stylesheets="@../css/mainviewbuttons.css" />
             <ImageView fitHeight="24.0" fitWidth="36.0" layoutX="899.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
                <image>
                   <Image url="@../images/arrowicon.png" />
@@ -117,11 +116,21 @@
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Button layoutX="814.0" layoutY="130.0" mnemonicParsing="false" onAction="#loadRegisterView" opacity="0.0" prefHeight="48.0" prefWidth="118.0">
+            <Button layoutX="814.0" layoutY="130.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="118.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Text fill="WHITE" layoutX="593.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post ID: ">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text fx:id="postId" fill="WHITE" layoutX="635.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post ID: ">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
    </children>

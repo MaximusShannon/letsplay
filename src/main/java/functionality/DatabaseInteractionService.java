@@ -10,6 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseInteractionService {
@@ -111,4 +112,22 @@ public class DatabaseInteractionService {
 
         sessionFactory.close();
     }
+
+    public ArrayList<Post> filterPostsByUserId(){
+
+        ArrayList<Post> userPosts = new ArrayList<>();
+        for(int i = 0; i < postsFound.size(); i++){
+
+            if(postsFound.get(i).getGamer().getId() == models.Session.gamerSession.getId()){
+
+                userPosts.add(postsFound.get(i));
+            }
+        }
+
+        return userPosts;
+    }
+
+
+
+
 }

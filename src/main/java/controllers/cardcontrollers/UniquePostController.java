@@ -10,7 +10,6 @@ public class UniquePostController {
     public Text postDescription;
     public Text postTags;
     public Text postLanguage;
-
     /*
     * Microphone required to language spoken image views to notify the user
     * which requirements are activated
