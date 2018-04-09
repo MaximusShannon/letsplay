@@ -42,10 +42,6 @@ public class ProfilePostUpdateController implements Initializable {
     @FXML private Button updatePostButton;
     @FXML private Button backButton;
 
-    //TODO: Notify the user that the post has been updated.
-    //TODO: Add functionality for the back button in the top bar.
-
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 

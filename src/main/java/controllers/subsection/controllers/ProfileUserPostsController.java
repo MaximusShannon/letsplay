@@ -5,9 +5,14 @@ import functionality.DatabaseInteractionService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import models.Post;
 import models.Session;
 
@@ -15,6 +20,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class ProfileUserPostsController implements Initializable {
@@ -78,13 +84,28 @@ public class ProfileUserPostsController implements Initializable {
 
                 //TODO: Maybe display a confirmation box in here.
 
-                //deletePost method returns a notification that it has been deleted.
-                Session.notifcations.add(dbService.deletePost(post.getId()));
+                Alert deleteAlert = new Alert(Alert.AlertType.CONFIRMATION);
+                deleteAlert.setTitle("Confirmation Dialog");
+                deleteAlert.setHeaderText("Are you sure you want to delete this post?");
+                deleteAlert.setContentText("Please choose. . .");
 
-                usersPostList.remove(post);
-                postsVbox.getChildren().remove(node);
+                Stage alertStage = (Stage) deleteAlert.getDialogPane().getScene().getWindow();
+                alertStage.getIcons().add(new Image("/images/letsplay_icon.png"));
 
-                setPostCountText();
+                Optional<ButtonType> result = deleteAlert.showAndWait();
+
+                if(result.get() == ButtonType.OK){
+
+                    Session.notifcations.add(dbService.deletePost(post.getId()));
+
+                    usersPostList.remove(post);
+                    postsVbox.getChildren().remove(node);
+
+                    setPostCountText();
+                }else {
+
+                    deleteAlert.close();
+                }
             });
 
             uniqueUsersPostController.updatePostButton.setOnMouseClicked(e ->{
