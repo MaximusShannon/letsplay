@@ -1,30 +1,21 @@
 package controllers;
 
-import functionality.DatabaseInteractionService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-import models.Post;
-
 import java.io.IOException;
 import java.net.URL;
-import java.util.Collections;
 import java.util.ResourceBundle;
 
 public class ProfileController implements Initializable {
 
-    @FXML
-    private AnchorPane injectablePane;
-    @FXML
-    private Pane profileBlueBar;
-    @FXML
-    private Pane postsBlueBar;
-    @FXML
-    private Pane groupsBlueBar;
-    @FXML
-    private Pane matchmakingBlueBar;
+    @FXML private AnchorPane injectablePane;
+    @FXML private Pane profileBlueBar;
+    @FXML private Pane postsBlueBar;
+    @FXML private Pane groupsBlueBar;
+    @FXML private Pane matchmakingBlueBar;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -86,6 +77,5 @@ public class ProfileController implements Initializable {
         groupsBlueBar.setVisible(false);
         matchmakingBlueBar.setVisible(false);
     }
-
 
 }
