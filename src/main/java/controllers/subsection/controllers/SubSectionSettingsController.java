@@ -9,10 +9,8 @@ import java.util.ResourceBundle;
 
 public class SubSectionSettingsController implements Initializable {
 
-    @FXML
-    private Slider sensitivitySlider;
-    @FXML
-    private Slider ageRangeSlider;
+    @FXML private Slider sensitivitySlider;
+    @FXML private Slider ageRangeSlider;
 
     @Override
     public void initialize(URL url, ResourceBundle rb){
