@@ -20,48 +20,26 @@ public class ProfileProfileInformationController implements Initializable {
     private DatabaseInteractionService dbService;
     private Validator validator;
 
-    @FXML
-    private Text userName;
-    @FXML
-    private Text interests;
-    @FXML
-    private Text firstName;
-    @FXML
-    private Text surname;
-    @FXML
-    private Text bio;
-    @FXML
-    private Text email;
-    @FXML
-    private Text location;
-    @FXML
-    private Text postCount;
-    @FXML
-    private Text commentCount;
-    @FXML
-    private Text applicationCount;
-    @FXML
-    private Text updateFailed;
-    @FXML
-    private TextField firstnameEdit;
-    @FXML
-    private TextField surnameEdit;
-    @FXML
-    private TextField emailEdit;
-    @FXML
-    private TextField locationEdit;
-    @FXML
-    private TextField bioEdit;
-    @FXML
-    private TextField interestsEdit;
-    @FXML
-    private Button editProfile;
-    @FXML
-    private Button updateProfile;
-    @FXML
-    private Button cancelUpdate;
-
-
+    @FXML private Text userName;
+    @FXML private Text interests;
+    @FXML private Text firstName;
+    @FXML private Text surname;
+    @FXML private Text bio;
+    @FXML private Text email;
+    @FXML private Text location;
+    @FXML private Text postCount;
+    @FXML private Text commentCount;
+    @FXML private Text applicationCount;
+    @FXML private Text updateFailed;
+    @FXML private TextField firstnameEdit;
+    @FXML private TextField surnameEdit;
+    @FXML private TextField emailEdit;
+    @FXML private TextField locationEdit;
+    @FXML private TextField bioEdit;
+    @FXML private TextField interestsEdit;
+    @FXML private Button editProfile;
+    @FXML private Button updateProfile;
+    @FXML private Button cancelUpdate;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
