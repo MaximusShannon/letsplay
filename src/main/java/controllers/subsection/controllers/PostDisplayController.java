@@ -29,35 +29,17 @@ public class PostDisplayController implements Initializable {
     private List<Post> postList;
     private List<Post> filteredPosts;
     private List<Post> filteredByRequirements;
-    private String languageSelected;
-    private String timeZoneSelected;
-    private boolean casualPlayersAccepted;
-    private boolean competitivePlayersAccepted;
-    private boolean malesAccepted;
-    private boolean femalesAccepted;
-
     public static String game;
-
-    @FXML
-    private VBox postsVbox;
-    @FXML
-    private Text postCount;
-    @FXML
-    private Text refreshText;
-    @FXML
-    private ChoiceBox<String> languageFilter;
-    @FXML
-    private ChoiceBox<String> timeZoneFilter;
-    @FXML
-    private CheckBox casualAcceptedFilter;
-    @FXML
-    private CheckBox compAcceptedFilter;
-    @FXML
-    private CheckBox acceptMalesFilter;
-    @FXML
-    private CheckBox acceptFemalesFilter;
-    @FXML
-    private CheckBox micRequired;
+    @FXML private VBox postsVbox;
+    @FXML private Text postCount;
+    @FXML private Text refreshText;
+    @FXML private ChoiceBox<String> languageFilter;
+    @FXML private ChoiceBox<String> timeZoneFilter;
+    @FXML private CheckBox casualAcceptedFilter;
+    @FXML private CheckBox compAcceptedFilter;
+    @FXML private CheckBox acceptMalesFilter;
+    @FXML private CheckBox acceptFemalesFilter;
+    @FXML private CheckBox micRequired;
 
 
     @Override

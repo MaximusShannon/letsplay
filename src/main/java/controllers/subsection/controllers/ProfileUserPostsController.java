@@ -6,7 +6,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
@@ -81,8 +80,6 @@ public class ProfileUserPostsController implements Initializable {
             uniqueUsersPostController.postId.setText(Integer.toString(post.getId()));
 
             uniqueUsersPostController.deletePostButton.setOnMouseClicked(e ->{
-
-                //TODO: Maybe display a confirmation box in here.
 
                 Alert deleteAlert = new Alert(Alert.AlertType.CONFIRMATION);
                 deleteAlert.setTitle("Confirmation Dialog");

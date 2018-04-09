@@ -59,31 +59,6 @@ public class MainViewController implements Initializable {
         userNameText.setText(Session.gamerSession.getUserName());
     }
 
-    /**
-     * TODO: on logout show confirmation box
-     * Time on problem 2 hrs had to leave.
-     */
-    private void loadConfirmationBox(){
-
-        try{
-
-            Stage confirmationBox = new Stage();
-
-            Parent root = FXMLLoader.load(getClass().getResource("/view/logoutconfirmationbox.fxml"));
-            confirmationBox.setTitle("Are you sure?");
-            confirmationBox.getIcons().add(new Image("/images/letsplay_icon.png"));
-            confirmationBox.setScene(new Scene(root, 400, 200));
-            confirmationBox.setResizable(false);
-            confirmationBox.requestFocus();
-            confirmationBox.show();
-
-        }catch (Exception e){
-
-            e.printStackTrace();
-        }
-
-    }
-
     @FXML
     private void handleLogoutRequest(){
         
