@@ -91,8 +91,9 @@ public class ProfileUserPostsController implements Initializable {
 
                 try{
 
-                    displayUpdatePostView();
                     Session.updateablePost = post;
+                    displayUpdatePostView();
+
 
                 }catch (Exception i){
 
