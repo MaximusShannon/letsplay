@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.spi.ServiceException;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -144,10 +145,18 @@ public class DatabaseInteractionService {
 
     private void initFactory(){
 
-        sessionFactory = new Configuration()
-                .configure()
-                .addAnnotatedClass(Gamer.class)
-                .buildSessionFactory();
+        try{
+            sessionFactory = new Configuration()
+                    .configure()
+                    .addAnnotatedClass(Gamer.class)
+                    .buildSessionFactory();
+
+        }catch (ServiceException e){
+
+            System.out.println("Caught");
+
+        }
+
     }
 
     public void closeFactory(){

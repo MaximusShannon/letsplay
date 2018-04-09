@@ -18,7 +18,11 @@ import javafx.util.Duration;
 import models.Gamer;
 import models.Session;
 
+import java.net.ConnectException;
+
 public class LoginController {
+
+
 
     private Validator validator;
     private Authentication authenticator;
@@ -28,6 +32,7 @@ public class LoginController {
     @FXML private TextField userNameField;
     @FXML private PasswordField passwordField;
     @FXML private Text loginFailureText;
+    @FXML private Text serverDownMessage;
 
     @FXML
     private void loadRegisterView(){
@@ -52,28 +57,42 @@ public class LoginController {
     @FXML
     private void handleLoginRequest(){
 
-        validator = new Validator();
-        authenticator = new Authentication();
+        try{
 
-        if(validator.validateLogin(userNameField.getText(), passwordField.getText())){
+            validator = new Validator();
+            authenticator = new Authentication();
 
-            if(authenticator.checkDoesUsernameExist(userNameField.getText())){
+            if(validator.validateLogin(userNameField.getText(), passwordField.getText())){
 
-                gamer = authenticator.fetchExistingGamer(userNameField.getText());
 
-                if(authenticator.checkPasswordsMatch(passwordField.getText(), gamer.getPassword())){
+                if(authenticator.checkDoesUsernameExist(userNameField.getText())){
 
-                    Session.gamerSession = gamer;
-                    loadHomeView();
+                    gamer = authenticator.fetchExistingGamer(userNameField.getText());
+
+                    if(authenticator.checkPasswordsMatch(passwordField.getText(), gamer.getPassword())){
+
+                        Session.gamerSession = gamer;
+                        loadHomeView();
+
+                    }else{
+                        showFailedLoginAttemptMessage();
+                    }
 
                 }else{
                     showFailedLoginAttemptMessage();
                 }
-
-            }else{
-                showFailedLoginAttemptMessage();
             }
+
+        }catch (NullPointerException e){
+
+            displayServerDownMessage();
+
         }
+    }
+
+    private void displayServerDownMessage(){
+
+        serverDownMessage.setVisible(true);
     }
 
     private void closeStage(){
