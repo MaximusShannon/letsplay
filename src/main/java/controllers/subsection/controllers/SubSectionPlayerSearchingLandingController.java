@@ -26,26 +26,16 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
     private int rb6sCount;
     private int dayzCount;
 
-    @FXML
-    private AnchorPane playerSearchingPane;
-    @FXML
-    private Pane fortnitePane;
-    @FXML
-    private Text fortnitePostCount;
-    @FXML
-    private Text pubgPostCount;
-    @FXML
-    private Text lolPostCount;
-    @FXML
-    private Text rustPostCount;
-    @FXML
-    private Text eftPostCount;
-    @FXML
-    private Text csgoPostCount;
-    @FXML
-    private Text rb6sPostCount;
-    @FXML
-    private Text dayzPostCount;
+    @FXML private AnchorPane playerSearchingPane;
+    @FXML private Pane fortnitePane;
+    @FXML private Text fortnitePostCount;
+    @FXML private Text pubgPostCount;
+    @FXML private Text lolPostCount;
+    @FXML private Text rustPostCount;
+    @FXML private Text eftPostCount;
+    @FXML private Text csgoPostCount;
+    @FXML private Text rb6sPostCount;
+    @FXML private Text dayzPostCount;
 
     @Override
     public void initialize(URL url, ResourceBundle rb){
