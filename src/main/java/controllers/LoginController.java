@@ -24,14 +24,10 @@ public class LoginController {
     private Authentication authenticator;
     private Gamer gamer;
 
-    @FXML
-    private AnchorPane loginStage;
-    @FXML
-    private TextField userNameField;
-    @FXML
-    private PasswordField passwordField;
-    @FXML
-    private Text loginFailureText;
+    @FXML private AnchorPane loginStage;
+    @FXML private TextField userNameField;
+    @FXML private PasswordField passwordField;
+    @FXML private Text loginFailureText;
 
     @FXML
     private void loadRegisterView(){
