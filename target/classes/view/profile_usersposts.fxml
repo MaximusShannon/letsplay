@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="728.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.subsection.controllers.ProfileUserPostsController">
    <children>
-      <Pane layoutY="14.0" prefHeight="100.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
+      <Pane layoutY="45.0" prefHeight="100.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
          <children>
             <Text fx:id="updateFailed" fill="WHITE" layoutX="410.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post's created by you">
                <font>

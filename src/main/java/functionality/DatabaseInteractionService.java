@@ -1,6 +1,8 @@
 package functionality;
 
+import javafx.geometry.Pos;
 import models.Gamer;
+import models.Notification;
 import models.Post;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -10,6 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +23,7 @@ public class DatabaseInteractionService {
     private SessionFactory sessionFactory;
     private List<Gamer> gamersFound;
     private List<Post> postsFound;
+    private Notification notification;
 
     public DatabaseInteractionService(){
 
@@ -127,7 +131,31 @@ public class DatabaseInteractionService {
         return userPosts;
     }
 
+    public Notification deletePost(int postId){
 
+        session = sessionFactory.openSession();
 
+        Transaction tx = session.beginTransaction();
+
+        Post toDelete = session.load(Post.class, postId);
+        session.delete(toDelete);
+
+        session.flush();
+        tx.commit();
+
+        session.close();
+        setDeleteNotification();
+
+        return notification;
+    }
+
+    private void setDeleteNotification(){
+
+        Timestamp newStamp = new Timestamp(System.currentTimeMillis());
+
+        notification = new Notification();
+        notification.setMessage("Your post has been deleted");
+        notification.setTimestamp(newStamp);
+    }
 
 }

@@ -63,4 +63,12 @@
         <property name="acceptFemales" type="boolean" column="accept_females"/>
     </class>
 
+    <class name="models.Notification" table="NOTIFICATIONS">
+        <id name="id" column="NOTIFICATION_ID">
+                <generator class="native"/>
+        </id>
+        <property name="message" type="java.lang.String" column="notification_message"/>
+        <property name="timestamp" type="timestamp" column="time_stamp"/>
+    </class>
+
 </hibernate-mapping>

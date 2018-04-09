@@ -9,8 +9,10 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import models.Post;
+import models.Session;
 
 import java.net.URL;
+import java.util.Collections;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -26,8 +28,17 @@ public class ProfileUserPostsController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         getUserLoggedInPostList();
+        reversePostList();
         displayAllPosts();
         setPostCountText();
+    }
+
+    /**
+     * We reverse it so the newest posts can be displayed at the top.
+     */
+    private void reversePostList(){
+
+        Collections.reverse(usersPostList);
     }
 
     private void getUserLoggedInPostList(){
@@ -35,6 +46,7 @@ public class ProfileUserPostsController implements Initializable {
         dbService = new DatabaseInteractionService();
         dbService.fetchPostList();
         usersPostList = dbService.filterPostsByUserId();
+        //dbService.closeFactory();
     }
 
     private void displayAllPosts(){
@@ -62,6 +74,15 @@ public class ProfileUserPostsController implements Initializable {
 
             uniqueUsersPostController.deletePostButton.setOnMouseClicked(e ->{
 
+                //TODO: Maybe display a confirmation box in here.
+
+                //deletePost method returns a notification that it has been deleted.
+                Session.notifcations.add(dbService.deletePost(post.getId()));
+
+                usersPostList.remove(post);
+                postsVbox.getChildren().remove(node);
+
+                setPostCountText();
 
             });
 

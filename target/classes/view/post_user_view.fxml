@@ -94,7 +94,7 @@
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Button layoutX="804.0" layoutY="58.0" mnemonicParsing="false" opacity="0.0" prefHeight="24.0" prefWidth="118.0" stylesheets="@../css/mainviewbuttons.css" />
+            <Button fx:id="deletePostButton" layoutX="804.0" layoutY="54.0" mnemonicParsing="false" opacity="0.0" prefHeight="32.0" prefWidth="118.0" stylesheets="@../css/mainviewbuttons.css" />
             <ImageView fitHeight="24.0" fitWidth="36.0" layoutX="804.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/createposticon.png" />
@@ -105,7 +105,7 @@
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Button layoutX="805.0" layoutY="96.0" mnemonicParsing="false" opacity="0.0" prefHeight="24.0" prefWidth="118.0" stylesheets="@../css/mainviewbuttons.css" />
+            <Button layoutX="804.0" layoutY="91.0" mnemonicParsing="false" opacity="0.0" prefHeight="32.0" prefWidth="118.0" stylesheets="@../css/mainviewbuttons.css" />
             <ImageView fitHeight="24.0" fitWidth="36.0" layoutX="899.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
                <image>
                   <Image url="@../images/arrowicon.png" />
