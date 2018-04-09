@@ -44,26 +44,16 @@ public class RegisterController {
     /**
      * View properties binded.
      */
-    @FXML
-    private AnchorPane registerStage;
-    @FXML
-    private TextField firstNameText;
-    @FXML
-    private TextField secondNameText;
-    @FXML
-    private TextField emailText;
-    @FXML
-    private TextField userNameText;
-    @FXML
-    private PasswordField passwordOne;
-    @FXML
-    private PasswordField passwordTwo;
-    @FXML
-    private Text hintMessage;
-    @FXML
-    private Text registrationSuccesful;
-    @FXML
-    private Text whoopsMessage;
+    @FXML private AnchorPane registerStage;
+    @FXML private TextField firstNameText;
+    @FXML private TextField secondNameText;
+    @FXML private TextField emailText;
+    @FXML private TextField userNameText;
+    @FXML private PasswordField passwordOne;
+    @FXML private PasswordField passwordTwo;
+    @FXML private Text hintMessage;
+    @FXML private Text registrationSuccesful;
+    @FXML private Text whoopsMessage;
 
     /**
      * This method loads the loginView, this is used for the button to go back to the
