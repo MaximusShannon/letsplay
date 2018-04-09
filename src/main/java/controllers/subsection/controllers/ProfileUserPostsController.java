@@ -11,6 +11,7 @@ import javafx.scene.text.Text;
 import models.Post;
 import models.Session;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.Collections;
 import java.util.List;
@@ -21,6 +22,7 @@ public class ProfileUserPostsController implements Initializable {
     private DatabaseInteractionService dbService;
     private List<Post> usersPostList;
 
+    @FXML private AnchorPane injectablePane;
     @FXML private VBox postsVbox;
     @FXML private Text postCount;
 
@@ -83,7 +85,19 @@ public class ProfileUserPostsController implements Initializable {
                 postsVbox.getChildren().remove(node);
 
                 setPostCountText();
+            });
 
+            uniqueUsersPostController.updatePostButton.setOnMouseClicked(e ->{
+
+                try{
+
+                    displayUpdatePostView();
+                    Session.updateablePost = post;
+
+                }catch (Exception i){
+
+                    i.printStackTrace();
+                }
             });
 
             //TODO: add support for application and comment count on the post.
@@ -102,5 +116,14 @@ public class ProfileUserPostsController implements Initializable {
 
             postCount.setText(Integer.toString(usersPostList.size()));
         }
+    }
+
+    @FXML
+    private void displayUpdatePostView() throws IOException{
+
+        AnchorPane updatePostView = FXMLLoader
+                .load(getClass().getResource("/view/post_update_view.fxml"));
+
+        injectablePane.getChildren().setAll(updatePostView);
     }
 }

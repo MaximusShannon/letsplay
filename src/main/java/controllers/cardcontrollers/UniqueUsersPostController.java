@@ -14,4 +14,5 @@ public class UniqueUsersPostController {
     public Text commentCount;
     public Text postId;
     public Button deletePostButton;
+    public Button updatePostButton;
 }
