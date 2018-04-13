@@ -71,7 +71,7 @@
         <property name="timestamp" type="timestamp" column="time_stamp"/>
     </class>
 
-    <class name="models.Group" table="NOTIFICATIONS">
+    <class name="models.Group" table="GROUPS">
         <id name="groupId" column="NOTIFICATION_ID">
             <generator class="native"/>
         </id>
@@ -85,5 +85,14 @@
         <property name="groupComsAddress" type="java.lang.String" column="group_coms_address"/>
         <property name="groupPictureReference" type="java.lang.String" column="group_picture_ref"/>
     </class>
+
+    <class name="models.MemberList" table="MEMBERLISTS">
+        <id name="memberListId" column="MEMBERLIST_ID">
+            <generator class="native"/>
+        </id>
+    </class>
+
+
+
 
 </hibernate-mapping>
