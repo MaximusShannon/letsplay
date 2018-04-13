@@ -71,4 +71,28 @@
         <property name="timestamp" type="timestamp" column="time_stamp"/>
     </class>
 
+    <class name="models.Group" table="GROUPS">
+        <id name="groupId" column="NOTIFICATION_ID">
+            <generator class="native"/>
+        </id>
+        <property name="groupName" type="java.lang.String" column="group_name"/>
+        <property name="groupDescription" type="java.lang.String" column="group_description"/>
+        <property name="groupVisability" type="java.lang.String" column="group_visability"/>
+        <property name="mainGame" type="java.lang.String" column="group_game"/>
+        <property name="comsChannel" type="java.lang.String" column="group_coms_channel"/>
+        <property name="activityLevel" type="java.lang.String" column="group_activity_level"/>
+        <property name="groupLanguageSpoken" type="java.lang.String" column="group_lang_spoken"/>
+        <property name="groupComsAddress" type="java.lang.String" column="group_coms_address"/>
+        <property name="groupPictureReference" type="java.lang.String" column="group_picture_ref"/>
+    </class>
+
+    <class name="models.MemberList" table="MEMBERLISTS">
+        <id name="memberListId" column="MEMBERLIST_ID">
+            <generator class="native"/>
+        </id>
+    </class>
+
+
+
+
 </hibernate-mapping>
