@@ -17,12 +17,13 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import models.Gamer;
 import models.Session;
+import org.apache.log4j.Logger;
 
 import java.net.ConnectException;
 
 public class LoginController {
 
-
+    private static final Logger logger = Logger.getLogger(LoginController.class);
 
     private Validator validator;
     private Authentication authenticator;
@@ -36,6 +37,10 @@ public class LoginController {
 
     @FXML
     private void loadRegisterView(){
+
+        if(logger.isDebugEnabled()){
+            logger.debug("private void loadRegisterView() called");
+        }
 
         try{
 
@@ -86,6 +91,7 @@ public class LoginController {
         }catch (NullPointerException e){
 
             displayServerDownMessage();
+            logger.error("This is a null-pointer-error");
 
         }
     }
