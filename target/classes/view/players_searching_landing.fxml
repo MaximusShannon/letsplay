@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -51,6 +52,9 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
       <Pane layoutX="278.0" layoutY="61.0" onMouseClicked="#loadPUBGPostDisplayView" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
          <children>
@@ -89,6 +93,9 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
       <Pane layoutX="505.0" layoutY="61.0" onMouseClicked="#loadLeagueOfLegendsPostView" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
          <children>
@@ -127,6 +134,9 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
       <Pane layoutX="737.0" layoutY="61.0" onMouseClicked="#loadRustPostView" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
          <children>
@@ -165,6 +175,9 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
       <Pane layoutX="48.0" layoutY="438.0" onMouseClicked="#loadEscapeFromTarkovPostView" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
          <children>
@@ -203,6 +216,9 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
       <Pane layoutX="278.0" layoutY="438.0" onMouseClicked="#loadCsgoPostView" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
          <children>
@@ -241,6 +257,9 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
       <Pane layoutX="505.0" layoutY="438.0" onMouseClicked="#loadRb6sPostView" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
          <children>
@@ -279,6 +298,9 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
       <Pane layoutX="737.0" layoutY="438.0" onMouseClicked="#loadDayzPostView" prefHeight="340.0" prefWidth="210.0" style="-fx-background-color: #292e37;">
          <children>
@@ -317,6 +339,9 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
    </children>
 </AnchorPane>
