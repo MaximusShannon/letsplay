@@ -41,4 +41,7 @@
           class="models.Group">
     </bean>
 
+    <bean id="memberList"
+        class="models.MemberList">
+    </bean>
 </beans>
