@@ -101,7 +101,7 @@ public class PostDisplayController implements Initializable {
 
         try{
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/post_view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dynamiclycreatedviews/post_view.fxml"));
             AnchorPane node = loader.load();
 
             UniquePostController uniquePostController = loader.getController();

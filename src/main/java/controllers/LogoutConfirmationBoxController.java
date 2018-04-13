@@ -8,8 +8,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import models.Session;
 
-import java.awt.*;
-
 public class LogoutConfirmationBoxController {
 
     @FXML
@@ -48,7 +46,7 @@ public class LogoutConfirmationBoxController {
 
             Stage registerStage = new Stage();
 
-            Parent root = FXMLLoader.load(getClass().getResource("/view/login.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/frameviews/login.fxml"));
             registerStage.setTitle("Login");
             registerStage.setScene(new Scene(root, 900, 500));
             registerStage.show();

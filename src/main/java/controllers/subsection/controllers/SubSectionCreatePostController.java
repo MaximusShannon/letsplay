@@ -13,13 +13,10 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 import models.Post;
 import models.Session;
-import org.hibernate.annotations.Check;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
 import java.net.URL;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class SubSectionCreatePostController implements Initializable {
@@ -115,7 +112,7 @@ public class SubSectionCreatePostController implements Initializable {
 
         try{
 
-            AnchorPane postCreation_sucess = FXMLLoader.load(getClass().getResource("/view/postcreation_success.fxml"));
+            AnchorPane postCreation_sucess = FXMLLoader.load(getClass().getResource("/view/feedbackviews/postcreation_success.fxml"));
             settingsView.getChildren().setAll(postCreation_sucess);
         }catch (IOException e){
 

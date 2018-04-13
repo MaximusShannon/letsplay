@@ -92,7 +92,7 @@ public class GroupCreationController implements Initializable {
 
     private void loadSuccessPane() throws IOException{
 
-        AnchorPane groupCreationSuccess = FXMLLoader.load(getClass().getResource("/view/group_creation_success.fxml"));
+        AnchorPane groupCreationSuccess = FXMLLoader.load(getClass().getResource("/view/feedbackviews/group_creation_success.fxml"));
         injectablePane.getChildren().setAll(groupCreationSuccess);
     }
 

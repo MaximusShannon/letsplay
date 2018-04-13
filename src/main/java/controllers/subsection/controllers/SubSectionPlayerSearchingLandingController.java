@@ -118,7 +118,7 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
 
             PostDisplayController.game = "fortnite";
 
-            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/innerviews/postsdisplay.fxml"));
             playerSearchingPane.getChildren().setAll(postDisplay);
 
         }catch (Exception e){
@@ -134,7 +134,7 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
 
             PostDisplayController.game = "pubg";
 
-            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/innerviews/postsdisplay.fxml"));
             playerSearchingPane.getChildren().setAll(postDisplay);
         }catch (Exception e){
 
@@ -149,7 +149,7 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
 
             PostDisplayController.game = "league of legends";
 
-            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/innerviews/postsdisplay.fxml"));
             playerSearchingPane.getChildren().setAll(postDisplay);
 
         }catch (Exception e){
@@ -165,7 +165,7 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
 
             PostDisplayController.game = "rust";
 
-            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/innerviews/postsdisplay.fxml"));
             playerSearchingPane.getChildren().setAll(postDisplay);
 
         }catch (Exception e){
@@ -181,7 +181,7 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
 
             PostDisplayController.game = "escape from tarkov";
 
-            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/innerviews/postsdisplay.fxml"));
             playerSearchingPane.getChildren().setAll(postDisplay);
         }catch (Exception e){
 
@@ -196,7 +196,7 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
 
             PostDisplayController.game = "counter-strike: global offensive";
 
-            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/innerviews/postsdisplay.fxml"));
             playerSearchingPane.getChildren().setAll(postDisplay);
         }catch (Exception e){
 
@@ -211,7 +211,7 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
 
             PostDisplayController.game = "rainbow six: siege";
 
-            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/innerviews/postsdisplay.fxml"));
             playerSearchingPane.getChildren().setAll(postDisplay);
         }catch (Exception e){
 
@@ -226,7 +226,7 @@ public class SubSectionPlayerSearchingLandingController implements Initializable
 
             PostDisplayController.game = "dayz";
 
-            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/postsdisplay.fxml"));
+            AnchorPane postDisplay = FXMLLoader.load(getClass().getResource("/view/innerviews/postsdisplay.fxml"));
             playerSearchingPane.getChildren().setAll(postDisplay);
         }catch (Exception e){
 

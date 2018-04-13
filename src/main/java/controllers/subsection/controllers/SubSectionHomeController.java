@@ -52,9 +52,9 @@ public class SubSectionHomeController implements Initializable {
     @FXML
     private void addItemsToHbox() throws IOException{
 
-        Node gamerProfileView = FXMLLoader.load(getClass().getResource("/view/matched-gamer-card.fxml"));
-        Node gamerProfileView2 = FXMLLoader.load(getClass().getResource("/view/matched-gamer-card.fxml"));
-        Pane gamerProfileView3 = FXMLLoader.load(getClass().getResource("/view/matched-gamer-card.fxml"));
+        Node gamerProfileView = FXMLLoader.load(getClass().getResource("/view/dynamiclycreatedviews/matched-gamer-card.fxml"));
+        Node gamerProfileView2 = FXMLLoader.load(getClass().getResource("/view/dynamiclycreatedviews/matched-gamer-card.fxml"));
+        Pane gamerProfileView3 = FXMLLoader.load(getClass().getResource("/view/dynamiclycreatedviews/matched-gamer-card.fxml"));
         gamerProfileView3.setPadding(new Insets(10,10,10,10));
         matchedGamersList.getChildren().addAll(gamerProfileView, gamerProfileView2, gamerProfileView3);
     }

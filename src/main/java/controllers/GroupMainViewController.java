@@ -16,7 +16,7 @@ public class GroupMainViewController {
     @FXML
     private void openCreateViewView() throws IOException{
 
-        AnchorPane createGroupPane = FXMLLoader.load(getClass().getResource("/view/creategroupview.fxml"));
+        AnchorPane createGroupPane = FXMLLoader.load(getClass().getResource("/view/innerviews/creategroupview.fxml"));
         injectablePane.getChildren().setAll(createGroupPane);
     }
 }

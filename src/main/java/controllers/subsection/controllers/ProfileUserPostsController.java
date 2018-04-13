@@ -68,7 +68,7 @@ public class ProfileUserPostsController implements Initializable {
 
         try{
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/post_user_view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/innerviews/inner_innerviews/post_user_view.fxml"));
             AnchorPane node = loader.load();
 
             UniqueUsersPostController uniqueUsersPostController = loader.getController();
@@ -141,7 +141,7 @@ public class ProfileUserPostsController implements Initializable {
     private void displayUpdatePostView() throws IOException{
 
         AnchorPane updatePostView = FXMLLoader
-                .load(getClass().getResource("/view/post_update_view.fxml"));
+                .load(getClass().getResource("/view/innerviews/inner_innerviews/post_update_view.fxml"));
 
         injectablePane.getChildren().setAll(updatePostView);
     }

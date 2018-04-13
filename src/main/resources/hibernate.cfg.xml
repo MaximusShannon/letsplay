@@ -12,7 +12,7 @@
         <property name="connection.username">root</property>
         <property name="connection.password"></property>
 
-        <!-- JDBC connection pool settings ... using built-in test pool -->
+        <!-- JDBC connection pool settings ... using built-in frameviews pool -->
         <property name="connection.pool_size">1</property>
 
         <!-- Select our SQL dialect -->

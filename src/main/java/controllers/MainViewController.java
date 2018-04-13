@@ -6,8 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
@@ -52,7 +50,7 @@ public class MainViewController implements Initializable {
 
             Stage loginStage = new Stage();
 
-            Parent root = FXMLLoader.load(getClass().getResource("/view/login.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/frameviews/login.fxml"));
             loginStage.setTitle("Login");
             loginStage.setScene(new Scene(root, 900, 500));
             loginStage.getIcons().add(new Image("/images/letsplay_icon.png"));
@@ -75,7 +73,7 @@ public class MainViewController implements Initializable {
     @FXML
     private void loadHomePane() throws IOException {
 
-        AnchorPane homePane = FXMLLoader.load(getClass().getResource("/view/homeview.fxml"));
+        AnchorPane homePane = FXMLLoader.load(getClass().getResource("/view/innerviews/homeview.fxml"));
         fillerPane.getChildren().setAll(homePane);
         navbarText.setText("Home");
     }
@@ -83,7 +81,7 @@ public class MainViewController implements Initializable {
     @FXML
     private void loadGamersSearchingLanding() throws IOException{
 
-        AnchorPane gamersSearching = FXMLLoader.load(getClass().getResource("/view/players_searching_landing.fxml"));
+        AnchorPane gamersSearching = FXMLLoader.load(getClass().getResource("/view/innerviews/players_searching_landing.fxml"));
         fillerPane.getChildren().setAll(gamersSearching);
         navbarText.setText("Search. . .");
 
@@ -91,7 +89,7 @@ public class MainViewController implements Initializable {
     @FXML
     private void loadProfilePane(ActionEvent event) throws IOException{
 
-        AnchorPane profilePane = FXMLLoader.load(getClass().getResource("/view/profile.fxml"));
+        AnchorPane profilePane = FXMLLoader.load(getClass().getResource("/view/innerviews/profile.fxml"));
         fillerPane.getChildren().setAll(profilePane);
         navbarText.setText("Profile");
     }
@@ -99,7 +97,7 @@ public class MainViewController implements Initializable {
     @FXML
     private void loadCreatePostPane(ActionEvent event) throws IOException{
 
-        AnchorPane createPostPane = FXMLLoader.load(getClass().getResource("/view/createpostview.fxml"));
+        AnchorPane createPostPane = FXMLLoader.load(getClass().getResource("/view/innerviews/createpostview.fxml"));
         fillerPane.getChildren().setAll(createPostPane);
         navbarText.setText("Create a tailored post");
 
@@ -108,7 +106,7 @@ public class MainViewController implements Initializable {
     @FXML
     private void loadHelpPane(ActionEvent event) throws IOException{
 
-        AnchorPane helpPane = FXMLLoader.load(getClass().getResource("/view/helpview.fxml"));
+        AnchorPane helpPane = FXMLLoader.load(getClass().getResource("/view/innerviews/helpview.fxml"));
         fillerPane.getChildren().setAll(helpPane);
         navbarText.setText("Help");
 
@@ -116,14 +114,14 @@ public class MainViewController implements Initializable {
 
     @FXML
     private void loadSettingsPane(ActionEvent event) throws IOException{
-        AnchorPane settingsPane = FXMLLoader.load(getClass().getResource("/view/settingsview.fxml"));
+        AnchorPane settingsPane = FXMLLoader.load(getClass().getResource("/view/innerviews/settingsview.fxml"));
         fillerPane.getChildren().setAll(settingsPane);
         navbarText.setText("Settings");
     }
 
     @FXML
     private void loadGroupsPane(ActionEvent event) throws IOException{
-        AnchorPane groupPane = FXMLLoader.load(getClass().getResource("/view/groupsmainview.fxml"));
+        AnchorPane groupPane = FXMLLoader.load(getClass().getResource("/view/innerviews/groupsmainview.fxml"));
         fillerPane.getChildren().setAll(groupPane);
         navbarText.setText("Groups");
     }

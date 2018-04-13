@@ -66,7 +66,7 @@ public class RegisterController {
 
             Stage registerStage = new Stage();
 
-            Parent root = FXMLLoader.load(getClass().getResource("/view/login.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/frameviews/login.fxml"));
             registerStage.setTitle("Login");
             registerStage.setScene(new Scene(root, 900, 500));
             registerStage.show();

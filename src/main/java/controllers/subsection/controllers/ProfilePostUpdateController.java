@@ -99,7 +99,7 @@ public class ProfilePostUpdateController implements Initializable {
     @FXML
     private void backToUserPostsView() throws IOException{
 
-        AnchorPane postsPane = FXMLLoader.load(getClass().getResource("/view/profile_usersposts.fxml"));
+        AnchorPane postsPane = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/profile_usersposts.fxml"));
         injectablePane.getChildren().addAll(postsPane);
     }
 

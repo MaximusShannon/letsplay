@@ -32,7 +32,7 @@ public class ProfileController implements Initializable {
     @FXML
     private void loadProfileInformationView() throws IOException{
 
-        AnchorPane profileInfoPane = FXMLLoader.load(getClass().getResource("/view/profile_profileinfoview.fxml"));
+        AnchorPane profileInfoPane = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/profile_profileinfoview.fxml"));
         injectablePane.getChildren().setAll(profileInfoPane);
 
         hideBlueBars();
@@ -43,7 +43,7 @@ public class ProfileController implements Initializable {
     @FXML
     private void loadUserPostsView() throws IOException{
 
-        AnchorPane userPostsView = FXMLLoader.load(getClass().getResource("/view/profile_usersposts.fxml"));
+        AnchorPane userPostsView = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/profile_usersposts.fxml"));
         injectablePane.getChildren().setAll(userPostsView);
 
         hideBlueBars();
@@ -53,7 +53,7 @@ public class ProfileController implements Initializable {
     @FXML
     private void loadUserGroupsView() throws IOException{
 
-        AnchorPane userGroupsView = FXMLLoader.load(getClass().getResource("/view/profile_usergroups.fxml"));
+        AnchorPane userGroupsView = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/profile_usergroups.fxml"));
         injectablePane.getChildren().setAll(userGroupsView);
 
         hideBlueBars();
@@ -63,7 +63,7 @@ public class ProfileController implements Initializable {
     @FXML
     private void loadUserMatchmakerSettingsView() throws IOException{
 
-        AnchorPane userMatchmakerSettings = FXMLLoader.load(getClass().getResource("/view/profile_usermatchmaker_settings.fxml"));
+        AnchorPane userMatchmakerSettings = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/profile_usermatchmaker_settings.fxml"));
         injectablePane.getChildren().setAll(userMatchmakerSettings);
 
         hideBlueBars();

@@ -1,7 +1,6 @@
 package controllers;
 
 import functionality.Authentication;
-import functionality.DatabaseInteractionService;
 import functionality.Validator;
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
@@ -18,8 +17,6 @@ import javafx.util.Duration;
 import models.Gamer;
 import models.Session;
 import org.apache.log4j.Logger;
-
-import java.net.ConnectException;
 
 public class LoginController {
 
@@ -46,7 +43,7 @@ public class LoginController {
 
             Stage registerStage = new Stage();
 
-            Parent root = FXMLLoader.load(getClass().getResource("/view/registerview.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/frameviews/registerview.fxml"));
             registerStage.setTitle("Register here");
             registerStage.setScene(new Scene(root, 900, 500));
             registerStage.show();
@@ -112,7 +109,7 @@ public class LoginController {
         try{
             Stage homeViewStage = new Stage();
 
-            Parent root = FXMLLoader.load(getClass().getResource("/view/mainview.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/frameviews/mainview.fxml"));
             homeViewStage.setTitle("Welcome, " + Session.gamerSession.getUserName());
             homeViewStage.getIcons().add(new Image("/images/letsplay_icon.png"));
             homeViewStage.setScene(new Scene(root, 1200, 900));
