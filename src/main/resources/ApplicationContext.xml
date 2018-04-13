@@ -35,7 +35,10 @@
 
     <bean id = "notification"
           class="models.Notification">
+    </bean>
 
+    <bean id = "group"
+          class="models.Group">
     </bean>
 
 </beans>
