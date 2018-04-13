@@ -71,10 +71,11 @@
         <property name="timestamp" type="timestamp" column="time_stamp"/>
     </class>
 
-    <class name="models.Group" table="GROUPS">
-        <id name="groupId" column="NOTIFICATION_ID">
+    <class name="models.GamerGroup" table="GROUPS">
+        <id name="groupId" column="GROUPS_ID">
             <generator class="native"/>
         </id>
+        <property name="adminId" type="java.lang.Integer" column="admin_id"/>
         <property name="groupName" type="java.lang.String" column="group_name"/>
         <property name="groupDescription" type="java.lang.String" column="group_description"/>
         <property name="groupVisability" type="java.lang.String" column="group_visability"/>

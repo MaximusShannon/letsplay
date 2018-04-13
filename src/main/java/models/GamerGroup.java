@@ -5,11 +5,12 @@ import javafx.fxml.FXML;
 import javax.persistence.*;
 
 @Entity
-public class Group {
+public class GamerGroup {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int groupId;
+    private int adminId;
     private String groupName;
     private String groupDescription;
     private String groupVisability; // Public or private
@@ -20,11 +21,24 @@ public class Group {
     private String groupComsAddress;
     private String groupPictureReference;
 
-    //Admin
     @OneToOne
-    private Gamer gamer;
-    @OneToOne
-    //memberlist
+    private MemberList memberList;
+
+    public int getAdminId() {
+        return adminId;
+    }
+
+    public void setAdminId(int adminId) {
+        this.adminId = adminId;
+    }
+
+    public MemberList getMemberList() {
+        return memberList;
+    }
+
+    public void setMemberList(MemberList memberList) {
+        this.memberList = memberList;
+    }
 
     public int getGroupId() {
         return groupId;
@@ -104,13 +118,5 @@ public class Group {
 
     public void setGroupPictureReference(String groupPictureReference) {
         this.groupPictureReference = groupPictureReference;
-    }
-
-    public Gamer getGamer() {
-        return gamer;
-    }
-
-    public void setGamer(Gamer gamer) {
-        this.gamer = gamer;
     }
 }

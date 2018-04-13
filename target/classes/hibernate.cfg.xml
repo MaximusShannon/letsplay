@@ -28,6 +28,8 @@
 
         <mapping class="models.Post"/>
         <mapping class="models.Gamer"/>
+        <mapping class="models.GamerGroup"/>
+        <mapping class="models.MemberList"/>
  
     </session-factory>
 

@@ -1,9 +1,7 @@
 package functionality;
 
 import javafx.geometry.Pos;
-import models.Gamer;
-import models.Notification;
-import models.Post;
+import models.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -104,6 +102,22 @@ public class DatabaseInteractionService {
 
         models.Session.resetSession();
         models.Session.gamerSession = gamer;
+    }
+
+    public Integer[] persistNewGroupAndGroupMemberList(GamerGroup group, MemberList memberList){
+
+        Integer[] ids = new Integer[2];
+
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+
+        ids[0] = (Integer) session.save(group);
+        ids[1] = (Integer) session.save(memberList);
+
+        session.getTransaction().commit();
+        session.close();
+
+        return ids;
     }
 
     /**

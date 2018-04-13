@@ -25,6 +25,10 @@
           class="models.Post">
     </bean>
 
+    <bean id="databaseinteractionservice"
+          class="functionality.DatabaseInteractionService">
+    </bean>
+
     <bean id = "postfunctionalityservice"
         class="functionality.PostFunctionalityService">
     </bean>
@@ -38,10 +42,10 @@
     </bean>
 
     <bean id = "group"
-          class="models.Group">
+          class="models.GamerGroup">
     </bean>
 
-    <bean id="memberList"
+    <bean id="memberlist"
         class="models.MemberList">
     </bean>
 </beans>
