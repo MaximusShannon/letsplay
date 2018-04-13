@@ -11,22 +11,7 @@
 
 <AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text fill="#292e37" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groups Home Page">
-         <font>
-            <Font name="Segoe UI Emoji" size="18.0" />
-         </font>
-      </Text>
-      <Pane layoutX="14.0" layoutY="38.0" prefHeight="3.0" prefWidth="155.0" style="-fx-background-color: #0967A5;" />
-      <Button fx:id="createGroupBtn" layoutX="782.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Create your own group" textFill="WHITE">
-         <graphic>
-            <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/plus.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Pane layoutY="81.0" prefHeight="90.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
+      <Pane layoutY="14.0" prefHeight="90.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
          <children>
             <Text fill="WHITE" layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filters">
                <font>
@@ -36,6 +21,15 @@
             <ChoiceBox layoutX="14.0" layoutY="45.0" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #38444C;" />
             <ChoiceBox layoutX="200.0" layoutY="45.0" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #38444C;" />
             <ChoiceBox layoutX="386.0" layoutY="45.0" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #38444C;" />
+            <Button fx:id="createGroupBtn" layoutX="782.0" layoutY="40.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="189.0" stylesheets="@../css/Sharp.css" text="Create your own group" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </Pane>
    </children>
