@@ -71,7 +71,7 @@
             <Font name="Segoe UI Italic" size="14.0" />
          </font>
       </Text>
-      <TextField fx:id="postTitle" layoutX="65.0" layoutY="225.0" prefHeight="27.0" prefWidth="598.0" promptText="What ever you want. . ." style="-fx-border-color: #292E37;" />
+      <TextField fx:id="groupName" layoutX="65.0" layoutY="225.0" prefHeight="27.0" prefWidth="598.0" promptText="What ever you want. . ." style="-fx-border-color: #292E37;" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="338.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="310.0" />
       <Text fill="#0967a5" layoutX="65.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group name" wrappingWidth="110.33886736631393">
          <font>
@@ -83,13 +83,13 @@
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <TextArea fx:id="postDescription" layoutX="65.0" layoutY="288.0" prefHeight="200.0" prefWidth="598.0" promptText="What does your group do? When do you play? What do you do in that game?" style="-fx-border-color: #292E37;" />
+      <TextArea fx:id="groupDescription" layoutX="65.0" layoutY="288.0" prefHeight="200.0" prefWidth="598.0" promptText="What does your group do? When do you play? What do you do in that game?" style="-fx-border-color: #292E37;" />
       <Text fill="#0967a5" layoutX="92.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Visability" wrappingWidth="143.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="languageSpoken" layoutX="92.0" layoutY="517.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../css/Sharp.css" />
+      <ChoiceBox fx:id="groupVisability" layoutX="92.0" layoutY="517.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../css/Sharp.css" />
       <Text fill="#0967a5" layoutX="409.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Game Played" wrappingWidth="143.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
@@ -101,19 +101,19 @@
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="languageSpoken1" layoutX="92.0" layoutY="587.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../css/Sharp.css" />
+      <ChoiceBox fx:id="comsChannel" layoutX="92.0" layoutY="587.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../css/Sharp.css" />
       <Text fill="#0967a5" layoutX="409.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activity Level" wrappingWidth="191.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="languageSpoken11" layoutX="409.0" layoutY="587.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../css/Sharp.css" />
+      <ChoiceBox fx:id="activityLevel" layoutX="409.0" layoutY="587.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../css/Sharp.css" />
       <Text fill="#0967a5" layoutX="68.0" layoutY="724.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Communication Server Address" wrappingWidth="238.57420948147774">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <TextField fx:id="postTitle1" layoutX="65.0" layoutY="729.0" prefHeight="27.0" prefWidth="598.0" promptText="Discord or teamspeak server address" style="-fx-border-color: #292E37;" />
+      <TextField fx:id="comsAddress" layoutX="65.0" layoutY="729.0" prefHeight="27.0" prefWidth="598.0" promptText="Discord or teamspeak server address" style="-fx-border-color: #292E37;" />
       <Text fill="RED" layoutX="48.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
          <font>
             <Font size="18.0" />
@@ -129,7 +129,7 @@
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="languageSpoken12" layoutX="92.0" layoutY="657.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../css/Sharp.css" />
+      <ChoiceBox fx:id="languageSpoken" layoutX="92.0" layoutY="657.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../css/Sharp.css" />
       <Text fill="RED" layoutX="77.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
          <font>
             <Font size="18.0" />
