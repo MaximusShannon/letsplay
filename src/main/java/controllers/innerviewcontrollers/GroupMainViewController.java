@@ -12,9 +12,11 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import models.GamerGroup;
 import models.MemberList;
+import models.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
+import java.lang.reflect.Member;
 import java.net.URL;
 import java.util.Collections;
 import java.util.List;
@@ -55,6 +57,7 @@ public class GroupMainViewController implements Initializable {
         }
 
         setGroupCount();
+        closeContext();
     }
 
     private void setGroupCount(){
@@ -65,6 +68,7 @@ public class GroupMainViewController implements Initializable {
     private void displayUniqueGroupsInView(GamerGroup group){
 
         int groupSize = checkGroupSize(group.getGroupId());
+        MemberList currentMemberList = getGroupMemberList(group.getGroupId());
 
         try{
 
@@ -79,12 +83,49 @@ public class GroupMainViewController implements Initializable {
             uniqueGroupController.activityLevel.setText(group.getActivityLevel());
             uniqueGroupController.groupSize.setText(Integer.toString(groupSize +1) + " / 15");
 
+            uniqueGroupController.viewPost.setOnMouseClicked( e->{
+
+                Session.resetInnerViewGamerGroup();
+                Session.resetInnerViewGamerGroupMemberList();
+                Session.innerViewGamerGroup = group;
+                Session.innerViewGamerGroupMemberList = currentMemberList;
+
+                openInnerGamerGroupView();
+            });
+
             groupsVbox.getChildren().add(node);
 
         }catch (Exception e){
 
             e.printStackTrace();
         }
+    }
+
+    private void openInnerGamerGroupView(){
+
+        try{
+            AnchorPane innerGamerGroupView = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/group_information_view.fxml"));
+            injectablePane.getChildren().setAll(innerGamerGroupView);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    private MemberList getGroupMemberList(int groupId){
+
+        MemberList matchingMemberList = new MemberList();
+
+        for(int i = 0; i < publicGroupMemberLists.size(); i++){
+
+            if(publicGroupMemberLists.get(i).getMemberListId() == groupId){
+
+                matchingMemberList = publicGroupMemberLists.get(i);
+            }
+        }
+
+        return matchingMemberList;
     }
 
     private int checkGroupSize(int groupId){

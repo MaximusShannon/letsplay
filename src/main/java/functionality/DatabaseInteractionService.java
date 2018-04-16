@@ -39,6 +39,13 @@ public class DatabaseInteractionService {
         return session.load(Gamer.class, models.Session.gamerSession.getId());
     }
 
+    public Gamer fetchGamerForGroupMemberList(int gamerId){
+
+        session = sessionFactory.openSession();
+
+        return session.load(Gamer.class, gamerId);
+    }
+
     public Post fetchPostForUpdate(){
 
         session = sessionFactory.openSession();

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:controller="controllers.dynamicviewcontrollers.UniqueGroupMemberController" prefHeight="80.0" prefWidth="345.0" style="-fx-background-color: #292E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#292e37" height="72.0" layoutX="4.0" layoutY="4.0" stroke="WHITE" strokeType="INSIDE" width="336.0" />
+      <Text fx:id="username" fill="WHITE" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="151.541015625">
+         <font>
+            <Font name="Verdana Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online: " wrappingWidth="151.541015625">
+         <font>
+            <Font name="Verdana Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="onlineRect" arcHeight="5.0" arcWidth="5.0" fill="#00ff09" height="21.0" layoutX="73.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+   </children>
+</AnchorPane>

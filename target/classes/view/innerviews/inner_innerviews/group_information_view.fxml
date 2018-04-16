@@ -87,7 +87,7 @@
                   </Text>
                   <ScrollPane hbarPolicy="NEVER" layoutX="553.0" layoutY="41.0" prefHeight="354.0" prefWidth="360.0" style="-fx-background-color: red;" styleClass="edge-to-edge" stylesheets="@../../../css/filters.css" vbarPolicy="ALWAYS">
                      <content>
-                        <VBox fx:id="memberlistVbox" prefHeight="354.0" prefWidth="345.0" style="-fx-background-color: #292E37;" />
+                        <VBox fx:id="memberlistVbox" prefHeight="444.0" prefWidth="345.0" style="-fx-background-color: #292E37;" />
                      </content>
                   </ScrollPane>
                   <Text fx:id="userName112" fill="#0967a5" layoutX="553.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member list">
@@ -95,11 +95,6 @@
                         <Font name="Verdana Bold" size="18.0" />
                      </font>
                   </Text>
-                  <Button fx:id="editProfile" layoutX="733.0" layoutY="422.0" mnemonicParsing="false" onAction="#showEditFields" prefHeight="37.0" prefWidth="187.0" stylesheets="@../../../css/Sharp.css" text="Apply to join" textFill="WHITE">
-                     <effect>
-                        <DropShadow />
-                     </effect>
-                  </Button>
                </children>
             </Pane>
             <ImageView fitHeight="185.0" fitWidth="185.0" layoutX="45.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
