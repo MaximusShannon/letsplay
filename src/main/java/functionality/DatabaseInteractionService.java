@@ -11,6 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import java.lang.reflect.Member;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,8 @@ public class DatabaseInteractionService {
     private SessionFactory sessionFactory;
     private List<Gamer> gamersFound;
     private List<Post> postsFound;
+    private List<GamerGroup> groupsFound;
+    private List<MemberList> memberListsFound;
     private Notification notification;
 
     public DatabaseInteractionService(){
@@ -155,6 +158,39 @@ public class DatabaseInteractionService {
 
         return postsFound;
 
+    }
+
+    public List<GamerGroup> fetchGroupsList(){
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<GamerGroup> groups = builder.createQuery(GamerGroup.class);
+        groups.from(GamerGroup.class);
+
+        groupsFound = session.createQuery(groups).getResultList();
+
+        session.close();
+
+        return groupsFound;
+
+    }
+
+    public List<MemberList> fetchMemberLists(){
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<MemberList> memberLists = builder.createQuery(MemberList.class);
+        memberLists.from(MemberList.class);
+
+        memberListsFound = session.createQuery(memberLists).getResultList();
+
+        session.close();
+
+        return memberListsFound;
     }
 
     private void initFactory(){
