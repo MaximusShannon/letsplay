@@ -16,9 +16,41 @@
 
 <AnchorPane fx:id="injectablePane" prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.innerviewcontrollers.GroupCreationController">
    <children>
+      <Pane layoutX="14.0" layoutY="80.0" prefHeight="760.0" prefWidth="957.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info:  ">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="48.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- A group must have a name.">
+               <font>
+                  <Font name="Segoe UI Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="48.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- A group must have a particular game.">
+               <font>
+                  <Font name="Segoe UI Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="48.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- A group must be either public or private. Private groups are invite only and Public can receive applications.">
+               <font>
+                  <Font name="Segoe UI Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="48.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Whoever creates the group will automatically be configured as group administrator.">
+               <font>
+                  <Font name="Segoe UI Italic" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
       <Pane layoutX="4.0" layoutY="14.0" prefHeight="83.0" prefWidth="977.0" style="-fx-background-color: #292E37;">
          <children>
-            <Text fill="WHITE" layoutX="430.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a group">
+            <Text fill="WHITE" layoutX="429.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a group">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
@@ -36,7 +68,7 @@
                   <Image url="@../../images/arrowicon.png" />
                </image>
             </ImageView>
-            <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" opacity="0.0" prefHeight="32.0" prefWidth="144.0">
+            <Button fx:id="backToGroupsBtn" onAction="#backToGroupsBtn" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" opacity="0.0" prefHeight="32.0" prefWidth="144.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -46,31 +78,6 @@
             <DropShadow />
          </effect>
       </Pane>
-      <Text layoutX="14.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info:  ">
-         <font>
-            <Font name="Segoe UI Bold Italic" size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="52.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- A group must have a name.">
-         <font>
-            <Font name="Segoe UI Italic" size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="52.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- A group must have a particular game.">
-         <font>
-            <Font name="Segoe UI Italic" size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="52.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- A group must be either public or private. Private groups are invite only and Public can receive applications.">
-         <font>
-            <Font name="Segoe UI Italic" size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="52.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Whoever creates the group will automatically be configured as group administrator.">
-         <font>
-            <Font name="Segoe UI Italic" size="14.0" />
-         </font>
-      </Text>
       <TextField fx:id="groupName" layoutX="65.0" layoutY="225.0" prefHeight="27.0" prefWidth="598.0" promptText="What ever you want. . ." style="-fx-border-color: #292E37;" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="338.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="310.0" />
       <Text fill="#0967a5" layoutX="65.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group name" wrappingWidth="110.33886736631393">

@@ -7,6 +7,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -41,6 +42,7 @@ public class GroupCreationController implements Initializable {
     @FXML private ChoiceBox<String> languageSpoken;
     @FXML private Text postFailureText;
     @FXML private Text somethingWentWrong;
+    @FXML private Button backToGroupsBtn;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -88,6 +90,13 @@ public class GroupCreationController implements Initializable {
             postFailureText.setVisible(true);
             fadeFailureText(postFailureText);
         }
+    }
+
+    @FXML
+    private void backToGroupsBtn() throws IOException{
+
+        AnchorPane groupsPane = FXMLLoader.load(getClass().getResource("/view/innerviews/groupsmainview.fxml"));
+        injectablePane.getChildren().setAll(groupsPane);
     }
 
     private void loadSuccessPane() throws IOException{
