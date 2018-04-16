@@ -69,7 +69,7 @@
                <effect>
                   <DropShadow />
                </effect></ChoiceBox>
-            <Button fx:id="createGroupBtn" layoutX="739.0" layoutY="44.0" mnemonicParsing="false" onAction="#openCreateViewView" prefHeight="35.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Create your own group" textFill="WHITE">
+            <Button fx:id="createGroupBtn" layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#openCreateViewView" prefHeight="35.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Create your own group" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -81,6 +81,11 @@
                   <DropShadow />
                </effect>
             </Button>
+            <Text fx:id="groupCount" fill="WHITE" layoutX="806.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Displaying x groups">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Text>
          </children>
          <effect>
             <DropShadow />

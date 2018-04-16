@@ -9,12 +9,14 @@ import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import models.GamerGroup;
 import models.MemberList;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Collections;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -28,6 +30,7 @@ public class GroupMainViewController implements Initializable {
     @FXML private AnchorPane injectablePane;
     @FXML private Button createGroupBtn;
     @FXML private VBox groupsVbox;
+    @FXML private Text groupCount;
 
     @FXML
     private void openCreateViewView() throws IOException{
@@ -44,10 +47,19 @@ public class GroupMainViewController implements Initializable {
         publicGroups = getPublicGroups(dbService.fetchGroupsList());
         publicGroupMemberLists = dbService.fetchMemberLists();
 
+        Collections.reverse(publicGroups);
+
         for(int i = 0; i < publicGroups.size(); i++){
 
             displayUniqueGroupsInView(publicGroups.get(i));
         }
+
+        setGroupCount();
+    }
+
+    private void setGroupCount(){
+
+        groupCount.setText("Displaying " + publicGroups.size() + " groups.");
     }
 
     private void displayUniqueGroupsInView(GamerGroup group){
