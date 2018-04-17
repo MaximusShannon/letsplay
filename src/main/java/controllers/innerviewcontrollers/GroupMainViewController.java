@@ -2,6 +2,7 @@ package controllers.innerviewcontrollers;
 
 import controllers.dynamicviewcontrollers.UniqueGroupController;
 import functionality.DatabaseInteractionService;
+import javafx.animation.FadeTransition;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -14,6 +15,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
 import models.GamerGroup;
 import models.MemberList;
 import models.Session;
@@ -152,6 +154,7 @@ public class GroupMainViewController implements Initializable {
 
         filteredByGame.clear();
     }
+
 
     private List<GamerGroup> filterGames(String gameName){
 
