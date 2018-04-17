@@ -11,10 +11,9 @@ public class UniqueUserGroupController {
     public Text groupVisibility;
     public Text memberStatus;
     public Text adminText;
-    public Text leaveText;
     public ImageView adminImage;
     public ImageView leaveImage;
     public Button adminButton;
-    public Button leaveButton;
+    public Button leaveGroup;
 
 }

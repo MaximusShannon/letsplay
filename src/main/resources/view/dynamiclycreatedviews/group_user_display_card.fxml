@@ -34,27 +34,27 @@
             <Font name="Verdana Italic" size="14.0" />
          </font>
       </Text>
-      <ImageView fx:id="adminImage" fitHeight="17.0" fitWidth="47.0" layoutX="788.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="adminImage" fitHeight="17.0" fitWidth="74.0" layoutX="779.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/admin.png" />
          </image>
       </ImageView>
-      <Text fx:id="adminText" fill="WHITE" layoutX="815.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
-         <font>
-            <Font name="Verdana Italic" size="14.0" />
-         </font>
-      </Text>
-      <Button fx:id="adminButton" layoutX="779.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="127.0" stylesheets="@../../css/mainviewbuttons.css" />
-      <ImageView fx:id="leaveImage" fitHeight="17.0" fitWidth="17.0" layoutX="788.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="leaveImage" fitHeight="17.0" fitWidth="17.0" layoutX="779.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/leave.png" />
          </image>
       </ImageView>
-      <Text fx:id="leaveText" fill="WHITE" layoutX="815.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave group">
+      <Text fx:id="adminText" fill="WHITE" layoutX="806.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
          <font>
             <Font name="Verdana Italic" size="14.0" />
          </font>
       </Text>
-      <Button fx:id="leaveButton" layoutX="779.0" layoutY="44.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="127.0" stylesheets="@../../css/mainviewbuttons.css" />
+      <Text fx:id="memberStatus11" fill="WHITE" layoutX="806.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave group">
+         <font>
+            <Font name="Verdana Italic" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="adminButton" layoutX="769.0" layoutY="17.0" mnemonicParsing="false" opacity="0.0" prefHeight="29.0" prefWidth="143.0" stylesheets="@../../css/mainviewbuttons.css" />
+      <Button fx:id="leaveGroup" layoutX="769.0" layoutY="53.0" mnemonicParsing="false" opacity="0.0" prefHeight="29.0" prefWidth="143.0" stylesheets="@../../css/mainviewbuttons.css" />
    </children>
 </AnchorPane>
