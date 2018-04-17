@@ -2,11 +2,15 @@ package controllers.innerviewcontrollers;
 
 import controllers.dynamicviewcontrollers.UniqueGroupController;
 import functionality.DatabaseInteractionService;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -18,6 +22,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.io.IOException;
 import java.lang.reflect.Member;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -26,6 +31,7 @@ public class GroupMainViewController implements Initializable {
 
     private List<GamerGroup> publicGroups;
     private List<MemberList> publicGroupMemberLists;
+    private List<GamerGroup> filteredByGame;
     private DatabaseInteractionService dbService;
     private ClassPathXmlApplicationContext context;
 
@@ -33,6 +39,7 @@ public class GroupMainViewController implements Initializable {
     @FXML private Button createGroupBtn;
     @FXML private VBox groupsVbox;
     @FXML private Text groupCount;
+    @FXML private ChoiceBox<String> gameFilter;
 
     @FXML
     private void openCreateViewView() throws IOException{
@@ -56,13 +63,121 @@ public class GroupMainViewController implements Initializable {
             displayUniqueGroupsInView(publicGroups.get(i));
         }
 
-        setGroupCount();
+        instantiateGroupGamePlayedChoiceBox();
+
+        setGroupCount(publicGroups.size());
         closeContext();
     }
 
-    private void setGroupCount(){
+    private void instantiateGroupGamePlayedChoiceBox(){
 
-        groupCount.setText("Displaying " + publicGroups.size() + " groups.");
+        gameFilter.setItems(FXCollections.observableArrayList("All groups", "League Of Legends", "FORTNITE",
+                "PUBG", "Counter-Strike: Global Offensive",
+                "Rust", "DayZ",
+                "Rainbow SIX: Siege", "Escape From Tarkov"));
+
+        gameFilter.getSelectionModel().selectedIndexProperty().addListener((observable, oldValue, newValue) -> {
+
+            filterByGame(newValue);
+        });
+    }
+
+    /**
+     * All games = 0, league of legends = 1, fortnite = 2, etc.
+     * @param choiceBoxValueId
+     */
+    private void filterByGame(Number choiceBoxValueId){
+
+        switch (choiceBoxValueId.toString()){
+
+            case "0":
+                filteredByGame = filterGames("All games");
+                displayFilteredList(filteredByGame);
+
+                break;
+            case "1":
+                filteredByGame = filterGames("League Of Legends");
+                displayFilteredList(filteredByGame);
+
+                break;
+            case "2":
+                filteredByGame = filterGames("FORTNITE");
+                displayFilteredList(filteredByGame);
+
+                break;
+            case "3":
+                filteredByGame = filterGames("PUBG");
+                displayFilteredList(filteredByGame);
+
+                break;
+            case "4":
+                filteredByGame = filterGames("Counter-Strike: Global Offensive");
+                displayFilteredList(filteredByGame);
+
+                break;
+            case "5":
+                filteredByGame = filterGames("Rust");
+                displayFilteredList(filteredByGame);
+
+                break;
+            case "6":
+                filteredByGame = filterGames("DayZ");
+                displayFilteredList(filteredByGame);
+
+                break;
+            case "7":
+                filteredByGame = filterGames("Rainbow SIX: Siege");
+                displayFilteredList(filteredByGame);
+
+                break;
+            case "8":
+                filteredByGame = filterGames("Escape From Tarkov");
+                displayFilteredList(filteredByGame);
+
+                break;
+        }
+
+    }
+
+    private void displayFilteredList(List<GamerGroup> filteredGroup){
+
+        groupsVbox.getChildren().clear();
+
+        for(int i = 0; i < filteredGroup.size(); i++){
+
+            displayUniqueGroupsInView(filteredGroup.get(i));
+        }
+
+        setGroupCount(filteredByGame.size());
+
+        filteredByGame.clear();
+    }
+
+    private List<GamerGroup> filterGames(String gameName){
+
+        ArrayList<GamerGroup> matchedList = new ArrayList<>();
+
+        if(gameName.equals("All games")){
+
+            matchedList.addAll(publicGroups);
+            return matchedList;
+        }
+
+        for(int i = 0; i < publicGroups.size(); i++){
+
+            if(publicGroups.get(i).getMainGame().equals(gameName)){
+
+                matchedList.add(publicGroups.get(i));
+            }
+
+        }
+
+        return matchedList;
+    }
+
+    private void setGroupCount(int size){
+
+        groupCount.setText("Displaying " + size + " group(s).");
     }
 
     private void displayUniqueGroupsInView(GamerGroup group){
