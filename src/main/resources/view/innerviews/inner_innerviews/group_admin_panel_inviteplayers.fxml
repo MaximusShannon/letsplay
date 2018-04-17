@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:controller="controllers.adminpanelcontrollers.InvitePlayersController" prefHeight="707.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#292e37" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invite Players">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="14.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="744.0" />
+      <Text fill="#0967a5" layoutX="222.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="91.86718755960464">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="invitationUsername" layoutX="222.0" layoutY="200.0" prefHeight="27.0" prefWidth="328.0" promptText="The player you want to invites username" style="-fx-border-color: #292E37;" />
+      <TextField fx:id="invitationMessage" layoutX="222.0" layoutY="281.0" prefHeight="27.0" prefWidth="328.0" promptText="A simple message they will receive" style="-fx-border-color: #292E37;" />
+      <Text fill="#0967a5" layoutX="222.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invitation message" wrappingWidth="138.86718755960464">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="251.0" layoutY="397.0" mnemonicParsing="false" onAction="#preparePostForCreation" prefHeight="37.0" prefWidth="270.0" stylesheets="@../../../css/Sharp.css" text="Send invitation" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Text fill="RED" layoutX="205.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="260.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note:">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="306.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Some players may just ignore your invite.">
+         <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
