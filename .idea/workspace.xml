@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUserGroupController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUserGroupController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/images/invite.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/images/message.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel.fxml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_user_display_card.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_user_display_card.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/groupsmainview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/groupsmainview.fxml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_usergroups.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_usergroups.fxml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/innerviewcontrollers/ProfileUserGroupsController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/profile.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/profile.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/innerviewcontrollers/ProfileUserGroupsController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/innerviewcontrollers/ProfileUserGroupsController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/innerviews/groupsmainview.fxml" afterPath="$PROJECT_DIR$/target/classes/view/innerviews/groupsmainview.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/innerviews/inner_innerviews/profile_usergroups.fxml" afterPath="$PROJECT_DIR$/target/classes/view/innerviews/inner_innerviews/profile_usergroups.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/innerviews/profile.fxml" afterPath="$PROJECT_DIR$/target/classes/view/innerviews/profile.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -138,11 +146,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProfileUserGroupsController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="group_admin_panel.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="76" column="94" lean-forward="false" selection-start-line="76" selection-start-column="94" selection-end-line="76" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileUserGroupsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="85" column="56" lean-forward="false" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
+            <state relative-caret-position="246">
+              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#checkIfUserIsAdminOfGroup#0;class#ProfileUserGroupsController#0" expanded="false" />
@@ -156,46 +187,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileUserPostsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserPostsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="89" column="80" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="group_user_display_card.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_user_display_card.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -230,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controllers/cardcontrollers/UniqueUsersPostController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/post_update_view.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/ProfilePostUpdateController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/subsection/controllers/ProfileUserPostsController.java" />
@@ -245,7 +242,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/GroupMainViewController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/groupsmainview.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/creategroupview.fxml" />
@@ -281,6 +277,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_user_display_card.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUserGroupController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -320,7 +318,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="525" />
+    <option name="x" value="2187" />
     <option name="y" value="29" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -378,15 +376,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamicviewcontrollers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -723,15 +712,15 @@
       <workItem from="1523622573818" duration="13769000" />
       <workItem from="1523658035709" duration="3777000" />
       <workItem from="1523881644349" duration="14321000" />
-      <workItem from="1523966138128" duration="9810000" />
+      <workItem from="1523966138128" duration="12932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203921000" />
+    <option name="totallyTimeSpent" value="207043000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -750,7 +739,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45711184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45711184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -860,13 +849,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionCreatePostController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -924,13 +906,6 @@
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/RegisterController.java">
@@ -1318,6 +1293,33 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkIfUserIsAdminOfGroup#0;class#ProfileUserGroupsController#0" expanded="false" />
+            <element signature="method#checkMemberLists#0;class#ProfileUserGroupsController#0" expanded="false" />
+            <element signature="method#getAllMemberLists#0;class#ProfileUserGroupsController#0" expanded="false" />
+            <element signature="method#getAllGroups#0;class#ProfileUserGroupsController#0" expanded="false" />
+            <element signature="method#initContext#0;class#ProfileUserGroupsController#0" expanded="false" />
+            <element signature="method#closeContext#0;class#ProfileUserGroupsController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="76" column="94" lean-forward="false" selection-start-line="76" selection-start-column="94" selection-end-line="76" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUserGroupController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1328,19 +1330,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="85" column="56" lean-forward="false" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkIfUserIsAdminOfGroup#0;class#ProfileUserGroupsController#0" expanded="false" />
-            <element signature="method#checkMemberLists#0;class#ProfileUserGroupsController#0" expanded="false" />
-            <element signature="method#getAllMemberLists#0;class#ProfileUserGroupsController#0" expanded="false" />
-            <element signature="method#getAllGroups#0;class#ProfileUserGroupsController#0" expanded="false" />
-            <element signature="method#initContext#0;class#ProfileUserGroupsController#0" expanded="false" />
-            <element signature="method#closeContext#0;class#ProfileUserGroupsController#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="16">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

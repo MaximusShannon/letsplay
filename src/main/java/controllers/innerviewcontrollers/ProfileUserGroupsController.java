@@ -13,6 +13,7 @@ import models.MemberList;
 import models.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +29,7 @@ public class ProfileUserGroupsController implements Initializable {
 
     @FXML private VBox gamersGroupsVbox;
     @FXML private Text groupCount;
+    @FXML private AnchorPane injectablePane;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -85,6 +87,13 @@ public class ProfileUserGroupsController implements Initializable {
 
                     System.out.println("OPEN ADMIN PANEL");
 
+                    try{
+
+                        loadAdminPanel();
+                    }catch (IOException io){
+
+                        io.printStackTrace();
+                    }
                 });
             }
 
@@ -100,6 +109,12 @@ public class ProfileUserGroupsController implements Initializable {
 
             e.printStackTrace();
         }
+    }
+
+    private void loadAdminPanel() throws IOException{
+
+        AnchorPane adminPanel = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/group_admin_panel.fxml"));
+        injectablePane.getChildren().setAll(adminPanel);
     }
 
     private Boolean checkIfUserIsAdminOfGroup(GamerGroup group){

@@ -59,11 +59,6 @@
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Text>
-            <Text fx:id="noGroups" fill="#00ff1e" layoutX="389.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No groups found for that game." visible="false">
-               <font>
-                  <Font name="Segoe UI" size="14.0" />
-               </font>
-            </Text>
          </children>
          <effect>
             <DropShadow />
