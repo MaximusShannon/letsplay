@@ -48,4 +48,10 @@
     <bean id="memberlist"
         class="models.MemberList">
     </bean>
+
+    <bean id="invitation"
+          class="models.Invitation">
+    </bean>
+
+
 </beans>

@@ -93,7 +93,12 @@
         </id>
     </class>
 
-
+    <class name="models.Invitation" table="INVITATIONS">
+        <id name = "id" column="INVIATION_ID">
+            <generator class="native"/>
+        </id>
+        <property name="invitationMessage" type="java.lang.String" column="invitation_message"/>
+    </class>
 
 
 </hibernate-mapping>
