@@ -6,6 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
@@ -15,6 +17,7 @@ import models.Session;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class MainViewController implements Initializable {
@@ -38,10 +41,28 @@ public class MainViewController implements Initializable {
 
     @FXML
     private void handleLogoutRequest(){
-        
-        Session.resetSession();
-        closeStage();
-        loadLoginView();
+
+        Alert logoutAlert = new Alert(Alert.AlertType.CONFIRMATION);
+        logoutAlert.setTitle("Logout Confirmation");
+        logoutAlert.setHeaderText("Are you sure you want to logout?");
+        logoutAlert.setContentText("Please choose. . .");
+
+        Stage logoutAlertStage = (Stage) logoutAlert.getDialogPane().getScene().getWindow();
+        logoutAlertStage.getIcons().add(new Image("/images/letsplay_icon.png"));
+
+        Optional<ButtonType> result = logoutAlert.showAndWait();
+
+        if(result.get() == ButtonType.OK){
+
+            Session.resetSession();
+            closeStage();
+            loadLoginView();
+        }
+        else {
+
+            logoutAlert.close();
+        }
+
     }
     
     private void loadLoginView(){
