@@ -40,6 +40,13 @@ public class DatabaseInteractionService {
         return session.load(Gamer.class, models.Session.gamerSession.getId());
     }
 
+    public GamerGroup fetchGamerGroupForUpdate(){
+
+        session = sessionFactory.openSession();
+
+        return session.load(GamerGroup.class, models.Session.adminGroup.getGroupId());
+    }
+
     public Gamer fetchGamerForGroupMemberList(int gamerId){
 
         session = sessionFactory.openSession();
@@ -107,6 +114,32 @@ public class DatabaseInteractionService {
         session.close();
         closeFactory();
 
+    }
+
+    public GamerGroup updateGroup(GamerGroup group, String groupName,
+                            String groupDesc, String groupVisability,
+                            String gamePlayed, String comsChannel,
+                            String activityLevel, String langSpoken,
+                            String comsAddress){
+
+        Transaction tx = session.beginTransaction();
+
+        group.setGroupName(groupName);
+        group.setGroupDescription(groupDesc);
+        group.setGroupVisability(groupVisability);
+        group.setMainGame(gamePlayed);
+        group.setComsChannel(comsChannel);
+        group.setActivityLevel(activityLevel);
+        group.setGroupLanguageSpoken(langSpoken);
+        group.setGroupComsAddress(comsAddress);
+
+        session.update(group);
+        tx.commit();
+
+        session.close();
+        closeFactory();
+
+        return group;
     }
 
     public boolean addMemberToGroupMemberList(MemberList memberList, int idToAdd){

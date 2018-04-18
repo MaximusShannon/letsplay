@@ -12,8 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="707.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="707.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.adminpanelcontrollers.UpdateGroupController">
    <children>
       <Text fill="#292e37" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Group">
          <font>
@@ -79,7 +78,7 @@
          </font>
       </Text>
       <TextField fx:id="comsAddress" layoutX="56.0" layoutY="599.0" prefHeight="27.0" prefWidth="646.0" promptText="Discord or teamspeak server address" style="-fx-border-color: #292E37;" />
-      <Button fx:id="updateGroup" layoutX="550.0" layoutY="648.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="189.0" stylesheets="@../../../css/Sharp.css" text="Update Group" textFill="WHITE">
+      <Button fx:id="updateGroup" layoutX="550.0" layoutY="648.0" mnemonicParsing="false" onAction="#updateGroupFunctionality" prefHeight="37.0" prefWidth="189.0" stylesheets="@../../../css/Sharp.css" text="Update Group" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
@@ -102,6 +101,16 @@
       <Text fill="RED" layoutX="206.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
          <font>
             <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="updateFailure" fill="RED" layoutX="414.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update failed, nothing has changed." visible="false" wrappingWidth="238.57420948147774">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="updateSuccess" fill="#00ab1f" layoutX="462.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Successful" visible="false" wrappingWidth="238.57420948147774">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
    </children>
