@@ -2,12 +2,17 @@ package controllers.adminpanelcontrollers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
+import models.Session;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class MainAdminPanelController {
+public class MainAdminPanelController implements Initializable {
 
     @FXML private Button invitePlayers;
     @FXML private Button removePlayers;
@@ -16,6 +21,13 @@ public class MainAdminPanelController {
     @FXML private Button updateGroup;
     @FXML private Button deleteGroup;
     @FXML private AnchorPane injectablePane;
+    @FXML private Text groupName;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+        groupName.setText("Welcome to, " + Session.adminGroup.getGroupName() + "'s Admin Panel");
+    }
 
     @FXML
     private void loadInvitePlayersPanel() throws IOException{
@@ -64,6 +76,7 @@ public class MainAdminPanelController {
                 getClass().getResource("/view/innerviews/inner_innerviews/group_admin_panel_deletegroup.fxml"));
         injectablePane.getChildren().setAll(deleteGroup);
     }
+
 
 
 }

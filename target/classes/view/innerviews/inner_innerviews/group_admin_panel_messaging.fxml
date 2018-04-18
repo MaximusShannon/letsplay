@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="707.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.adminpanelcontrollers.GroupMessagingController">
+   <children>
+      <Text fill="#292e37" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messaging - Send a batch message.">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="14.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="744.0" />
+      <Text fill="#292e37" layoutX="174.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note:">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="219.0" layoutY="687.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message all your group members at once.. let them know play times etc.">
+         <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#0967a5" layoutX="130.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message Context" wrappingWidth="158.86718755960464">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="messageBody" layoutX="129.0" layoutY="192.0" prefHeight="200.0" prefWidth="521.0" promptText="Whats the plan, gamer man?" style="-fx-border-color: #292E37;" />
+      <Button fx:id="sendMessageButton" layoutX="251.0" layoutY="457.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="37.0" prefWidth="270.0" stylesheets="@../../../css/Sharp.css" text="Send Batch Message" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Text fill="RED" layoutX="115.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="messageEmptyText" fill="RED" layoutX="272.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please ensure you've entered a message." visible="false">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="messageSent" fill="#00b50c" layoutX="350.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message Sent!" visible="false">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="12.0" />
+         </font>
+      </Text>
+   </children>
 </AnchorPane>

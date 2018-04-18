@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="80.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.adminpanelcontrollers.RemovePlayerCardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="71.0" layoutX="5.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="630.0" />
+      <Text fx:id="memberUsername" fill="#292e37" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="memberUserId" fill="#292e37" layoutX="14.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserId">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="removeMemberButton" layoutX="491.0" layoutY="22.0" mnemonicParsing="false" onAction="#sendInvitation" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: red;" text="Remove Member" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

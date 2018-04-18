@@ -57,5 +57,9 @@
           class="functionality.InvitationService">
     </bean>
 
+    <bean id = "groupmessage"
+          class="models.GroupMessage">
+    </bean>
+
 
 </beans>

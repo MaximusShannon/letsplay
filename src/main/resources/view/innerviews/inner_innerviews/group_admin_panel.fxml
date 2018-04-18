@@ -30,7 +30,7 @@
                   <Image url="@../../../images/invite.png" />
                </image>
             </ImageView>
-            <Button fx:id="invitePlayers" onAction="#loadInvitePlayersPanel" layoutX="11.0" layoutY="84.0" mnemonicParsing="false" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
+            <Button fx:id="invitePlayers" layoutX="11.0" layoutY="84.0" mnemonicParsing="false" onAction="#loadInvitePlayersPanel" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
             <Text fill="WHITE" layoutX="64.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Players">
                <font>
                   <Font name="Segoe UI" size="16.0" />
@@ -41,7 +41,7 @@
                   <Image url="@../../../images/delete.png" />
                </image>
             </ImageView>
-            <Button fx:id="removePlayers" onAction="#loadRemovePlayersPanel" layoutX="11.0" layoutY="179.0" mnemonicParsing="false" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
+            <Button fx:id="removePlayers" layoutX="11.0" layoutY="179.0" mnemonicParsing="false" onAction="#loadRemovePlayersPanel" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
             <Text fill="WHITE" layoutX="64.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messaging">
                <font>
                   <Font name="Segoe UI" size="16.0" />
@@ -52,7 +52,7 @@
                   <Image url="@../../../images/message.png" />
                </image>
             </ImageView>
-            <Button fx:id="messaging" onAction="#loadMessagingPanel" layoutX="11.0" layoutY="272.0" mnemonicParsing="false" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
+            <Button fx:id="messaging" layoutX="11.0" layoutY="272.0" mnemonicParsing="false" onAction="#loadMessagingPanel" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
             <Text fill="WHITE" layoutX="64.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update">
                <font>
                   <Font name="Segoe UI" size="16.0" />
@@ -63,7 +63,7 @@
                   <Image url="@../../../images/eraser-256.png" />
                </image>
             </ImageView>
-            <Button fx:id="updateGroup" onAction="#loadUpdateGroupPanel" layoutX="13.0" layoutY="480.0" mnemonicParsing="false" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
+            <Button fx:id="updateGroup" layoutX="13.0" layoutY="480.0" mnemonicParsing="false" onAction="#loadUpdateGroupPanel" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
             <Text fill="WHITE" layoutX="64.0" layoutY="628.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Group">
                <font>
                   <Font name="Segoe UI" size="16.0" />
@@ -74,7 +74,7 @@
                   <Image url="@../../../images/red_x.png" />
                </image>
             </ImageView>
-            <Button fx:id="deleteGroup" onAction="#loadDeleteGroupPanel" layoutX="11.0" layoutY="595.0" mnemonicParsing="false" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
+            <Button fx:id="deleteGroup" layoutX="11.0" layoutY="595.0" mnemonicParsing="false" onAction="#loadDeleteGroupPanel" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
             <Text fill="WHITE" layoutX="64.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applications">
                <font>
                   <Font name="Segoe UI" size="16.0" />
@@ -85,7 +85,7 @@
                   <Image url="@../../../images/createposticon.png" />
                </image>
             </ImageView>
-            <Button fx:id="applications" onAction="#loadApplicationsPanel" layoutX="11.0" layoutY="373.0" mnemonicParsing="false" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
+            <Button fx:id="applications" layoutX="11.0" layoutY="373.0" mnemonicParsing="false" onAction="#loadApplicationsPanel" opacity="0.0" prefHeight="53.0" prefWidth="172.0" stylesheets="@../../../css/mainviewbuttons.css" />
          </children>
          <effect>
             <DropShadow />
@@ -94,6 +94,84 @@
       <AnchorPane fx:id="injectablePane" layoutX="200.0" layoutY="8.0" prefHeight="707.0" prefWidth="779.0" style="-fx-background-color: white;">
          <effect>
             <DropShadow />
-         </effect></AnchorPane>
+         </effect>
+         <children>
+            <Text fx:id="groupName" fill="#292e37" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to : x Admin Panel">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="16.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="14.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="744.0" />
+            <Text fill="#292e37" layoutX="14.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From here you can:">
+               <font>
+                  <Font name="Segoe UI Italic" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#292e37" layoutX="35.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invite new players to your group.">
+               <font>
+                  <Font name="Segoe UI Italic" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="21.0" fitWidth="43.0" layoutX="280.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <Text fill="#292e37" layoutX="33.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove players from your group.">
+               <font>
+                  <Font name="Segoe UI Italic" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="21.0" fitWidth="43.0" layoutX="280.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <Text fill="#292e37" layoutX="32.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send batch messages to all your group members.">
+               <font>
+                  <Font name="Segoe UI Italic" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="21.0" fitWidth="43.0" layoutX="379.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <Text fill="#292e37" layoutX="32.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View all the applications to your group.">
+               <font>
+                  <Font name="Segoe UI Italic" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="21.0" fitWidth="43.0" layoutX="327.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <Text fill="#292e37" layoutX="32.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update the information, game played etc. of your group.">
+               <font>
+                  <Font name="Segoe UI Italic" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="21.0" fitWidth="43.0" layoutX="436.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <Text fill="#292e37" layoutX="32.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Or, delete your group. Yikes. . .">
+               <font>
+                  <Font name="Segoe UI Italic" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="21.0" fitWidth="43.0" layoutX="262.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <Text fill="#292e37" layoutX="230.0" layoutY="687.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remember, have fun. Play fair, and be nice.">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="16.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
    </children>
 </AnchorPane>

@@ -101,5 +101,11 @@
         <property name="groupId" type="integer" column="group_id"/>
     </class>
 
+    <class name="models.GroupMessage" table="GROUP_MESSAGES">
+        <id name="messageId" column="MESSAGE_ID">
+            <generator class="native"/>
+        </id>
+        <property name="message" type="java.lang.String" column="message_body"/>
+    </class>
 
 </hibernate-mapping>

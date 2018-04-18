@@ -32,7 +32,7 @@
          </font>
       </Text>
       <TextArea fx:id="messageBody" layoutX="129.0" layoutY="192.0" prefHeight="200.0" prefWidth="521.0" promptText="Whats the plan, gamer man?" style="-fx-border-color: #292E37;" />
-      <Button fx:id="sendMessageButton" layoutX="251.0" layoutY="457.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="270.0" stylesheets="@../../../css/Sharp.css" text="Send Batch Message" textFill="WHITE">
+      <Button fx:id="sendMessageButton" layoutX="251.0" layoutY="457.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="37.0" prefWidth="270.0" stylesheets="@../../../css/Sharp.css" text="Send Batch Message" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
@@ -43,6 +43,11 @@
          </font>
       </Text>
       <Text fx:id="messageEmptyText" fill="RED" layoutX="272.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please ensure you've entered a message." visible="false">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="messageSent" fill="#00b50c" layoutX="350.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message Sent!" visible="false">
          <font>
             <Font name="Segoe UI Bold Italic" size="12.0" />
          </font>

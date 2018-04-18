@@ -198,6 +198,22 @@ public class DatabaseInteractionService {
         return ids;
     }
 
+    public Integer persistGroupMessage(GroupMessage message){
+
+        Integer id;
+
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+
+        id = (Integer) session.save(message);
+
+        session.getTransaction().commit();
+        session.close();
+
+        return id;
+
+    }
+
     /**
      * Get a list of user's from the gamer table in the database.
      */
