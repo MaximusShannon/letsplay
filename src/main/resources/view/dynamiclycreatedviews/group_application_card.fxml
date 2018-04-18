@@ -21,10 +21,5 @@
       </Text>
       <Button fx:id="acceptButton" layoutX="537.0" layoutY="9.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="91.0" stylesheets="@../../css/Sharp.css" text="Accept" textFill="WHITE" />
       <Button fx:id="declineButton" layoutX="537.0" layoutY="40.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="91.0" style="-fx-background-color: red;" text="Decline" textFill="WHITE" />
-      <Text fx:id="applicationNotify" fill="#292e37" layoutX="506.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Application Message" visible="false">
-         <font>
-            <Font name="Segoe UI Italic" size="12.0" />
-         </font>
-      </Text>
    </children>
 </AnchorPane>

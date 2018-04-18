@@ -45,5 +45,10 @@
             <Font name="Segoe UI Bold" size="12.0" />
          </font>
       </Text>
+      <Text fx:id="applicationCount" fill="#292e37" layoutX="574.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Displaying 0 Application(s)">
+         <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

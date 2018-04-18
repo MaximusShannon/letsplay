@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import models.Gamer;
 import models.MemberList;
 import models.Session;
@@ -24,6 +25,7 @@ public class RemovePlayersController implements Initializable {
     private List<Gamer> members;
 
     @FXML private VBox groupMemberListVbox;
+    @FXML private Text memberCounts;
 
 
     @Override
@@ -41,8 +43,8 @@ public class RemovePlayersController implements Initializable {
             }
         }
 
+        memberCounts.setText("Displaying " + members.size() + " Member(s)");
         closeResources();
-
     }
 
     private void displayMembersInVbox(Gamer member){
