@@ -108,4 +108,12 @@
         <property name="message" type="java.lang.String" column="message_body"/>
     </class>
 
+    <class name="models.GroupApplication" table="GROUP_APPLICATIONS">
+        <id name="applicationId" column="APPLICATION_ID">
+            <generator class="native"/>
+        </id>
+        <property name="gamerId" type="java.lang.Integer" column="GAMER_ID"/>
+        <property name="message" type="java.lang.String" column=""/>
+    </class>
+
 </hibernate-mapping>

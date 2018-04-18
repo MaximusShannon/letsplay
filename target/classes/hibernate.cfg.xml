@@ -13,7 +13,7 @@
         <property name="connection.password"></property>
 
         <!-- JDBC connection pool settings ... using built-in frameviews pool -->
-        <property name="connection.pool_size">1</property>
+        <property name="connection.pool_size">10</property>
 
         <!-- Select our SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
@@ -32,6 +32,7 @@
         <mapping class="models.MemberList"/>
         <mapping class="models.Invitation"/>
         <mapping class="models.GroupMessage"/>
+        <mapping class="models.GroupApplication"/>
  
     </session-factory>
 

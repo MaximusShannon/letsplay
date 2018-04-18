@@ -61,5 +61,8 @@
           class="models.GroupMessage">
     </bean>
 
+    <bean id="groupapplication"
+        class = "models.GroupApplication">
+    </bean>
 
 </beans>

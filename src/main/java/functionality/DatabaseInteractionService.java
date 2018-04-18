@@ -214,6 +214,19 @@ public class DatabaseInteractionService {
 
     }
 
+    public Integer persistGroupApplication(GroupApplication application){
+
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+
+        Integer id = (Integer) session.save(application);
+
+        session.getTransaction().commit();
+        session.close();
+
+        return id;
+    }
+
     /**
      * Get a list of user's from the gamer table in the database.
      */

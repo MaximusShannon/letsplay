@@ -6,15 +6,19 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ResizeFeaturesBase;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import models.Gamer;
+import models.GroupApplication;
 import models.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class GroupInformationController implements Initializable {
@@ -23,6 +27,7 @@ public class GroupInformationController implements Initializable {
     private DatabaseInteractionService dbService;
     private ClassPathXmlApplicationContext context;
     private ArrayList<Gamer> memberList;
+    private GroupApplication groupApplication;
 
     @FXML private Text groupName;
     @FXML private Text groupComsChannel;
@@ -33,14 +38,17 @@ public class GroupInformationController implements Initializable {
     @FXML private Text languageSpoken;
     @FXML private Text groupDescription;
     @FXML private Text isMember;
+    @FXML private Text applicationSent;
     @FXML private VBox memberlistVbox;
     @FXML private Button groupApplyButton;
+
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         initContext();
+
         getMemberListIds();
         getGroupMembers();
 
@@ -69,6 +77,28 @@ public class GroupInformationController implements Initializable {
     private void startApplication(){
 
 
+
+        TextInputDialog applicationDialog = new TextInputDialog("");
+        applicationDialog.setTitle("Send you application");
+        applicationDialog.setHeaderText(Session.innerViewGamerGroup.getGroupName() + " Application");
+        applicationDialog.setContentText("Application message: ");
+
+        Optional<String> result = applicationDialog.showAndWait();
+
+        if(result.isPresent()){
+
+            groupApplication = new GroupApplication();
+            groupApplication.setMessage(result.get());
+            groupApplication.setGamerId(Session.gamerSession.getId());
+            groupApplication.setGamerGroup(Session.innerViewGamerGroup);
+
+            if(dbService.persistGroupApplication(groupApplication) > 0){
+
+                groupApplyButton.setVisible(false);
+                applicationSent.setVisible(true);
+            }
+
+        }
     }
 
     private boolean checkIsAdminViewing(){
@@ -85,7 +115,6 @@ public class GroupInformationController implements Initializable {
 
         return false;
     }
-
 
     private void getMemberListIds(){
 
