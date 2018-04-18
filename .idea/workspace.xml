@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayerCardController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_remove_card.fxml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/InvitePlayersController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/InvitePlayersController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/MainAdminPanelController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/MainAdminPanelController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayersController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayersController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_deletegroup.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_deletegroup.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_removeplayers.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_removeplayers.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupMessagingController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupMessagingController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_remove_card.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_remove_card.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_messaging.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_messaging.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,55 +79,33 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="RemovePlayersController.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayersController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DatabaseInteractionService.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="ProfileUserGroupsController.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="101">
-                  <caret line="66" column="128" lean-forward="false" selection-start-line="66" selection-start-column="71" selection-end-line="66" selection-end-column="128" />
-                  <folding>
-                    <element signature="method#checkIfUserIsAdminOfGroup#0;class#ProfileUserGroupsController#0" expanded="false" />
-                    <element signature="method#checkMemberLists#0;class#ProfileUserGroupsController#0" expanded="false" />
-                    <element signature="method#getAllMemberLists#0;class#ProfileUserGroupsController#0" expanded="false" />
-                    <element signature="method#getAllGroups#0;class#ProfileUserGroupsController#0" expanded="false" />
-                    <element signature="method#initContext#0;class#ProfileUserGroupsController#0" expanded="false" />
-                    <element signature="method#closeContext#0;class#ProfileUserGroupsController#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GroupMessagingController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupMessagingController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group_admin_panel_messaging.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_messaging.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="23" column="127" lean-forward="true" selection-start-line="23" selection-start-column="127" selection-end-line="23" selection-end-column="127" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -173,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/GroupMainViewController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/groupsmainview.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/creategroupview.fxml" />
@@ -196,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_card.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupMemberController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_information_view.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java" />
@@ -205,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_user_display_card.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUserGroupController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_messaging.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_applications.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_updategroup.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_deletegroup.fxml" />
@@ -222,8 +192,11 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/InvitePlayersController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_remove_card.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayerCardController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayersController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_removeplayers.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayersController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_messaging.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupMessagingController.java" />
       </list>
     </option>
   </component>
@@ -378,15 +351,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamiclycreatedviews" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -676,12 +640,12 @@
       <workItem from="1523881644349" duration="14321000" />
       <workItem from="1523966138128" duration="13150000" />
       <workItem from="1523990423602" duration="3508000" />
-      <workItem from="1524048409739" duration="5565000" />
+      <workItem from="1524048409739" duration="7018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216334000" />
+    <option name="totallyTimeSpent" value="217787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1094,17 +1058,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_messaging.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_updategroup.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1120,14 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupMessagingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,7 +1164,7 @@
         <state relative-caret-position="761">
           <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#checkIsGamerAMemberOfGroup#0;class#InvitationService#0" expanded="false" />
             <element signature="method#fetchGamerForInvitation#0;class#InvitationService#0" expanded="false" />
             <element signature="method#persistInvitation#0;class#InvitationService#0" expanded="false" />
@@ -1232,7 +1177,7 @@
         <state relative-caret-position="816">
           <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#initResources#0;class#InvitePlayersController#0" expanded="false" />
             <element signature="method#closeResources#0;class#InvitePlayersController#0" expanded="false" />
             <element signature="method#fadeFailureText#0;class#InvitePlayersController#0" expanded="false" />
@@ -1256,7 +1201,7 @@
         <state relative-caret-position="281">
           <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1266,7 +1211,7 @@
         <state relative-caret-position="144">
           <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1280,6 +1225,54 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_removeplayers.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_deletegroup.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="110" column="84" lean-forward="false" selection-start-line="110" selection-start-column="84" selection-end-line="110" selection-end-column="84" />
+          <folding>
+            <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchMemberLists#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#initFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java">
@@ -1297,40 +1290,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_removeplayers.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_deletegroup.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayersController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="496">
+          <caret line="47" column="51" lean-forward="false" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initialize#0;class#RemovePlayersController#0" expanded="false" />
+            <element signature="method#displayMembersInVbox#0;class#RemovePlayersController#0" expanded="false" />
+            <element signature="method#getMembers#0;class#RemovePlayersController#0" expanded="false" />
+            <element signature="method#initResources#0;class#RemovePlayersController#0" expanded="false" />
+            <element signature="method#closeResources#0;class#RemovePlayersController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_messaging.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="127" lean-forward="true" selection-start-line="23" selection-start-column="127" selection-end-line="23" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupMessagingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
