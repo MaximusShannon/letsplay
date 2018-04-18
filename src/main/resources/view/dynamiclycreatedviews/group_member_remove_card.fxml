@@ -20,7 +20,7 @@
             <Font name="Segoe UI Italic" size="16.0" />
          </font>
       </Text>
-      <Button fx:id="removeMemberButton" layoutX="491.0" layoutY="22.0" mnemonicParsing="false" onAction="#sendInvitation" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: red;" text="Remove Member" textFill="WHITE">
+      <Button fx:id="removeMemberButton" layoutX="491.0" layoutY="22.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: red;" text="Remove Member" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>

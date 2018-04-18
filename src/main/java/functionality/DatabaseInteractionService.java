@@ -25,6 +25,7 @@ public class DatabaseInteractionService {
     private List<Post> postsFound;
     private List<GamerGroup> groupsFound;
     private List<MemberList> memberListsFound;
+    private List<GroupApplication> groupApplications;
     private Notification notification;
 
     public DatabaseInteractionService(){
@@ -106,6 +107,95 @@ public class DatabaseInteractionService {
         session.close();
         closeFactory();
 
+    }
+
+    public boolean addMemberToGroupMemberList(MemberList memberList, int idToAdd){
+
+        boolean memberListAllowingNewMembers = false;
+
+        Transaction tx = session.beginTransaction();
+
+        if(memberList.getM_2_id() == 0){
+
+            memberList.setM_2_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_3_id() == 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_3_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_4_id() == 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_4_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_5_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_5_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_6_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_6_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_7_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_7_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_8_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_8_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_9_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_9_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_10_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_10_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_11_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_11_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_12_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_12_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_13_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_13_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_14_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_14_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+        if(memberList.getM_15_id() != 0 && !memberListAllowingNewMembers){
+
+            memberList.setM_15_id(idToAdd);
+            memberListAllowingNewMembers = true;
+        }
+
+        if(memberListAllowingNewMembers){
+
+            session.update(memberList);
+            tx.commit();
+
+            session.close();
+            closeFactory();
+        }
+
+        return memberListAllowingNewMembers;
     }
 
     public void removeMemberFromGroupMemberList(MemberList memberList, int memberId){
@@ -264,6 +354,35 @@ public class DatabaseInteractionService {
 
     }
 
+    public List<GroupApplication> fetchAllApplicationsForGroup(int id){
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<GroupApplication> applications = builder.createQuery(GroupApplication.class);
+        applications.from(GroupApplication.class);
+
+        groupApplications = session.createQuery(applications).getResultList();
+
+        session.close();
+
+        return filterApplicationsToGroup(groupApplications, id);
+    }
+
+    private List<GroupApplication> filterApplicationsToGroup(List<GroupApplication> groupApplications, int id){
+
+        for(int i = 0; i < groupApplications.size(); i++){
+
+            if(groupApplications.get(i).getGamerGroup().getGroupId() != id){
+
+                groupApplications.remove(i);
+            }
+        }
+
+        return groupApplications;
+    }
+
     public List<GamerGroup> fetchGroupsList(){
 
         session = sessionFactory.openSession();
@@ -297,7 +416,7 @@ public class DatabaseInteractionService {
         return memberListsFound;
     }
 
-    private void initFactory(){
+    public void initFactory(){
 
         try{
             sessionFactory = new Configuration()
@@ -330,6 +449,22 @@ public class DatabaseInteractionService {
         }
 
         return userPosts;
+    }
+
+    public void deleteApplication(int applicationId){
+
+        session = sessionFactory.openSession();
+
+        Transaction tx = session.beginTransaction();
+
+        GroupApplication toDelete = session.load(GroupApplication.class, applicationId);
+        session.delete(toDelete);
+
+        session.flush();
+        tx.commit();
+
+        session.close();
+
     }
 
     public Notification deletePost(int postId){
