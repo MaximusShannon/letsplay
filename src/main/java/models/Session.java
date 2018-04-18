@@ -9,6 +9,7 @@ public class Session {
     public static Post updateablePost;
     public static GamerGroup innerViewGamerGroup;
     public static MemberList innerViewGamerGroupMemberList;
+    public static GamerGroup adminGroup;
 
     public static void resetSession(){
 
@@ -23,5 +24,10 @@ public class Session {
     public static void resetInnerViewGamerGroupMemberList(){
 
         innerViewGamerGroupMemberList = null;
+    }
+
+    public static void resetAdminGroup(){
+
+        adminGroup = null;
     }
 }

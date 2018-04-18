@@ -8,6 +8,7 @@ public class Invitation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private int groupId;
     private String invitationMessage;
 
     @OneToOne
@@ -19,6 +20,14 @@ public class Invitation {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(int groupId) {
+        this.groupId = groupId;
     }
 
     public String getInvitationMessage() {

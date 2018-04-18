@@ -98,6 +98,7 @@
             <generator class="native"/>
         </id>
         <property name="invitationMessage" type="java.lang.String" column="invitation_message"/>
+        <property name="groupId" type="integer" column="group_id"/>
     </class>
 
 

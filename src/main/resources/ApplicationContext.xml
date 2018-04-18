@@ -53,5 +53,9 @@
           class="models.Invitation">
     </bean>
 
+    <bean id = "invitationservice"
+          class="functionality.InvitationService">
+    </bean>
+
 
 </beans>

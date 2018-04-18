@@ -85,7 +85,8 @@ public class ProfileUserGroupsController implements Initializable {
                 uniqueUserGroupController.memberStatus.setText("Admin");
                 uniqueUserGroupController.adminButton.setOnMouseClicked(e ->{
 
-                    System.out.println("OPEN ADMIN PANEL");
+                    Session.resetAdminGroup();
+                    Session.adminGroup = group;
 
                     try{
 
