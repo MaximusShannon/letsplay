@@ -32,6 +32,7 @@
         <mapping class="models.MemberList"/>
         <mapping class="models.Invitation"/>
         <mapping class="models.GroupMessage"/>
+        <mapping class="models.GroupApplication"/>
  
     </session-factory>
 

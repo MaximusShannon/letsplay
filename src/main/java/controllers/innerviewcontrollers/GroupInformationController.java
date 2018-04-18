@@ -5,6 +5,7 @@ import functionality.DatabaseInteractionService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -31,7 +32,9 @@ public class GroupInformationController implements Initializable {
     @FXML private Text activityLevel;
     @FXML private Text languageSpoken;
     @FXML private Text groupDescription;
+    @FXML private Text isMember;
     @FXML private VBox memberlistVbox;
+    @FXML private Button groupApplyButton;
 
 
     @Override
@@ -46,10 +49,43 @@ public class GroupInformationController implements Initializable {
         for(int i = 0; i < memberList.size(); i++){
 
             fillMemberListVBox(memberList.get(i));
+
+            if(checkIsAdminViewing()){
+
+                groupApplyButton.setVisible(false);
+                isMember.setVisible(true);
+            }
+            if(checkIsLoggedInGamerAMemberOfThisGroup()){
+
+                groupApplyButton.setVisible(false);
+                isMember.setVisible(true);
+            }
         }
 
         closeContext();
     }
+
+    @FXML
+    private void startApplication(){
+
+
+    }
+
+    private boolean checkIsAdminViewing(){
+
+        return Session.gamerSession.getId() == Session.innerViewGamerGroup.getAdminId();
+    }
+
+    private boolean checkIsLoggedInGamerAMemberOfThisGroup(){
+
+        for(int i = 0; i < memberListIds.length; i++){
+
+            return memberListIds[i] == Session.gamerSession.getId();
+        }
+
+        return false;
+    }
+
 
     private void getMemberListIds(){
 
