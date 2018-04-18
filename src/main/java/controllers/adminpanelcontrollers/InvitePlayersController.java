@@ -50,7 +50,6 @@ public class InvitePlayersController {
                     invitationService.persistInvitation(groupInvitation);
                     invitationService.closeResources();
 
-                    // display notification that invitation was sent.
                     invitationSent.setVisible(true);
                     fadeFailureText(invitationSent);
 

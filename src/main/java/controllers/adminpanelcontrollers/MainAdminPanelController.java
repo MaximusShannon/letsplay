@@ -61,7 +61,7 @@ public class MainAdminPanelController {
     private void loadDeleteGroupPanel() throws IOException{
 
         AnchorPane deleteGroup = FXMLLoader.load(
-                getClass().getResource("/view/innerviews/inner_innerviews/group_admin_panel_deleteGroup.fxml"));
+                getClass().getResource("/view/innerviews/inner_innerviews/group_admin_panel_deletegroup.fxml"));
         injectablePane.getChildren().setAll(deleteGroup);
     }
 

@@ -108,6 +108,74 @@ public class DatabaseInteractionService {
 
     }
 
+    public void removeMemberFromGroupMemberList(MemberList memberList, int memberId){
+
+        Transaction tx = session.beginTransaction();
+
+        if(memberList.getM_2_id() == memberId){
+
+            memberList.setM_2_id(0);
+        }
+        if(memberList.getM_3_id() == memberId){
+
+            memberList.setM_3_id(0);
+        }
+        if(memberList.getM_4_id() == memberId){
+
+            memberList.setM_4_id(0);
+        }
+        if(memberList.getM_5_id() == memberId){
+
+            memberList.setM_5_id(0);
+        }
+        if(memberList.getM_6_id() == memberId){
+
+            memberList.setM_6_id(0);
+        }
+        if(memberList.getM_7_id() == memberId){
+
+            memberList.setM_7_id(0);
+        }
+        if(memberList.getM_8_id() == memberId){
+
+            memberList.setM_8_id(0);
+        }
+        if(memberList.getM_9_id() == memberId){
+
+            memberList.setM_9_id(0);
+        }
+        if(memberList.getM_10_id() == memberId){
+
+            memberList.setM_10_id(0);
+        }
+        if(memberList.getM_11_id() == memberId){
+
+            memberList.setM_11_id(0);
+        }
+        if(memberList.getM_12_id() == memberId){
+
+            memberList.setM_12_id(0);
+        }
+        if(memberList.getM_13_id() == memberId){
+
+            memberList.setM_13_id(0);
+        }
+        if(memberList.getM_14_id() == memberId){
+
+            memberList.setM_14_id(0);
+        }
+        if(memberList.getM_15_id() == memberId){
+
+            memberList.setM_15_id(0);
+        }
+
+        session.update(memberList);
+        tx.commit();
+
+        session.close();
+        closeFactory();
+    }
+
     private void updateSession(Gamer gamer){
 
         models.Session.resetSession();
