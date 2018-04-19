@@ -127,6 +127,9 @@ public class ProfileProfileInformationController implements Initializable {
 
     private boolean checkDoesUserHaveAnAvatar(){
 
+        gamerAvatars.clear();
+        gamerAvatars = dbService.fetchGamerAvatars();
+
         for(int i = 0; i < gamerAvatars.size(); i++){
 
             if(gamerAvatars.get(i).getGamer().getId() == Session.gamerSession.getId()){
