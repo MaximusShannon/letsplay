@@ -1,5 +1,6 @@
 package controllers.dynamicviewcontrollers;
 
+import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
@@ -10,6 +11,7 @@ public class UniquePostController {
     public Text postDescription;
     public Text postTags;
     public Text postLanguage;
+    public Button viewPost;
     /*
     * Microphone required to language spoken image views to notify the user
     * which requirements are activated

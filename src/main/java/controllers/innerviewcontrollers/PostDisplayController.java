@@ -30,6 +30,7 @@ public class PostDisplayController implements Initializable {
     private List<Post> filteredPosts;
     private List<Post> filteredByRequirements;
     public static String game;
+
     @FXML private VBox postsVbox;
     @FXML private Text postCount;
     @FXML private Text refreshText;
@@ -40,6 +41,7 @@ public class PostDisplayController implements Initializable {
     @FXML private CheckBox acceptMalesFilter;
     @FXML private CheckBox acceptFemalesFilter;
     @FXML private CheckBox micRequired;
+    @FXML private AnchorPane injectablePane;
 
 
     @Override
@@ -111,6 +113,13 @@ public class PostDisplayController implements Initializable {
             uniquePostController.username.setText(post.getGamer().getUserName());
             uniquePostController.postTags.setText(post.getPostTags());
             uniquePostController.postLanguage.setText(post.getLanguageSpoken());
+            uniquePostController.viewPost.setOnMouseClicked(e ->{
+
+                // new view with the post..
+
+                // comments..
+
+            });
 
             /*Requirements display*/
             if(post.isMicrophoneRequired()){
