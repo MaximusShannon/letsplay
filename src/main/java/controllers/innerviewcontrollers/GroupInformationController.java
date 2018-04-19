@@ -41,6 +41,7 @@ public class GroupInformationController implements Initializable {
     @FXML private Text applicationSent;
     @FXML private VBox memberlistVbox;
     @FXML private Button groupApplyButton;
+    @FXML private AnchorPane injectablePane;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -96,6 +97,18 @@ public class GroupInformationController implements Initializable {
                 applicationSent.setVisible(true);
             }
 
+        }
+    }
+
+    @FXML
+    private void backToAllGroupsView(){
+
+        try{
+            AnchorPane groupMainView = FXMLLoader.load(getClass().getResource("/view/innerviews/groupsmainview.fxml"));
+            injectablePane.getChildren().setAll(groupMainView);
+        }catch (Exception e){
+
+            e.printStackTrace();
         }
     }
 
