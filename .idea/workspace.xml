@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupMemberController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupMemberController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/InnerPostViewController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/InnerPostViewController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/LoginController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" afterPath="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functionality/Main.java" afterPath="$PROJECT_DIR$/src/main/java/functionality/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_card.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_card.fxml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/post_view.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/post_view.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -81,11 +88,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PostDisplayController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java">
+      <file leaf-file-name="GroupInformationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="979">
-              <caret line="118" column="101" lean-forward="false" selection-start-line="118" selection-start-column="101" selection-end-line="118" selection-end-column="101" />
+            <state relative-caret-position="746">
+              <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+              <folding>
+                <element signature="method#initialize#0;class#GroupInformationController#0" expanded="false" />
+                <element signature="method#startApplication#0;class#GroupInformationController#0" expanded="false" />
+                <element signature="method#checkIsAdminViewing#0;class#GroupInformationController#0" expanded="false" />
+                <element signature="method#checkIsLoggedInGamerAMemberOfThisGroup#0;class#GroupInformationController#0" expanded="false" />
+                <element signature="method#getMemberListIds#0;class#GroupInformationController#0" expanded="false" />
+                <element signature="method#fillInformationFromGroupSession#0;class#GroupInformationController#0" expanded="false" />
+                <element signature="method#initContext#0;class#GroupInformationController#0" expanded="false" />
+                <element signature="method#closeContext#0;class#GroupInformationController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="134" column="44" lean-forward="true" selection-start-line="134" selection-start-column="44" selection-end-line="134" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UniqueGroupMemberController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupMemberController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseInteractionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGroupMessage#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistPostComment#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGroupApplication#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchAllApplicationsForGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#filterApplicationsToGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#initFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteApplication#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/functionality/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -94,39 +181,46 @@
       <file leaf-file-name="UniquePostController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+            <state relative-caret-position="208">
+              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post_view_inside_with_comments.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/post_view_inside_with_comments.fxml">
+      <file leaf-file-name="PostDisplayController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InnerPostViewController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/InnerPostViewController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="159" column="104" lean-forward="false" selection-start-line="159" selection-start-column="104" selection-end-line="159" selection-end-column="104" />
+            <state relative-caret-position="649">
+              <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
               <folding>
-                <element signature="method#initTexts#0;class#InnerPostViewController#0" expanded="false" />
-                <element signature="method#fadeText#0;class#InnerPostViewController#0" expanded="false" />
-                <element signature="method#backToPostsButtonFunctionality#0;class#InnerPostViewController#0" expanded="false" />
-                <element signature="method#initRequirements#0;class#InnerPostViewController#0" expanded="false" />
-                <element signature="method#initResources#0;class#InnerPostViewController#0" expanded="false" />
-                <element signature="method#closeResources#0;class#InnerPostViewController#0" expanded="false" />
+                <element signature="method#displayPostCount#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#displayUniquePostsInView#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#initializeChoiceBoxes#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#refreshPosts#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#filterPostsByRequirements#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#removeAllLanguagesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#removeAllTimeZonesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#removeAllPostsThatRequireMicrophone#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#removeAllPostsThatAreLookingForCasualPlayers#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#removeAllPostsThatAreLookingForCompetitivePlayers#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#removeAllPostsThatAreLookingForMales#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#removeAllPostsThatAreLookingForFemales#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#createFilter#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#closeContext#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#getMostRecentPostList#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="method#fadeRefreshingText#0;class#PostDisplayController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainViewController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,6 +249,7 @@
       <find>backto</find>
       <find>closeContext</find>
       <find>update</find>
+      <find>serverd</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -173,11 +268,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_display_card.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_card.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupMemberController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupMainViewController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_usergroups.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_user_display_card.fxml" />
@@ -196,7 +287,6 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/MainAdminPanelController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_information_view.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/models/GroupApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_applications.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_application_card.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupApplicationCardController.java" />
@@ -219,11 +309,16 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostCommentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/PostComment.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ORM.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionCreatePostController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/InnerPostViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/functionality/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupMemberController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java" />
       </list>
     </option>
   </component>
@@ -330,15 +425,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="adminpanelcontrollers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="dynamicviewcontrollers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -372,14 +458,6 @@
               <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -389,52 +467,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamiclycreatedviews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="feedbackviews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="frameviews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="innerviews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="innerviews" type="462c0819:PsiDirectoryNode" />
-              <item name="inner_innerviews" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -704,12 +736,12 @@
       <workItem from="1523966138128" duration="13150000" />
       <workItem from="1523990423602" duration="3508000" />
       <workItem from="1524048409739" duration="23515000" />
-      <workItem from="1524130279976" duration="12238000" />
+      <workItem from="1524130279976" duration="15204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246522000" />
+    <option name="totallyTimeSpent" value="249488000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -741,12 +773,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3583062" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22258414" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30401736" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2801303" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21108742" sideWeight="0.6703755" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20202559" sideWeight="0.6703755" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -842,7 +874,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -851,48 +883,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="32" column="75" lean-forward="false" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_removeplayers.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/GroupMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="e#315#316#0" expanded="false" />
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#404#405#0" expanded="false" />
-            <element signature="e#438#439#0" expanded="false" />
-            <element signature="e#468#469#0" expanded="false" />
-            <element signature="e#514#515#0" expanded="false" />
-            <element signature="e#552#553#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-            <element signature="e#626#627#0" expanded="false" />
-            <element signature="e#682#683#0" expanded="false" />
-            <element signature="e#726#727#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_messaging.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -935,22 +925,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="method#checkIsAdminViewing#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#checkIsLoggedInGamerAMemberOfThisGroup#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#getMemberListIds#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#fillInformationFromGroupSession#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#getGroupMembers#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#fillMemberListVBox#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#closeContext#0;class#GroupInformationController#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/GroupApplication.java">
@@ -1144,14 +1118,6 @@
             <element signature="method#instantiateGroupActivityLevelChoiceBox#0;class#UpdateGroupController#0" expanded="false" />
             <element signature="method#instantiateGroupMainLanguageChoiceBox#0;class#UpdateGroupController#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="81" column="29" lean-forward="true" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,17 +1348,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/post_view_inside_with_comments.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/InnerPostViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="102" column="89" lean-forward="false" selection-start-line="102" selection-start-column="89" selection-end-line="102" selection-end-column="89" />
+          <folding>
+            <element signature="method#fadeText#0;class#InnerPostViewController#0" expanded="false" />
+            <element signature="method#backToPostsButtonFunctionality#0;class#InnerPostViewController#0" expanded="false" />
+            <element signature="method#initRequirements#0;class#InnerPostViewController#0" expanded="false" />
+            <element signature="method#initResources#0;class#InnerPostViewController#0" expanded="false" />
+            <element signature="method#closeResources#0;class#InnerPostViewController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="111" column="23" lean-forward="false" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
+        <state relative-caret-position="172">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#updateGroup#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
@@ -1420,45 +1420,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="979">
-          <caret line="118" column="101" lean-forward="false" selection-start-line="118" selection-start-column="101" selection-end-line="118" selection-end-column="101" />
+        <state relative-caret-position="396">
+          <caret line="134" column="44" lean-forward="true" selection-start-line="134" selection-start-column="44" selection-end-line="134" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupMemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#startApplication#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#checkIsAdminViewing#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#checkIsLoggedInGamerAMemberOfThisGroup#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#getMemberListIds#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#fillInformationFromGroupSession#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#initContext#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#closeContext#0;class#GroupInformationController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        <state relative-caret-position="208">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/post_view_inside_with_comments.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/InnerPostViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="159" column="104" lean-forward="false" selection-start-line="159" selection-start-column="104" selection-end-line="159" selection-end-column="104" />
+        <state relative-caret-position="649">
+          <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
           <folding>
-            <element signature="method#initTexts#0;class#InnerPostViewController#0" expanded="false" />
-            <element signature="method#fadeText#0;class#InnerPostViewController#0" expanded="false" />
-            <element signature="method#backToPostsButtonFunctionality#0;class#InnerPostViewController#0" expanded="false" />
-            <element signature="method#initRequirements#0;class#InnerPostViewController#0" expanded="false" />
-            <element signature="method#initResources#0;class#InnerPostViewController#0" expanded="false" />
-            <element signature="method#closeResources#0;class#InnerPostViewController#0" expanded="false" />
+            <element signature="method#displayPostCount#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#displayUniquePostsInView#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#initializeChoiceBoxes#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#refreshPosts#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#filterPostsByRequirements#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllLanguagesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllTimeZonesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatRequireMicrophone#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatAreLookingForCasualPlayers#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatAreLookingForCompetitivePlayers#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatAreLookingForMales#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatAreLookingForFemales#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#createFilter#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#closeContext#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#getMostRecentPostList#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#fadeRefreshingText#0;class#PostDisplayController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -18,6 +18,7 @@
             <Font name="Verdana Bold Italic" size="12.0" />
          </font>
       </Text>
-      <Rectangle fx:id="onlineRect" arcHeight="5.0" arcWidth="5.0" fill="#00ff09" height="21.0" layoutX="73.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+      <Rectangle fx:id="onlineRec_online" arcHeight="5.0" arcWidth="5.0" fill="#00ff09" height="21.0" layoutX="73.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="17.0" />
+      <Rectangle fx:id="onlineRec_offline" arcHeight="5.0" arcWidth="5.0" fill="RED" height="21.0" layoutX="73.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="17.0" />
    </children>
 </AnchorPane>

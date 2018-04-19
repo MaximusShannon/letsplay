@@ -1,10 +1,13 @@
 package controllers.outviewcontrollers;
 
 import functionality.Authentication;
+import functionality.DatabaseInteractionService;
 import functionality.Validator;
 import javafx.animation.FadeTransition;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
@@ -13,18 +16,24 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 import javafx.util.Duration;
 import models.Gamer;
 import models.Session;
 import org.apache.log4j.Logger;
 
-public class LoginController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class LoginController implements Initializable {
 
     private static final Logger logger = Logger.getLogger(LoginController.class);
 
     private Validator validator;
     private Authentication authenticator;
     private Gamer gamer;
+    private Gamer authenticatedGamer;
+    private DatabaseInteractionService dbService;
 
     @FXML private AnchorPane loginStage;
     @FXML private TextField userNameField;
@@ -74,6 +83,7 @@ public class LoginController {
                     if(authenticator.checkPasswordsMatch(passwordField.getText(), gamer.getPassword())){
 
                         Session.gamerSession = gamer;
+                        dbService.setGamerOnline(dbService.fetchUserForUpdate());
                         loadHomeView();
 
                     }else{
@@ -87,6 +97,7 @@ public class LoginController {
 
         }catch (NullPointerException e){
 
+            e.printStackTrace();
             displayServerDownMessage();
             logger.error("This is a null-pointer-error");
 
@@ -117,6 +128,16 @@ public class LoginController {
             homeViewStage.sizeToScene();
             homeViewStage.show();
 
+            homeViewStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+                @Override
+                public void handle(WindowEvent event) {
+
+                    dbService.initFactory();
+                    dbService.setGamerOffline(dbService.fetchUserForUpdate());
+                    System.exit(0);
+                }
+            });
+
             closeStage();
 
         }catch (Exception e){
@@ -137,5 +158,11 @@ public class LoginController {
         ft.setToValue(0.0);
 
         ft.play();
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+        dbService = new DatabaseInteractionService();
     }
 }

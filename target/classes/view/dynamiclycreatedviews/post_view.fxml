@@ -146,7 +146,7 @@
                   <Font name="Verdana Bold Italic" size="12.0" />
                </font>
             </Text>
-            <Text fill="#00ff44" layoutX="140.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="applicationCount" fill="#00ff44" layoutX="140.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font name="Verdana Bold Italic" size="12.0" />
                </font>
@@ -181,7 +181,7 @@
                   <Image url="@../../images/red_x.png" />
                </image>
             </ImageView>
-            <Button fx:id="viewPost" layoutX="664.0" layoutY="259.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="167.0" stylesheets="@../../css/Sharp.css" text="View post" textFill="WHITE" />
+            <Button fx:id="viewPost" layoutX="781.0" layoutY="260.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="167.0" stylesheets="@../../css/Sharp.css" text="View post" textFill="WHITE" />
             <Label fx:id="isOnline_red" layoutX="136.0" layoutY="251.0" prefHeight="17.0" prefWidth="17.0" style="-fx-background-color: red;" visible="false" />
          </children>
       </Pane>

@@ -42,8 +42,6 @@ public class GroupInformationController implements Initializable {
     @FXML private VBox memberlistVbox;
     @FXML private Button groupApplyButton;
 
-
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -76,8 +74,6 @@ public class GroupInformationController implements Initializable {
     @FXML
     private void startApplication(){
 
-
-
         TextInputDialog applicationDialog = new TextInputDialog("");
         applicationDialog.setTitle("Send you application");
         applicationDialog.setHeaderText(Session.innerViewGamerGroup.getGroupName() + " Application");
@@ -93,6 +89,8 @@ public class GroupInformationController implements Initializable {
             groupApplication.setGamerGroup(Session.innerViewGamerGroup);
 
             if(dbService.persistGroupApplication(groupApplication) > 0){
+
+                dbService.updateGamerApplicationCount(dbService.fetchUserForUpdate());
 
                 groupApplyButton.setVisible(false);
                 applicationSent.setVisible(true);
@@ -173,6 +171,14 @@ public class GroupInformationController implements Initializable {
 
             UniqueGroupMemberController uniqueGroupMemberController = loader.getController();
             uniqueGroupMemberController.username.setText(groupMember.getUserName());
+
+            if(groupMember.getPlayerOnlineStatus()){
+
+                uniqueGroupMemberController.onlineRec_online.setVisible(true);
+            }else{
+
+                uniqueGroupMemberController.onlineRec_offline.setVisible(true);
+            }
 
             memberlistVbox.getChildren().add(node);
 

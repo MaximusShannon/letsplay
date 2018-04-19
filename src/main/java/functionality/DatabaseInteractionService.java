@@ -112,6 +112,42 @@ public class DatabaseInteractionService {
         closeFactory();
     }
 
+    public void updateGamerApplicationCount(Gamer gamer){
+
+        Transaction tx = session.beginTransaction();
+        gamer.setApplicationsCount(gamer.getApplicationsCount() + 1);
+
+        session.update(gamer);
+        tx.commit();
+
+        session.close();
+        closeFactory();
+    }
+
+    public void setGamerOnline(Gamer gamer){
+
+        Transaction tx = session.beginTransaction();
+        gamer.setPlayerOnlineStatus(true);
+
+        session.update(gamer);
+        tx.commit();
+
+        session.close();
+        closeFactory();
+    }
+
+    public void setGamerOffline(Gamer gamer){
+
+        Transaction tx = session.beginTransaction();
+        gamer.setPlayerOnlineStatus(false);
+
+        session.update(gamer);
+        tx.commit();
+
+        session.close();
+        closeFactory();
+    }
+
     public void updatePost(Post post, String postTitle,
                            String ageRange, String postDesc,
                            String postTags, String langSpoken,

@@ -1,5 +1,6 @@
 package controllers.outviewcontrollers;
 
+import functionality.DatabaseInteractionService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,6 +22,8 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class MainViewController implements Initializable {
+
+    private DatabaseInteractionService dbService;
 
     @FXML private AnchorPane mainViewPane;
     @FXML private AnchorPane fillerPane;
@@ -53,6 +56,9 @@ public class MainViewController implements Initializable {
         Optional<ButtonType> result = logoutAlert.showAndWait();
 
         if(result.get() == ButtonType.OK){
+
+            dbService = new DatabaseInteractionService();
+            dbService.setGamerOffline(dbService.fetchUserForUpdate());
 
             Session.resetSession();
             closeStage();

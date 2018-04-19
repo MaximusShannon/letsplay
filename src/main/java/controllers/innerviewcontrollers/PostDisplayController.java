@@ -117,6 +117,15 @@ public class PostDisplayController implements Initializable {
             uniquePostController.username.setText(post.getGamer().getUserName());
             uniquePostController.commentCount.setText(Integer.toString(post.getGamer().getCommentsCount()));
             uniquePostController.postCount.setText(Integer.toString(post.getGamer().getPostCount()));
+            uniquePostController.applicationCount.setText(Integer.toString(post.getGamer().getApplicationsCount()));
+
+            if(post.getGamer().getPlayerOnlineStatus()){
+
+                uniquePostController.isOnline_green.setVisible(true);
+            }else {
+
+                uniquePostController.isOnline_red.setVisible(true);
+            }
 
             uniquePostController.viewPost.setOnMouseClicked(e ->{
 

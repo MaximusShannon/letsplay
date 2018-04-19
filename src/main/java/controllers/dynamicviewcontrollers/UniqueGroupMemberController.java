@@ -6,5 +6,6 @@ import javafx.scene.text.Text;
 public class UniqueGroupMemberController {
 
     public Text username;
-    public Rectangle onlineRect;
+    public Rectangle onlineRec_online;
+    public Rectangle onlineRec_offline;
 }

@@ -14,6 +14,7 @@ public class UniquePostController {
     public Text postLanguage;
     public Text postCount;
     public Text commentCount;
+    public Text applicationCount;
     public Button viewPost;
     /*
     * Microphone required to language spoken image views to notify the user
