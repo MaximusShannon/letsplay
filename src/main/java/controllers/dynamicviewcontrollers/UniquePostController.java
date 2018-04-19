@@ -1,6 +1,7 @@
 package controllers.dynamicviewcontrollers;
 
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
@@ -11,6 +12,8 @@ public class UniquePostController {
     public Text postDescription;
     public Text postTags;
     public Text postLanguage;
+    public Text postCount;
+    public Text commentCount;
     public Button viewPost;
     /*
     * Microphone required to language spoken image views to notify the user
@@ -22,5 +25,7 @@ public class UniquePostController {
     public ImageView acm_x, acm_tick;
     public ImageView acf_x, acf_tick;
     public ImageView lang_x, lang_tick;
+    public Label isOnline_green;
+    public Label isOnline_red;
 
 }

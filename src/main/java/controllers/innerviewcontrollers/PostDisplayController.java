@@ -111,9 +111,12 @@ public class PostDisplayController implements Initializable {
 
             uniquePostController.postTitle.setText(post.getPostTitle());
             uniquePostController.postDescription.setText(post.getPostDescription());
-            uniquePostController.username.setText(post.getGamer().getUserName());
             uniquePostController.postTags.setText(post.getPostTags());
             uniquePostController.postLanguage.setText(post.getLanguageSpoken());
+
+            uniquePostController.username.setText(post.getGamer().getUserName());
+            uniquePostController.commentCount.setText(Integer.toString(post.getGamer().getCommentsCount()));
+            uniquePostController.postCount.setText(Integer.toString(post.getGamer().getPostCount()));
 
             uniquePostController.viewPost.setOnMouseClicked(e ->{
 

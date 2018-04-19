@@ -100,7 +100,7 @@ public class InnerPostViewController implements Initializable {
 
     private void initTexts(){
 
-        postersUsername.setText(Session.innerViewPost.getGamer().getUserName() + "'s Post");
+        postersUsername.setText(Session.innerViewPost.getGamer().getUserName() + "'s post");
         postTitle.setText(Session.innerViewPost.getPostTitle());
         postDescription.setText(Session.innerViewPost.getPostDescription());
         postAgeRange.setText(Session.innerViewPost.getAgeRange());
@@ -157,7 +157,7 @@ public class InnerPostViewController implements Initializable {
 
         UniquePostCommentController uniquePostCommentController = loader.getController();
 
-        uniquePostCommentController.commentorName.setText(comment.getCommentor().getUserName());
+        uniquePostCommentController.commentorName.setText(comment.getCommentor().getUserName() + " said:");
         uniquePostCommentController.commentText.setText(comment.getCommentText());
 
         if(comment.getCommentor().getId() == Session.gamerSession.getId()){
