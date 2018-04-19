@@ -8,10 +8,19 @@ public class PostComment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int commentId;
+    private int postId;
     private String commentText;
 
     @OneToOne
     private Gamer commentor;
+
+    public int getPostId() {
+        return postId;
+    }
+
+    public void setPostId(int postId) {
+        this.postId = postId;
+    }
 
     public int getCommentId() {
         return commentId;

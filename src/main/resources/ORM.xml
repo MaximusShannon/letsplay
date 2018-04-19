@@ -121,7 +121,8 @@
         <id name="commentId" column="COLUMN_ID">
             <generator class="native"/>
         </id>
-        <property name="commentText" column="COMMENT_TEXT"/>
+        <property name="commentText" type="java.lang.String" column="COMMENT_TEXT"/>
+        <property name="postId" type="integer" column="POST_ID"/>
     </class>
 
 </hibernate-mapping>

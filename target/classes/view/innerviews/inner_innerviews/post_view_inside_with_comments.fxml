@@ -15,8 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:controller="controllers.innerviewcontrollers.InnerPostViewController" prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="injectablePane" prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.innerviewcontrollers.InnerPostViewController">
    <children>
       <ScrollPane hbarPolicy="NEVER" layoutX="13.0" layoutY="493.0" prefHeight="324.0" prefWidth="958.0" styleClass="edge-to-edge" stylesheets="@../../../css/filters.css" vbarPolicy="ALWAYS">
          <content>
@@ -41,17 +40,17 @@
                   <Font name="Verdana Italic" size="14.0" />
                </font>
             </Text>
-            <TextField fx:id="commentBox" layoutX="153.0" layoutY="387.0" prefHeight="27.0" prefWidth="453.0" promptText="Discord or teamspeak server address" style="-fx-border-color: #292E37;">
+            <TextField fx:id="commentBox" layoutX="14.0" layoutY="387.0" prefHeight="27.0" prefWidth="453.0" promptText="Leave your steam profile with a message" style="-fx-border-color: #292E37;">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
             </TextField>
-            <Text fill="#0967a5" layoutX="153.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave a comment. . " wrappingWidth="181.7451171875">
+            <Text fill="#0967a5" layoutX="14.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave a comment. . " wrappingWidth="181.7451171875">
                <font>
                   <Font name="Segoe UI Bold" size="14.0" />
                </font>
             </Text>
-            <Button fx:id="postCommentButton" layoutX="631.0" layoutY="387.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="189.0" stylesheets="@../../../css/Sharp.css" text="Post comment" textFill="WHITE">
+            <Button fx:id="postCommentButton" layoutX="485.0" layoutY="387.0" mnemonicParsing="false" onAction="#postComment" prefHeight="27.0" prefWidth="189.0" stylesheets="@../../../css/Sharp.css" text="Post comment" textFill="WHITE">
                <effect>
                   <DropShadow />
                </effect>
@@ -192,6 +191,16 @@
                </image>
             </ImageView>
             <Pane layoutX="538.0" layoutY="85.0" opacity="0.49" prefHeight="273.0" prefWidth="2.0" style="-fx-background-color: #292E37;" />
+            <Text fx:id="commentPosted" fill="#018d34" layoutX="783.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comment Posted." visible="false">
+               <font>
+                  <Font name="Verdana Italic" size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="commentFailed" fill="#d70606" layoutX="710.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please ensure you've entered something." visible="false">
+               <font>
+                  <Font name="Verdana Italic" size="11.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
       <Pane layoutX="5.0" layoutY="27.0" prefHeight="108.0" prefWidth="974.0" style="-fx-background-color: #292E37;">
@@ -205,11 +214,26 @@
                </font>
             </Text>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="115.0" layoutY="74.0" stroke="BLACK" strokeType="INSIDE" width="744.0" />
-            <Text fx:id="postersUsername" fill="WHITE" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iMaximuss's Post" wrappingWidth="124.74511873722076">
+            <Text fx:id="postersUsername" fill="WHITE" layoutX="797.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iMaximuss's Post" wrappingWidth="124.74511873722076">
                <font>
                   <Font name="Verdana Italic" size="14.0" />
                </font>
             </Text>
+            <Text fx:id="updateFailed1111113" fill="#616161" layoutX="38.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back to all posts">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="36.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../../images/arrowicon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backToPostsButton" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#backToPostsButtonFunctionality" opacity="0.0" prefHeight="32.0" prefWidth="144.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </Pane>
       <Text fill="#0967a5" layoutX="450.0" layoutY="838.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments" wrappingWidth="84.7451171875">

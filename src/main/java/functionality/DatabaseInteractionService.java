@@ -26,6 +26,7 @@ public class DatabaseInteractionService {
     private List<GamerGroup> groupsFound;
     private List<MemberList> memberListsFound;
     private List<GroupApplication> groupApplications;
+    private List<PostComment> postComments;
     private Notification notification;
 
     public DatabaseInteractionService(){
@@ -75,6 +76,20 @@ public class DatabaseInteractionService {
         gamer.setBio(bio);
         gamer.setInterest(interests);
         gamer.setProfileVersion(gamer.getProfileVersion() + 1);
+
+        session.update(gamer);
+        tx.commit();
+
+        updateSession(gamer);
+
+        session.close();
+        closeFactory();
+    }
+
+    public void updateGamerCommentCount(Gamer gamer){
+
+        Transaction tx = session.beginTransaction();
+        gamer.setCommentsCount(gamer.getCommentsCount() + 1);
 
         session.update(gamer);
         tx.commit();
@@ -337,6 +352,19 @@ public class DatabaseInteractionService {
 
     }
 
+    public Integer persistPostComment(PostComment comment){
+
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+
+        Integer id = (Integer) session.save(comment);
+
+        session.getTransaction().commit();
+        session.close();
+
+        return id;
+    }
+
     public Integer persistGroupApplication(GroupApplication application){
 
         session = sessionFactory.openSession();
@@ -449,6 +477,22 @@ public class DatabaseInteractionService {
         return memberListsFound;
     }
 
+    public List<PostComment> fetchPostCommentList(){
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<PostComment> commentsList = builder.createQuery(PostComment.class);
+        commentsList.from(PostComment.class);
+
+        postComments = session.createQuery(commentsList).getResultList();
+
+        session.close();
+
+        return postComments;
+    }
+
     public void initFactory(){
 
         try{
@@ -525,6 +569,21 @@ public class DatabaseInteractionService {
         Transaction tx = session.beginTransaction();
 
         GamerGroup toDelete = session.load(GamerGroup.class, groupId);
+        session.delete(toDelete);
+
+        session.flush();
+        tx.commit();
+
+        session.close();
+    }
+
+    public void deleteComment(int commentId){
+
+        session = sessionFactory.openSession();
+
+        Transaction tx = session.beginTransaction();
+
+        PostComment toDelete = session.load(PostComment.class, commentId);
         session.delete(toDelete);
 
         session.flush();

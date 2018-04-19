@@ -114,14 +114,20 @@ public class PostDisplayController implements Initializable {
             uniquePostController.username.setText(post.getGamer().getUserName());
             uniquePostController.postTags.setText(post.getPostTags());
             uniquePostController.postLanguage.setText(post.getLanguageSpoken());
+
             uniquePostController.viewPost.setOnMouseClicked(e ->{
 
-                // new view with the post..
                 Session.resetInnerViewPost();
                 Session.innerViewPost = post;
-                // open view
 
+                try{
+                    AnchorPane postView = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/post_view_inside_with_comments.fxml"));
+                    injectablePane.getChildren().setAll(postView);
 
+                }catch (Exception ei){
+
+                    ei.printStackTrace();
+                }
             });
 
             /*Requirements display*/
