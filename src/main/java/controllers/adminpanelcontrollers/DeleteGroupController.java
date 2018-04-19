@@ -2,10 +2,12 @@ package controllers.adminpanelcontrollers;
 
 import functionality.DatabaseInteractionService;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import models.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -37,18 +39,19 @@ public class DeleteGroupController {
 
             initResources();
 
-
             dbService.deleteGroup(Session.adminGroup.getGroupId());
             Session.resetAdminGroup();
 
+            try{
+                AnchorPane deleteSuccess = FXMLLoader.load(getClass().getResource("/view/feedbackviews/group_deleted_success.fxml"));
+                Session.adminGroupView.getChildren().setAll(deleteSuccess);
 
+            }catch (Exception e){
 
-            //we then need to delete the group, and its memberlist
-            //then we need to reset the session.
-            //exit the view.
+                e.printStackTrace();
+            }
 
             closeResources();
-
         }else{
 
             deleteGroupDialog.close();

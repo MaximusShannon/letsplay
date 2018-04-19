@@ -34,6 +34,8 @@ public class ProfileUserGroupsController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        Session.resetAdminGroupView();
+
         initContext();
         dbService = (DatabaseInteractionService) context.getBean("databaseinteractionservice");
 
@@ -89,7 +91,7 @@ public class ProfileUserGroupsController implements Initializable {
                     Session.adminGroup = group;
 
                     try{
-
+                        Session.adminGroupView = injectablePane;
                         loadAdminPanel();
                     }catch (IOException io){
 

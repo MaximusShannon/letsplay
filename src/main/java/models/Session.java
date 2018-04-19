@@ -1,5 +1,7 @@
 package models;
 
+import javafx.scene.layout.AnchorPane;
+
 import java.util.ArrayList;
 
 public class Session {
@@ -10,6 +12,7 @@ public class Session {
     public static GamerGroup innerViewGamerGroup;
     public static MemberList innerViewGamerGroupMemberList;
     public static GamerGroup adminGroup;
+    public static AnchorPane adminGroupView;
 
     public static void resetSession(){
 
@@ -29,5 +32,10 @@ public class Session {
     public static void resetAdminGroup(){
 
         adminGroup = null;
+    }
+
+    public static void resetAdminGroupView(){
+
+        adminGroupView = null;
     }
 }
