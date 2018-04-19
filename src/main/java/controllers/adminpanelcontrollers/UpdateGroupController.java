@@ -35,6 +35,7 @@ public class UpdateGroupController implements Initializable {
     @FXML private Button updateGroup;
     @FXML private Text updateFailure;
     @FXML private Text updateSuccess;
+    @FXML private Text changeImage;
 
 
     @Override
@@ -42,6 +43,18 @@ public class UpdateGroupController implements Initializable {
 
         initChoices();
         initTextFields();
+        setChangeImageClick();
+
+        //set upload click listener
+    }
+
+    private void setChangeImageClick(){
+
+        changeImage.setOnMouseClicked(e ->{
+
+
+        });
+
     }
 
     @FXML
