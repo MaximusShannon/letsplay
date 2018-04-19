@@ -1,5 +1,6 @@
 package controllers.innerviewcontrollers;
 
+import functionality.DatabaseInteractionService;
 import functionality.PostFunctionalityService;
 import functionality.Validator;
 import javafx.animation.FadeTransition;
@@ -23,6 +24,7 @@ public class SubSectionCreatePostController implements Initializable {
 
     private Validator validator;
     private PostFunctionalityService postCreationService;
+    private DatabaseInteractionService dbService;
     private ClassPathXmlApplicationContext context;
     private Post post;
     private Integer idReturned;
@@ -85,6 +87,7 @@ public class SubSectionCreatePostController implements Initializable {
     private void preparePostForCreation(){
 
         validator = new Validator();
+        dbService = new DatabaseInteractionService();
 
         if(validator.validateTextFieldNotEmpty(postTitle.getText())
                 && validator.validateTextFieldNotEmpty(postDescription.getText())
@@ -98,6 +101,8 @@ public class SubSectionCreatePostController implements Initializable {
 
                 closeContext();
                 postCreationService.closeFactory();
+                dbService.updateGamerPostCount(dbService.fetchUserForUpdate());
+
                 loadSuccessView();
             }else {
                 fadeFailureText();

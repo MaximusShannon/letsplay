@@ -100,6 +100,18 @@ public class DatabaseInteractionService {
         closeFactory();
     }
 
+    public void updateGamerPostCount(Gamer gamer){
+
+        Transaction tx = session.beginTransaction();
+        gamer.setPostCount(gamer.getPostCount() + 1);
+
+        session.update(gamer);
+        tx.commit();
+
+        session.close();
+        closeFactory();
+    }
+
     public void updatePost(Post post, String postTitle,
                            String ageRange, String postDesc,
                            String postTags, String langSpoken,
