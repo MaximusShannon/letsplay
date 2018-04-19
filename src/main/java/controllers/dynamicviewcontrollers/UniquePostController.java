@@ -26,6 +26,7 @@ public class UniquePostController {
     public ImageView acm_x, acm_tick;
     public ImageView acf_x, acf_tick;
     public ImageView lang_x, lang_tick;
+    public ImageView userProfileImage;
     public Label isOnline_green;
     public Label isOnline_red;
 
