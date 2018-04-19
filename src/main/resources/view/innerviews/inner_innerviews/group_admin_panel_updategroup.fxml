@@ -22,7 +22,7 @@
          </font>
       </Text>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="14.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="744.0" />
-      <ImageView fitHeight="197.0" fitWidth="230.0" layoutX="14.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="groupImage" fitHeight="197.0" fitWidth="230.0" layoutX="14.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/letsplay_Icon.PNG" />
          </image>

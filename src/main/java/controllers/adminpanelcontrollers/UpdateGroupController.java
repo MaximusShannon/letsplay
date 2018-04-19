@@ -4,18 +4,27 @@ import functionality.DatabaseInteractionService;
 import functionality.Validator;
 import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.image.WritableImage;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
+import models.GroupAvatar;
 import models.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class UpdateGroupController implements Initializable {
@@ -23,6 +32,8 @@ public class UpdateGroupController implements Initializable {
     private ClassPathXmlApplicationContext context;
     private DatabaseInteractionService dbService;
     private Validator validator;
+    private List<GroupAvatar> groupAvatarList;
+    private GroupAvatar avatar;
 
     @FXML private TextField groupName;
     @FXML private TextField comsAddress;
@@ -36,6 +47,7 @@ public class UpdateGroupController implements Initializable {
     @FXML private Text updateFailure;
     @FXML private Text updateSuccess;
     @FXML private Text changeImage;
+    @FXML private ImageView groupImage;
 
 
     @Override
@@ -44,8 +56,25 @@ public class UpdateGroupController implements Initializable {
         initChoices();
         initTextFields();
         setChangeImageClick();
+        setGroupImageIfApplicable();
 
         //set upload click listener
+    }
+
+    private void setGroupImageIfApplicable(){
+
+        if(dbService == null){
+
+            dbService = new DatabaseInteractionService();
+        }
+
+        avatar = checkDoesGroupHaveAnAvatar();
+
+        if(avatar != null){
+
+            groupImage.setImage(convertToJavaFXImage(avatar.getImage(), 230, 197));
+        }
+
     }
 
     private void setChangeImageClick(){
@@ -55,6 +84,42 @@ public class UpdateGroupController implements Initializable {
 
         });
 
+    }
+
+    private Image convertToJavaFXImage(byte[] raw, final int width, final int height){
+
+        WritableImage image = new WritableImage(width, height);
+
+        try{
+
+            ByteArrayInputStream bis = new ByteArrayInputStream(raw);
+            BufferedImage read = ImageIO.read(bis);
+
+            image = SwingFXUtils.toFXImage(read, null);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+
+        return image;
+    }
+
+    private GroupAvatar checkDoesGroupHaveAnAvatar(){
+
+        groupAvatarList.clear();
+        groupAvatarList = dbService.fetchGroupAvatars();
+
+        for(int i = 0; i < groupAvatarList.size(); i++){
+
+            if(groupAvatarList.get(i).getGamerGroup().getGroupId() == Session.innerViewGamerGroup.getGroupId()){
+
+                return groupAvatarList.get(i);
+            }
+        }
+
+
+        return null;
     }
 
     @FXML

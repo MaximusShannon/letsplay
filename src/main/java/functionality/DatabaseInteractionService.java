@@ -28,6 +28,7 @@ public class DatabaseInteractionService {
     private List<GroupApplication> groupApplications;
     private List<PostComment> postComments;
     private List<GamerAvatar> gamersAvatars;
+    private List<GroupAvatar> groupAvatars;
     private Notification notification;
 
     public DatabaseInteractionService(){
@@ -569,6 +570,22 @@ public class DatabaseInteractionService {
         session.close();
 
         return gamersAvatars;
+    }
+
+    public List<GroupAvatar> fetchGroupAvatars(){
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<GroupAvatar> groupAvatarList = builder.createQuery(GroupAvatar.class);
+        groupAvatarList.from(GroupAvatar.class);
+
+        groupAvatars = session.createQuery(groupAvatarList).getResultList();
+
+        session.close();
+
+        return groupAvatars;
     }
 
     public void initFactory(){
