@@ -1,6 +1,7 @@
 package models;
 
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
@@ -14,6 +15,7 @@ public class Session {
     public static GamerGroup adminGroup;
     public static AnchorPane adminGroupView;
     public static Post innerViewPost;
+    public static Stage thisStage;
 
     public static void resetSession(){
 

@@ -3,22 +3,39 @@ package controllers.innerviewcontrollers;
 import functionality.DatabaseInteractionService;
 import functionality.Validator;
 import javafx.animation.FadeTransition;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.image.WritableImage;
 import javafx.scene.text.Text;
+import javafx.stage.FileChooser;
 import javafx.util.Duration;
+import models.GamerAvatar;
 import models.Session;
+import org.hibernate.Hibernate;
+import org.hibernate.exception.GenericJDBCException;
 
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.net.URL;
+import java.sql.Blob;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class ProfileProfileInformationController implements Initializable {
 
     private DatabaseInteractionService dbService;
     private Validator validator;
+    private List<GamerAvatar> gamerAvatars;
+    private GamerAvatar gamersAvatar;
 
     @FXML private Text userName;
     @FXML private Text interests;
@@ -31,6 +48,8 @@ public class ProfileProfileInformationController implements Initializable {
     @FXML private Text commentCount;
     @FXML private Text applicationCount;
     @FXML private Text updateFailed;
+    @FXML private Text uploadNewPicture;
+    @FXML private Text warningUpload;
     @FXML private TextField firstnameEdit;
     @FXML private TextField surnameEdit;
     @FXML private TextField emailEdit;
@@ -40,6 +59,7 @@ public class ProfileProfileInformationController implements Initializable {
     @FXML private Button editProfile;
     @FXML private Button updateProfile;
     @FXML private Button cancelUpdate;
+    @FXML private ImageView profileImage;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -48,7 +68,74 @@ public class ProfileProfileInformationController implements Initializable {
         setEditFieldsInvisible();
         hideUpdateAndCancel();
 
+        if(dbService == null){
+
+            dbService = new DatabaseInteractionService();
+        }
+
+        gamerAvatars = dbService.fetchGamerAvatars();
+        if(checkDoesUserHaveAnAvatar()){
+
+            profileImage.setImage(converToJavaFXImage(gamersAvatar.getAvatarImage(), 185, 185));
+        }
+
         updateFailed.setVisible(false);
+
+        uploadNewPicture.setOnMouseClicked(e ->{
+
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Profile image chooser");
+            fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
+
+            File selectedFile = fileChooser.showOpenDialog(Session.thisStage);
+
+            if(selectedFile != null){
+
+                byte[] imageConverted = convertImageToByteArray(selectedFile);
+
+                GamerAvatar gamerAvatar = new GamerAvatar();
+                gamerAvatar.setAvatarImage(imageConverted);
+                gamerAvatar.setGamer(Session.gamerSession);
+
+                System.out.println(imageConverted.length);
+
+                if(dbService == null){
+
+                    dbService = new DatabaseInteractionService();
+                }
+                try{
+
+                    if(checkDoesUserHaveAnAvatar()){
+
+                        dbService.deleteOldAvatar(gamersAvatar.getAvatarId());
+                    }
+
+                    int id = dbService.persistGamerAvatar(gamerAvatar);
+                    if(id > 0){
+
+                        profileImage.setImage(converToJavaFXImage(imageConverted, 185, 185));
+                    }
+
+                }catch (GenericJDBCException gj){
+
+                    warningUpload.setVisible(true);
+                    fadeUpdateFailedText(warningUpload);
+                }
+            }
+        });
+    }
+
+    private boolean checkDoesUserHaveAnAvatar(){
+
+        for(int i = 0; i < gamerAvatars.size(); i++){
+
+            if(gamerAvatars.get(i).getGamer().getId() == Session.gamerSession.getId()){
+
+                gamersAvatar = gamerAvatars.get(i);
+                return true;
+            }
+        }
+        return false;
     }
 
     private void initFields(){
@@ -104,8 +191,51 @@ public class ProfileProfileInformationController implements Initializable {
         interestsEdit.setVisible(true);
         locationEdit.setVisible(true);
         bioEdit.setVisible(true);
+        uploadNewPicture.setVisible(true);
+
+
 
         fillInEditFields();
+    }
+
+    private Image converToJavaFXImage(byte[] raw, final int width, final int height){
+
+        WritableImage image = new WritableImage(width, height);
+
+        try{
+
+            ByteArrayInputStream bis = new ByteArrayInputStream(raw);
+            BufferedImage read = ImageIO.read(bis);
+
+            image = SwingFXUtils.toFXImage(read, null);
+
+        }catch (Exception e){
+
+            System.out.println("FAILED HERE");
+            e.printStackTrace();
+
+        }
+
+        return image;
+    }
+
+    private byte[] convertImageToByteArray(File fileReceived){
+
+        byte[] pictureAsBytes = new byte[(int) fileReceived.length()];
+
+        try{
+
+            FileInputStream fileInputStream = new FileInputStream(fileReceived);
+
+            fileInputStream.read(pictureAsBytes);
+            fileInputStream.close();
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+
+        return pictureAsBytes;
     }
 
     private void fillInEditFields(){

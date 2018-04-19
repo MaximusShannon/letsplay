@@ -27,6 +27,7 @@ public class DatabaseInteractionService {
     private List<MemberList> memberListsFound;
     private List<GroupApplication> groupApplications;
     private List<PostComment> postComments;
+    private List<GamerAvatar> gamersAvatars;
     private Notification notification;
 
     public DatabaseInteractionService(){
@@ -413,6 +414,19 @@ public class DatabaseInteractionService {
         return id;
     }
 
+    public Integer persistGamerAvatar(GamerAvatar gamerAvatar){
+
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+
+        Integer id = (Integer) session.save(gamerAvatar);
+
+        session.getTransaction().commit();;
+        session.close();
+
+        return id;
+    }
+
     public Integer persistGroupApplication(GroupApplication application){
 
         session = sessionFactory.openSession();
@@ -541,6 +555,22 @@ public class DatabaseInteractionService {
         return postComments;
     }
 
+    public List<GamerAvatar> fetchGamerAvatars(){
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<GamerAvatar> avatarList = builder.createQuery(GamerAvatar.class);
+        avatarList.from(GamerAvatar.class);
+
+        gamersAvatars = session.createQuery(avatarList).getResultList();
+
+        session.close();
+
+        return gamersAvatars;
+    }
+
     public void initFactory(){
 
         try{
@@ -617,6 +647,21 @@ public class DatabaseInteractionService {
         Transaction tx = session.beginTransaction();
 
         GamerGroup toDelete = session.load(GamerGroup.class, groupId);
+        session.delete(toDelete);
+
+        session.flush();
+        tx.commit();
+
+        session.close();
+    }
+
+    public void deleteOldAvatar(int avatarId){
+
+        session = sessionFactory.openSession();
+
+        Transaction tx = session.beginTransaction();
+
+        GamerAvatar toDelete = session.load(GamerAvatar.class, avatarId);
         session.delete(toDelete);
 
         session.flush();

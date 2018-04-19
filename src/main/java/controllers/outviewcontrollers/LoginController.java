@@ -128,6 +128,8 @@ public class LoginController implements Initializable {
             homeViewStage.sizeToScene();
             homeViewStage.show();
 
+            Session.thisStage = homeViewStage;
+
             homeViewStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
                 @Override
                 public void handle(WindowEvent event) {

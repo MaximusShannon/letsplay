@@ -125,4 +125,11 @@
         <property name="postId" type="integer" column="POST_ID"/>
     </class>
 
+    <class name="models.GamerAvatar" table="GAMER_AVATARS">
+        <id name="avatarId" column="AVATAR_ID">
+            <generator class="native"/>
+        </id>
+        <property name="avatarImage" type="binary" column="image_binary" length="80000"/>
+    </class>
+
 </hibernate-mapping>
