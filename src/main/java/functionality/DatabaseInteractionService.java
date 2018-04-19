@@ -518,6 +518,21 @@ public class DatabaseInteractionService {
         return notification;
     }
 
+    public void deleteGroup(int groupId){
+
+        session = sessionFactory.openSession();
+
+        Transaction tx = session.beginTransaction();
+
+        GamerGroup toDelete = session.load(GamerGroup.class, groupId);
+        session.delete(toDelete);
+
+        session.flush();
+        tx.commit();
+
+        session.close();
+    }
+
     private void setDeleteNotification(){
 
         Timestamp newStamp = new Timestamp(System.currentTimeMillis());

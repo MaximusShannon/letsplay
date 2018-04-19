@@ -91,6 +91,7 @@
         <id name="memberListId" column="MEMBERLIST_ID">
             <generator class="native"/>
         </id>
+
     </class>
 
     <class name="models.Invitation" table="INVITATIONS">

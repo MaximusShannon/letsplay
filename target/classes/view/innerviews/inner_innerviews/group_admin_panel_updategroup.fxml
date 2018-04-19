@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.TextArea?>
@@ -35,32 +37,50 @@
          <font>
             <Font name="Segoe UI Italic" size="14.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Text>
       <Text fill="#0967a5" layoutX="223.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Description" wrappingWidth="108.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <TextArea fx:id="groupDescription" layoutX="223.0" layoutY="130.0" prefHeight="200.0" prefWidth="477.0" promptText="What does your group do? When do you play? What do you do in that game?" style="-fx-border-color: #292E37;" />
+      <TextArea fx:id="groupDescription" layoutX="223.0" layoutY="130.0" prefHeight="200.0" prefWidth="477.0" promptText="What does your group do? When do you play? What do you do in that game?" style="-fx-border-color: #292E37;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextArea>
       <Text fill="#0967a5" layoutX="54.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Visability" wrappingWidth="143.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="groupVisability" layoutX="54.0" layoutY="373.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css" />
+      <ChoiceBox fx:id="groupVisability" layoutX="54.0" layoutY="373.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
       <Text fill="#0967a5" layoutX="390.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Game Played" wrappingWidth="143.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="gamePlayed" layoutX="390.0" layoutY="373.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css" />
+      <ChoiceBox fx:id="gamePlayed" layoutX="390.0" layoutY="373.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
       <Text fill="#0967a5" layoutX="55.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Communication Channel" wrappingWidth="191.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="comsChannel" layoutX="54.0" layoutY="450.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css" />
-      <ChoiceBox fx:id="activityLevel" layoutX="390.0" layoutY="448.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css" />
+      <ChoiceBox fx:id="comsChannel" layoutX="54.0" layoutY="450.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <ChoiceBox fx:id="activityLevel" layoutX="390.0" layoutY="448.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
       <Text fill="#0967a5" layoutX="390.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activity Level" wrappingWidth="191.7451171875">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
@@ -71,17 +91,26 @@
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="languageSpoken" layoutX="54.0" layoutY="523.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css" />
+      <ChoiceBox fx:id="languageSpoken" layoutX="54.0" layoutY="523.0" prefHeight="25.0" prefWidth="239.0" stylesheets="@../../../css/Sharp.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
       <Text fill="#0967a5" layoutX="55.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Communication Server Address" wrappingWidth="238.57420948147774">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <TextField fx:id="comsAddress" layoutX="56.0" layoutY="599.0" prefHeight="27.0" prefWidth="646.0" promptText="Discord or teamspeak server address" style="-fx-border-color: #292E37;" />
+      <TextField fx:id="comsAddress" layoutX="56.0" layoutY="599.0" prefHeight="27.0" prefWidth="646.0" promptText="Discord or teamspeak server address" style="-fx-border-color: #292E37;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
       <Button fx:id="updateGroup" layoutX="550.0" layoutY="648.0" mnemonicParsing="false" onAction="#updateGroupFunctionality" prefHeight="37.0" prefWidth="189.0" stylesheets="@../../../css/Sharp.css" text="Update Group" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Text fill="RED" layoutX="37.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
          <font>

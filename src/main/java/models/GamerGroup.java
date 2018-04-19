@@ -21,7 +21,7 @@ public class GamerGroup {
     private String groupComsAddress;
     private String groupPictureReference;
 
-    @OneToOne
+    @OneToOne (cascade = CascadeType.REMOVE)
     private MemberList memberList;
 
     public int getAdminId() {
