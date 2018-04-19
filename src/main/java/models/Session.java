@@ -13,10 +13,16 @@ public class Session {
     public static MemberList innerViewGamerGroupMemberList;
     public static GamerGroup adminGroup;
     public static AnchorPane adminGroupView;
+    public static Post innerViewPost;
 
     public static void resetSession(){
 
         gamerSession = null;
+    }
+
+    public static void resetInnerViewPost(){
+
+        innerViewPost = null;
     }
 
     public static void resetInnerViewGamerGroup(){

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:controller="controllers.innerviewcontrollers.InnerPostViewController" prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="13.0" layoutY="493.0" prefHeight="324.0" prefWidth="958.0" styleClass="edge-to-edge" stylesheets="@../../../css/filters.css" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="commentsVbox" prefHeight="323.0" prefWidth="946.0" />
+         </content>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ScrollPane>
+      <Pane layoutX="13.0" layoutY="64.0" prefHeight="428.0" prefWidth="958.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text fill="#0967a5" layoutX="14.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post Description" wrappingWidth="108.7451171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postDescription" fill="#292e37" layoutX="14.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post description text" wrappingWidth="489.99999940395355">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="commentBox" layoutX="153.0" layoutY="387.0" prefHeight="27.0" prefWidth="453.0" promptText="Discord or teamspeak server address" style="-fx-border-color: #292E37;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Text fill="#0967a5" layoutX="153.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave a comment. . " wrappingWidth="181.7451171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="postCommentButton" layoutX="631.0" layoutY="387.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="189.0" stylesheets="@../../../css/Sharp.css" text="Post comment" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fill="#0967a5" layoutX="565.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age Range" wrappingWidth="108.7451171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postAgeRange" fill="#292e37" layoutX="565.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age Range" wrappingWidth="151.745099067688">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="6.0" layoutY="365.0" opacity="0.49" prefHeight="2.0" prefWidth="940.0" style="-fx-background-color: #292E37;" />
+            <Text fill="#292e37" layoutX="136.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tags:">
+               <font>
+                  <Font name="Verdana Italic" size="10.0" />
+               </font>
+            </Text>
+            <Text fx:id="postTags" fill="#018d34" layoutX="169.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rust PvP, Base Building, Armor, Guns, Etc.">
+               <font>
+                  <Font name="Verdana Italic" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="565.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Spoken" wrappingWidth="144.7451171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postLangSpoken" fill="#292e37" layoutX="565.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Spoken" wrappingWidth="159.7450954914093">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="565.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Played" wrappingWidth="144.7451171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postGamePlayed" fill="#292e37" layoutX="565.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game played" wrappingWidth="181.74511478841305">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="565.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Zone" wrappingWidth="144.7451171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postTimeZone" fill="#292e37" layoutX="565.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Zone" wrappingWidth="181.74511478841305">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0967a5" layoutX="778.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requirements" wrappingWidth="108.7451171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="750.0" layoutY="85.0" opacity="0.49" prefHeight="273.0" prefWidth="2.0" style="-fx-background-color: #292E37;" />
+            <Text fx:id="postDescription13" fill="#292e37" layoutX="778.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mic Required" wrappingWidth="108.7451069355011">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postDescription131" fill="#292e37" layoutX="778.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comp Players" wrappingWidth="108.7451069355011">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postDescription1311" fill="#292e37" layoutX="778.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casual players" wrappingWidth="108.7451069355011">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postDescription13111" fill="#292e37" layoutX="778.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Females" wrappingWidth="124.74509906768799">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="postDescription131111" fill="#292e37" layoutX="778.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept Males" wrappingWidth="108.7451069355011">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="mic_tick" fitHeight="19.0" fitWidth="17.0" layoutX="913.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="comp_tick" fitHeight="19.0" fitWidth="17.0" layoutX="913.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="casual_tick" fitHeight="19.0" fitWidth="17.0" layoutX="913.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="acceptFemales_tick" fitHeight="19.0" fitWidth="17.0" layoutX="913.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="acceptMales_tick" fitHeight="19.0" fitWidth="17.0" layoutX="913.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/tick.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mic_x" fitHeight="19.0" fitWidth="17.0" layoutX="914.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/red_x.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="comp_x" fitHeight="19.0" fitWidth="17.0" layoutX="914.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/red_x.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="casual_x" fitHeight="19.0" fitWidth="17.0" layoutX="914.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/red_x.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="acceptFemales_x" fitHeight="19.0" fitWidth="17.0" layoutX="914.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/red_x.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="acceptMales_x" fitHeight="19.0" fitWidth="17.0" layoutX="914.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../images/red_x.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="538.0" layoutY="85.0" opacity="0.49" prefHeight="273.0" prefWidth="2.0" style="-fx-background-color: #292E37;" />
+         </children>
+      </Pane>
+      <Pane layoutX="5.0" layoutY="27.0" prefHeight="108.0" prefWidth="974.0" style="-fx-background-color: #292E37;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text fx:id="postTitle" fill="WHITE" layoutX="276.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post Title - This is the post title">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="115.0" layoutY="74.0" stroke="BLACK" strokeType="INSIDE" width="744.0" />
+            <Text fx:id="postersUsername" fill="WHITE" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iMaximuss's Post" wrappingWidth="124.74511873722076">
+               <font>
+                  <Font name="Verdana Italic" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="#0967a5" layoutX="450.0" layoutY="838.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments" wrappingWidth="84.7451171875">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

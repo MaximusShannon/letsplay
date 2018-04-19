@@ -33,6 +33,7 @@
         <mapping class="models.Invitation"/>
         <mapping class="models.GroupMessage"/>
         <mapping class="models.GroupApplication"/>
+        <mapping class="models.PostComment"/>
  
     </session-factory>
 

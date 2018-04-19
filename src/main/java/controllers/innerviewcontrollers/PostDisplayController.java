@@ -15,6 +15,7 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 import models.Filter;
 import models.Post;
+import models.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
@@ -116,8 +117,10 @@ public class PostDisplayController implements Initializable {
             uniquePostController.viewPost.setOnMouseClicked(e ->{
 
                 // new view with the post..
+                Session.resetInnerViewPost();
+                Session.innerViewPost = post;
+                // open view
 
-                // comments..
 
             });
 

@@ -117,4 +117,11 @@
         <property name="message" type="java.lang.String" column=""/>
     </class>
 
+    <class name="models.PostComment" table="POST_COMMENTS">
+        <id name="commentId" column="COLUMN_ID">
+            <generator class="native"/>
+        </id>
+        <property name="commentText" column="COMMENT_TEXT"/>
+    </class>
+
 </hibernate-mapping>

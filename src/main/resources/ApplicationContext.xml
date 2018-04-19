@@ -65,4 +65,7 @@
         class = "models.GroupApplication">
     </bean>
 
+    <bean id="postcomment"
+        class = "models.PostComment">
+    </bean>
 </beans>
