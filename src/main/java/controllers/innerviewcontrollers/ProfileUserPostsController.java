@@ -119,8 +119,6 @@ public class ProfileUserPostsController implements Initializable {
                 }
             });
 
-            //TODO: add support for application and comment count on the post.
-
             postsVbox.getChildren().add(node);
 
         }catch (Exception e){

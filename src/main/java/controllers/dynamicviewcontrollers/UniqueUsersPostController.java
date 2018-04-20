@@ -10,9 +10,8 @@ public class UniqueUsersPostController {
     public Text language;
     public Text timeZone;
     public Text tags;
-    public Text applicationCount;
-    public Text commentCount;
     public Text postId;
     public Button deletePostButton;
     public Button updatePostButton;
+
 }

@@ -9,11 +9,11 @@
 
 <AnchorPane fx:id="injectablePane" prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.innerviewcontrollers.PostDisplayController">
    <children>
-      <Pane layoutY="24.0" prefHeight="140.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
+      <Pane layoutY="29.0" prefHeight="135.0" prefWidth="985.0" style="-fx-background-color: #292E37;">
          <children>
-            <Text fx:id="gameName" fill="WHITE" layoutX="289.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="These are the posts for the following game:">
+            <Text fx:id="gameName" fill="WHITE" layoutX="212.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="These are the posts for the following game:">
                <font>
-                  <Font name="Verdana Bold" size="14.0" />
+                  <Font name="Verdana Bold" size="18.0" />
                </font>
             </Text>
             <Text fill="WHITE" layoutX="433.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Displaying">
