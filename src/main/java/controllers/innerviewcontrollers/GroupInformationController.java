@@ -2,22 +2,31 @@ package controllers.innerviewcontrollers;
 
 import controllers.dynamicviewcontrollers.UniqueGroupMemberController;
 import functionality.DatabaseInteractionService;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ResizeFeaturesBase;
 import javafx.scene.control.TextInputDialog;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.image.WritableImage;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import models.Gamer;
 import models.GroupApplication;
+import models.GroupAvatar;
 import models.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -28,6 +37,8 @@ public class GroupInformationController implements Initializable {
     private ClassPathXmlApplicationContext context;
     private ArrayList<Gamer> memberList;
     private GroupApplication groupApplication;
+    private List<GroupAvatar> groupAvatarList;
+    private GroupAvatar groupAvatar;
 
     @FXML private Text groupName;
     @FXML private Text groupComsChannel;
@@ -42,6 +53,7 @@ public class GroupInformationController implements Initializable {
     @FXML private VBox memberlistVbox;
     @FXML private Button groupApplyButton;
     @FXML private AnchorPane injectablePane;
+    @FXML private ImageView groupImage;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -50,6 +62,11 @@ public class GroupInformationController implements Initializable {
 
         getMemberListIds();
         getGroupMembers();
+
+        if(dbService == null){
+
+            dbService = (DatabaseInteractionService) context.getBean("databaseinteractionservice");
+        }
 
         fillInformationFromGroupSession();
 
@@ -69,7 +86,47 @@ public class GroupInformationController implements Initializable {
             }
         }
 
+        groupAvatarList = dbService.fetchGroupAvatars();
+        groupAvatar = checkDoesGroupHaveAvatar(Session.innerViewGamerGroup.getGroupId());
+
+        if(groupAvatar != null){
+
+            groupImage.setImage(convertToJavaFXImage(groupAvatar.getImage(), 185, 185));
+        }
+
         closeContext();
+    }
+
+    private GroupAvatar checkDoesGroupHaveAvatar(int id){
+
+        for(int i = 0; i < groupAvatarList.size(); i++){
+
+            if(groupAvatarList.get(i).getGamerGroup().getGroupId() == Session.innerViewGamerGroup.getGroupId()){
+
+                return groupAvatarList.get(i);
+            }
+        }
+        return null;
+    }
+
+    private Image convertToJavaFXImage(byte[] raw, final int width, final int height){
+
+        WritableImage image = new WritableImage(width, height);
+
+        try{
+
+            ByteArrayInputStream bis = new ByteArrayInputStream(raw);
+            BufferedImage read = ImageIO.read(bis);
+
+            image = SwingFXUtils.toFXImage(read, null);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+
+        }
+
+        return image;
     }
 
     @FXML
@@ -210,6 +267,5 @@ public class GroupInformationController implements Initializable {
 
         context.close();
     }
-
 
 }

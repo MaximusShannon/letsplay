@@ -163,7 +163,6 @@ public class GroupMainViewController implements Initializable {
         filteredByGame.clear();
     }
 
-
     private List<GamerGroup> filterGames(String gameName){
 
         ArrayList<GamerGroup> matchedList = new ArrayList<>();

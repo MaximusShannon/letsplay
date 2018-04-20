@@ -112,7 +112,7 @@
                   </Text>
                </children>
             </Pane>
-            <ImageView fitHeight="185.0" fitWidth="185.0" layoutX="45.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="groupImage" fitHeight="185.0" fitWidth="185.0" layoutX="45.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/letsplay_Icon.PNG" />
                </image>
