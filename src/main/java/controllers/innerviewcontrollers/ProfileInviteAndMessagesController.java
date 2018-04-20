@@ -76,16 +76,12 @@ public class ProfileInviteAndMessagesController implements Initializable {
 
             for(int x = 0; x < invitationList.size(); x++){
 
-                System.out.println("Valid inv id: " +validInvitationIds.get(i) + " InvitationId: " + invitationList.get(x).getId());
-
                 if(validInvitationIds.get(i) == invitationList.get(x).getGroupId()){
 
                     validInvitations.add(invitationList.get(x));
                 }
             }
         }
-
-        System.out.println(validInvitations.size() + "HERE WE ARE HERE");
         return validInvitations;
     }
 
@@ -144,7 +140,6 @@ public class ProfileInviteAndMessagesController implements Initializable {
 
                     if(groupList.get(i).getGroupId() == inv.getGroupId()){
 
-                        //if not a member.. add to memberlist
                         if(!checkIsUserAMemberOfGroup(groupList.get(i).getMemberList(), inv.getInvitedGamer().getId())){
 
                             if(dbService.addMemberToGroupMemberList(groupList.get(i).getMemberList(), inv.getInvitedGamer().getId())){
@@ -193,14 +188,6 @@ public class ProfileInviteAndMessagesController implements Initializable {
         }catch (Exception e){
 
             e.printStackTrace();
-        }
-    }
-
-    private void deleteBadInvites(List<Invitation> badInvites){
-
-        for(int i = 0; i < badInvites.size(); i++){
-
-            dbService.deleteInvitation(badInvites.get(i).getId());
         }
     }
 
@@ -302,15 +289,5 @@ public class ProfileInviteAndMessagesController implements Initializable {
         context.close();
     }
 
-    private boolean checkDoesGroupStillExits(List<GamerGroup> groupList, int groupId){
 
-        for(int i = 0; i < groupList.size(); i++){
-
-            if(groupList.get(i).getGroupId() == groupId){
-
-                return true;
-            }
-        }
-        return false;
-    }
 }
