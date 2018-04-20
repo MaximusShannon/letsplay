@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="125.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.dynamicviewcontrollers.UniqueGroupInvitationController">
+   <children>
+      <Pane layoutX="5.0" layoutY="6.0" prefHeight="115.0" prefWidth="408.0" style="-fx-background-color: #292E37;">
+         <children>
+            <Text fx:id="groupName" fill="WHITE" layoutX="7.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAMERGROUPNAME has invited you to join them.">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="inviteMessage" fill="WHITE" layoutX="7.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message text" wrappingWidth="244.5234375">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            <Button fx:id="deleteMessage" layoutX="319.0" layoutY="31.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="14.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="387.0" />
+   </children>
+</AnchorPane>
