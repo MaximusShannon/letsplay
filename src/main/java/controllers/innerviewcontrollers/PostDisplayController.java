@@ -33,81 +33,45 @@ public class PostDisplayController implements Initializable {
 
     private DatabaseInteractionService dbService;
     private ClassPathXmlApplicationContext context;
-    private Filter postFilter;
     private List<Post> postList;
-    private List<Post> filteredPosts;
-    private List<Post> filteredByRequirements;
     private List<GamerAvatar> avatars;
     private GamerAvatar avatar;
     public static String game;
 
     @FXML private VBox postsVbox;
     @FXML private Text postCount;
-    @FXML private Text refreshText;
-    @FXML private ChoiceBox<String> languageFilter;
-    @FXML private ChoiceBox<String> timeZoneFilter;
-    @FXML private CheckBox casualAcceptedFilter;
-    @FXML private CheckBox compAcceptedFilter;
-    @FXML private CheckBox acceptMalesFilter;
-    @FXML private CheckBox acceptFemalesFilter;
-    @FXML private CheckBox micRequired;
+    @FXML private Text gameName;
     @FXML private AnchorPane injectablePane;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        gameName.setText("These are the posts for the game: " + game);
+
         dbService = new DatabaseInteractionService();
         avatars = dbService.fetchGamerAvatars();
-
-        initializeChoiceBoxes();
 
         postList = dbService.fetchPostList();
 
         if(postList != null){
-            filterByGame();
 
             /*Reverse the list so the new stuff is at the top.*/
-            Collections.reverse(filteredPosts);
+            Collections.reverse(postList);
 
-            for (Post filteredPost : filteredPosts) {
+            displayPostCount();
 
-                displayUniquePostsInView(filteredPost);
+            for (Post initalPost : postList) {
+
+                displayUniquePostsInView(initalPost);
             }
         }
 
-        displayPostCount();
-        initFilters();
-    }
-
-    private void initFilters(){
-
-        languageFilter.getSelectionModel().selectFirst();
-        timeZoneFilter.getSelectionModel().selectFirst();
-        micRequired.setSelected(true);
-        casualAcceptedFilter.setSelected(true);
-        compAcceptedFilter.setSelected(true);
-        acceptMalesFilter.setSelected(true);
-        acceptFemalesFilter.setSelected(true);
-    }
-
-    private void filterByGame(){
-
-        filteredPosts = new ArrayList<>();
-        filteredPosts.clear();
-
-        for(int i = 0; i < postList.size(); i++){
-
-            if(postList.get(i).getGamePlayed().toLowerCase().equals(game)){
-
-                filteredPosts.add(postList.get(i));
-            }
-        }
     }
 
     private void displayPostCount(){
 
-        postCount.setText(Integer.toString(filteredPosts.size()));
+        postCount.setText(Integer.toString(postList.size()));
     }
 
     private GamerAvatar checkDoesPosterHaveAnAvatar(int posterId){
@@ -227,176 +191,4 @@ public class PostDisplayController implements Initializable {
         }
     }
 
-    private void initializeChoiceBoxes(){
-
-        languageFilter.setItems(FXCollections.observableArrayList("English", "Irish",
-                "French", "German",
-                "Norwegian", "Dutch",
-                "Russian"));
-
-        timeZoneFilter.setItems(FXCollections.observableArrayList("UTC-1", "UTC",
-                "UTC+1", "UTC+2",
-                "UTC+3", "UTC+4",
-                "UTC+5"));
-    }
-
-    @FXML
-    private void refreshPosts(){
-
-        postsVbox.getChildren().clear();
-        getMostRecentPostList();
-        filterByGame();
-
-        if(languageFilter.getValue().toLowerCase().equals("english")
-                && timeZoneFilter.getValue().toLowerCase().equals("utc-1")
-                && casualAcceptedFilter.isSelected()
-                && compAcceptedFilter.isSelected()
-                && acceptMalesFilter.isSelected()
-                && acceptFemalesFilter.isSelected()){
-
-            fadeRefreshingText();
-
-            for(int i = 0; i < filteredPosts.size(); i++){
-
-                displayUniquePostsInView(filteredPosts.get(i));
-            }
-        }else{
-
-            createFilter();
-            filterPostsByRequirements();
-            fadeRefreshingText();
-
-            for(int i = 0; i < filteredPosts.size(); i++){
-
-                displayUniquePostsInView(filteredPosts.get(i));
-            }
-        }
-    }
-
-    private void filterPostsByRequirements(){
-
-        filteredByRequirements = new ArrayList<>();
-
-        removeAllLanguagesThatDontMatch();
-        removeAllTimeZonesThatDontMatch();
-        removeAllPostsThatRequireMicrophone();
-        removeAllPostsThatAreLookingForCasualPlayers();
-        removeAllPostsThatAreLookingForCompetitivePlayers();
-        removeAllPostsThatAreLookingForMales();
-        removeAllPostsThatAreLookingForFemales();
-
-    }
-
-    private void removeAllLanguagesThatDontMatch(){
-
-        for(int i = 0; i < filteredPosts.size(); i++){
-
-            if(!filteredPosts.get(i).getLanguageSpoken().toLowerCase().equals(postFilter.getLanguageRequired().toLowerCase())){
-
-                filteredPosts.remove(i);
-            }
-        }
-    }
-
-    private void removeAllTimeZonesThatDontMatch(){
-
-        for(int i = 0; i < filteredPosts.size(); i++){
-
-            if(!filteredPosts.get(i).getTimeZone().equals(postFilter.getTimeZoneRequired())){
-
-                filteredPosts.remove(i);
-            }
-        }
-    }
-
-    private void removeAllPostsThatRequireMicrophone(){
-
-        for(int i = 0; i < filteredPosts.size(); i++){
-
-            if(filteredPosts.get(i).isMicrophoneRequired()){
-
-                filteredPosts.remove(i);
-            }
-        }
-    }
-
-    private void removeAllPostsThatAreLookingForCasualPlayers(){
-
-        for(int i = 0; i < filteredPosts.size(); i++){
-
-            if(filteredPosts.get(i).isAcceptMales()){
-
-                filteredPosts.remove(i);
-            }
-        }
-    }
-
-    private void removeAllPostsThatAreLookingForCompetitivePlayers(){
-
-        for(int i = 0; i < filteredPosts.size(); i++){
-
-            if(filteredPosts.get(i).isAcceptingCompetitivePlayers()){
-
-                filteredPosts.remove(i);
-            }
-        }
-    }
-
-    private void removeAllPostsThatAreLookingForMales(){
-
-        for(int i = 0; i < filteredPosts.size(); i++){
-
-            if(filteredPosts.get(i).isAcceptMales()){
-
-                filteredPosts.remove(i);
-            }
-        }
-    }
-
-    private void removeAllPostsThatAreLookingForFemales(){
-
-        for(int i = 0; i < filteredPosts.size(); i++){
-
-            if(filteredPosts.get(i).isAcceptFemales()){
-
-                filteredPosts.remove(i);
-            }
-        }
-    }
-
-    private void createFilter(){
-
-        context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-
-        postFilter = (Filter) context.getBean("filter");
-        postFilter.setLanguageRequired(languageFilter.getValue());
-        postFilter.setTimeZoneRequired(timeZoneFilter.getValue());
-        postFilter.setMicRequired(micRequired.isSelected());
-        postFilter.setAcceptCasualPlayers(casualAcceptedFilter.isSelected());
-        postFilter.setAcceptCompetitivePlayers(compAcceptedFilter.isSelected());
-        postFilter.setAcceptFemales(acceptFemalesFilter.isSelected());
-        postFilter.setAcceptMales(acceptMalesFilter.isSelected());
-    }
-
-    private void closeContext(){
-
-        context.close();
-    }
-
-    private void getMostRecentPostList(){
-
-        postList.clear();
-        postList.addAll(dbService.fetchPostList());
-    }
-
-    private void fadeRefreshingText(){
-
-        refreshText.setVisible(true);
-
-        FadeTransition ft = new FadeTransition(Duration.millis(5000), refreshText);
-        ft.setFromValue(1.0);
-        ft.setFromValue(0.0);
-
-        ft.play();
-    }
 }
