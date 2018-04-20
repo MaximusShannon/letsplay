@@ -29,6 +29,7 @@ public class DatabaseInteractionService {
     private List<PostComment> postComments;
     private List<GamerAvatar> gamersAvatars;
     private List<GroupAvatar> groupAvatars;
+    private List<Invitation> allInvitations;
     private Notification notification;
 
     public DatabaseInteractionService(){
@@ -49,6 +50,30 @@ public class DatabaseInteractionService {
 
         return session.load(GamerGroup.class, models.Session.adminGroup.getGroupId());
     }
+
+    public GamerGroup fetchSingleGroup(int groupId){
+
+        session = sessionFactory.openSession();
+
+        return session.load(GamerGroup.class, groupId);
+    }
+
+    public List<Invitation> fetchAllInvitations(){
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<Invitation> invationList = builder.createQuery(Invitation.class);
+        invationList.from(Invitation.class);
+
+        allInvitations = session.createQuery(invationList).getResultList();
+
+        session.close();
+
+        return allInvitations;
+    }
+
 
     public Gamer fetchGamerForGroupMemberList(int gamerId){
 
@@ -211,6 +236,8 @@ public class DatabaseInteractionService {
 
         boolean memberListAllowingNewMembers = false;
 
+        session = sessionFactory.openSession();
+
         Transaction tx = session.beginTransaction();
 
         if(memberList.getM_2_id() == 0){
@@ -290,7 +317,6 @@ public class DatabaseInteractionService {
             tx.commit();
 
             session.close();
-            closeFactory();
         }
 
         return memberListAllowingNewMembers;
@@ -685,6 +711,21 @@ public class DatabaseInteractionService {
         session.close();
     }
 
+    public void deleteInvitation(int invId){
+
+        session = sessionFactory.openSession();
+
+        Transaction tx = session.beginTransaction();
+
+        Invitation toDelete = session.load(Invitation.class, invId);
+        session.delete(toDelete);
+
+        session.flush();
+        tx.commit();
+
+        session.close();
+    }
+
     public void deleteOldAvatar(int avatarId){
 
         session = sessionFactory.openSession();
@@ -739,4 +780,11 @@ public class DatabaseInteractionService {
         notification.setTimestamp(newStamp);
     }
 
+    public SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
+
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
 }

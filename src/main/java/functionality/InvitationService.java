@@ -1,6 +1,7 @@
 package functionality;
 
 import models.Gamer;
+import models.GamerGroup;
 import models.Invitation;
 import models.MemberList;
 import org.hibernate.Session;
@@ -8,6 +9,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.xml.crypto.Data;
 import java.util.List;
 
 public class InvitationService {
@@ -17,6 +21,8 @@ public class InvitationService {
     private ClassPathXmlApplicationContext context;
     private DatabaseInteractionService dbService;
     private List<Gamer> gamerList;
+    private List<Invitation> allInvitations;
+    private List<GamerGroup> groupList;
 
     public void initResources(){
 
@@ -98,4 +104,6 @@ public class InvitationService {
 
         return id;
     }
+
+
 }

@@ -1,5 +1,6 @@
 package controllers.adminpanelcontrollers;
 
+import functionality.DatabaseInteractionService;
 import functionality.InvitationService;
 import functionality.Validator;
 import javafx.animation.FadeTransition;
@@ -14,6 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class InvitePlayersController {
 
     private ClassPathXmlApplicationContext context;
+    private DatabaseInteractionService dbService;
     private Validator validator;
     private InvitationService invitationService;
     private Invitation groupInvitation;
@@ -33,6 +35,7 @@ public class InvitePlayersController {
         if(validator.validateTextFieldNotEmpty(invitationUsername.getText())){
 
             invitationService = (InvitationService) context.getBean("invitationservice");
+            dbService = (DatabaseInteractionService) context.getBean("databaseinteractionservice");
             invitationService.initResources();
 
             groupInvitation = (Invitation) context.getBean("invitation");

@@ -24,6 +24,7 @@ public class GamerGroup {
     @OneToOne (cascade = CascadeType.REMOVE)
     private MemberList memberList;
 
+
     public int getAdminId() {
         return adminId;
     }

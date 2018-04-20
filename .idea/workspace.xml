@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupMainViewController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupMainViewController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_information_view.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_information_view.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupInvitationController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileInviteAndMessagesController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/invitation_card.fxml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/InvitePlayersController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/InvitePlayersController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" afterPath="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functionality/InvitationService.java" afterPath="$PROJECT_DIR$/src/main/java/functionality/InvitationService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/GamerGroup.java" afterPath="$PROJECT_DIR$/src/main/java/models/GamerGroup.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_usermatchmaker_settings.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_usermatchmaker_settings.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/profile.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/profile.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/innerviews/inner_innerviews/profile_usermatchmaker_settings.fxml" afterPath="$PROJECT_DIR$/target/classes/view/innerviews/inner_innerviews/profile_usermatchmaker_settings.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/innerviews/profile.fxml" afterPath="$PROJECT_DIR$/target/classes/view/innerviews/profile.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,162 +88,134 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GroupMainViewController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupMainViewController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="163" column="5" lean-forward="false" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
-                  <folding>
-                    <element signature="method#openCreateViewView#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#initialize#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#instantiateGroupGamePlayedChoiceBox#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="e#3080#3164#0" expanded="false" />
-                    <element signature="docComment;method#filterByGame#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#filterByGame#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#displayFilteredList#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#filterGames#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#setGroupCount#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#displayUniqueGroupsInView#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#convertToJavaFXImage#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#openInnerGamerGroupView#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#getGroupMemberList#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#checkGroupSize#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#initContext#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#closeContext#0;class#GroupMainViewController#0" expanded="false" />
-                    <element signature="method#getPublicGroups#0;class#GroupMainViewController#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GroupInformationController.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="896">
-                  <caret line="268" column="5" lean-forward="false" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
-                  <folding>
-                    <element signature="method#initialize#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#checkDoesGroupHaveAvatar#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#convertToJavaFXImage#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#startApplication#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#backToAllGroupsView#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#checkIsAdminViewing#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#checkIsLoggedInGamerAMemberOfThisGroup#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#getMemberListIds#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#fillInformationFromGroupSession#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#getGroupMembers#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#fillMemberListVBox#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#initContext#0;class#GroupInformationController#0" expanded="false" />
-                    <element signature="method#closeContext#0;class#GroupInformationController#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UniqueGroupController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="208">
-                  <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="PostDisplayController.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="334">
-                  <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="143" selection-end-column="5" />
-                  <folding>
-                    <element signature="method#initFilters#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#filterByGame#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#displayPostCount#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#checkDoesPosterHaveAnAvatar#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#convertToJavaFXImage#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#displayUniquePostsInView#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#initializeChoiceBoxes#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#refreshPosts#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#filterPostsByRequirements#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#removeAllLanguagesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#removeAllTimeZonesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#removeAllPostsThatRequireMicrophone#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#removeAllPostsThatAreLookingForCasualPlayers#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#removeAllPostsThatAreLookingForCompetitivePlayers#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#removeAllPostsThatAreLookingForMales#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#removeAllPostsThatAreLookingForFemales#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#createFilter#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#closeContext#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#getMostRecentPostList#0;class#PostDisplayController#0" expanded="false" />
-                    <element signature="method#fadeRefreshingText#0;class#PostDisplayController#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DatabaseInteractionService.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="939">
-                  <caret line="702" column="55" lean-forward="false" selection-start-line="702" selection-start-column="55" selection-end-line="702" selection-end-column="55" />
-                  <folding>
-                    <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#updateGamerApplicationCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#setGamerOnline#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#setGamerOffline#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#updateGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#persistGroupMessage#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#persistPostComment#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#persistGamerAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#persistGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#persistGroupApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchAllApplicationsForGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#filterApplicationsToGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchMemberLists#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchPostCommentList#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchGamerAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#fetchGroupAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#initFactory#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#deleteApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#deleteGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#deleteOldAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#deleteOldGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
-                    <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DatabaseInteractionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="318" column="28" lean-forward="false" selection-start-line="318" selection-start-column="12" selection-end-line="318" selection-end-column="28" />
+              <folding>
+                <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchAllInvitations#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamerApplicationCount#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#setGamerOnline#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#setGamerOffline#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGroupMessage#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistPostComment#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGamerAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGroupApplication#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchAllApplicationsForGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#filterApplicationsToGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchMemberLists#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchPostCommentList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGroupAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#initFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteApplication#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteOldAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteOldGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="e#20670#20671#0" expanded="true" />
+                <element signature="e#20707#20708#0" expanded="true" />
+                <element signature="e#20775#20776#0" expanded="true" />
+                <element signature="e#20827#20828#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileProfileInformationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileProfileInformationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+              <folding>
+                <element signature="method#initialize#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#checkDoesUserHaveAnAvatar#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#initFields#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#setEditFieldsVisible#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#converToJavaFXImage#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#convertImageToByteArray#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#fillInEditFields#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#setProfileInformationInvisible#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#setProfileInformationVisible#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#showUpdateAndCancel#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#hideEditProfileButton#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#showEditButton#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#hideUpdateAndCancel#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#showEditFields#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#cancelUpdate#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#updateUser#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#fadeUpdateFailedText#0;class#ProfileProfileInformationController#0" expanded="false" />
+                <element signature="method#checkFieldsHaveChanged#0;class#ProfileProfileInformationController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileInviteAndMessagesController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileInviteAndMessagesController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="172" column="70" lean-forward="false" selection-start-line="172" selection-start-column="70" selection-end-line="172" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#cleanInvites#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+                <element signature="method#checkGroupThatSentInvitationStillExists#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+                <element signature="method#deleteBadInvites#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+                <element signature="method#fadeText#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+                <element signature="method#checkIsUserAMemberOfGroup#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+                <element signature="method#fetchThisUsersInvites#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+                <element signature="method#initResources#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+                <element signature="method#closeResources#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+                <element signature="method#checkDoesGroupStillExits#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GamerGroup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/GamerGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -259,6 +240,7 @@
       <find>closeContext</find>
       <find>update</find>
       <find>serverd</find>
+      <find>dbservice</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -277,12 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_inviteplayers.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Invitation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functionality/InvitationService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/InvitePlayersController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayerCardController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_removeplayers.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/models/GroupMessage.java" />
@@ -300,7 +276,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_updategroup.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfilePostUpdateController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_deletegroup.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/models/GamerGroup.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/feedbackviews/group_deleted_success.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/DeleteGroupController.java" />
@@ -323,11 +298,18 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/ORM.xml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileProfileInformationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/UpdateGroupController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupMainViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_usermatchmaker_settings.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/invitation_card.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupInvitationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/InvitePlayersController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/functionality/InvitationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/GamerGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileInviteAndMessagesController.java" />
       </list>
     </option>
   </component>
@@ -792,12 +774,12 @@
       <workItem from="1524048409739" duration="23515000" />
       <workItem from="1524130279976" duration="29053000" />
       <workItem from="1524174848747" duration="49000" />
-      <workItem from="1524222700627" duration="2782000" />
+      <workItem from="1524222700627" duration="15025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266168000" />
+    <option name="totallyTimeSpent" value="278411000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -830,7 +812,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21281216" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40173724" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2801303" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -930,15 +912,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileProfileInformationController.java</url>
-          <line>179</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -947,64 +921,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/GroupApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/ApplicationsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/MainAdminPanelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_remove_card.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="96" lean-forward="false" selection-start-line="22" selection-start-column="96" selection-end-line="22" selection-end-column="96" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayerCardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupApplicationCardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_application_card.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="93" lean-forward="false" selection-start-line="21" selection-start-column="93" selection-end-line="21" selection-end-column="93" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_applications.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1075,13 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/GamerGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1280,67 +1189,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="69" column="11" lean-forward="false" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfilePostUpdateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="105" column="44" lean-forward="false" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
-          <folding>
-            <element signature="method#updatePost#0;class#ProfilePostUpdateController#0" expanded="false" />
-            <element signature="method#backToUserPostsView#0;class#ProfilePostUpdateController#0" expanded="false" />
-            <element signature="method#validatePostHasChanged#0;class#ProfilePostUpdateController#0" expanded="false" />
-            <element signature="method#setInitialValues#0;class#ProfilePostUpdateController#0" expanded="false" />
-            <element signature="method#instantiateLanguageSpokenChoiceBox#0;class#ProfilePostUpdateController#0" expanded="false" />
-            <element signature="method#instantiateGamePlayedChoiceBox#0;class#ProfilePostUpdateController#0" expanded="false" />
-            <element signature="method#instantiateTimeZoneChoiceBox#0;class#ProfilePostUpdateController#0" expanded="false" />
-            <element signature="method#fadeSuccessfullText#0;class#ProfilePostUpdateController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Session.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileProfileInformationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <element signature="method#initFields#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#setEditFieldsInvisible#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#setEditFieldsVisible#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#converToJavaFXImage#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#fillInEditFields#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#setProfileInformationInvisible#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#setProfileInformationVisible#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#showUpdateAndCancel#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#hideEditProfileButton#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#showEditButton#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#hideUpdateAndCancel#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#showEditFields#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#cancelUpdate#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#updateUser#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#fadeUpdateFailedText#0;class#ProfileProfileInformationController#0" expanded="false" />
-            <element signature="method#checkFieldsHaveChanged#0;class#ProfileProfileInformationController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1364,18 +1216,18 @@
         <state relative-caret-position="160">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#334#335#0" expanded="false" />
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#439#440#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#499#500#0" expanded="false" />
+            <element signature="e#541#542#0" expanded="false" />
+            <element signature="e#575#576#0" expanded="false" />
+            <element signature="e#616#617#0" expanded="false" />
+            <element signature="e#649#650#0" expanded="false" />
+            <element signature="e#705#706#0" expanded="false" />
+            <element signature="e#749#750#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1455,14 +1307,185 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupInvitationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/invitation_card.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="93" lean-forward="false" selection-start-line="11" selection-start-column="93" selection-end-line="11" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="149" column="113" lean-forward="false" selection-start-line="149" selection-start-column="77" selection-end-line="149" selection-end-column="113" />
+          <folding>
+            <element signature="method#initFilters#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#filterByGame#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#displayPostCount#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#checkDoesPosterHaveAnAvatar#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#convertToJavaFXImage#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#initializeChoiceBoxes#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#refreshPosts#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#filterPostsByRequirements#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllLanguagesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllTimeZonesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatRequireMicrophone#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatAreLookingForCasualPlayers#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatAreLookingForCompetitivePlayers#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatAreLookingForMales#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#removeAllPostsThatAreLookingForFemales#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#createFilter#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#closeContext#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#getMostRecentPostList#0;class#PostDisplayController#0" expanded="false" />
+            <element signature="method#fadeRefreshingText#0;class#PostDisplayController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_usermatchmaker_settings.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="94" lean-forward="false" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/InvitationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" column="95" lean-forward="false" selection-start-line="29" selection-start-column="95" selection-end-line="29" selection-end-column="95" />
+          <folding>
+            <element signature="method#closeResources#0;class#InvitationService#0" expanded="false" />
+            <element signature="method#checkIsGamerAMemberOfGroup#0;class#InvitationService#0" expanded="false" />
+            <element signature="method#fetchGamerForInvitation#0;class#InvitationService#0" expanded="false" />
+            <element signature="method#persistInvitation#0;class#InvitationService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/InvitePlayersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="268" column="5" lean-forward="false" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
+          <folding>
+            <element signature="method#initialize#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#checkDoesGroupHaveAvatar#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#convertToJavaFXImage#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#startApplication#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#backToAllGroupsView#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#checkIsAdminViewing#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#checkIsLoggedInGamerAMemberOfThisGroup#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#getMemberListIds#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#fillInformationFromGroupSession#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#getGroupMembers#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#fillMemberListVBox#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#initContext#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="method#closeContext#0;class#GroupInformationController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfilePostUpdateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="105" column="44" lean-forward="false" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+          <folding>
+            <element signature="method#updatePost#0;class#ProfilePostUpdateController#0" expanded="false" />
+            <element signature="method#backToUserPostsView#0;class#ProfilePostUpdateController#0" expanded="false" />
+            <element signature="method#validatePostHasChanged#0;class#ProfilePostUpdateController#0" expanded="false" />
+            <element signature="method#setInitialValues#0;class#ProfilePostUpdateController#0" expanded="false" />
+            <element signature="method#instantiateLanguageSpokenChoiceBox#0;class#ProfilePostUpdateController#0" expanded="false" />
+            <element signature="method#instantiateGamePlayedChoiceBox#0;class#ProfilePostUpdateController#0" expanded="false" />
+            <element signature="method#instantiateTimeZoneChoiceBox#0;class#ProfilePostUpdateController#0" expanded="false" />
+            <element signature="method#fadeSuccessfullText#0;class#ProfilePostUpdateController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Invitation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/GamerGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileProfileInformationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#checkDoesUserHaveAnAvatar#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#initFields#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#setEditFieldsVisible#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#converToJavaFXImage#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#convertImageToByteArray#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#fillInEditFields#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#setProfileInformationInvisible#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#setProfileInformationVisible#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#showUpdateAndCancel#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#hideEditProfileButton#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#showEditButton#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#hideUpdateAndCancel#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#showEditFields#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#cancelUpdate#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#updateUser#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#fadeUpdateFailedText#0;class#ProfileProfileInformationController#0" expanded="false" />
+            <element signature="method#checkFieldsHaveChanged#0;class#ProfileProfileInformationController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="939">
-          <caret line="702" column="55" lean-forward="false" selection-start-line="702" selection-start-column="55" selection-end-line="702" selection-end-column="55" />
+        <state relative-caret-position="630">
+          <caret line="318" column="28" lean-forward="false" selection-start-line="318" selection-start-column="12" selection-end-line="318" selection-end-column="28" />
           <folding>
             <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchAllInvitations#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
@@ -1473,7 +1496,6 @@
             <element signature="method#setGamerOffline#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#updateGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
@@ -1502,57 +1524,37 @@
             <element signature="method#deleteOldGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
             <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="e#20670#20671#0" expanded="true" />
+            <element signature="e#20707#20708#0" expanded="true" />
+            <element signature="e#20775#20776#0" expanded="true" />
+            <element signature="e#20827#20828#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="143" selection-end-column="5" />
-          <folding>
-            <element signature="method#initFilters#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#filterByGame#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#displayPostCount#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#checkDoesPosterHaveAnAvatar#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#convertToJavaFXImage#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#displayUniquePostsInView#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#initializeChoiceBoxes#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#refreshPosts#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#filterPostsByRequirements#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#removeAllLanguagesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#removeAllTimeZonesThatDontMatch#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#removeAllPostsThatRequireMicrophone#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#removeAllPostsThatAreLookingForCasualPlayers#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#removeAllPostsThatAreLookingForCompetitivePlayers#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#removeAllPostsThatAreLookingForMales#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#removeAllPostsThatAreLookingForFemales#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#createFilter#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#closeContext#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#getMostRecentPostList#0;class#PostDisplayController#0" expanded="false" />
-            <element signature="method#fadeRefreshingText#0;class#PostDisplayController#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="167">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/GroupInformationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileInviteAndMessagesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="268" column="5" lean-forward="false" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
+        <state relative-caret-position="382">
+          <caret line="172" column="70" lean-forward="false" selection-start-line="172" selection-start-column="70" selection-end-line="172" selection-end-column="70" />
           <folding>
-            <element signature="method#initialize#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#checkDoesGroupHaveAvatar#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#convertToJavaFXImage#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#startApplication#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#backToAllGroupsView#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#checkIsAdminViewing#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#checkIsLoggedInGamerAMemberOfThisGroup#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#getMemberListIds#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#fillInformationFromGroupSession#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#getGroupMembers#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#fillMemberListVBox#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#initContext#0;class#GroupInformationController#0" expanded="false" />
-            <element signature="method#closeContext#0;class#GroupInformationController#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#cleanInvites#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+            <element signature="method#checkGroupThatSentInvitationStillExists#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+            <element signature="method#deleteBadInvites#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+            <element signature="method#fadeText#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+            <element signature="method#checkIsUserAMemberOfGroup#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+            <element signature="method#fetchThisUsersInvites#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+            <element signature="method#initResources#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+            <element signature="method#closeResources#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
+            <element signature="method#checkDoesGroupStillExits#0;class#ProfileInviteAndMessagesController#0" expanded="false" />
           </folding>
         </state>
       </provider>
