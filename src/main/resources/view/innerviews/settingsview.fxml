@@ -6,20 +6,19 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.innerviewcontrollers.SubSectionSettingsController">
    <children>
-      <Text fill="#292e37" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matchmaking Settings">
+      <Text fill="#292e37" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matchmaking Preferences">
          <font>
             <Font name="Segoe UI Emoji" size="18.0" />
          </font>
       </Text>
-      <Pane layoutX="14.0" layoutY="41.0" prefHeight="3.0" prefWidth="192.0" style="-fx-background-color: #0967A5;" />
-      <CheckBox layoutX="65.0" layoutY="104.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="136.0" stylesheets="@../../css/Sharp.css" text="Available to play">
+      <CheckBox layoutX="92.0" layoutY="103.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="136.0" stylesheets="@../../css/Sharp.css" text="Available to play">
          <font>
             <Font size="14.0" />
          </font>
@@ -27,18 +26,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <Slider fx:id="sensitivitySlider" layoutX="62.0" layoutY="553.0" prefHeight="14.0" prefWidth="453.0" stylesheets="@../../css/Sharp.css" />
-      <Text layoutX="62.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matchmaker Sensitivity">
-         <font>
-            <Font name="Segoe UI" size="14.0" />
-         </font>
-      </Text>
-      <Text fill="#292e37" layoutX="65.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Settings">
+      <Text fill="#292e37" layoutX="16.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic System settings">
          <font>
             <Font name="Segoe UI Emoji" size="16.0" />
          </font>
       </Text>
-      <CheckBox layoutX="65.0" layoutY="139.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="162.0" stylesheets="@../../css/Sharp.css" text="Active Matchmaking">
+      <CheckBox layoutX="95.0" layoutY="172.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="162.0" stylesheets="@../../css/Sharp.css" text="Active Matchmaking">
          <font>
             <Font size="14.0" />
          </font>
@@ -46,14 +39,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <Pane layoutX="65.0" layoutY="83.0" prefHeight="2.0" prefWidth="112.0" style="-fx-background-color: #0967A5;" />
-      <Text fill="#292e37" layoutX="65.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Matchmaker Settings">
+      <Text fill="#292e37" layoutX="17.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requirement Settings">
          <font>
             <Font name="Segoe UI Emoji" size="16.0" />
          </font>
       </Text>
-      <Pane layoutX="65.0" layoutY="195.0" prefHeight="2.0" prefWidth="189.0" style="-fx-background-color: #0967A5;" />
-      <CheckBox layoutX="65.0" layoutY="216.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Microphone Required">
+      <CheckBox layoutX="95.0" layoutY="289.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Microphone Required">
          <font>
             <Font size="14.0" />
          </font>
@@ -61,7 +52,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="65.0" layoutY="258.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Competitive Players">
+      <CheckBox layoutX="95.0" layoutY="331.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Competitive Players">
          <font>
             <Font size="14.0" />
          </font>
@@ -69,7 +60,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="65.0" layoutY="303.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Casual Players">
+      <CheckBox layoutX="95.0" layoutY="375.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Casual Players">
          <font>
             <Font size="14.0" />
          </font>
@@ -77,7 +68,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="307.0" layoutY="216.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Accept Males">
+      <CheckBox layoutX="489.0" layoutY="289.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Accept Males">
          <font>
             <Font size="14.0" />
          </font>
@@ -85,7 +76,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="307.0" layoutY="258.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Accept Females">
+      <CheckBox layoutX="489.0" layoutY="331.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Accept Females">
          <font>
             <Font size="14.0" />
          </font>
@@ -93,86 +84,102 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <Text fill="#292e37" layoutX="65.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advanced Matchmaker Settings">
-         <font>
-            <Font name="Segoe UI Emoji" size="16.0" />
-         </font>
-      </Text>
-      <Pane layoutX="65.0" layoutY="355.0" prefHeight="2.0" prefWidth="224.0" style="-fx-background-color: #0967A5;" />
-      <Slider fx:id="ageRangeSlider" layoutX="62.0" layoutY="393.0" prefHeight="14.0" prefWidth="453.0" stylesheets="@../../css/Sharp.css" />
-      <Text layoutX="65.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age Ranges">
+      <Slider fx:id="ageRangeSlider" layoutX="206.0" layoutY="540.0" prefHeight="14.0" prefWidth="453.0" stylesheets="@../../css/Sharp.css" />
+      <Text layoutX="261.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age Ranges">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="307.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Older Than">
+      <Text layoutX="503.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Older Than">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="57.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15">
+      <Text layoutX="205.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="130.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20">
+      <Text layoutX="278.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="206.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+      <Text layoutX="354.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="281.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30">
+      <Text layoutX="429.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="421.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40">
+      <Text layoutX="569.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="541.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0">
+      <Text layoutX="562.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="351.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="35">
+      <Text layoutX="499.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="35">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="496.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="45">
+      <Text layoutX="644.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="45">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <MenuButton layoutX="65.0" layoutY="470.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" stylesheets="@../../css/Sharp.css" text="English" textFill="WHITE">
+      <MenuButton layoutX="96.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="262.0" stylesheets="@../../css/Sharp.css" text="English" textFill="WHITE">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
       </MenuButton>
-      <Text layoutX="65.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Spoken">
+      <Text layoutX="97.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Spoken">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="225.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Played" wrappingWidth="98.9999991953373">
+      <Text layoutX="457.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Played" wrappingWidth="98.9999991953373">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <MenuButton layoutX="225.0" layoutY="470.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="192.0" stylesheets="@../../css/Sharp.css" text="Counter Strike: Global Offensive" textFill="WHITE">
+      <MenuButton layoutX="457.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="262.0" stylesheets="@../../css/Sharp.css" text="Counter Strike: Global Offensive" textFill="WHITE">
          <items>
             <MenuItem mnemonicParsing="false" text="Action 1" />
             <MenuItem mnemonicParsing="false" text="Action 2" />
          </items>
       </MenuButton>
-      <Button layoutX="470.0" layoutY="626.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Apply" textFill="WHITE" />
-      <Button layoutX="675.0" layoutY="626.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Save" textFill="WHITE" />
+      <Button layoutX="678.0" layoutY="760.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Save" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Text fill="#292e37" layoutX="88.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available to play lets the user that is matched with you that you are currently wanting to play." underline="true">
+         <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="89.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Active Matchmaking is basically the on/off switch. If you want it to run in the background tick the box." underline="true">
+         <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="88.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="These settings are used by the Matchmaker to allow you to be matched only to be that meet your requirements." underline="true">
+         <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#0967a5" layoutX="101.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please note: If you have not enabled Active Matchmaking the matchmaker will not work.">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

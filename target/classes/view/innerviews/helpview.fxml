@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" />
+
+<AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matchmaker Help/Guide">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How the matchmaker works is quite simple from your point of view. It helps you find friends that have similar requirements/settings to you. But I haven't seen anything on the home page you ask? That's because you have not configured you matchmaker settings. You can do this by using the settings tab. It is located down the bottom of the mainview page. Once you have completed your configuration you will then start seeing people the next time you log in. (Or maybe not, maybe nobody will match you initially, but as we grow in size im sure your perfect match will come)" wrappingWidth="815.564453125">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="3.0" layoutX="14.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="825.0" />
+      <Text layoutX="14.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post Creation Guide">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="3.0" layoutX="14.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" width="825.0" />
+      <Text layoutX="15.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details, details and more details. The whole reason this tool was created was to allow the user to tailor their specific needs and try convey it in a simple format. You can set such things as, the post title: &quot;Hey guys lets play Rust tonight&quot;, &quot;Hey guys lets go for this acheivement on Counter Strike&quot;. We are totally leaving this up to the user what they want to do. You can also set a description on your post, try and give as much information on what you are doing in the online world, this also supports the game choice. Initially we have just a few games listed but as we grow there will be more support added for each game. Down the bottom of the post creation screen you will see you requirements, this allows you to tailor your post to your specific needs. What are you waiting for? LetsPlay." wrappingWidth="815.564453125">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remember, this is you as a gamer in a few words. Nobody wants to play with a boring player. Make it exciting!!" wrappingWidth="815.564453125">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Creation Guide">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="3.0" layoutX="14.0" layoutY="423.0" stroke="BLACK" strokeType="INSIDE" width="825.0" />
+      <Text layoutX="15.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ok, this is quite simple also. But it gives powerful tools behind the scenes to allow Gamers to organise gaming sessions. Once you've created a few posts and built up a bit of rep, why not start a group with gamers you've met previously. You guys like raiding on Friday nights in the world of Rust? Well send batch style messages to all your group members to remind them. Remind them to get on the discord server, we leave this power in your hands." wrappingWidth="815.564453125">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Creation">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="3.0" layoutX="14.0" layoutY="556.0" stroke="BLACK" strokeType="INSIDE" width="825.0" />
+      <Text layoutX="15.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This probably the most important part. If you don't have a good profile, who's going to want to play with you? When you are matched to another gamer, don't forget they are also matched to you. They will be able to see your profile and you there's. If you have dirty pictures or anything that makes you out to be negative they might not want to play with you but don't forget, we are not asking you to be lovely to everyone. We know how harsh the gaming community can be to each other, we just ask that you post no images or pornography or terroism or anything really offensive. The gaming world is built on offensive behavior and memes, but just take it easy." wrappingWidth="815.564453125">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#0967a5" layoutX="284.0" layoutY="793.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LetsPlay">
+         <font>
+            <Font name="Segoe UI Bold" size="72.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="562.0" layoutY="792.0" strokeType="OUTSIDE" strokeWidth="0.0" text=".gg">
+         <font>
+            <Font name="Segoe UI Bold" size="72.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
