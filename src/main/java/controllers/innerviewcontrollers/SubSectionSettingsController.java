@@ -21,6 +21,8 @@ public class SubSectionSettingsController implements Initializable {
         setSliders();
         instantiateGamePlayedChoiceBox();
         instantiateGroupMainLanguageChoiceBox();
+
+        //check does the user have a matchmaker requirement
     }
 
     private void setSliders(){

@@ -19,6 +19,8 @@ public class MatchmakerRequirement {
     private String requiredGame;
     private int gamersMinimumAgeRequirement;
 
+    public MatchmakerRequirement(){}
+
     public MatchmakerRequirement(boolean availableToPlayFlag, boolean matchmakerActiviationFlag,
                                  boolean doesGamerRequireMicrophone, boolean doesGamerRequireCompetitiveGamers,
                                  boolean doesGamerRequireCasualPlayers, boolean doesGamerRequireMales,
