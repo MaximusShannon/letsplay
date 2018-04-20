@@ -8,10 +8,9 @@ public class GroupMessage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int messageId;
+    private int groupId;
     private String message;
 
-    @OneToOne
-    private GamerGroup gamerGroup;
 
     public int getMessageId() {
         return messageId;
@@ -29,11 +28,11 @@ public class GroupMessage {
         this.message = message;
     }
 
-    public GamerGroup getGamerGroup() {
-        return gamerGroup;
+    public int getGroupId() {
+        return groupId;
     }
 
-    public void setGamerGroup(GamerGroup gamerGroup) {
-        this.gamerGroup = gamerGroup;
+    public void setGroupId(int groupId) {
+        this.groupId = groupId;
     }
 }

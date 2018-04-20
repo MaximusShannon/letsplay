@@ -30,6 +30,7 @@ public class DatabaseInteractionService {
     private List<GamerAvatar> gamersAvatars;
     private List<GroupAvatar> groupAvatars;
     private List<Invitation> allInvitations;
+    private List<GroupMessage> groupMessages;
     private Notification notification;
 
     public DatabaseInteractionService(){
@@ -51,11 +52,15 @@ public class DatabaseInteractionService {
         return session.load(GamerGroup.class, models.Session.adminGroup.getGroupId());
     }
 
-    public GamerGroup fetchSingleGroup(int groupId){
+    public String fetchGamerGroupsName(int gamerGroupId){
 
         session = sessionFactory.openSession();
 
-        return session.load(GamerGroup.class, groupId);
+        String groupName = session.load(GamerGroup.class, gamerGroupId).getGroupName();
+
+        session.close();
+
+        return groupName;
     }
 
     public List<Invitation> fetchAllInvitations(){
@@ -595,6 +600,25 @@ public class DatabaseInteractionService {
         return postComments;
     }
 
+    public List<GroupMessage> fetchGroupMessages(){
+
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<GroupMessage> groupMessage = builder.createQuery(GroupMessage.class);
+        groupMessage.from(GroupMessage.class);
+
+        groupMessages = session.createQuery(groupMessage).getResultList();
+
+        session.close();
+
+        return groupMessages;
+
+    }
+
+
     public List<GamerAvatar> fetchGamerAvatars(){
 
         session = sessionFactory.openSession();
@@ -718,6 +742,21 @@ public class DatabaseInteractionService {
         Transaction tx = session.beginTransaction();
 
         Invitation toDelete = session.load(Invitation.class, invId);
+        session.delete(toDelete);
+
+        session.flush();
+        tx.commit();
+
+        session.close();
+    }
+
+    public void deleteMessage(int messageId){
+
+        session = sessionFactory.openSession();
+
+        Transaction tx = session.beginTransaction();
+
+        GroupMessage toDelete = session.load(GroupMessage.class, messageId);
         session.delete(toDelete);
 
         session.flush();

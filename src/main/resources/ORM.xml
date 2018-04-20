@@ -107,6 +107,7 @@
             <generator class="native"/>
         </id>
         <property name="message" type="java.lang.String" column="message_body"/>
+        <property name="groupId" type="integer" column="group_id"/>
     </class>
 
     <class name="models.GroupApplication" table="GROUP_APPLICATIONS">

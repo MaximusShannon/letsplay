@@ -1,6 +1,7 @@
 package controllers.innerviewcontrollers;
 
 import controllers.dynamicviewcontrollers.UniqueGroupInvitationController;
+import controllers.dynamicviewcontrollers.UniqueMessageController;
 import functionality.DatabaseInteractionService;
 import functionality.InvitationService;
 import javafx.animation.FadeTransition;
@@ -35,11 +36,84 @@ public class ProfileInviteAndMessagesController implements Initializable {
     @FXML private Text inviteFailed;
     @FXML private Text inviteDeclined;
     @FXML private Text inviteCount;
+    @FXML private Text messageCount;
+    @FXML private Text messageDeleted;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         initResources();
+
+        displayInvites();
+        displayMessages();
+
+        closeResources();
+    }
+
+    private void displayMessages(){
+
+        fetchThisUsersMessages();
+
+        if(messageList.size() > 0){
+
+            for(int i = 0; i < messageList.size(); i++){
+
+                displayMessageCard(messageList.get(i));
+            }
+
+            messageCount.setText("Displaying " + messageList.size() + " message(s).");
+        }
+    }
+
+    private void displayMessageCard(GroupMessage message){
+
+        try{
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dynamiclycreatedviews/message_card.fxml"));
+            AnchorPane node = loader.load();
+
+            UniqueMessageController uniqueMessageController = loader.getController();
+
+            uniqueMessageController.messenger.setText(dbService.fetchGamerGroupsName(message.getGroupId())+ " sent you a message.");
+            uniqueMessageController.messageText.setText(message.getMessage());
+            uniqueMessageController.deleteMessage.setOnMouseClicked(e ->{
+
+                dbService.deleteMessage(message.getMessageId());
+                messageDeleted.setVisible(true);
+                fadeText(messageDeleted);
+
+                messagesVbox.getChildren().remove(node);
+            });
+
+            messagesVbox.getChildren().add(node);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    private void fetchThisUsersMessages(){
+
+        List<GroupMessage> groupMessages = dbService.fetchGroupMessages();
+        messageList = new ArrayList<>();
+
+        for(int i = 0; i < groupList.size(); i++){
+
+            if(checkIsUserAMemberOfGroup(groupList.get(i).getMemberList(), Session.gamerSession.getId())){
+
+                for(int x = 0; x < groupMessages.size(); x++){
+
+                    if(groupMessages.get(x).getGroupId() == groupList.get(i).getGroupId()){
+
+                        messageList.add(groupMessages.get(x));
+                    }
+                }
+            }
+        }
+    }
+
+    private void displayInvites(){
 
         fetchThisUsersInvites();
         groupList = dbService.fetchGroupsList();
@@ -49,6 +123,7 @@ public class ProfileInviteAndMessagesController implements Initializable {
         if(validInvitationGroupIds.size() > 0){
 
             validInvitations = cleanInvites(validInvitationGroupIds);
+            inviteCount.setText("Displaying " + validInvitations.size() + " invite(s).");
         }
 
         if(validInvitations != null && validInvitations.size() > 0){
@@ -57,11 +132,8 @@ public class ProfileInviteAndMessagesController implements Initializable {
 
                 displayUniqueInvitationInView(validInvitations.get(i));
             }
-
-            inviteCount.setText("Displaying " + validInvitations.size() + " invite(s).");
         }
 
-        closeResources();
     }
 
     private List<Invitation> cleanInvites(List<Integer> validInvitationIds){
@@ -125,7 +197,7 @@ public class ProfileInviteAndMessagesController implements Initializable {
 
                 if(groupList.get(i).getGroupId() == inv.getGroupId()){
 
-                    uniqueGroupInvitationController.groupName.setText(groupList.get(i).getGroupName());
+                    uniqueGroupInvitationController.groupName.setText(groupList.get(i).getGroupName() + " has invited you to join them!");
                 }
             }
 

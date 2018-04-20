@@ -31,7 +31,7 @@ public class GroupMessagingController {
         if(validator.validateTextFieldNotEmpty(messageBody.getText())){
 
             //persist the message
-            message.setGamerGroup(Session.adminGroup);
+            message.setGroupId(Session.adminGroup.getGroupId());
             message.setMessage(messageBody.getText());
 
             int id = dbService.persistGroupMessage(message);
