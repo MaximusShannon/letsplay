@@ -36,6 +36,7 @@
         <mapping class="models.PostComment"/>
         <mapping class="models.GamerAvatar"/>
         <mapping class="models.GroupAvatar"/>
+        <mapping class="models.MatchmakerRequirement"/>
  
     </session-factory>
 

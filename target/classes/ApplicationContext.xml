@@ -68,4 +68,13 @@
     <bean id="postcomment"
         class = "models.PostComment">
     </bean>
+
+    <bean id = "matchmakerrequirement"
+        class = "models.MatchmakerRequirement">
+    </bean>
+
+    <bean id = "matchmakerpersistenceservice"
+          class="functionality.MatchmakerPersistenceService">
+    </bean>
+
 </beans>

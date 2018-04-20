@@ -3,8 +3,7 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -18,7 +17,7 @@
             <Font name="Segoe UI Emoji" size="18.0" />
          </font>
       </Text>
-      <CheckBox layoutX="92.0" layoutY="103.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="136.0" stylesheets="@../../css/Sharp.css" text="Available to play">
+      <CheckBox fx:id="atpCb" layoutX="92.0" layoutY="103.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="136.0" stylesheets="@../../css/Sharp.css" text="Available to play">
          <font>
             <Font size="14.0" />
          </font>
@@ -31,7 +30,7 @@
             <Font name="Segoe UI Emoji" size="16.0" />
          </font>
       </Text>
-      <CheckBox layoutX="95.0" layoutY="172.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="162.0" stylesheets="@../../css/Sharp.css" text="Active Matchmaking">
+      <CheckBox fx:id="activeMatchmakingCb" layoutX="95.0" layoutY="172.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="162.0" stylesheets="@../../css/Sharp.css" text="Active Matchmaking">
          <font>
             <Font size="14.0" />
          </font>
@@ -44,7 +43,7 @@
             <Font name="Segoe UI Emoji" size="16.0" />
          </font>
       </Text>
-      <CheckBox layoutX="95.0" layoutY="289.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Microphone Required">
+      <CheckBox fx:id="micRequiredCb" layoutX="95.0" layoutY="289.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Microphone Required">
          <font>
             <Font size="14.0" />
          </font>
@@ -52,7 +51,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="95.0" layoutY="331.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Competitive Players">
+      <CheckBox fx:id="competitivePlayersCb" layoutX="95.0" layoutY="331.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Competitive Players">
          <font>
             <Font size="14.0" />
          </font>
@@ -60,7 +59,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="95.0" layoutY="375.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Casual Players">
+      <CheckBox fx:id="casualPlayersCb" layoutX="95.0" layoutY="375.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Casual Players">
          <font>
             <Font size="14.0" />
          </font>
@@ -68,7 +67,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="489.0" layoutY="289.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Accept Males">
+      <CheckBox fx:id="acceptMalesCb" layoutX="489.0" layoutY="289.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Accept Males">
          <font>
             <Font size="14.0" />
          </font>
@@ -76,7 +75,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </CheckBox>
-      <CheckBox layoutX="489.0" layoutY="331.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Accept Females">
+      <CheckBox fx:id="acceptFemalesCb" layoutX="489.0" layoutY="331.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Accept Females">
          <font>
             <Font size="14.0" />
          </font>
@@ -135,12 +134,6 @@
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <MenuButton layoutX="96.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="262.0" stylesheets="@../../css/Sharp.css" text="English" textFill="WHITE">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
-        </items>
-      </MenuButton>
       <Text layoutX="97.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Spoken">
          <font>
             <Font name="Segoe UI" size="14.0" />
@@ -151,13 +144,7 @@
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <MenuButton layoutX="457.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="262.0" stylesheets="@../../css/Sharp.css" text="Counter Strike: Global Offensive" textFill="WHITE">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
-      <Button layoutX="678.0" layoutY="760.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Save" textFill="WHITE">
+      <Button fx:id="saveRequirementToDb" layoutX="678.0" layoutY="760.0" mnemonicParsing="false" onAction="#saveRequirement" prefHeight="37.0" prefWidth="189.0" stylesheets="@../../css/Sharp.css" text="Save" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect></Button>
@@ -176,7 +163,29 @@
             <Font name="Segoe UI Italic" size="12.0" />
          </font>
       </Text>
-      <Text fill="#0967a5" layoutX="101.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please note: If you have not enabled Active Matchmaking the matchmaker will not work.">
+      <Text fill="#0967a5" layoutX="186.0" layoutY="734.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please note: If you have not enabled Active Matchmaking the matchmaker will not work.">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="languageSpoken" layoutX="94.0" layoutY="447.0" prefHeight="25.0" prefWidth="251.0" stylesheets="@../../css/Sharp.css" />
+      <ChoiceBox fx:id="gamePlayed" layoutX="458.0" layoutY="447.0" prefHeight="25.0" prefWidth="251.0" stylesheets="@../../css/Sharp.css" />
+      <Text fx:id="noRequirementsFound" fill="#42b500" layoutX="797.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Requirements found." visible="false">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="saved" fill="#048031" layoutX="735.0" layoutY="827.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saved. . ." visible="false">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="failed" fill="#ab0202" layoutX="582.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Failed, are you sure you changed something?" visible="false">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="requirementCreationFailure" fill="#a10000" layoutX="241.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have to configure more settings. Requirement creation failed." visible="false" wrappingWidth="433.00000181794167">
          <font>
             <Font name="Segoe UI Bold" size="18.0" />
          </font>

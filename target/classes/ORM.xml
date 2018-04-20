@@ -140,4 +140,21 @@
         <property name="image" type="binary" column="group_avatar_binary" length="80000"/>
     </class>
 
+    <class name="models.MatchmakerRequirement" table="MATCHMAKER_REQUIREMENTS">
+    <id name="matchmakerRequirementId" column="matchmaker_requirement_id">
+        <generator class="native"/>
+    </id>
+        <property name="availableToPlayFlag" type="boolean" column="available_to_play"/>
+        <property name="matchmakerActivationFlag" type="boolean" column="matchmaker_activation_flag"/>
+        <property name="availableToPlayFlag" type="boolean" column="available_to_play"/>
+        <property name="doesGamerRequireMicrophone" type="boolean" column="microphone_required"/>
+        <property name="doesGamerRequireCompetitiveGamers" type="boolean" column="competitive_gamers_required"/>
+        <property name="doesGamerRequireCasualPlayers" type="boolean" column="casual_players_required"/>
+        <property name="doesGamerRequireMales" type="boolean" column="males_required"/>
+        <property name="doesGamerRequireFemales" type="boolean" column="females_required"/>
+        <property name="requiredLanguage" type="java.lang.String" column="required_language"/>
+        <property name="requiredGame" type="java.lang.String" column="required_game"/>
+        <property name="gamersMinimumAgeRequirement" type="integer" column="minimum_age"/>
+    </class>
+
 </hibernate-mapping>
