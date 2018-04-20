@@ -6,21 +6,28 @@ import javafx.animation.FadeTransition;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.image.Image;
+import javafx.scene.image.WritableImage;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 import models.GamerGroup;
+import models.GroupAvatar;
 import models.MemberList;
 import models.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.lang.reflect.Member;
 import java.net.URL;
@@ -36,6 +43,7 @@ public class GroupMainViewController implements Initializable {
     private List<GamerGroup> filteredByGame;
     private DatabaseInteractionService dbService;
     private ClassPathXmlApplicationContext context;
+    private List<GroupAvatar> groupAvatars;
 
     @FXML private AnchorPane injectablePane;
     @FXML private Button createGroupBtn;
@@ -188,6 +196,8 @@ public class GroupMainViewController implements Initializable {
         int groupSize = checkGroupSize(group.getGroupId());
         MemberList currentMemberList = getGroupMemberList(group.getGroupId());
 
+        groupAvatars = dbService.fetchGroupAvatars();
+
         try{
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dynamiclycreatedviews/group_display_card.fxml"));
@@ -200,6 +210,14 @@ public class GroupMainViewController implements Initializable {
             uniqueGroupController.comsChannel.setText(group.getComsChannel());
             uniqueGroupController.activityLevel.setText(group.getActivityLevel());
             uniqueGroupController.groupSize.setText(Integer.toString(groupSize +1) + " / 15");
+
+            for(int i = 0; i < groupAvatars.size(); i++){
+
+                if(groupAvatars.get(i).getGamerGroup().getGroupId() == group.getGroupId()){
+
+                    uniqueGroupController.groupImage.setImage(convertToJavaFXImage(groupAvatars.get(i).getImage(), 218, 202));
+                }
+            }
 
             uniqueGroupController.viewPost.setOnMouseClicked( e->{
 
@@ -217,6 +235,26 @@ public class GroupMainViewController implements Initializable {
 
             e.printStackTrace();
         }
+    }
+
+    private Image convertToJavaFXImage(byte[] raw, final int width, final int height){
+
+        WritableImage image = new WritableImage(width, height);
+
+        try{
+
+            ByteArrayInputStream bis = new ByteArrayInputStream(raw);
+            BufferedImage read = ImageIO.read(bis);
+
+            image = SwingFXUtils.toFXImage(read, null);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+
+        }
+
+        return image;
     }
 
     private void openInnerGamerGroupView(){

@@ -37,7 +37,7 @@
                   <Font name="Verdana Bold" size="14.0" />
                </font>
             </Text>
-            <ImageView fitHeight="202.0" fitWidth="218.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="groupImage" fitHeight="202.0" fitWidth="218.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/profile_std.jpg" />
                </image>
