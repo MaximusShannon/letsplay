@@ -97,7 +97,6 @@ public class ProfileProfileInformationController implements Initializable {
                 gamerAvatar.setAvatarImage(imageConverted);
                 gamerAvatar.setGamer(Session.gamerSession);
 
-                System.out.println(imageConverted.length);
 
                 if(dbService == null){
 

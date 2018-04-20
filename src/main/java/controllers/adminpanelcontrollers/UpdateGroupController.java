@@ -15,15 +15,20 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.scene.text.Text;
+import javafx.stage.FileChooser;
 import javafx.util.Duration;
 import models.GroupAvatar;
 import models.Session;
+import org.hibernate.exception.GenericJDBCException;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -47,16 +52,20 @@ public class UpdateGroupController implements Initializable {
     @FXML private Text updateFailure;
     @FXML private Text updateSuccess;
     @FXML private Text changeImage;
+    @FXML private Text warning;
     @FXML private ImageView groupImage;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        groupAvatarList = new ArrayList<>();
+
         initChoices();
         initTextFields();
         setChangeImageClick();
         setGroupImageIfApplicable();
+
 
         //set upload click listener
     }
@@ -81,9 +90,68 @@ public class UpdateGroupController implements Initializable {
 
         changeImage.setOnMouseClicked(e ->{
 
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Group Image chooser");
+            fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
+
+            File selectedFile = fileChooser.showOpenDialog(Session.thisStage);
+
+            if(selectedFile != null){
+
+                byte[] imageConverted = convertImageToByteArray(selectedFile);
+
+                GroupAvatar groupAvatar = new GroupAvatar();
+                groupAvatar.setImage(imageConverted);
+                groupAvatar.setGamerGroup(Session.adminGroup);
+
+                if(dbService == null){
+
+                    dbService = new DatabaseInteractionService();
+                }try{
+
+                    avatar = checkDoesGroupHaveAnAvatar();
+
+                    if(avatar != null){
+
+                        dbService.deleteOldGroupAvatar(avatar.getGroupAvatarId());
+                    }
+
+                    int id = dbService.persistGroupAvatar(groupAvatar);
+                    if(id > 0){
+
+                        groupImage.setImage(convertToJavaFXImage(imageConverted,230,197));
+                    }
+
+                }catch (GenericJDBCException ex){
+
+                    warning.setVisible(true);
+                    fadeFailureText(warning);
+                    ex.printStackTrace();
+                }
+            }
 
         });
 
+    }
+
+    private byte[] convertImageToByteArray(File fileToConvert){
+
+        byte[] imageAsBytes = new byte[(int) fileToConvert.length()];
+
+        try{
+
+            FileInputStream fis = new FileInputStream(fileToConvert);
+
+            fis.read(imageAsBytes);
+            fis.close();
+
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+
+        return imageAsBytes;
     }
 
     private Image convertToJavaFXImage(byte[] raw, final int width, final int height){
@@ -112,7 +180,7 @@ public class UpdateGroupController implements Initializable {
 
         for(int i = 0; i < groupAvatarList.size(); i++){
 
-            if(groupAvatarList.get(i).getGamerGroup().getGroupId() == Session.innerViewGamerGroup.getGroupId()){
+            if(groupAvatarList.get(i).getGamerGroup().getGroupId() == Session.adminGroup.getGroupId()){
 
                 return groupAvatarList.get(i);
             }

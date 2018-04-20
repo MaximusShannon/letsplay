@@ -35,6 +35,7 @@
         <mapping class="models.GroupApplication"/>
         <mapping class="models.PostComment"/>
         <mapping class="models.GamerAvatar"/>
+        <mapping class="models.GroupAvatar"/>
  
     </session-factory>
 

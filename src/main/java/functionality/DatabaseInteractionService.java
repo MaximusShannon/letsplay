@@ -428,6 +428,19 @@ public class DatabaseInteractionService {
         return id;
     }
 
+    public Integer persistGroupAvatar(GroupAvatar groupAvatar){
+
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+
+        Integer id = (Integer) session.save(groupAvatar);
+
+        session.getTransaction().commit();
+        session.close();
+
+        return id;
+    }
+
     public Integer persistGroupApplication(GroupApplication application){
 
         session = sessionFactory.openSession();
@@ -679,6 +692,21 @@ public class DatabaseInteractionService {
         Transaction tx = session.beginTransaction();
 
         GamerAvatar toDelete = session.load(GamerAvatar.class, avatarId);
+        session.delete(toDelete);
+
+        session.flush();
+        tx.commit();
+
+        session.close();
+    }
+
+    public void deleteOldGroupAvatar(int groupAvatarId){
+
+        session = sessionFactory.openSession();
+
+        Transaction tx = session.beginTransaction();
+
+        GroupAvatar toDelete = session.load(GroupAvatar.class, groupAvatarId);
         session.delete(toDelete);
 
         session.flush();

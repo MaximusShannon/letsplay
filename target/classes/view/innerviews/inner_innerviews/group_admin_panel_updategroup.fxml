@@ -22,7 +22,7 @@
          </font>
       </Text>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="4.0" layoutX="14.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="744.0" />
-      <ImageView fitHeight="197.0" fitWidth="230.0" layoutX="14.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="groupImage" fitHeight="197.0" fitWidth="230.0" layoutX="14.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/letsplay_Icon.PNG" />
          </image>
@@ -33,7 +33,7 @@
          </font>
       </Text>
       <TextField fx:id="groupName" layoutX="223.0" layoutY="72.0" prefHeight="27.0" prefWidth="477.0" promptText="Group name" style="-fx-border-color: #292E37;" />
-      <Text fill="#0967a5" layoutX="54.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change image" underline="true" wrappingWidth="97.25000500679016">
+      <Text fx:id="changeImage" fill="#0967a5" layoutX="54.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change image" underline="true" wrappingWidth="97.25000500679016">
          <font>
             <Font name="Segoe UI Italic" size="14.0" />
          </font>
@@ -138,6 +138,11 @@
          </font>
       </Text>
       <Text fx:id="updateSuccess" fill="#00ab1f" layoutX="462.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Successful" visible="false" wrappingWidth="238.57420948147774">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="warning" fill="#ab0000" layoutX="39.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning! Picture to large." visible="false" wrappingWidth="143.7451159657212">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
