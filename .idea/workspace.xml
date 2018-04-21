@@ -114,15 +114,15 @@
       <file leaf-file-name="SubSectionHomeController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="187" column="12" lean-forward="false" selection-start-line="187" selection-start-column="12" selection-end-line="187" selection-end-column="12" />
+            <state relative-caret-position="105">
+              <caret line="139" column="103" lean-forward="false" selection-start-line="139" selection-start-column="103" selection-end-line="139" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#initialize#0;class#SubSectionHomeController#0" expanded="false" />
                 <element signature="method#getMatchedGamers#0;class#SubSectionHomeController#0" expanded="false" />
                 <element signature="method#getMostRecentPosts#0;class#SubSectionHomeController#0" expanded="false" />
                 <element signature="method#getMatchingGroups#0;class#SubSectionHomeController#0" expanded="false" />
-                <element signature="method#displayRecentPost#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#displayMatchedGroup#0;class#SubSectionHomeController#0" expanded="false" />
                 <element signature="method#displayMatchedGamer#0;class#SubSectionHomeController#0" expanded="false" />
                 <element signature="method#convertToJavaFXImage#0;class#SubSectionHomeController#0" expanded="false" />
                 <element signature="method#initResources#0;class#SubSectionHomeController#0" expanded="false" />
@@ -718,12 +718,12 @@
       <workItem from="1524174848747" duration="49000" />
       <workItem from="1524222700627" duration="18009000" />
       <workItem from="1524248718467" duration="15261000" />
-      <workItem from="1524308143864" duration="11699000" />
+      <workItem from="1524308143864" duration="11898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308355000" />
+    <option name="totallyTimeSpent" value="308554000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -756,7 +756,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34636265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3441911" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2801303" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1498,15 +1498,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="187" column="12" lean-forward="false" selection-start-line="187" selection-start-column="12" selection-end-line="187" selection-end-column="12" />
+        <state relative-caret-position="105">
+          <caret line="139" column="103" lean-forward="false" selection-start-line="139" selection-start-column="103" selection-end-line="139" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initialize#0;class#SubSectionHomeController#0" expanded="false" />
             <element signature="method#getMatchedGamers#0;class#SubSectionHomeController#0" expanded="false" />
             <element signature="method#getMostRecentPosts#0;class#SubSectionHomeController#0" expanded="false" />
             <element signature="method#getMatchingGroups#0;class#SubSectionHomeController#0" expanded="false" />
-            <element signature="method#displayRecentPost#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#displayMatchedGroup#0;class#SubSectionHomeController#0" expanded="false" />
             <element signature="method#displayMatchedGamer#0;class#SubSectionHomeController#0" expanded="false" />
             <element signature="method#convertToJavaFXImage#0;class#SubSectionHomeController#0" expanded="false" />
             <element signature="method#initResources#0;class#SubSectionHomeController#0" expanded="false" />

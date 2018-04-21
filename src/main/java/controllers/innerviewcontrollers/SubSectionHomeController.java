@@ -133,6 +133,17 @@ public class SubSectionHomeController implements Initializable {
 
             uniqueRecentPostController.gotoPost.setOnMouseClicked(e ->{
 
+                Session.resetInnerViewPost();
+                Session.innerViewPost = post;
+
+                try{
+                    AnchorPane innerViewPost = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/post_view_inside_with_comments.fxml"));
+                    injectablePane.getChildren().setAll(innerViewPost);
+                }catch (Exception i){
+
+                    i.printStackTrace();
+                }
+
 
             });
 
