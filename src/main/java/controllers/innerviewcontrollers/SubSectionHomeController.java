@@ -1,20 +1,24 @@
 package controllers.innerviewcontrollers;
 
 import controllers.dynamicviewcontrollers.UniqueMatchedGamerCardController;
+import functionality.DatabaseInteractionService;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
+import javafx.scene.image.Image;
+import javafx.scene.image.WritableImage;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
-import models.Gamer;
-import models.GamerGroup;
-import models.Matchmaker;
-import models.Post;
+import models.*;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +27,12 @@ import java.util.ResourceBundle;
 public class SubSectionHomeController implements Initializable {
 
     private ClassPathXmlApplicationContext context;
+    private DatabaseInteractionService dbService;
     private Matchmaker matchmaker;
     private List<Gamer> matchedGamers;
     private List<Post> mostRecentPosts;
     private ArrayList<GamerGroup> matchingGroupsNotAMemberOf;
+    private List<GamerAvatar> gamerAvatars;
 
     @FXML private Text matchedGamersCount;
     @FXML private Text postCount;
@@ -86,6 +92,18 @@ public class SubSectionHomeController implements Initializable {
         }
     }
 
+    private void displayRecentPost(Post post){
+
+        try{
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dynamiclycreatedviews/recent_post_display_card.fxml"));
+            Pane node = loader.load();
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
     private void displayMatchedGamer(Gamer matchedGamer){
 
         try{
@@ -102,10 +120,25 @@ public class SubSectionHomeController implements Initializable {
                 uniqueMatchedGamerCardController.onlineStatus_offline.setVisible(true);
             }
 
-            //handle button click
+            gamerAvatars = dbService.fetchGamerAvatars();
+
+            if(gamerAvatars.size() > 0){
+                for(int i = 0; i < gamerAvatars.size(); i++){
+
+                    if(gamerAvatars.get(i).getGamer().getId() == matchedGamer.getId()){
+
+                        uniqueMatchedGamerCardController.gamerImage.setImage(convertToJavaFXImage(gamerAvatars.get(i).getAvatarImage(), 146, 161));
+                    }
+                }
+            }
+
+            uniqueMatchedGamerCardController.gotoProfile.setOnMouseClicked(e ->{
+
+                //got to profile
+
+            });
 
             matchedGamersList.getChildren().add(node);
-
 
         }catch (Exception e){
 
@@ -113,6 +146,26 @@ public class SubSectionHomeController implements Initializable {
         }
 
 
+    }
+
+    private Image convertToJavaFXImage(byte[] raw, final int width, final int height){
+
+        WritableImage image = new WritableImage(width, height);
+
+        try{
+
+            ByteArrayInputStream bis = new ByteArrayInputStream(raw);
+            BufferedImage read = ImageIO.read(bis);
+
+            image = SwingFXUtils.toFXImage(read, null);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+
+        }
+
+        return image;
     }
 
     private void getMatchingGroups(){
@@ -134,6 +187,7 @@ public class SubSectionHomeController implements Initializable {
 
         context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         matchmaker = (Matchmaker) context.getBean("matchmaker");
+        dbService = (DatabaseInteractionService) context.getBean("databaseinteractionservice");
     }
 
 }
