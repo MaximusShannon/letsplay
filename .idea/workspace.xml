@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueRecentPostController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/recent_post_display_card.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGroupController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/matched-group-card.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,7 +113,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SubSectionHomeController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SubSectionHomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="379">
@@ -155,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UniqueMatchedGamerCardController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java">
+      <file leaf-file-name="UniqueMatchedGroupController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGroupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="176">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,62 +194,6 @@
                 <element signature="method#filterOutGroupsGamerIsAlreadyAMemberOf#0;class#Matchmaker#0" expanded="false" />
                 <element signature="method#checkIsAMember#0;class#Matchmaker#0" expanded="false" />
                 <element signature="method#checkDoesUserHaveARequirement#0;class#Matchmaker#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseInteractionService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="525" column="61" lean-forward="false" selection-start-line="525" selection-start-column="61" selection-end-line="525" selection-end-column="61" />
-              <folding>
-                <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchGamerGroupsName#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchAllInvitations#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#updateGamerApplicationCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#setGamerOnline#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#setGamerOffline#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#persistGroupMessage#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#persistPostComment#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#persistGamerAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#persistGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#persistGroupApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchAllRequirements#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchAllApplicationsForGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#filterApplicationsToGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchMemberLists#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchPostCommentList#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchGroupMessages#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchGamerAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#fetchGroupAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#initFactory#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#deleteApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#deleteGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#deleteInvitation#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#deleteOldGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
-                <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -311,9 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/view/feedbackviews/group_deleted_success.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/DeleteGroupController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/post_view_inside_with_comments.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/post_comment.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostCommentController.java" />
@@ -362,6 +302,9 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/recent_post_display_card.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueRecentPostController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/matched-group-card.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UnqiueMatchedGroupController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGroupController.java" />
       </list>
     </option>
   </component>
@@ -829,12 +772,12 @@
       <workItem from="1524174848747" duration="49000" />
       <workItem from="1524222700627" duration="18009000" />
       <workItem from="1524248718467" duration="15261000" />
-      <workItem from="1524308143864" duration="6814000" />
+      <workItem from="1524308143864" duration="7107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303470000" />
+    <option name="totallyTimeSpent" value="303763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -976,30 +919,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/post_view_inside_with_comments.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/InnerPostViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="102" column="89" lean-forward="false" selection-start-line="102" selection-start-column="89" selection-end-line="102" selection-end-column="89" />
-          <folding>
-            <element signature="method#fadeText#0;class#InnerPostViewController#0" expanded="false" />
-            <element signature="method#backToPostsButtonFunctionality#0;class#InnerPostViewController#0" expanded="false" />
-            <element signature="method#initRequirements#0;class#InnerPostViewController#0" expanded="false" />
-            <element signature="method#initResources#0;class#InnerPostViewController#0" expanded="false" />
-            <element signature="method#closeResources#0;class#InnerPostViewController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupMemberController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1566,26 +1485,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueRecentPostController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/recent_post_display_card.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1607,6 +1506,47 @@
             <element signature="method#getMatchedGamers#0;class#SubSectionHomeController#0" expanded="false" />
             <element signature="method#getMatchingGroups#0;class#SubSectionHomeController#0" expanded="false" />
             <element signature="method#initResources#0;class#SubSectionHomeController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/matched-group-card.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="10" column="282" lean-forward="false" selection-start-line="10" selection-start-column="282" selection-end-line="10" selection-end-column="282" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueRecentPostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
