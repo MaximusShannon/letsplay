@@ -47,7 +47,7 @@ public class PostDisplayController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        gameName.setText("These are the posts for the game: " + game);
+        int postCountNum = 0;
 
         dbService = new DatabaseInteractionService();
         avatars = dbService.fetchGamerAvatars();
@@ -59,19 +59,26 @@ public class PostDisplayController implements Initializable {
             /*Reverse the list so the new stuff is at the top.*/
             Collections.reverse(postList);
 
-            displayPostCount();
-
             for (Post initalPost : postList) {
 
-                displayUniquePostsInView(initalPost);
+                if(initalPost.getGamePlayed().toLowerCase().equals(game.toLowerCase())){
+
+                    displayUniquePostsInView(initalPost);
+                    postCountNum ++;
+                }
+
+
             }
+
+            displayPostCount(postCountNum);
+            gameName.setText("These are the posts for the game: " + game.toUpperCase());
         }
 
     }
 
-    private void displayPostCount(){
+    private void displayPostCount(int postCounter){
 
-        postCount.setText(Integer.toString(postList.size()));
+        postCount.setText(Integer.toString(postCounter));
     }
 
     private GamerAvatar checkDoesPosterHaveAnAvatar(int posterId){

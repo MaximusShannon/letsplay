@@ -298,7 +298,12 @@
                   <Font name="Segoe UI Emoji" size="14.0" />
                </font>
             </Text>
-            <Button layoutX="546.0" layoutY="345.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="274.0" stylesheets="@../../css/Sharp.css" text="Request a feature" textFill="WHITE" />
+            <Button disable="true" layoutX="546.0" layoutY="345.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="274.0" stylesheets="@../../css/Sharp.css" text="Request a feature" textFill="WHITE" />
+            <Text fill="#292e37" layoutX="622.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coming soon . . ." wrappingWidth="121.08985632658005">
+               <font>
+                  <Font name="Segoe UI Emoji" size="14.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
       <Pane prefHeight="900.0" prefWidth="215.0" style="-fx-background-color: #292E37;">

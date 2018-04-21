@@ -27,10 +27,6 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Text fill="#616161" layoutX="404.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="forgot password?" underline="true">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Text>
       <Text fx:id="loginFailureText" fill="#a13131" layoutX="277.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We couldn't find an account with that username and/or password" visible="false">
          <effect>
             <Glow />
