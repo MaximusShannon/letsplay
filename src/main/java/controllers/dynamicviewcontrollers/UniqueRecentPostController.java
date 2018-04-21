@@ -3,10 +3,11 @@ package controllers.dynamicviewcontrollers;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 
-public class UniqueMatchedGamerCardController {
+public class UniqueRecentPostController {
 
-    public Text username;
+    public Text postTitle;
     public Text gamePlaying;
     public Text languageSpoken;
-    public Button gotoProfile;
+    public Text postTags;
+    public Button gotoPost;
 }

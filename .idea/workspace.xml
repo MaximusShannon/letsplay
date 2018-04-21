@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/Matchmaker.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueRecentPostController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/recent_post_display_card.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" afterPath="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/Sharp.css" afterPath="$PROJECT_DIR$/src/main/resources/css/Sharp.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/homeview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/homeview.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,8 +117,8 @@
       <file leaf-file-name="SubSectionHomeController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="70" column="92" lean-forward="false" selection-start-line="70" selection-start-column="92" selection-end-line="70" selection-end-column="92" />
+            <state relative-caret-position="379">
+              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#initialize#0;class#SubSectionHomeController#0" expanded="false" />
@@ -130,6 +127,56 @@
                 <element signature="method#initResources#0;class#SubSectionHomeController#0" expanded="false" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recent_post_display_card.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/recent_post_display_card.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="280" lean-forward="false" selection-start-line="10" selection-start-column="280" selection-end-line="10" selection-end-column="280" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UniqueRecentPostController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueRecentPostController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UniqueMatchedGamerCardController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matched-gamer-card.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/matched-gamer-card.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="88" lean-forward="false" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -264,10 +311,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayersController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_updategroup.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfilePostUpdateController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_deletegroup.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/feedbackviews/group_deleted_success.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserGroupsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/DeleteGroupController.java" />
@@ -315,6 +358,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/homeview.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/models/Matchmaker.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/matched-gamer-card.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/recent_post_display_card.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueRecentPostController.java" />
       </list>
     </option>
   </component>
@@ -782,12 +829,12 @@
       <workItem from="1524174848747" duration="49000" />
       <workItem from="1524222700627" duration="18009000" />
       <workItem from="1524248718467" duration="15261000" />
-      <workItem from="1524308143864" duration="5831000" />
+      <workItem from="1524308143864" duration="6814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302487000" />
+    <option name="totallyTimeSpent" value="303470000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -820,7 +867,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36807817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36807817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2801303" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -929,38 +976,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/post_comment.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="89" lean-forward="false" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/PostComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostCommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionCreatePostController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="102" column="16" lean-forward="false" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/post_view_inside_with_comments.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1540,10 +1555,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/matched-gamer-card.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="88" lean-forward="false" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueRecentPostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/recent_post_display_card.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="280" lean-forward="false" selection-start-line="10" selection-start-column="280" selection-end-line="10" selection-end-column="280" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="70" column="92" lean-forward="false" selection-start-line="70" selection-start-column="92" selection-end-line="70" selection-end-column="92" />
+        <state relative-caret-position="379">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initialize#0;class#SubSectionHomeController#0" expanded="false" />
