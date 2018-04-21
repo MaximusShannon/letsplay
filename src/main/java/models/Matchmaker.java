@@ -43,7 +43,7 @@ public class Matchmaker {
     public List<Gamer> checkForGamersThatMatch(){
 
         matchedGamers = new ArrayList<>();
-        //remove the current gamer
+        //remove the current gamers requirement
         for (int i = 0; i < allPlayersRequirements.size(); i++){
 
             if(allPlayersRequirements.get(i).getGamer().getId() == Session.gamerSession.getId()){
@@ -69,7 +69,7 @@ public class Matchmaker {
                         && allPlayersRequirements.get(i).getRequiredLanguage().equals(gamersRequirement.getRequiredLanguage())
                         && allPlayersRequirements.get(i).getGamersMinimumAgeRequirement() >= gamersRequirement.getGamersMinimumAgeRequirement()){
 
-                    matchedGamers.add(gamersRequirement.getGamer());
+                    matchedGamers.add(allPlayersRequirements.get(i).getGamer());
                     System.out.println("MATCHED");
                 }
             }

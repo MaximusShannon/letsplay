@@ -1,8 +1,13 @@
 package controllers.innerviewcontrollers;
 
+import controllers.dynamicviewcontrollers.UniqueMatchedGamerCardController;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import models.Gamer;
 import models.GamerGroup;
@@ -26,6 +31,7 @@ public class SubSectionHomeController implements Initializable {
     @FXML private Text matchedGamersCount;
     @FXML private Text postCount;
     @FXML private Text matchedGroupCount;
+    @FXML private HBox matchedGamersList;
 
 
 
@@ -49,6 +55,10 @@ public class SubSectionHomeController implements Initializable {
 
             if(matchedGamers.size() > 0){
 
+                for(int i = 0; i < matchedGamers.size(); i++){
+
+                    displayMatchedGamer(matchedGamers.get(i));
+                }
                 //display them in thew view
                 matchedGamersCount.setText("Displaying " + matchedGamers.size() + " matched gamer(s)");
             }
@@ -74,6 +84,35 @@ public class SubSectionHomeController implements Initializable {
 
             //show message no posts
         }
+    }
+
+    private void displayMatchedGamer(Gamer matchedGamer){
+
+        try{
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dynamiclycreatedviews/matched-gamer-card.fxml"));
+            Pane node = loader.load();
+
+            UniqueMatchedGamerCardController uniqueMatchedGamerCardController = loader.getController();
+            uniqueMatchedGamerCardController.username.setText(matchedGamer.getUserName());
+
+            if(matchedGamer.getPlayerOnlineStatus()){
+                uniqueMatchedGamerCardController.onlineStatus_online.setVisible(true);
+            }else {
+                uniqueMatchedGamerCardController.onlineStatus_offline.setVisible(true);
+            }
+
+            //handle button click
+
+            matchedGamersList.getChildren().add(node);
+
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+
+
     }
 
     private void getMatchingGroups(){

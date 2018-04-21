@@ -300,6 +300,7 @@ public class SubSectionSettingsController implements Initializable {
             languageSpoken.getSelectionModel().selectFirst();
         }else {
 
-        }languageSpoken.getSelectionModel().select(mmRequirement.getRequiredLanguage());
+            languageSpoken.getSelectionModel().select(mmRequirement.getRequiredLanguage());
+        }
     }
 }
