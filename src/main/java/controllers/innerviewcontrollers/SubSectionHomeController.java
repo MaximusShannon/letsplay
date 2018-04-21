@@ -170,12 +170,21 @@ public class SubSectionHomeController implements Initializable {
 
             uniqueMatchedGroupController.gotoGroup.setOnMouseClicked(e ->{
 
+                Session.resetInnerViewGamerGroup();
+                Session.resetInnerViewGamerGroupMemberList();
+                Session.innerViewGamerGroup = group;
+                Session.innerViewGamerGroupMemberList = group.getMemberList();
 
+                try{
+                    AnchorPane innerGroupView = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/group_information_view.fxml"));
+                    injectablePane.getChildren().setAll(innerGroupView);
+                }catch (Exception ex){
+
+                    ex.printStackTrace();
+                }
             });
 
             groupsBasedOnRequirements.getChildren().add(node);
-
-
 
         }catch (Exception e){
 
