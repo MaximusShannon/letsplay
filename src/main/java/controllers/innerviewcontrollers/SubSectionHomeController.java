@@ -1,63 +1,100 @@
 package controllers.innerviewcontrollers;
 
 import javafx.fxml.FXML;
-
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
-import javafx.scene.Node;
-import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
+
 import javafx.scene.text.Text;
+import models.Gamer;
+import models.GamerGroup;
+import models.Matchmaker;
+import models.Post;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-
-import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class SubSectionHomeController implements Initializable {
 
-    @FXML
-    private Text changeableText;
-    @FXML
-    private Button changeText;
-    @FXML
-    private HBox matchedGamersList;
-    @FXML
-    private ScrollPane scrollPaneMatchedGamers;
+    private ClassPathXmlApplicationContext context;
+    private Matchmaker matchmaker;
+    private List<Gamer> matchedGamers;
+    private List<Post> mostRecentPosts;
+    private ArrayList<GamerGroup> matchingGroupsNotAMemberOf;
+
+    @FXML private Text matchedGamersCount;
+    @FXML private Text postCount;
+    @FXML private Text matchedGroupCount;
+
 
 
     @Override
     public void initialize(URL url, ResourceBundle rb){
 
-        try{
-            addItemsToHbox();
+        initResources();
+        getMatchedGamers();
+        getMostRecentPosts();
+        getMatchingGroups();
+
+    }
+
+    private void getMatchedGamers(){
+
+        matchmaker.run();
+
+        if(matchmaker.checkDoesUserHaveARequirement()){
+
+            matchedGamers = matchmaker.checkForGamersThatMatch();
+
+            if(matchedGamers.size() > 0){
+
+                //display them in thew view
+                matchedGamersCount.setText("Displaying " + matchedGamers.size() + " matched gamer(s)");
+            }
+
+        }else{
+
+            //show message no requirement
         }
-        catch (Exception e){
-            e.printStackTrace();
+
+    }
+
+    private void getMostRecentPosts(){
+
+        mostRecentPosts = matchmaker.fetchMostRecentPosts();
+
+        if(mostRecentPosts.size() > 0){
+
+
+            //show posts in view.
+            postCount.setText("Displaying " + mostRecentPosts.size() + " most recent post(s)");
+
+        }else{
+
+            //show message no posts
+        }
+    }
+
+    private void getMatchingGroups(){
+
+        matchingGroupsNotAMemberOf = matchmaker.fetchMatchingGroups();
+
+        if(matchingGroupsNotAMemberOf != null){
+
+
+            matchedGroupCount.setText("Displaying " + matchingGroupsNotAMemberOf.size() + " group(s)");
+        }else{
+
+            System.out.println("NO GROUPS THAT MATCH");
         }
 
-
-
     }
 
-    @FXML
-    private void changeText(){
+    private void initResources(){
 
-        changeableText.setText("Here we are now.");
+        context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+        matchmaker = (Matchmaker) context.getBean("matchmaker");
     }
-
-    @FXML
-    private void addItemsToHbox() throws IOException{
-
-        Node gamerProfileView = FXMLLoader.load(getClass().getResource("/view/dynamiclycreatedviews/matched-gamer-card.fxml"));
-        Node gamerProfileView2 = FXMLLoader.load(getClass().getResource("/view/dynamiclycreatedviews/matched-gamer-card.fxml"));
-        Pane gamerProfileView3 = FXMLLoader.load(getClass().getResource("/view/dynamiclycreatedviews/matched-gamer-card.fxml"));
-        gamerProfileView3.setPadding(new Insets(10,10,10,10));
-        matchedGamersList.getChildren().addAll(gamerProfileView, gamerProfileView2, gamerProfileView3);
-    }
-
 
 }

@@ -3,22 +3,65 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.innerviewcontrollers.SubSectionHomeController">
    <children>
-      <Text fill="#292e37" layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matched Gamers">
+      <Text fill="#292e37" layoutX="23.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matched Gamers">
          <font>
             <Font name="Segoe UI Emoji" size="18.0" />
          </font>
       </Text>
-      <Pane layoutX="18.0" layoutY="44.0" prefHeight="2.0" prefWidth="145.0" style="-fx-background-color: #0967A5;" />
       <ScrollPane fx:id="scrollPaneMatchedGamers" hbarPolicy="ALWAYS" hmax="3.0" layoutX="23.0" layoutY="54.0" prefHeight="186.0" prefWidth="945.0" stylesheets="@../../css/Sharp.css" vbarPolicy="NEVER" vmax="0.0">
          <content>
-            <HBox fx:id="matchedGamersList" prefHeight="166.0" prefWidth="209.0" stylesheets="@../../css/Sharp.css" />
+            <HBox fx:id="matchedGamersList" prefHeight="166.0" prefWidth="404.0" stylesheets="@../../css/Sharp.css" />
          </content>
       </ScrollPane>
+      <ScrollPane fx:id="scrollPaneMatchedGamers1" hbarPolicy="ALWAYS" hmax="3.0" layoutX="23.0" layoutY="302.0" prefHeight="186.0" prefWidth="945.0" stylesheets="@../../css/Sharp.css" vbarPolicy="NEVER" vmax="0.0">
+         <content>
+            <HBox fx:id="newPostsList" prefHeight="166.0" prefWidth="404.0" stylesheets="@../../css/Sharp.css" />
+         </content>
+      </ScrollPane>
+      <Text fill="#292e37" layoutX="23.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New posts">
+         <font>
+            <Font name="Segoe UI Emoji" size="18.0" />
+         </font>
+      </Text>
+      <ScrollPane fx:id="scrollPaneMatchedGamers11" hbarPolicy="ALWAYS" hmax="3.0" layoutX="23.0" layoutY="556.0" prefHeight="186.0" prefWidth="945.0" stylesheets="@../../css/Sharp.css" vbarPolicy="NEVER" vmax="0.0">
+         <content>
+            <HBox fx:id="groupsBasedOnRequirements" prefHeight="166.0" prefWidth="404.0" stylesheets="@../../css/Sharp.css" />
+         </content>
+      </ScrollPane>
+      <Text fill="#292e37" layoutX="23.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groups based on your interests">
+         <font>
+            <Font name="Segoe UI Emoji" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="271.0" layoutY="819.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note:">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="314.0" layoutY="818.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you don't have your matchmaker enabled these recommendations wont be as accurate">
+         <font>
+            <Font name="Segoe UI Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="matchedGamersCount" fill="#292e37" layoutX="691.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Displaying 0 matched gamer(s)">
+         <font>
+            <Font name="Segoe UI Emoji" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="postCount" fill="#292e37" layoutX="711.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Displaying 0 new post(s)">
+         <font>
+            <Font name="Segoe UI Emoji" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="matchedGroupCount" fill="#292e37" layoutX="721.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Displaying 0 group(s)">
+         <font>
+            <Font name="Segoe UI Emoji" size="14.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

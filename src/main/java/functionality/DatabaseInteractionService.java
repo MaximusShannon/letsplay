@@ -31,6 +31,7 @@ public class DatabaseInteractionService {
     private List<GroupAvatar> groupAvatars;
     private List<Invitation> allInvitations;
     private List<GroupMessage> groupMessages;
+    private List<MatchmakerRequirement> matchmakerRequirements;
     private Notification notification;
 
     public DatabaseInteractionService(){
@@ -519,6 +520,23 @@ public class DatabaseInteractionService {
         session.close();
 
         return postsFound;
+
+    }
+
+    public List<MatchmakerRequirement> fetchAllRequirements(){
+
+        session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<MatchmakerRequirement> allMatchmakerRequirements = builder.createQuery(MatchmakerRequirement.class);
+        allMatchmakerRequirements.from(MatchmakerRequirement.class);
+
+        matchmakerRequirements = session.createQuery(allMatchmakerRequirements).getResultList();
+
+        session.close();
+
+        return matchmakerRequirements;
 
     }
 

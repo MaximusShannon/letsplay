@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/models/Matchmaker.java" line="100" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUsersPostController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUsersPostController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserPostsController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserPostsController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/post_user_view.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/post_user_view.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/Matchmaker.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" afterPath="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/Sharp.css" afterPath="$PROJECT_DIR$/src/main/resources/css/Sharp.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/homeview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/homeview.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,144 +86,28 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <splitter split-orientation="horizontal" split-proportion="0.5">
-            <split-first>
-              <leaf>
-                <file leaf-file-name="DatabaseInteractionService.java" pinned="false" current-in-tab="false">
-                  <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="1">
-                        <caret line="54" column="56" lean-forward="false" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
-                        <folding>
-                          <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerGroupsName#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchAllInvitations#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateGamerApplicationCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#setGamerOnline#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#setGamerOffline#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistGroupMessage#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistPostComment#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistGamerAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistGroupApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchAllApplicationsForGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#filterApplicationsToGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchMemberLists#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchPostCommentList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGroupMessages#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGroupAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteInvitation#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteOldGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
-                        </folding>
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-                <file leaf-file-name="MatchmakerRequirement.java" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/src/main/java/models/MatchmakerRequirement.java">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="240">
-                        <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-                        <folding>
-                          <element signature="method#MatchmakerRequirement#1;class#MatchmakerRequirement#0" expanded="false" />
-                          <element signature="method#setMatchmakerRequirementId#0;class#MatchmakerRequirement#0" expanded="false" />
-                          <element signature="method#setMatchmakerActiviationFlag#0;class#MatchmakerRequirement#0" expanded="false" />
-                          <element signature="method#setDoesGamerRequireMicrophone#0;class#MatchmakerRequirement#0" expanded="false" />
-                          <element signature="method#setDoesGamerRequireCompetitiveGamers#0;class#MatchmakerRequirement#0" expanded="false" />
-                          <element signature="method#setDoesGamerRequireCasualPlayers#0;class#MatchmakerRequirement#0" expanded="false" />
-                          <element signature="method#setDoesGamerRequireMales#0;class#MatchmakerRequirement#0" expanded="false" />
-                          <element signature="method#setDoesGamerRequireFemales#0;class#MatchmakerRequirement#0" expanded="false" />
-                          <element signature="method#setGamersMinimumAgeRequirement#0;class#MatchmakerRequirement#0" expanded="false" />
-                        </folding>
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-first>
-            <split-second>
-              <leaf>
-                <file leaf-file-name="DatabaseInteractionService.java" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="301">
-                        <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-                        <folding>
-                          <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerGroupsName#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchAllInvitations#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateGamerApplicationCount#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#setGamerOnline#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#setGamerOffline#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistGroupMessage#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistGamerAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#persistGroupApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchAllApplicationsForGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#filterApplicationsToGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchMemberLists#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchPostCommentList#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGroupMessages#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGamerAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#fetchGroupAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteInvitation#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteOldGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
-                          <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
-                        </folding>
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-second>
-          </splitter>
+          <leaf>
+            <file leaf-file-name="MatchmakerRequirement.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/models/MatchmakerRequirement.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="240">
+                    <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+                    <folding>
+                      <element signature="method#MatchmakerRequirement#1;class#MatchmakerRequirement#0" expanded="false" />
+                      <element signature="method#setMatchmakerRequirementId#0;class#MatchmakerRequirement#0" expanded="false" />
+                      <element signature="method#setMatchmakerActiviationFlag#0;class#MatchmakerRequirement#0" expanded="false" />
+                      <element signature="method#setDoesGamerRequireMicrophone#0;class#MatchmakerRequirement#0" expanded="false" />
+                      <element signature="method#setDoesGamerRequireCompetitiveGamers#0;class#MatchmakerRequirement#0" expanded="false" />
+                      <element signature="method#setDoesGamerRequireCasualPlayers#0;class#MatchmakerRequirement#0" expanded="false" />
+                      <element signature="method#setDoesGamerRequireMales#0;class#MatchmakerRequirement#0" expanded="false" />
+                      <element signature="method#setDoesGamerRequireFemales#0;class#MatchmakerRequirement#0" expanded="false" />
+                      <element signature="method#setGamersMinimumAgeRequirement#0;class#MatchmakerRequirement#0" expanded="false" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
         </state>
       </content>
     </window>
@@ -226,36 +117,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PostDisplayController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java">
+      <file leaf-file-name="SubSectionHomeController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="47" column="67" lean-forward="false" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
+            <state relative-caret-position="364">
+              <caret line="70" column="92" lean-forward="false" selection-start-line="70" selection-start-column="92" selection-end-line="70" selection-end-column="92" />
               <folding>
-                <element signature="method#initialize#0;class#PostDisplayController#0" expanded="false" />
-                <element signature="method#displayPostCount#0;class#PostDisplayController#0" expanded="false" />
-                <element signature="method#checkDoesPosterHaveAnAvatar#0;class#PostDisplayController#0" expanded="false" />
-                <element signature="method#convertToJavaFXImage#0;class#PostDisplayController#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#initialize#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#getMatchedGamers#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#getMatchingGroups#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#initResources#0;class#SubSectionHomeController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileUserPostsController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserPostsController.java">
+      <file leaf-file-name="Matchmaker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/Matchmaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="119" column="15" lean-forward="false" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="413">
+              <caret line="91" column="30" lean-forward="false" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#initResources#0;class#Matchmaker#0" expanded="false" />
+                <element signature="method#run#0;class#Matchmaker#0" expanded="false" />
+                <element signature="method#fetchInitialData#0;class#Matchmaker#0" expanded="false" />
+                <element signature="method#checkForGamersThatMatch#0;class#Matchmaker#0" expanded="false" />
+                <element signature="method#fetchMatchingGroups#0;class#Matchmaker#0" expanded="false" />
+                <element signature="method#filterOutGroupsGamerIsAlreadyAMemberOf#0;class#Matchmaker#0" expanded="false" />
+                <element signature="method#checkIsAMember#0;class#Matchmaker#0" expanded="false" />
+                <element signature="method#checkDoesUserHaveARequirement#0;class#Matchmaker#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UniqueUsersPostController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUsersPostController.java">
+      <file leaf-file-name="DatabaseInteractionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="348">
+              <caret line="525" column="61" lean-forward="false" selection-start-line="525" selection-start-column="61" selection-end-line="525" selection-end-column="61" />
+              <folding>
+                <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerGroupsName#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchAllInvitations#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateGamerApplicationCount#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#setGamerOnline#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#setGamerOffline#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGroupMessage#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistPostComment#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGamerAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#persistGroupApplication#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchAllRequirements#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchAllApplicationsForGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#filterApplicationsToGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchMemberLists#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchPostCommentList#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGroupMessages#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGamerAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#fetchGroupAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#initFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteApplication#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteInvitation#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteOldGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
+                <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="793">
+              <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -306,10 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_application_card.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupApplicationCardController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/group_member_remove_card.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/ApplicationsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/RemovePlayersController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/group_admin_panel_updategroup.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfilePostUpdateController.java" />
@@ -347,9 +301,7 @@
         <option value="$PROJECT_DIR$/src/main/java/models/GroupMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/GroupMessagingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileInviteAndMessagesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ORM.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/models/MatchmakerRequirement.java" />
         <option value="$PROJECT_DIR$/src/main/java/functionality/MatchmakerPersistenceService.java" />
@@ -357,6 +309,12 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/PostDisplayController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUsersPostController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserPostsController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/Sharp.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/homeview.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Matchmaker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java" />
       </list>
     </option>
   </component>
@@ -419,6 +377,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -517,6 +476,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -551,10 +518,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -815,12 +781,13 @@
       <workItem from="1524130279976" duration="29053000" />
       <workItem from="1524174848747" duration="49000" />
       <workItem from="1524222700627" duration="18009000" />
-      <workItem from="1524248718467" duration="14833000" />
+      <workItem from="1524248718467" duration="15261000" />
+      <workItem from="1524308143864" duration="5831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296228000" />
+    <option name="totallyTimeSpent" value="302487000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -853,13 +820,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34201956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36807817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2801303" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21215352" sideWeight="0.6703755" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3011727" sideWeight="0.6703755" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -871,8 +836,10 @@
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -953,7 +920,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="49" />
+      <option name="time" value="82" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -962,45 +929,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/post_view.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/players_searching_landing.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/postsdisplay.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/post_comment.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1336,85 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="71" column="16" lean-forward="false" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="54" column="56" lean-forward="false" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
-          <folding>
-            <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchGamerGroupsName#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchAllInvitations#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#updateGamerApplicationCount#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#setGamerOnline#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#setGamerOffline#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#updateGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#persistGroupMessage#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#persistPostComment#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#persistGamerAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#persistGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#persistGroupApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchAllApplicationsForGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#filterApplicationsToGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchMemberLists#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchPostCommentList#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchGroupMessages#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchGamerAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#fetchGroupAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#deleteApplication#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#deleteGroup#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#deleteInvitation#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#deleteOldGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
-            <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/MatchmakerRequirement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="method#MatchmakerRequirement#1;class#MatchmakerRequirement#0" expanded="false" />
-            <element signature="method#setMatchmakerRequirementId#0;class#MatchmakerRequirement#0" expanded="false" />
-            <element signature="method#setMatchmakerActiviationFlag#0;class#MatchmakerRequirement#0" expanded="false" />
-            <element signature="method#setDoesGamerRequireMicrophone#0;class#MatchmakerRequirement#0" expanded="false" />
-            <element signature="method#setDoesGamerRequireCompetitiveGamers#0;class#MatchmakerRequirement#0" expanded="false" />
-            <element signature="method#setDoesGamerRequireCasualPlayers#0;class#MatchmakerRequirement#0" expanded="false" />
-            <element signature="method#setDoesGamerRequireMales#0;class#MatchmakerRequirement#0" expanded="false" />
-            <element signature="method#setDoesGamerRequireFemales#0;class#MatchmakerRequirement#0" expanded="false" />
-            <element signature="method#setGamersMinimumAgeRequirement#0;class#MatchmakerRequirement#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/adminpanelcontrollers/UpdateGroupController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -1443,7 +1292,7 @@
         <state relative-caret-position="649">
           <caret line="113" column="69" lean-forward="false" selection-start-line="113" selection-start-column="69" selection-end-line="113" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#MatchmakerPersistenceService#0;class#MatchmakerPersistenceService#0" expanded="false" />
             <element signature="method#initFactory#0;class#MatchmakerPersistenceService#0" expanded="false" />
             <element signature="method#closeFactory#0;class#MatchmakerPersistenceService#0" expanded="false" />
@@ -1556,6 +1405,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserPostsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+          <folding>
+            <element signature="method#displayUsersPostInVbox#0;class#ProfileUserPostsController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueUsersPostController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1564,11 +1423,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileUserPostsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/Sharp.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="119" column="15" lean-forward="false" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
+        <state relative-caret-position="336">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/MatchmakerRequirement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="method#MatchmakerRequirement#1;class#MatchmakerRequirement#0" expanded="false" />
+            <element signature="method#setMatchmakerRequirementId#0;class#MatchmakerRequirement#0" expanded="false" />
+            <element signature="method#setMatchmakerActiviationFlag#0;class#MatchmakerRequirement#0" expanded="false" />
+            <element signature="method#setDoesGamerRequireMicrophone#0;class#MatchmakerRequirement#0" expanded="false" />
+            <element signature="method#setDoesGamerRequireCompetitiveGamers#0;class#MatchmakerRequirement#0" expanded="false" />
+            <element signature="method#setDoesGamerRequireCasualPlayers#0;class#MatchmakerRequirement#0" expanded="false" />
+            <element signature="method#setDoesGamerRequireMales#0;class#MatchmakerRequirement#0" expanded="false" />
+            <element signature="method#setDoesGamerRequireFemales#0;class#MatchmakerRequirement#0" expanded="false" />
+            <element signature="method#setGamersMinimumAgeRequirement#0;class#MatchmakerRequirement#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/homeview.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="84" lean-forward="false" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/DatabaseInteractionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="525" column="61" lean-forward="false" selection-start-line="525" selection-start-column="61" selection-end-line="525" selection-end-column="61" />
+          <folding>
+            <element signature="method#DatabaseInteractionService#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchUserForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGamerGroupForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGamerGroupsName#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchAllInvitations#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGamerForGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchPostForUpdate#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updateGamer#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updateGamerCommentCount#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updateGamerPostCount#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updateGamerApplicationCount#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#setGamerOnline#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#setGamerOffline#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updatePost#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#addMemberToGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#removeMemberFromGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#updateSession#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#persistNewGroupAndGroupMemberList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#persistGroupMessage#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#persistPostComment#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#persistGamerAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#persistGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#persistGroupApplication#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="docComment;method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGamerList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchPostList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchAllRequirements#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchAllApplicationsForGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#filterApplicationsToGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGroupsList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchMemberLists#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchPostCommentList#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGroupMessages#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGamerAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#fetchGroupAvatars#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#initFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#closeFactory#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#filterPostsByUserId#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#deleteApplication#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#deletePost#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#deleteGroup#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#deleteInvitation#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#deleteOldGroupAvatar#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#deleteComment#0;class#DatabaseInteractionService#0" expanded="false" />
+            <element signature="method#setDeleteNotification#0;class#DatabaseInteractionService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Matchmaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="91" column="30" lean-forward="false" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initResources#0;class#Matchmaker#0" expanded="false" />
+            <element signature="method#run#0;class#Matchmaker#0" expanded="false" />
+            <element signature="method#fetchInitialData#0;class#Matchmaker#0" expanded="false" />
+            <element signature="method#checkForGamersThatMatch#0;class#Matchmaker#0" expanded="false" />
+            <element signature="method#fetchMatchingGroups#0;class#Matchmaker#0" expanded="false" />
+            <element signature="method#filterOutGroupsGamerIsAlreadyAMemberOf#0;class#Matchmaker#0" expanded="false" />
+            <element signature="method#checkIsAMember#0;class#Matchmaker#0" expanded="false" />
+            <element signature="method#checkDoesUserHaveARequirement#0;class#Matchmaker#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="70" column="92" lean-forward="false" selection-start-line="70" selection-start-column="92" selection-end-line="70" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initialize#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#getMatchedGamers#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#getMatchingGroups#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#initResources#0;class#SubSectionHomeController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

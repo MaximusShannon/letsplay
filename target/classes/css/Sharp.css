@@ -30,7 +30,7 @@
     -fx-background-color: #0967A5;
 }
 .scroll-bar:horizontal .thumb{
-    -fx-background-color: #0967A5 ;
+    -fx-background-color: #292E37 ;
 }
 .scroll-bar:horizontal .track{
     -fx-background-color: white;
