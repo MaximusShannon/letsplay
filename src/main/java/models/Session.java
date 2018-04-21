@@ -1,5 +1,6 @@
 package models;
 
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -8,6 +9,7 @@ import java.util.ArrayList;
 public class Session {
 
     public static Gamer gamerSession;
+    public static Gamer gamersProfile;
     public static ArrayList<Notification> notifcations = new ArrayList<>();
     public static Post updateablePost;
     public static GamerGroup innerViewGamerGroup;
@@ -16,10 +18,21 @@ public class Session {
     public static AnchorPane adminGroupView;
     public static Post innerViewPost;
     public static Stage thisStage;
+    public static Image profileImage;
 
     public static void resetSession(){
 
         gamerSession = null;
+    }
+
+    public static void resetGamerProfile(){
+
+        gamersProfile = null;
+    }
+
+    public static void resetProfileImage(){
+
+        profileImage = null;
     }
 
     public static void resetInnerViewPost(){

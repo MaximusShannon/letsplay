@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileMatchedGamerController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_users_view.fxml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Session.java" afterPath="$PROJECT_DIR$/src/main/java/models/Session.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/recent_post_display_card.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/recent_post_display_card.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/innerviews/homeview.fxml" afterPath="$PROJECT_DIR$/src/main/resources/view/innerviews/homeview.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/innerviewcontrollers/SubSectionHomeController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/innerviewcontrollers/SubSectionHomeController.class" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +26,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Responsive_Prototype$Main.coverage" NAME="Main Coverage Results" MODIFIED="1524263148453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Responsive_Prototype$Main.coverage" NAME="Main Coverage Results" MODIFIED="1524319221533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>controllers.innerviewcontrollers.*</FILTER>
     </SUITE>
   </component>
@@ -112,15 +118,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SubSectionHomeController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SubSectionHomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="128" column="12" lean-forward="false" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+            <state relative-caret-position="572">
+              <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#convertToJavaFXImage#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#initialize#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#getMatchedGamers#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#getMostRecentPosts#0;class#SubSectionHomeController#0" expanded="false" />
                 <element signature="method#getMatchingGroups#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#displayRecentPost#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#displayMatchedGroup#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#convertToJavaFXImage#0;class#SubSectionHomeController#0" expanded="false" />
+                <element signature="method#initResources#0;class#SubSectionHomeController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/Session.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile_users_view.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_users_view.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="184" column="87" lean-forward="false" selection-start-line="184" selection-start-column="87" selection-end-line="184" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileMatchedGamerController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileMatchedGamerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#backToHome#0;class#ProfileMatchedGamerController#0" expanded="false" />
+                <element signature="method#initView#0;class#ProfileMatchedGamerController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -224,7 +273,7 @@
       <file leaf-file-name="MainViewController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
+            <state relative-caret-position="585">
               <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
               <folding />
             </state>
@@ -306,8 +355,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/post_view_inside_with_comments.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/dynamiclycreatedviews/post_comment.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostCommentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/PostComment.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionCreatePostController.java" />
@@ -315,7 +362,6 @@
         <option value="$PROJECT_DIR$/src/main/java/functionality/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueGroupMemberController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Session.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/GamerAvatar.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniquePostController.java" />
@@ -356,7 +402,10 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Matchmaker.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionSettingsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/dynamicviewcontrollers/UniqueMatchedGamerCardController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Session.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_users_view.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileMatchedGamerController.java" />
       </list>
     </option>
   </component>
@@ -545,16 +594,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="innerviews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Responsive Prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Responsive Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="innerviews" type="462c0819:PsiDirectoryNode" />
-              <item name="inner_innerviews" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -824,12 +863,12 @@
       <workItem from="1524174848747" duration="49000" />
       <workItem from="1524222700627" duration="18009000" />
       <workItem from="1524248718467" duration="15261000" />
-      <workItem from="1524308143864" duration="9014000" />
+      <workItem from="1524308143864" duration="11293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305670000" />
+    <option name="totallyTimeSpent" value="307949000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -862,11 +901,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6188925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34636265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2801303" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3011727" sideWeight="0.6703755" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18869936" sideWeight="0.6703755" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -971,33 +1010,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/functionality/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="130" column="46" lean-forward="false" selection-start-line="130" selection-start-column="46" selection-end-line="130" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/GamerAvatar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1488,14 +1504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionSettingsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
@@ -1593,14 +1601,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/outviewcontrollers/MainViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/innerviews/inner_innerviews/profile_users_view.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="184" column="87" lean-forward="false" selection-start-line="184" selection-start-column="87" selection-end-line="184" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/SubSectionHomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="128" column="12" lean-forward="false" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+        <state relative-caret-position="572">
+          <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#convertToJavaFXImage#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#initialize#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#getMatchedGamers#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#getMostRecentPosts#0;class#SubSectionHomeController#0" expanded="false" />
             <element signature="method#getMatchingGroups#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#displayRecentPost#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#displayMatchedGroup#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#convertToJavaFXImage#0;class#SubSectionHomeController#0" expanded="false" />
+            <element signature="method#initResources#0;class#SubSectionHomeController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/innerviewcontrollers/ProfileMatchedGamerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#backToHome#0;class#ProfileMatchedGamerController#0" expanded="false" />
+            <element signature="method#initView#0;class#ProfileMatchedGamerController#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.innerviewcontrollers.SubSectionHomeController">
+<AnchorPane fx:id="injectablePane" prefHeight="847.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.innerviewcontrollers.SubSectionHomeController">
    <children>
       <Text fill="#292e37" layoutX="23.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matched Gamers">
          <font>
@@ -15,7 +15,7 @@
       </Text>
       <ScrollPane fx:id="scrollPaneMatchedGamers" hbarPolicy="ALWAYS" hmax="3.0" layoutX="23.0" layoutY="54.0" prefHeight="186.0" prefWidth="945.0" stylesheets="@../../css/Sharp.css" vbarPolicy="NEVER" vmax="0.0">
          <content>
-            <HBox fx:id="matchedGamersList" prefHeight="166.0" prefWidth="404.0" stylesheets="@../../css/Sharp.css" />
+            <HBox fx:id="matchedGamersList" prefHeight="170.0" prefWidth="400.0" stylesheets="@../../css/Sharp.css" />
          </content>
       </ScrollPane>
       <ScrollPane fx:id="scrollPaneMatchedGamers1" hbarPolicy="ALWAYS" hmax="3.0" layoutX="23.0" layoutY="302.0" prefHeight="186.0" prefWidth="945.0" stylesheets="@../../css/Sharp.css" vbarPolicy="NEVER" vmax="0.0">

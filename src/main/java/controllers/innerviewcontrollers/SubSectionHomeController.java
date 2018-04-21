@@ -1,6 +1,8 @@
 package controllers.innerviewcontrollers;
 
 import controllers.dynamicviewcontrollers.UniqueMatchedGamerCardController;
+import controllers.dynamicviewcontrollers.UniqueMatchedGroupController;
+import controllers.dynamicviewcontrollers.UniqueRecentPostController;
 import functionality.DatabaseInteractionService;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
@@ -33,11 +35,15 @@ public class SubSectionHomeController implements Initializable {
     private List<Post> mostRecentPosts;
     private ArrayList<GamerGroup> matchingGroupsNotAMemberOf;
     private List<GamerAvatar> gamerAvatars;
+    private List<GroupAvatar> groupAvatars;
 
     @FXML private Text matchedGamersCount;
     @FXML private Text postCount;
     @FXML private Text matchedGroupCount;
     @FXML private HBox matchedGamersList;
+    @FXML private HBox newPostsList;
+    @FXML private HBox groupsBasedOnRequirements;
+    @FXML private AnchorPane injectablePane;
 
 
 
@@ -82,8 +88,11 @@ public class SubSectionHomeController implements Initializable {
 
         if(mostRecentPosts.size() > 0){
 
+            for(int i = 0; i < mostRecentPosts.size(); i++){
 
-            //show posts in view.
+                displayRecentPost(mostRecentPosts.get(i));
+            }
+
             postCount.setText("Displaying " + mostRecentPosts.size() + " most recent post(s)");
 
         }else{
@@ -92,11 +101,81 @@ public class SubSectionHomeController implements Initializable {
         }
     }
 
+    private void getMatchingGroups(){
+
+        matchingGroupsNotAMemberOf = matchmaker.fetchMatchingGroups();
+
+        if(matchingGroupsNotAMemberOf != null){
+
+            for(int i = 0; i < matchingGroupsNotAMemberOf.size(); i++){
+
+                displayMatchedGroup(matchingGroupsNotAMemberOf.get(i));
+            }
+
+            matchedGroupCount.setText("Displaying " + matchingGroupsNotAMemberOf.size() + " group(s)");
+        }else{
+
+        }
+
+    }
+
     private void displayRecentPost(Post post){
 
         try{
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dynamiclycreatedviews/recent_post_display_card.fxml"));
             Pane node = loader.load();
+
+            UniqueRecentPostController uniqueRecentPostController = loader.getController();
+            uniqueRecentPostController.postTitle.setText(post.getPostTitle());
+            uniqueRecentPostController.gamePlaying.setText(post.getGamePlayed());
+            uniqueRecentPostController.languageSpoken.setText(post.getLanguageSpoken());
+            uniqueRecentPostController.postTags.setText(post.getPostTags());
+
+            uniqueRecentPostController.gotoPost.setOnMouseClicked(e ->{
+
+
+            });
+
+            newPostsList.getChildren().add(node);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+    private void displayMatchedGroup(GamerGroup group){
+
+        try{
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dynamiclycreatedviews/matched-group-card.fxml"));
+            Pane node = loader.load();
+
+            UniqueMatchedGroupController uniqueMatchedGroupController = loader.getController();
+            uniqueMatchedGroupController.groupName.setText(group.getGroupName());
+            uniqueMatchedGroupController.gamePlaying.setText(group.getMainGame());
+            uniqueMatchedGroupController.languageSpoken.setText(group.getGroupLanguageSpoken());
+
+            groupAvatars = dbService.fetchGroupAvatars();
+            if(groupAvatars.size() > 0){
+
+                for(int i = 0; i < groupAvatars.size(); i++){
+
+                    if(groupAvatars.get(i).getGamerGroup().getGroupId() == group.getGroupId()){
+
+                        uniqueMatchedGroupController.groupImage.setImage(convertToJavaFXImage(groupAvatars.get(i).getImage(), 146, 161));
+                    }
+                }
+            }
+
+            uniqueMatchedGroupController.gotoGroup.setOnMouseClicked(e ->{
+
+
+            });
+
+            groupsBasedOnRequirements.getChildren().add(node);
+
+
 
         }catch (Exception e){
 
@@ -134,7 +213,21 @@ public class SubSectionHomeController implements Initializable {
 
             uniqueMatchedGamerCardController.gotoProfile.setOnMouseClicked(e ->{
 
-                //got to profile
+                try{
+
+                    Session.resetGamerProfile();
+                    Session.resetProfileImage();
+                    Session.profileImage = uniqueMatchedGamerCardController.gamerImage.getImage();
+                    Session.gamersProfile = matchedGamer;
+
+
+                    AnchorPane profileView = FXMLLoader.load(getClass().getResource("/view/innerviews/inner_innerviews/profile_users_view.fxml"));
+                    injectablePane.getChildren().setAll(profileView);
+
+                }catch (Exception ei){
+
+                    ei.printStackTrace();
+                }
 
             });
 
@@ -166,21 +259,6 @@ public class SubSectionHomeController implements Initializable {
         }
 
         return image;
-    }
-
-    private void getMatchingGroups(){
-
-        matchingGroupsNotAMemberOf = matchmaker.fetchMatchingGroups();
-
-        if(matchingGroupsNotAMemberOf != null){
-
-
-            matchedGroupCount.setText("Displaying " + matchingGroupsNotAMemberOf.size() + " group(s)");
-        }else{
-
-            System.out.println("NO GROUPS THAT MATCH");
-        }
-
     }
 
     private void initResources(){

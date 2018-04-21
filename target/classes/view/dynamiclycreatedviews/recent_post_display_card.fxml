@@ -54,7 +54,7 @@
                   <Font name="Segoe UI Bold" size="14.0" />
                </font>
             </Text>
-            <Text fx:id="postTags" fill="WHITE" layoutX="14.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English" wrappingWidth="349.9999940395355">
+            <Text fx:id="postTags" fill="#00ff51" layoutX="14.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English" wrappingWidth="349.9999940395355">
                <font>
                   <Font name="Segoe UI Italic" size="14.0" />
                </font>
