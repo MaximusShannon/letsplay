@@ -176,9 +176,11 @@ public class GroupInformationController implements Initializable {
 
     private boolean checkIsLoggedInGamerAMemberOfThisGroup(){
 
-        for(int i = 0; i < memberListIds.length; i++){
+        for (int memberListId : memberListIds) {
 
-            return memberListIds[i] == Session.gamerSession.getId();
+            if (memberListId == Session.gamerSession.getId()) ;
+
+            return true;
         }
 
         return false;

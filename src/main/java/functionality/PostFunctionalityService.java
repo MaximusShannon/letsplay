@@ -46,7 +46,7 @@ public class PostFunctionalityService {
 
         sessionFactory = new Configuration()
                 .configure()
-                .addAnnotatedClass(Post.class)
+                .addAnnotatedClass(Gamer.class)
                 .buildSessionFactory();
     }
     /**

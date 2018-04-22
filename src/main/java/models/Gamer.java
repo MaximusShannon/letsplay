@@ -8,6 +8,7 @@ import javax.persistence.Id;
 /**
  * I think this is where hibernate gets the table name from, its the only place called Gamer.
  */
+
 @Entity
 public class Gamer {
 
@@ -20,7 +21,7 @@ public class Gamer {
     private String bio;
     private String email;
     private String password;
-    private String profilePictureReference; /*I think i will use FireBase to store images, not sure yet*/
+    private String profilePictureReference;
     private String location;
     private String interest;
     private int postCount;
